@@ -1,0 +1,1706 @@
+[
+  {
+    "name": "Adamantine Longsword",
+    "type": "Longsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8)2h Slashing(1d10)",
+      "This weapon ignores Resistance to Slashing damage.If you hit an object with this weapon, the hit is always Critical."
+    ]
+  },
+  {
+    "name": "Adamantine Mace",
+    "type": "Mace",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6)",
+      "This weapon ignores Resistance to Bludgeoning damage. If you hit an object with this weapon, the hit is always Critical."
+    ]
+  },
+  {
+    "name": "Adamantine Scimitar",
+    "type": "Scimitar",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d6)",
+      "This weapon ignores Resistance to Slashing damage.If you hit an object with this weapon, the hit is always Critical."
+    ]
+  },
+  {
+    "name": "Assassin's Touch",
+    "type": "Dagger",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d4 + 1)",
+      "Deals an additional Necrotic(1d4) to creatures that are Knocked Out or Sleeping."
+    ]
+  },
+  {
+    "name": "Blooded Greataxe",
+    "type": "Greataxe",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(1d12)",
+      "Deal an additional Slashing(1d4) while you're at 50% Hit Points or less."
+    ]
+  },
+  {
+    "name": "Bow of Awareness",
+    "type": "Shortbow",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Bow(1d6 + 1)",
+      "Gain a +1 bonus to Initiative Rolls."
+    ]
+  },
+  {
+    "name": "Bow of the Banshee",
+    "type": "Shortbow",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d6 + 1)",
+      "Gain 🎲(1d4) bonus to attack and damage rolls against Frightened creatures.When you a hit with this weapon, possibly inflict Frightened."
+    ]
+  },
+  {
+    "name": "Cacophony",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 1) + Thunder(1d4)2h Bludgeoning(1d8 + 1) + Thunder(1d4)",
+      "Cast Thunderous Smite once per Short Rest"
+    ]
+  },
+  {
+    "name": "Ceremonial Longsword",
+    "type": "Longsword",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Slashing(1d8 + 1)2h Slashing(1d10 + 1)"
+    ]
+  },
+  {
+    "name": "Ceremonial Battleaxe",
+    "type": "Battleaxe",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Slashing(1d8 + 1)2h Slashing(1d10 + 1)"
+    ]
+  },
+  {
+    "name": "Ceremonial Mace",
+    "type": "Mace",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d6 + 1)"
+    ]
+  },
+  {
+    "name": "Ceremonial Warhammer",
+    "type": "Warhammer",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d8 + 1)2h Bludgeoning(1d10 + 1)"
+    ]
+  },
+  {
+    "name": "Club of Hill Giant Strength",
+    "type": "Club",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d4)",
+      "Increase Strength to 19."
+    ]
+  },
+  {
+    "name": "Corellon's Grace",
+    "type": "Quarterstaff",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "Gain a +1 bonus to Unarmed Attack Rolls and damage.Gain a +2 bonus to Saving Throws when not wearing armour."
+    ]
+  },
+  {
+    "name": "Corrosive Flail",
+    "type": "Flail",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d8 + 1)",
+      "Gain Corrosive Strike weapon action."
+    ]
+  },
+  {
+    "name": "Creation's Echo",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "When you deal Acid, Fire, Lightning, Radiant, or Necrotic damage, gain Resistance to that damage type for 2 turns."
+    ]
+  },
+  {
+    "name": "Crossbow of Arcane Force",
+    "type": "Heavy Crossbow",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Bow(1d10 + 1)",
+      "Gain Arcane Ammunition weapon action."
+    ]
+  },
+  {
+    "name": "Deep Delver",
+    "type": "War Pick",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d8)",
+      "Inflicts Shattered on hit. When attacking a Shattered target, deal an additional Bow(1d4)."
+    ]
+  },
+  {
+    "name": "Defender Flail",
+    "type": "Flail",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d8 + 1)Shield + 1 AC",
+      "Reduce incoming Bludgeoning, Piercing, and Slashing damage by 1."
+    ]
+  },
+  {
+    "name": "Doom Hammer",
+    "type": "Maul",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Bludgeoning(2d6)",
+      "Prevents target from regaining Hit Points. Undead creatures also get Disadvantage on Attack Rolls."
+    ]
+  },
+  {
+    "name": "Dragon's Grasp",
+    "type": "Handaxe",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Slashing(1d6)",
+      "Deals an additional Slashing(1d4) to Burning targets."
+    ]
+  },
+  {
+    "name": "Everburn Blade",
+    "type": "Greatsword",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Slashing(2d6) + Fire(1d4)"
+    ]
+  },
+  {
+    "name": "Exterminator's Axe",
+    "type": "Greataxe",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Slashing(1d12)",
+      "Deals an additional Fire(1d6) to Plants, Insects, and Small creatures."
+    ]
+  },
+  {
+    "name": "Faithbreaker",
+    "type": "Warhammer",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d8 + 1)2h Bludgeoning(1d10 + 1)",
+      "Gain Absolute Power weapon action."
+    ]
+  },
+  {
+    "name": "Firestoker",
+    "type": "Hand Crossbow",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d6)",
+      "Deals an additional Bow(1d4) to Burning targets."
+    ]
+  },
+  {
+    "name": "Gandrel's Aspiration",
+    "type": "Heavy Crossbow",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Bow(1d10 + 1)",
+      "Advantage against Monstrosity type enemies."
+    ]
+  },
+  {
+    "name": "Giantbreaker",
+    "type": "Heavy Crossbow",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d10)",
+      "When you hit, inflict Reeling for 2 turns."
+    ]
+  },
+  {
+    "name": "Gold Wyrmling Staff",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 1) + Fire(1d4)2h Bludgeoning(1d8 + 1) + Fire(1d4)",
+      "Cast Fire Bolt"
+    ]
+  },
+  {
+    "name": "Hamarhraft",
+    "type": "Maul",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Bludgeoning(2d6)",
+      "When the wearer Jumps, they deal Thunder(1d6) in a 3 m / 10 ft radius upon landing."
+    ]
+  },
+  {
+    "name": "Harold",
+    "type": "Heavy Crossbow",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d10 + 1)",
+      "When you deal damage to a target with a ranged weapon, it must succeed a Charisma Charisma Save or be Baned for 2 turns."
+    ]
+  },
+  {
+    "name": "Hunter's Dagger",
+    "type": "Dagger",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d4 + 1)",
+      "On a hit, the target must succeed a Constitution Saving Throw or become Ruptured."
+    ]
+  },
+  {
+    "name": "Hunting Shortbow",
+    "type": "Shortbow",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Bow(1d6 + 1)",
+      "Advantage against Monstrosity type enemies.",
+      "Cast Hunter's Mark once per Long Rest."
+    ]
+  },
+  {
+    "name": "Intransigent Warhammer",
+    "type": "Warhammer",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d8)2h Bludgeoning(1d10)",
+      "Knocks nearby creatures Prone after killing a target or landing a Critical Hit."
+    ]
+  },
+  {
+    "name": "Jagged Spear",
+    "type": "Spear",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d6)2h Bow(1d8)",
+      "On a hit, the target may receive Disadvantage on Constitution Saving Throws."
+    ]
+  },
+  {
+    "name": "Jorgoral's Greatsword",
+    "type": "Greatsword",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(2d6 + 1)",
+      "Gain Colossal Onslaught weapon action."
+    ]
+  },
+  {
+    "name": "Knife of the Undermountain King",
+    "type": "Shortsword",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bow(1d6 + 2)",
+      "When you roll 2 damage or less, reroll the dice.You have Advantage on Attack Rolls against Lightly or Heavily Obscured targets when using this weapon.You land a Critical Hit when rolling a 19."
+    ]
+  },
+  {
+    "name": "Larethian's Wrath",
+    "type": "Longsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8 + 1)2h Slashing(1d10 + 1)",
+      "Gain Razor Gale weapon action."
+    ]
+  },
+  {
+    "name": "Light of Creation",
+    "type": "Halberd",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Slashing(1d10 + 1) + Lightning(1d6)",
+      "Chance to Stun the wielder, unless it is a Construct."
+    ]
+  },
+  {
+    "name": "Loviatar's Scourge",
+    "type": "Mace",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d6) + Necrotic(1d6)",
+      "Deals an additional Necrotic(1d6) to nearby targets, including the wielder.Resistance to Necrotic damage."
+    ]
+  },
+  {
+    "name": "Melf's First Staff",
+    "type": "Quarterstaff",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d6 + 1)2h Bludgeoning(1d8 + 1)",
+      "Gain a +1 bonus to Spell Save DC and spell Attack Rolls.",
+      "Cast Melf's Acid Arrow once per Long Rest."
+    ]
+  },
+  {
+    "name": "Merregon Halberd",
+    "type": "Halberd",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Slashing(1d10 + 1)"
+    ]
+  },
+  {
+    "name": "Monster Slayer Glaive",
+    "type": "Glaive",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(1d10 + 1)",
+      "Deals an additional 🎲(1d4) damage against monstrosity type enemies.Jump distance is increased by 1.5m / 5ft."
+    ]
+  },
+  {
+    "name": "Mourning Frost",
+    "type": "Quarterstaff",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 1) + Cold(1d4)2h Bludgeoning(1d8 + 1) + Cold(1d4)",
+      "Deal an additional Cold(1) when you deal any cold damage, and possibly inflict Chill.",
+      "Cast Ray of Frost"
+    ]
+  },
+  {
+    "name": "Nature's Snare",
+    "type": "Quarterstaff",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "On a hit, the target may become Ensnared if it is not a plant or beast."
+    ]
+  },
+  {
+    "name": "Pale Oak",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "Immune to Ensnare by Druidic Vines.",
+      "Cast Faithwarden's Vines once per Long Rest."
+    ]
+  },
+  {
+    "name": "Phalar Aluve",
+    "type": "Longsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8 + 1)2h Slashing(1d10 + 1)",
+      "Cast Phalar Aluve: Shriek once per Short Rest.",
+      "Cast Phalar Aluve: Sing once per Short Rest.",
+      "Performance +1"
+    ]
+  },
+  {
+    "name": "Rain Dancer",
+    "type": "Quarterstaff",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "Cast Create Water once per Short Rest."
+    ]
+  },
+  {
+    "name": "Returning Pike",
+    "type": "Pike",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Bow(1d10 + 1)",
+      "This weapon will return to its owner when thrown."
+    ]
+  },
+  {
+    "name": "Ritual Axe",
+    "type": "Handaxe",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Slashing(1d6)",
+      "On a hit, possibly inflict a 🎲(1d4) penalty to Attack Rolls and Saving Throws on target.If the attacker still has 25% or more Hit Points, they take Bow(1d6) themselves."
+    ]
+  },
+  {
+    "name": "Ritual Dagger",
+    "type": "Dagger",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d4)",
+      "On a hit, receive a 🎲(1d4) bonus to Attack Rolls and Saving Throws until the end of your next turn.Use a Bonus Action to take Slashing(1d4) and receive a 🎲(1d4) bonus to Attack Rolls and Saving Throws."
+    ]
+  },
+  {
+    "name": "Rupturing Blade",
+    "type": "Rapier",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d8 + 1)",
+      "Gain Searing Blood weapon action."
+    ]
+  },
+  {
+    "name": "Shattered Flail",
+    "type": "Mace",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 2)",
+      "Regain ❤️(1d6) Hit Points when you hit an enemy. You can go Mad if you don't hit an enemy each turn."
+    ]
+  },
+  {
+    "name": "Shining Staver-of-Skulls",
+    "type": "Light Hammer",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d4 +1) + Radiant(1d4)"
+    ]
+  },
+  {
+    "name": "Shortsword of First Blood",
+    "type": "Shortsword",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d6)",
+      "Deals an additional Bow(1d8) to targets that still have all their Hit Points."
+    ]
+  },
+  {
+    "name": "Sickle of BOOOAL",
+    "type": "Sickle",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(2d4)",
+      "Advantage on Attack Rolls against Bleeding creatures, as long as there are Kuo-toa to worship BOOOAL."
+    ]
+  },
+  {
+    "name": "Skybreaker",
+    "type": "Light Hammer",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d4 + 1)",
+      "Cast Searing Smite once per Long Rest."
+    ]
+  },
+  {
+    "name": "Sorrow",
+    "type": "Glaive",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(1d10 + 1)",
+      "Cast Sorrowful Lash once per turn."
+    ]
+  },
+  {
+    "name": "Soulbreaker Greatsword",
+    "type": "Greatsword",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(2d6 + 1)",
+      "Deal an additional Psychic(1d4) if you are Githyanki.Gain a +2 bonus to Initiative Rolls."
+    ]
+  },
+  {
+    "name": "Speedy Reply",
+    "type": "Scimitar",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Slashing(1d6)",
+      "On a hit, gain Momentum for 2 turns."
+    ]
+  },
+  {
+    "name": "Spellthief",
+    "type": "Longbow",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Bow(1d8)",
+      "Regain a Level 1 Spell Slot when you land a Critical hit with the Spellthief once per Short Rest."
+    ]
+  },
+  {
+    "name": "Staff of Arcane Blessing",
+    "type": "Quarterstaff",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "Bless becomes Mystra's Blessing.",
+      "Mystra's Blessing grants an additional 🎲(1d4) to Weapon Attack Rolls and Saving Throws, and an additional 🎲(2d4) to Spell Attack Rolls.",
+      "Cast Bless (Mystra's Blessing) once per Long Rest"
+    ]
+  },
+  {
+    "name": "Staff of Crones",
+    "type": "Quarterstaff",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "Cast Ray of Sickness once per Short Rest."
+    ]
+  },
+  {
+    "name": "Steelforge Sword",
+    "type": "Shortsword",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d6 + 1)"
+    ]
+  },
+  {
+    "name": "Sussur Dagger",
+    "type": "Dagger",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d4 + 1)",
+      "On a hit, Silence target."
+    ]
+  },
+  {
+    "name": "Sussur Greatsword",
+    "type": "Greatsword",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(2d6 + 1)",
+      "On a hit, Silence target."
+    ]
+  },
+  {
+    "name": "Sussur Sickle",
+    "type": "Sickle",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d4 + 1)",
+      "On a hit, Silence target."
+    ]
+  },
+  {
+    "name": "Svartlebee's Woundseeker",
+    "type": "Greatsword",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Slashing(2d6 + 1)",
+      "Gains a 🎲(1d4) bonus to Attack Rolls with this weapon when attacking creatures that have already taken damage."
+    ]
+  },
+  {
+    "name": "Sword of Justice",
+    "type": "Greatsword",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Slashing(2d6 + 1)",
+      "Cast Shield of Faith once per Long Rest."
+    ]
+  },
+  {
+    "name": "Sword of Screams",
+    "type": "Rapier",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d8) + Psychic(1d4)"
+    ]
+  },
+  {
+    "name": "The Baneful",
+    "type": "Shortsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d6 + 1)",
+      "The Warlock bound to this weapon is always Proficient with it. The weapon's damage is magical.Gain a +1 bonus to damage and Attack Rolls with this weapon.On a hit, possibly inflict Bane your target."
+    ]
+  },
+  {
+    "name": "The Blood of Lathander",
+    "type": "Mace",
+    "rarity": "Legendary",
+    "effects": [
+      "1h Bludgeoning(1d6 + 3)",
+      "Regain ❤️(2d6) Hit Points when your Hit Points are reduced to 0 once per Long Rest. Allies within 9m also regain ❤️(1d6) Hit Points.",
+      "This weapon shines with a glowing light in a radius of 6m. In combat, fiends and undead standing in the light are Blinded.",
+      "Cast Sunbeam once per Long Rest."
+    ]
+  },
+  {
+    "name": "The Joltshooter",
+    "type": "Longbow",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d8)",
+      "When you deal damage with this weapon, gain 2 Lightning Charges."
+    ]
+  },
+  {
+    "name": "The Skinburster",
+    "type": "Halberd",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Slashing(1d10 + 1)",
+      "On a hit, gain Force Conduit for 2 turns."
+    ]
+  },
+  {
+    "name": "The Sparky Points",
+    "type": "Trident",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d6)2h Bow(1d8)",
+      "When you deal damage with this weapon, gain 2 Lightning Charges."
+    ]
+  },
+  {
+    "name": "The Spellsparkler",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "When you deal damage with a spell or cantrip, gain 2 Lightning Charges."
+    ]
+  },
+  {
+    "name": "The Watcher's Guide",
+    "type": "Spear",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d6)2h Bow(1d8)",
+      "On a miss, the next Attack Roll against that target gains True Strike."
+    ]
+  },
+  {
+    "name": "Titanstring Bow",
+    "type": "Longbow",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d8 + 1)",
+      "Deal an additional 🎲(Strength Modifier) with this weapon."
+    ]
+  },
+  {
+    "name": "Unseen Menace",
+    "type": "Pike",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d10 + 1)",
+      "This weapon is Invisible while equipped. It loses this property for 2 turns on a missed Attack Rolls.While Invisible, you are Immune to Disarm, gain Advantage on Attack Rolls and you land a Critical Hit when rolling a 19."
+    ]
+  },
+  {
+    "name": "Very Heavy Greataxe",
+    "type": "Greataxe",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Slashing(1d12)",
+      "Gain Gargantuan Cleave weapon action."
+    ]
+  },
+  {
+    "name": "Vision of the Absolute",
+    "type": "Spear",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d6)2h Bow(1d8)",
+      "On a hit, the target must succeed a Dexterity Saving Throw or become Blinded. Deals an additional Bow(2d6) to creatures that have multiple sets of eyes."
+    ]
+  },
+  {
+    "name": "Witchbreaker",
+    "type": "Battleaxe",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Slashing(1d8 + 1)2h Slashing(1d10 + 1)",
+      "Advantage on Attack Rolls against concentrating creatures."
+    ]
+  },
+  {
+    "name": "Worgfang",
+    "type": "Dagger",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d4)",
+      "Goblins have Disadvantage on Attack Rolls against you."
+    ]
+  },
+  {
+    "name": "Xyanyde",
+    "type": "Mace",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d6)",
+      "On a miss, automatically Cast Faerie Fire on the target (for 2 turns) once per Short Rest."
+    ]
+  },
+  {
+    "name": "Assassin's Shortsword",
+    "type": "Shortsword",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d6 + 1)",
+      "Advantage on Stealth Checks."
+    ]
+  },
+  {
+    "name": "Argument Solver",
+    "type": "Greatclub",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d8 + 1)",
+      "Gain Poison Mist weapon action."
+    ]
+  },
+  {
+    "name": "Bigboy's Chew Toy",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "Cast Enlarge on yourself once per Long Rest."
+    ]
+  },
+  {
+    "name": "Blade of Oppressed Souls",
+    "type": "Longsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8) + Psychic(1d4)2h Slashing(1d10) + Psychic(1d4)",
+      "Gain Crowning Strike weapon action."
+    ]
+  },
+  {
+    "name": "Blood-Bound Blade",
+    "type": "Longsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8)2h Slashing(1d10)",
+      "This weapon only functions if it's Bound to an Eldritch Knight or is a Warlock's Pact Weapon.Gain a +1 bonus to damage and Attack Roll with this weapon.Deal additional damage equal to your Proficiency Bonus with this weapon."
+    ]
+  },
+  {
+    "name": "Charge-Bound Warhammer",
+    "type": "Warhammer",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d8 + 1)2h Bludgeoning(1d10 + 1)",
+      "This weapon only functions if it's Bound to an Eldritch Knight or is a Warlock's Pact Weapon.Gain a +1 bonus to damage and Attack Roll with this weapon.Deal an additional Lightning(1d6) with this weapon."
+    ]
+  },
+  {
+    "name": "Cruel Sting",
+    "type": "Longsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8 + 1) + Psychic(1d6)2h Slashing(1d10 + 1) + Psychic(1d6)",
+      "Sting The Helpless: A drow elf wielding this weapon deals an additional 1d4 Poison damage against Restrained targets.Cast Ensnaring Strands."
+    ]
+  },
+  {
+    "name": "Darkfire Shortbow",
+    "type": "Shortbow",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d6 + 2)",
+      "Resistance to Fire damage.Resistance to Cold damage.Cast Haste once per Long Rest."
+    ]
+  },
+  {
+    "name": "Defender Greataxe",
+    "type": "Greataxe",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(1d12 + 2)",
+      "When you make your first attack of the round, you can reduce this weapon's Enchantment by 1 to increase your Saving Throw bonus by 1 and Shield + 1 AC."
+    ]
+  },
+  {
+    "name": "Drakethroat Glaive",
+    "type": "Glaive",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(1d10 + 2)",
+      "Enemies have Disadvantage on Saving Throws against your Dragonborn breath weapon.Cast Draconic Elemental Weapon once per Long Rest."
+    ]
+  },
+  {
+    "name": "Halberd of Vigilance",
+    "type": "Halberd",
+    "rarity": "Very Rare",
+    "effects": [
+      "2h Slashing(1d10 + 2) + Force(1d4)",
+      "Gain a +1 bonus to initiative rolls and Advantage on Perception Ability Checks.Advantage when you make an Attack Roll as a reaction."
+    ]
+  },
+  {
+    "name": "Harmonium Halberd",
+    "type": "Halberd",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(1d10 + 1)",
+      "Strength +2 (up to 23)Intelligence -1Wisdom -1"
+    ]
+  },
+  {
+    "name": "Hellfire Hand Crossbow",
+    "type": "Hand Crossbow",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bow(1d6 + 2)",
+      "On a hit while Hiding or Invisible, possibly inflict Burning.Cast Scorching Ray once per Short Rest."
+    ]
+  },
+  {
+    "name": "Incandescent Staff",
+    "type": "Quarterstaff",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "Ranged Spell Attack +1Resistance to Fire damageCast Fire BoltCast Fireball once per Long Rest"
+    ]
+  },
+  {
+    "name": "Infernal Rapier",
+    "type": "Rapier",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bow(1d8 + 2)",
+      "Gain a +1 bonus to Spell Save DC.Add Spellcasting Ability Modifier to Attack Rolls instead of Dexterity Modifier.Cast Planar Ally: Cambion once per Long Rest."
+    ]
+  },
+  {
+    "name": "Ironwood Club",
+    "type": "Club",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d4 + 1)"
+    ]
+  },
+  {
+    "name": "Justiciar's Scimitar",
+    "type": "Scimitar",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Slashing(1d6 + 2)",
+      "When you attack with Advantage, possibly inflict Blind.Cast Shadowsoaked Blow once per Short Rest."
+    ]
+  },
+  {
+    "name": "Ketheric's Warhammer",
+    "type": "Warhammer",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d8) + Psychic(1d4)2h Bludgeoning(1d10) + Psychic(1d4)"
+    ]
+  },
+  {
+    "name": "Least Expected",
+    "type": "Shortbow",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d6)",
+      "Gain 🎲(1d4) bonus to ranged weapon attacks while Obscured by shadow."
+    ]
+  },
+  {
+    "name": "Lightning Jabber",
+    "type": "Spear",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d6 + 1) + Lightning(1d4)2h Bow(1d8 + 1) + Lightning(1d4)",
+      "On a hit, possibly Shock your target.When thrown, deal an additional Lightning(1d4)."
+    ]
+  },
+  {
+    "name": "Moonlight Glaive",
+    "type": "Glaive",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(1d10 + 2) + Radiant(1d4)",
+      "This weapon shines with a glowing light in a radius of 6m."
+    ]
+  },
+  {
+    "name": "Myrkulite Scourge",
+    "type": "Flail",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bludgeoning(1d8 + 1) + Necrotic(1d6)"
+    ]
+  },
+  {
+    "name": "Ne'er Misser",
+    "type": "Hand Crossbow",
+    "rarity": "Rare",
+    "effects": [
+      "1h Force(1d6)",
+      "Cast Magic Missile once per Short Rest."
+    ]
+  },
+  {
+    "name": "Punch-Drunk Bastard",
+    "type": "Greatclub",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d8 + 1)",
+      "While Drunk, gain Advantage on Attack Rolls and deal an additional Thunder(1d4) for 3m / 10ft with each attack."
+    ]
+  },
+  {
+    "name": "Rat Bat",
+    "type": "Greatclub",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d8 + 1)",
+      "Advantage on Attack Rolls against beasts."
+    ]
+  },
+  {
+    "name": "Render of Mind and Body",
+    "type": "Shortsword",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d6 + 1)",
+      "When attacking a target with Advantage, deal an additional Psychic(1d8)."
+    ]
+  },
+  {
+    "name": "Ritual Dagger of Shar",
+    "type": "Dagger",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d4 + 1) + Necrotic(1d4)"
+    ]
+  },
+  {
+    "name": "Selûne's Spear of Night",
+    "type": "Spear",
+    "rarity": "Legendary",
+    "effects": [
+      "1h Bow(1d6 + 3)2h Bow(1d8 + 3)",
+      "Advantage on Wisdom Saving Throws and Perception Checks.",
+      "You can see in the dark up to 12m.",
+      "Cast Moonbeam once per Long Rest.",
+      "Cast Moonmote once per Long Rest."
+    ]
+  },
+  {
+    "name": "Shadow Lantern",
+    "type": "Club",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d4)",
+      "Cast Conjure Shadow Lantern Wraith once per Long Rest."
+    ]
+  },
+  {
+    "name": "Shar’s Spear of Evening",
+    "type": "Spear",
+    "rarity": "Legendary",
+    "effects": [
+      "1h Bow(1d6 + 3)2h Bow(1d8 + 3)",
+      "Advantage on Saving Throws while Lightly or Heavily Obscured.",
+      "Deals an additional 🎲(1d6) with this weapon to creatures that are Lightly or Heavily Obscured.",
+      "Immunity to Blind.",
+      "Cast Shar's Darkness"
+    ]
+  },
+  {
+    "name": "Slicing Shortsword",
+    "type": "Shortsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d6 + 1)",
+      "When you attack with Advantage, inflict Bleeding."
+    ]
+  },
+  {
+    "name": "Spear of Night",
+    "type": "Spear",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d6)2h Bow(1d8)",
+      "If Shar allows it, use this spear to kill Nightsong."
+    ]
+  },
+  {
+    "name": "Sword of Clutching Umbra",
+    "type": "Shortsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d6 + 1)",
+      "Gain Shadowsoaked Blow weapon action."
+    ]
+  },
+  {
+    "name": "Sword of Life Stealing",
+    "type": "Shortsword",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bow(1d6 + 2)",
+      "On a Critical Hit, you gain ❤️(10) Temporary Hit Points and the target takes an extra Necrotic(1d10) as long as it isn't a construct or an undead."
+    ]
+  },
+  {
+    "name": "Sylvan Scimitar",
+    "type": "Scimitar",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Slashing(1d6 + 1)",
+      "Add Spellcasting Ability Modifier to Attack Rolls instead of Dexterity Modifier."
+    ]
+  },
+  {
+    "name": "Thermodynamo Axe",
+    "type": "Battleaxe",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8 + 1)2h Slashing(1d10 + 1)",
+      "When you deal damage with this weapon, gain Heat for 2 turns."
+    ]
+  },
+  {
+    "name": "Thorn Blade",
+    "type": "Scimitar",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d6 + 1)",
+      "Deal an additional Poison(1d4) when you attack with this weapon while Concentrating.Cast Ensnaring Strike once per Long Rest."
+    ]
+  },
+  {
+    "name": "Twist of Fortune",
+    "type": "Morningstar",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d8 + 1)",
+      "When you roll 2 or less with this weapon's damage die, reroll it and take the new result."
+    ]
+  },
+  {
+    "name": "Ambusher",
+    "type": "Shortsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d6 + 1)",
+      "Deal an additional Necrotic(1d6) against creatures that haven't taken a turn yet.Gain a +1 bonus to Initiative rolls and Advantage on Perception Ability Checks."
+    ]
+  },
+  {
+    "name": "Balduran's Giantslayer",
+    "type": "Greatsword",
+    "rarity": "Legendary",
+    "effects": [
+      "2h Slashing(2d6 + 3)",
+      "On a hit, double the damage from your Strength Modifier.",
+      "Advantage on Attack Rolls against Large, Huge or Gargantuan creatures.",
+      "Cast Giant Form once per Long Rest."
+    ]
+  },
+  {
+    "name": "Belm",
+    "type": "Scimitar",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Slashing(1d6 + 2)",
+      "Gain an additional attack as a bonus action."
+    ]
+  },
+  {
+    "name": "Blackguard's Sword",
+    "type": "Longsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8) + Necrotic(1d4)2h Slashing(1d10) + Necrotic(1d4)",
+      "When you hit with one of your Smites, the target must succeed a Constitution Saving Throw or become Dazed."
+    ]
+  },
+  {
+    "name": "Blightbringer",
+    "type": "Shortbow",
+    "rarity": "Very Rare",
+    "effects": [
+      "2h Bow(1d6)",
+      "Gain a 🎲(1d4) bonus to Attack and Damage rolls when attacking Gnomes or Dwarves with this weapon.When you land a Critical Hit with this weapon, Slow the target creature."
+    ]
+  },
+  {
+    "name": "Bloodthirst",
+    "type": "Dagger",
+    "rarity": "Legendary",
+    "effects": [
+      "1h Bow(1d4 + 2)",
+      "The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.",
+      "Cast True Strike once per Short Rest.",
+      "Bound Weapon",
+      "Main Hand Only:",
+      "On a hit with this weapon, creatures receive Vulnerability to Piercing damage.",
+      "Off-Hand Only:",
+      "When a creature misses you with a melee attack, you may retaliate and gain True Strike.",
+      "Shield + 1 AC"
+    ]
+  },
+  {
+    "name": "Breaching Pikestaff",
+    "type": "Pike",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d10) + Force(1d4)"
+    ]
+  },
+  {
+    "name": "Caitiff Staff",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "Gain a +1 bonus to Spell Save DC and spell attack rolls.You can replenish expended Warlock Spell Slots once per Long Rest."
+    ]
+  },
+  {
+    "name": "Clown Hammer",
+    "type": "Warhammer",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d8)2h Bludgeoning(1d10)",
+      "When you land a Critical hit with this weapon, both you and the target must succeed a Wisdom Saving Throw or be affected by Tasha's Hideous Laughter."
+    ]
+  },
+  {
+    "name": "Cold Snap",
+    "type": "Dagger",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d6)Shield + 1 AC",
+      "Off-Hand Only:When a creature misses an attack against you, it must succeed a DC 13 Constitution Saving Throw or be Chilled for 2 turns."
+    ]
+  },
+  {
+    "name": "Corpsegrinder",
+    "type": "Maul",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bludgeoning(2d6)",
+      "Gain Grand Slam weapon action."
+    ]
+  },
+  {
+    "name": "Crimson Mischief",
+    "type": "Shortsword",
+    "rarity": "Legendary",
+    "effects": [
+      "1h Bow(1d6 + 2) + Necrotic(1d4)",
+      "Main Hand Only:",
+      "Deal an additional Bow(1d4) against targets that have 50% Hit Points or less.",
+      "When you make an attack with Advantage, the target takes an additional Bow(7).",
+      "Off-Hand Only:",
+      "On a hit, deal an additional 🎲(Ability Modifier)."
+    ]
+  },
+  {
+    "name": "Despair of Athkatla",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "Gain a +1 bonus to Spell Save DC and spell attack rolls."
+    ]
+  },
+  {
+    "name": "Devotee's Mace",
+    "type": "Mace",
+    "rarity": "Legendary",
+    "effects": [
+      "1h Bludgeoning(1d6 + 3) + Radiant(1d8)",
+      "Cast Healing Incense Aura once per Long Rest"
+    ]
+  },
+  {
+    "name": "Dolor Amarus",
+    "type": "Dagger",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d4 + 2)",
+      "When you land a Critical Hit with this weapon, it deals an additional 7 damage."
+    ]
+  },
+  {
+    "name": "Dread Iron Dagger",
+    "type": "Dagger",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d4 + 1)",
+      "Deal an extra Necrotic(1d6) with this weapon while you are Hidden."
+    ]
+  },
+  {
+    "name": "Duellist's Prerogative",
+    "type": "Rapier",
+    "rarity": "Legendary",
+    "effects": [
+      "1h Bow(1d8 + 3) + Necrotic(1d4)",
+      "While your off-hand is empty, you land a Critical Hit when rolling a 19 and gain an additional reaction per turn.",
+      "Deal an additional Necrotic(Proficiency Bonus) on a hit with this weapon.",
+      "Cast Challenge to Duel",
+      "Cast Dueller's Enthusiasm"
+    ]
+  },
+  {
+    "name": "Duke Ravengard's Longsword",
+    "type": "Longsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8)2h Slashing(1d10)",
+      "When you kill an enemy, allies within 9m / 30ft gain ❤️(Charisma Modifier, minimum 1) Temporary Hit Points.Direct an ally to strike a foe once per Short Rest. The ally uses a Reaction on their next turn to make a weapon attack.Charisma +2"
+    ]
+  },
+  {
+    "name": "Dwarven Thrower",
+    "type": "Warhammer",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bludgeoning(1d8 + 2)2h Bludgeoning(1d10 + 2)",
+      "Deal an additional Bludgeoning(1d8) if you are a Dwarf and throw this weapon.Deal an additional Bludgeoning(2d8) if the target is a Large, Huge or Gargantuan creature.This weapon will return to its owner when thrown."
+    ]
+  },
+  {
+    "name": "Fabricated Arbalest",
+    "type": "Heavy Crossbow",
+    "rarity": "Very Rare",
+    "effects": [
+      "2h Bow(1d10 + 2)",
+      "Cast Illuminating Shot"
+    ]
+  },
+  {
+    "name": "Flail of Ages",
+    "type": "Flail",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d8 + 1)",
+      "When you deal Acid, Cold, or Fire damage, it also inflicts a Condition respective to that damage type.Cast Elemental Age once per Long Rest."
+    ]
+  },
+  {
+    "name": "Fleshrender",
+    "type": "Shortsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d6 + 2)",
+      "Gain Part the Flesh weapon action."
+    ]
+  },
+  {
+    "name": "Foebreaker",
+    "type": "Maul",
+    "rarity": "Very Rare",
+    "effects": [
+      "2h Bludgeoning(2d6 + 2)",
+      "This weapon ignores Bludgeoning Resistance."
+    ]
+  },
+  {
+    "name": "Gleamdance Dagger",
+    "type": "Dagger",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d4 + 2)",
+      "This weapon shines with a glowing light in a radius of 6m.Off-Hand Only:Shield + 1 AC"
+    ]
+  },
+  {
+    "name": "Gontr Mael",
+    "type": "Longbow",
+    "rarity": "Legendary",
+    "effects": [
+      "2h Bow(1d8 + 3)",
+      "On a hit, possibly inflict Guiding Bolt.",
+      "This weapon shines with a glowing light in a radius of 6m.",
+      "Cast Celestial Haste once per Long Rest."
+    ]
+  },
+  {
+    "name": "Hammer of the Just",
+    "type": "Warhammer",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d8) + Radiant(1d4)2h Bludgeoning(1d10) + Radiant(1d4)",
+      "Deal an additional Bludgeoning(1d6) against Fiends and Undead.Cast Detect Thoughts once per Long Rest."
+    ]
+  },
+  {
+    "name": "Handmaiden's Mace",
+    "type": "Mace",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 2) + Poison(1d6)",
+      "Increases Strength to 18."
+    ]
+  },
+  {
+    "name": "Harmonic Dueller",
+    "type": "Rapier",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d8 + 1)",
+      "Cast Mellow Harmony once per Short Rest."
+    ]
+  },
+  {
+    "name": "Harper Sacredstriker",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6)2h Bludgeoning(1d8)",
+      "Cast Spiritual Weapon once per Long Rest."
+    ]
+  },
+  {
+    "name": "Hellbeard Halberd",
+    "type": "Halberd",
+    "rarity": "Rare",
+    "effects": [
+      "2h Slashing(1d10 + 2) + Poison(6)"
+    ]
+  },
+  {
+    "name": "Hellfire Engine Crossbow",
+    "type": "Heavy Crossbow",
+    "rarity": "Very Rare",
+    "effects": [
+      "2h Bow(1d10 + 2)",
+      "Cast Lightning Arrow once per Long Rest."
+    ]
+  },
+  {
+    "name": "Hellfire Greataxe",
+    "type": "Greataxe",
+    "rarity": "Very Rare",
+    "effects": [
+      "2h Slashing(1d12 + 2) + Fire(1d6)",
+      "When you deal damage with this weapon, gain Heat for 2 turns.Gain Hellflame Cleave weapon action."
+    ]
+  },
+  {
+    "name": "Hellrider Longbow",
+    "type": "Longbow",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Bow(1d8 + 1)",
+      "Gain a +3 bonus to Initiative Rolls and Advantage on Perception Ability Checks.Once per turn, a creature hit by this weapon will possibly be afflicted with Faerie Fire."
+    ]
+  },
+  {
+    "name": "Hollow's Staff",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6) + Necrotic(1d4)2h Bludgeoning(1d8) + Necrotic(1d4)",
+      "Creatures have Disadvantage on Saving Throws against your Necromancy Spells.Cast Arms of Hadar once per Long Rest."
+    ]
+  },
+  {
+    "name": "Infernal Mace",
+    "type": "Mace",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 +2) + Poison(3)",
+      "When you hit, deal an additional Poison(3) and possibly Poison the target."
+    ]
+  },
+  {
+    "name": "Infernal Spear",
+    "type": "Spear",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d6 + 1)2h Bow(1d8 + 1)",
+      "When you hit, deal an additional Poison(3) and possibly Poison the target."
+    ]
+  },
+  {
+    "name": "Kurwin's Cauteriser",
+    "type": "Scimitar",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Slashing(1d6) + Fire(1d4)",
+      "On a hit, the target must succeed a Constitution Saving Throw or begin Burning."
+    ]
+  },
+  {
+    "name": "Markoheshkir",
+    "type": "Quarterstaff",
+    "rarity": "Legendary",
+    "effects": [
+      "1h Bludgeoning(1d6 + 2)2h Bludgeoning(1d8 + 2)",
+      "Gain a +1 bonus to Spell Save DC and spell attack rolls.",
+      "Cast Arcane Battery once per Long Rest.",
+      "Cast Kereska's Favour once per Short Rest."
+    ]
+  },
+  {
+    "name": "Murderous Cut",
+    "type": "Dagger",
+    "rarity": "Uncommon",
+    "effects": [
+      "1h Bow(1d4 + 1)",
+      "Deals an additional Bow(1d4) against targets with 50% or less of their Hit Points."
+    ]
+  },
+  {
+    "name": "Nyrulna",
+    "type": "Trident",
+    "rarity": "Legendary",
+    "effects": [
+      "1h Bow(1d6 + 3) + Thunder(1d6)2h Bow(1d8 + 3) + Thunder(1d6)",
+      "Deal Thunder(3d4) in a 6m / 20ft at the centered on your target when thrown.This weapon will return to your hand when thrown. You cannot be forced to drop the trident.Jump and Movement distance increased by 3m / 10ft. Immunity to falling damage.This weapon shines with a glowing light in a radius of 6m."
+    ]
+  },
+  {
+    "name": "Orphic Hammer",
+    "type": "Warhammer",
+    "rarity": "Legendary",
+    "effects": [
+      "1h Bludgeoning(1d8 + 3)2h Bludgeoning(1d10 + 3)",
+      "Advantage on Saving Throws against spells.",
+      "Gain the Unshackling Strike weapon action."
+    ]
+  },
+  {
+    "name": "Pelorsun Blade",
+    "type": "Rapier",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bow(1d8 + 1) + Radiant(1d4)",
+      "Advantage with Attack Rolls against Undead."
+    ]
+  },
+  {
+    "name": "Ravengard's Scourger",
+    "type": "Morningstar",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bow(1d8)",
+      "Cast Commander's Strike once per Short Rest."
+    ]
+  },
+  {
+    "name": "Rhapsody",
+    "type": "Dagger",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bow(1d4 + 1)",
+      "Deal 🎲(1) and gain a +1 bonus to Attack Rolls and Spell Save DC for every enemy you slay, stacking up to 3 times per battle.On a hit with this weapon while Hiding or Invisible, possibly inflict Bleeding."
+    ]
+  },
+  {
+    "name": "Sethan",
+    "type": "Greataxe",
+    "rarity": "Very Rare",
+    "effects": [
+      "2h Slashing(1d12 + 2)",
+      "Cast Sethan: Spiritual Greataxe once per Long Rest.",
+      "Cast Sethan: Reduce once per Long Rest."
+    ]
+  },
+  {
+    "name": "Silver Sword of the Astral Plane",
+    "type": "Greatsword",
+    "rarity": "Legendary",
+    "effects": [
+      "2h Slashing(2d6 + 3)",
+      "Deal an additional Psychic(1d6) with this weapon if you are Githyanki.",
+      "Advantage on Intelligence, Wisdom and Charisma Saving Throws, Resistance to Psychic damage, and Immune to Charm if you are Githyanki."
+    ]
+  },
+  {
+    "name": "Staff of Cherished Necromancy",
+    "type": "Quarterstaff",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 2) + Necrotic(1d4)2h Bludgeoning(1d8 + 2) + Necrotic(1d4)",
+      "Enemies have Disadvantage on Saving Throws against your Necromancy spells.When you kill a creature with a spell, gain their Life Essence until Long Rest."
+    ]
+  },
+  {
+    "name": "Staff of Interruption",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 2)2h Bludgeoning(1d8 + 2)",
+      "Cast Counterspell once per Long Rest."
+    ]
+  },
+  {
+    "name": "Staff of Spellpower",
+    "type": "Quarterstaff",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 2)2h Bludgeoning(1d8 + 2)",
+      "Gain a +1 bonus to Spell Save DC and spell attack rolls.Cast Arcane Battery once per Long Rest."
+    ]
+  },
+  {
+    "name": "Staff of the Emperor",
+    "type": "Quarterstaff",
+    "rarity": "Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 2)2h Bludgeoning(1d8 + 2)",
+      "Gain a +1 bonus to Spell Save DC and Spell Attack Rolls.Successful Saving Throws causes the source to make their own Intelligence Saving Throw or be Stunned."
+    ]
+  },
+  {
+    "name": "Staff of the Ram",
+    "type": "Quarterstaff",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 2)2h Bludgeoning(1d8 + 2)",
+      "On a hit once per turn, knock an enemy back 2m and Stun them. This has no effect on dragons or Huge creatures."
+    ]
+  },
+  {
+    "name": "Stillmaker",
+    "type": "Dagger",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bow(1d4 + 2)",
+      "Cast Hold Person once per Long Rest."
+    ]
+  },
+  {
+    "name": "Sword of Chaos",
+    "type": "Greatsword",
+    "rarity": "Very Rare",
+    "effects": [
+      "2h Slashing(2d6 + 2) + Necrotic(1d4)",
+      "Regain ❤️(1d6) Hit Points on a hit."
+    ]
+  },
+  {
+    "name": "Sword of the Emperor",
+    "type": "Longsword",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8)2h Slashing(1d10)",
+      "Deal an additional 🎲(1d4) damage with this weapon against shapeshifters or polymorphed creatures.Gain a +2 bonus to Saving Throws against spells."
+    ]
+  },
+  {
+    "name": "The Dancing Breeze",
+    "type": "Glaive",
+    "rarity": "Very Rare",
+    "effects": [
+      "2h Slashing(1d10)"
+    ]
+  },
+  {
+    "name": "The Dead Shot",
+    "type": "Longbow",
+    "rarity": "Very Rare",
+    "effects": [
+      "2h Bow(1d8 + 2)",
+      "The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.Double your Proficiency Bonus when rolling ranged attacks with this weapon, unless you have Disadvantage."
+    ]
+  },
+  {
+    "name": "The Long Arm of the Gur",
+    "type": "Heavy Crossbow",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d10 + 2)",
+      "Gain 🎲(1d4) bonus to Attack and Damage Rolls when attacking undead creatures."
+    ]
+  },
+  {
+    "name": "The Sacred Star",
+    "type": "Morningstar",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bow(1d8 + 3) + Radiant(1d4)",
+      "On a hit, inflict Radiating Orb for 1 turn.Sanctified Weapon: Undead creatures struck by this weapon are possibly Turned."
+    ]
+  },
+  {
+    "name": "The Undead Bane",
+    "type": "Greataxe",
+    "rarity": "Uncommon",
+    "effects": [
+      "2h Slashing(1d12 + 1)"
+    ]
+  },
+  {
+    "name": "Torch of Revocation",
+    "type": "Club",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bludgeoning(1d4 + 1) + Necrotic(1d4)"
+    ]
+  },
+  {
+    "name": "Trident of the Waves",
+    "type": "Trident",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bow(1d6 + 1)2h Bow(1d8 + 1)",
+      "On a hit, create a 2m / 7ft water surface centered around the target."
+    ]
+  },
+  {
+    "name": "Vicious Battleaxe",
+    "type": "Battleaxe",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d8 + 2)2h Slashing(1d10 + 2)",
+      "When you land a Critical Hit with this weapon, it deals an additional 7 damage."
+    ]
+  },
+  {
+    "name": "Vicious Shortbow",
+    "type": "Shortbow",
+    "rarity": "Rare",
+    "effects": [
+      "2h Bow(1d6 + 2)",
+      "Deal an additional 🎲(7) on a Critical Hit."
+    ]
+  },
+  {
+    "name": "Voss' Silver Sword",
+    "type": "Longsword",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Slashing(1d8 + 2) + Psychic(1d4)2h Slashing(1d10 + 2) + Psychic(1d4)",
+      "Gain a 🎲(1d4) bonus to Damage and Attack Rolls against Githyanki, aberrations, fiends, and elementals.Cast Wrathful Smite once per Long Rest."
+    ]
+  },
+  {
+    "name": "Wavemother's Sickle",
+    "type": "Sickle",
+    "rarity": "Rare",
+    "effects": [
+      "1h Slashing(1d4) + Cold(1d4)",
+      "Advantage against Wet creatures with this weapon."
+    ]
+  },
+  {
+    "name": "Woe",
+    "type": "Quarterstaff",
+    "rarity": "Very Rare",
+    "effects": [
+      "1h Bludgeoning(1d6 + 2)2h Bludgeoning(1d8 + 2)",
+      "Gain a +1 bonus to Spell Save DC and spell Attack Rolls.Regain ❤️(1d4) Hit Points when the creatures affected by your spells fail their Saving Throws.Cast Blight once per Long Rest.Bound Weapon"
+    ]
+  }
+]

@@ -1,0 +1,3162 @@
+[
+  {
+    "name": "Aberration Hunters' Amulet",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Advantage on Intelligence Saving Throws if you are Githyanki. Advantage on Attack Rolls against aberrations and aberrations have Disadvantage on Attack Rolls against you."
+    ]
+  },
+  {
+    "name": "Absolute's Talisman",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Advantage on Death Saving Throws if you bear the Absolute's Brand",
+      "Cast Aid once per Long Rest. This casting of Aid only affects the caster."
+    ]
+  },
+  {
+    "name": "Absolute's Warboard",
+    "type": "Shield",
+    "rarity": "Uncommon",
+    "armor_class": 2,
+    "effects": [
+      "Gain a +1 bonus to Saving Throws if you bear the Absolute's Brand.",
+      "Cast Heroism once per Long Rest."
+    ]
+  },
+  {
+    "name": "Abyss Beckoners",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Your summoned creatures have resistance to all damage except Psychic.At the start of your summoned creature's turn, it must succeed a Wisdom Saving Throw or be driven Mad."
+    ]
+  },
+  {
+    "name": "Adamantine Scale Mail",
+    "type": "Medium Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 16 AC",
+      "Reduce all incoming damage by 1.When a creature hits you with a melee attack, you send it Reeling for 2 turns.Attackers can't land Critical Hits on you."
+    ]
+  },
+  {
+    "name": "Adamantine Shield",
+    "type": "Shield",
+    "rarity": "Rare",
+    "armor_class": 2,
+    "effects": [
+      "When a creature misses a melee attack against you, you send it Reeling for 2 turns.When you are hit with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity Saving Throw.Attackers can't land Critical Hits on you."
+    ]
+  },
+  {
+    "name": "Adamantine Splint Armour",
+    "type": "Heavy Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 18 AC",
+      "Reduce all incoming damage by 2.When a creature hits you with a melee attack, you send it Reeling for 3 turns.Attackers can't land Critical Hits on you."
+    ]
+  },
+  {
+    "name": "Amulet of Branding",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Brand the Weak once per Long Rest."
+    ]
+  },
+  {
+    "name": "Amulet of Misty Step",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Misty Step once per Short Rest."
+    ]
+  },
+  {
+    "name": "Amulet of Restoration",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Healing Word once per Long Rest.",
+      "Cast Mass Healing Word once per Long Rest."
+    ]
+  },
+  {
+    "name": "Amulet of Selûne's Chosen",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Selûne's Dream once per Long Rest."
+    ]
+  },
+  {
+    "name": "Amulet of Silvanus",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Lesser Restoration once per Long Rest."
+    ]
+  },
+  {
+    "name": "Amulet of the Unworthy",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Resistance to Slashing damage.Vulnerability to Bludgeoning damage."
+    ]
+  },
+  {
+    "name": "Armour of Uninhibited Kushigo",
+    "type": "Clothing",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "While Patient Defence is active, you can use your Reaction to make an unarmed strike against any attacker that misses."
+    ]
+  },
+  {
+    "name": "Beastmaster's Chain",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Animal Friendship once per Long Rest."
+    ]
+  },
+  {
+    "name": "Blazer of Benevolence",
+    "type": "Light Armour",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 11 AC",
+      "Gain ❤️(4) Temporary Hit Points when you inspire an ally using Bardic Inspiration."
+    ]
+  },
+  {
+    "name": "Bloodguzzler Garb",
+    "type": "Clothing",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Gain Wrath for 1 turn whenever you are hit."
+    ]
+  },
+  {
+    "name": "Boots of Aid and Comfort",
+    "type": "Boots",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you heal a creature, they gain an additional ❤️(3) Temporary Hit Points."
+    ]
+  },
+  {
+    "name": "Boots of Genial Striding",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Your Movement Speed is unimpeded by Difficult Terrain."
+    ]
+  },
+  {
+    "name": "Boots of Speed",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Click Heels"
+    ]
+  },
+  {
+    "name": "Boots of Stormy Clamour",
+    "type": "Boots",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you inflict a condition on a creature, you also inflict Reverberation for 2 turns."
+    ]
+  },
+  {
+    "name": "Bracers of Defence",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a Shield + 2 AC when not wearing armour or holding a shield."
+    ]
+  },
+  {
+    "name": "Bracing Band",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Gain Shield + 1 AC until your next turn after shoving an enemy."
+    ]
+  },
+  {
+    "name": "Broodmother's Revenge",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you are healed, your weapon deals an additional Poison(1d4) for 3 turns."
+    ]
+  },
+  {
+    "name": "Cap of Curing",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you inspire an ally using Bardic Inspiration, they regain ❤️(1d6) Hit Points."
+    ]
+  },
+  {
+    "name": "Cap of Wrath",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "If you start your turn with 50% Hit Points or less, gain Wrath for 2 turn."
+    ]
+  },
+  {
+    "name": "Caustic Band",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Acid(2) with weapon attacks."
+    ]
+  },
+  {
+    "name": "Champion's Chain",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Grant an ally a +2 bonus to Intimidation once per Long Rest."
+    ]
+  },
+  {
+    "name": "Cinder Shoes",
+    "type": "Boots",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you Burn an enemy, gain Heat for 2 turns."
+    ]
+  },
+  {
+    "name": "Circlet of Blasting",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Scorching Ray once per Long Rest."
+    ]
+  },
+  {
+    "name": "Circlet of Psionic Revenge",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you succeed a Saving Throw, the enemy that caused the throw takes Psychic(1d4).Gain a +1 bonus to Intelligence, Wisdom, and Charisma Saving Throws if you are Githyanki."
+    ]
+  },
+  {
+    "name": "Crusher's Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Movement Speed increased by 3m / 10ft."
+    ]
+  },
+  {
+    "name": "Daredevil Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to Spell Attack Rolls.Your Ranged Spell Attacks can be made as melee spell attacks when you are adjacent to a hostile creature."
+    ]
+  },
+  {
+    "name": "Dark Justiciar Mail",
+    "type": "Medium Armour",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 13 AC",
+      "Deal Necrotic(1d4) to attackers that hit you with a melee attack while you're obscured by shadow."
+    ]
+  },
+  {
+    "name": "Diadem of Arcane Synergy",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you inflict a condition, gain Arcane Synergy for 2 turns."
+    ]
+  },
+  {
+    "name": "Disintegrating Night Walkers",
+    "type": "Boots",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Immune to being Enwebbed, Entangled, or Ensnared and slipping on Grease or Ice.",
+      "Cast Misty Step once per Short Rest."
+    ]
+  },
+  {
+    "name": "Drow Studded Leather Armour",
+    "type": "Light Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 12 AC",
+      "Stealth + 1"
+    ]
+  },
+  {
+    "name": "Envoy's Amulet",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Grant an ally a +2 bonus to Persuasion Checks once per Long Rest."
+    ]
+  },
+  {
+    "name": "Explorer's Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Nature +1Survival +1"
+    ]
+  },
+  {
+    "name": "Fetish of Callarduran Smoothhands",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Invisibility once per Long Rest."
+    ]
+  },
+  {
+    "name": "Fleetfingers",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you Dash or take a similar action, you can Jump without using a bonus action."
+    ]
+  },
+  {
+    "name": "Gloves of Archery",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional 🎲(2) damage with ranged weapon attacks.Proficiency with Longbows and Shortbows."
+    ]
+  },
+  {
+    "name": "Gloves of Baneful Striking",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal damage with a weapon attack, the target receives a 🎲(1d4) penalty to its Saving Throw against your next spell."
+    ]
+  },
+  {
+    "name": "Gloves of Belligerent Skies",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Thunder, Lightning, or Radiant damage, inflict Reverberation for 2 turns."
+    ]
+  },
+  {
+    "name": "Gloves of Cinder and Sizzle",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Fire(1d4) with your unarmed attacks.",
+      "Cast Scorching Ray once per Long Rest."
+    ]
+  },
+  {
+    "name": "Gloves of Dexterity",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Increases Dexterity to 18.Attack +1"
+    ]
+  },
+  {
+    "name": "Gloves of Hail of Thorns",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Hail of Thorns once per Short Rest"
+    ]
+  },
+  {
+    "name": "Gloves of Heroism",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you use your Channel Oath spells, you gain Heroism.Strength Saving Throws +1"
+    ]
+  },
+  {
+    "name": "Gloves of Missile Snaring",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "As a Reaction, intercept ranged weapon attacks and reduce their damage by 🎲(1d10 + Dexterity Modifier)."
+    ]
+  },
+  {
+    "name": "Gloves of Power",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal damage with a melee attack and bear the Absolute's Brand, the target receives a 🎲(1d4) penalty penalty to their Attack Rolls and Saving Throws.Sleight of Hand +1"
+    ]
+  },
+  {
+    "name": "Gloves of the Growling Underdog",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Advantage on melee attack rolls while surrounded by 2 or more foes.Strength Saving Throws +1"
+    ]
+  },
+  {
+    "name": "Gloves of Thievery",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Advantage on Sleight of Hand Checks."
+    ]
+  },
+  {
+    "name": "Gloves of Uninhibited Kushigo",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional 🎲(1d4) with Throw Attacks and attacks made with Improvised Weapons."
+    ]
+  },
+  {
+    "name": "Glowing Shield",
+    "type": "Shield",
+    "rarity": "Uncommon",
+    "armor_class": 2,
+    "effects": [
+      "Gain ❤️(8) Temporary Hit Points when you're at 50% Hit Points or less once per Short Rest."
+    ]
+  },
+  {
+    "name": "Guiding Light",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Light"
+    ]
+  },
+  {
+    "name": "Haste Helm",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "At the start of combat, gain Momentum for 3 turns."
+    ]
+  },
+  {
+    "name": "Hedge Wanderer Armour",
+    "type": "Medium Armour",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 13 AC",
+      "Gain a +1 bonus to Dexterity Saving Throws and Dexterity Checks.Nature +1"
+    ]
+  },
+  {
+    "name": "Herbalist's Gloves",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "If you heal a Poisoned creature, it is no longer Poisoned."
+    ]
+  },
+  {
+    "name": "Hoarfrost Boots",
+    "type": "Boots",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "You cannot fall Prone while traversing icy terrain."
+    ]
+  },
+  {
+    "name": "Infernal Robe",
+    "type": "Clothing",
+    "rarity": "Very Rare",
+    "armor_class": 1,
+    "effects": [
+      "Shield 10 ACShield + 1 AC",
+      "Cast Fire Shield (Warm) once per Long Rest.",
+      "Resistance to Fire damage."
+    ]
+  },
+  {
+    "name": "Key of the Ancients",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "While you stand in front of the stone door in Nettie's room in the Druid Grove, you can open a shortcut to the Underground Passage.Nature +1"
+    ]
+  },
+  {
+    "name": "Komira's Locket",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Dancing Lights"
+    ]
+  },
+  {
+    "name": "Linebreaker Boots",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you Dash or take a similar action, gain Wrath for 2 turns."
+    ]
+  },
+  {
+    "name": "Luminous Armour",
+    "type": "Medium Armour",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 15 AC",
+      "When you deal Radiant damage, you cause a Radiant shockwave that inflicts Radiating Orb in a 3 m / 10 ft radius to enemies for 1 turn."
+    ]
+  },
+  {
+    "name": "Mage's Friend",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Arcana +1Religion +1"
+    ]
+  },
+  {
+    "name": "Mask of the Shapeshifter",
+    "type": "Helmet",
+    "rarity": "Legendary",
+    "armor_class": null,
+    "effects": [
+      "Cast Disguise Self"
+    ]
+  },
+  {
+    "name": "Moondrop Pendant",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "You don't provoke Attacks of Opportunity while you're at 50% Hit Points or less."
+    ]
+  },
+  {
+    "name": "Mystra's Grace",
+    "type": "Boots",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Feather Fall"
+    ]
+  },
+  {
+    "name": "Necklace of Elemental Augmentation",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Acid, Cold, Fire, Lightning or Thunder damage with Cantrips, add your Spellcasting Modifier to the damage dealt."
+    ]
+  },
+  {
+    "name": "Pearl of Power Amulet",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "You can replenish expended Spell Slots of your choice once per Long Rest.Restores a single spell slot of 3rd level or lower."
+    ]
+  },
+  {
+    "name": "Periapt of Wound Closure",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When Downed, automatically stabilise at the start of the turn.When you regain Hit Points, heal for the maximum number."
+    ]
+  },
+  {
+    "name": "Poisoner's Robe",
+    "type": "Clothing",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Deal an additional Poison(1d4) when casting a spell that deals Poison damage."
+    ]
+  },
+  {
+    "name": "Psychic Spark",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Magic Missile shoots an additional missile when cast.",
+      "Cast Magic Missile once per Long Rest."
+    ]
+  },
+  {
+    "name": "Reason's Grasp",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Gain ❤️(15) Temporary Hit Points when your Rage ends."
+    ]
+  },
+  {
+    "name": "Ring of Absolute Force",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Thunderwave once per Short Rest"
+    ]
+  },
+  {
+    "name": "Ring of Arcane Synergy",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you deal damage with a Cantrip, gain Arcane Synergy for 2 turns."
+    ]
+  },
+  {
+    "name": "Ring of Colour Spray",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Colour Spray once per battle."
+    ]
+  },
+  {
+    "name": "Ring of Elemental Infusion",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Acid, Cold, Fire, Lightning or Thunder damage with Spells or Cantrips, you deal an additional 🎲(1d4) damage of that element on your next successful weapon attack, lasting until the end of your next turn."
+    ]
+  },
+  {
+    "name": "Ring of Evasion",
+    "type": "Ring",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "When you fail a Dexterity Saving Throw, you can use your Reaction to succeed instead."
+    ]
+  },
+  {
+    "name": "Ring of Flinging",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Gain 🎲(1d4) bonus to throw damage."
+    ]
+  },
+  {
+    "name": "Ring of Jumping",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Enhance Leap once per Short Rest."
+    ]
+  },
+  {
+    "name": "Ring of Mind-Shielding",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Advantage on Saving Throws against being Charmed."
+    ]
+  },
+  {
+    "name": "Ring of Poison Resistance",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Resistance to Poison damage."
+    ]
+  },
+  {
+    "name": "Ring of Protection",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": 1,
+    "effects": [
+      "Saving Throw +1"
+    ]
+  },
+  {
+    "name": "Ring of Restorative Gravity",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you heal a creature, they are pulled 2m / 7ft towards you."
+    ]
+  },
+  {
+    "name": "Ring of Salving",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you heal a creature, you regain ❤️(2) Hit Points."
+    ]
+  },
+  {
+    "name": "Robe of Summer",
+    "type": "Clothing",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Resistance to Cold damage."
+    ]
+  },
+  {
+    "name": "Robust Chain Shirt",
+    "type": "Medium Armour",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 13 AC",
+      "Deal Bow(1d4) to the attackers that hit you with a melee attack while you're at 50% Hit Points or less."
+    ]
+  },
+  {
+    "name": "Safeguard Shield",
+    "type": "Shield",
+    "rarity": "Uncommon",
+    "armor_class": 2,
+    "effects": [
+      "Saving Throws +1"
+    ]
+  },
+  {
+    "name": "Sentient Amulet (Rare)",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "See wiki for risks when using this item.",
+      "Cast Shatter once per Short Rest.",
+      "Cast Ki Restoration once per Long Rest."
+    ]
+  },
+  {
+    "name": "Shapeshifter's Boon Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Gain 🎲(1d4) bonus to all checks while shapeshifting or disguising yourself"
+    ]
+  },
+  {
+    "name": "Silver Pendant",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Guidance"
+    ]
+  },
+  {
+    "name": "Slippery Chain Shirt",
+    "type": "Medium Armour",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 13 AC",
+      "When you heal a creature, it automatically Disengages and won't trigger Opportunity Attacks."
+    ]
+  },
+  {
+    "name": "Smuggler's Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Stealth +2Sleight of Hand +2Charisma -1"
+    ]
+  },
+  {
+    "name": "Spidersilk Armour",
+    "type": "Light Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 12 AC",
+      "Stealthy: Gain +1 bonus to Stealth Checks.Advantage on Constitution Saving Throws."
+    ]
+  },
+  {
+    "name": "Spiderstep Boots",
+    "type": "Boots",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Immune to being Enwebbed. Your Movement Speed is not affected by web surfaces."
+    ]
+  },
+  {
+    "name": "Springstep Boots",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you Dash or take a similar action, gain Momentum for 3 turns."
+    ]
+  },
+  {
+    "name": "Spurred Band",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you start your turn with 50% Hit Points or less, gain Momentum for 1 turn."
+    ]
+  },
+  {
+    "name": "Strange Conduit Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Psychic(1d4) with weapon attacks while you are Concentrating on a spell."
+    ]
+  },
+  {
+    "name": "Sunwalker's Gift",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Gain Darkvision."
+    ]
+  },
+  {
+    "name": "Swiresy Shoes",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Jump distance is increased by 1.5m / 5ft.Acrobatics +1"
+    ]
+  },
+  {
+    "name": "Tarnished Charm",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "The DC of Death Saving Throws for the wearer is lowered from 10 to 5."
+    ]
+  },
+  {
+    "name": "The Amulet of Lost Voices",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Speak with Dead once per Long Rest."
+    ]
+  },
+  {
+    "name": "The Blast Pendant",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Use a Bonus Action to consume Lightning Charges to deal additional damage on your next Lightning Spell or Cantrip once per Long Rest."
+    ]
+  },
+  {
+    "name": "The Deathstalker Mantle",
+    "type": "Cloak",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "You can become Invisible for 2 turns after killing an enemy, once per turn."
+    ]
+  },
+  {
+    "name": "The Ever-Seeing Eye",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Protection from Evil and Good once per Short Rest."
+    ]
+  },
+  {
+    "name": "The Graceful Cloth (Esther)",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": 1,
+    "effects": [
+      "Shield 10 ACShield + 1 AC",
+      "Gain a +1 bonus to Dexterity Saving Throws.Jump distance is increased by 1.5m / 5ft.Dexterity +2 (up to 20)"
+    ]
+  },
+  {
+    "name": "The Jolty Vest",
+    "type": "Medium Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 13 AC",
+      "When you are hit with a melee attack while having Lightning Charges, the attacker must succeed a Dexterity Saving Throw or become Shocked.You take 1 less Slashing damage."
+    ]
+  },
+  {
+    "name": "The Lifebringer",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Gain ❤️(3) Temporary Hit Points when you gain Lightning Charges."
+    ]
+  },
+  {
+    "name": "The Oakfather's Embrace",
+    "type": "Medium Armour",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 13 AC",
+      "Deal Radiant(1d6) to the attacker if they are undead. Attackers that are beasts receive an additional Radiant(1d6)."
+    ]
+  },
+  {
+    "name": "The Protecty Sparkswall",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Gain a +1 bonus to Spell Save DC.Gain a +1 bonus to Saving Throws and Shield + 1 AC when you have Lightning Charges."
+    ]
+  },
+  {
+    "name": "The Real Sparky Sparkswall",
+    "type": "Shield",
+    "rarity": "Uncommon",
+    "armor_class": 2,
+    "effects": [
+      "Use an Action to consume 3 Lightning Charges to Jolts nearby enemies and deal Lightning(1d4) once per Long Rest."
+    ]
+  },
+  {
+    "name": "The Shadespell Circlet",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "While you are obscured in shadow, your spells gain a +1 bonus to Spell Save DC, making them more likely to succeed."
+    ]
+  },
+  {
+    "name": "The Sparkle Hands",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "On a hit with an unarmed attack, gain 2 Lightning Charges.Advantage on Attack Rolls against metal constructs and enemies wearing metal armour while you have Lightning Charges."
+    ]
+  },
+  {
+    "name": "The Sparkswall",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Immune to being Electrocuted.Resistance to Lightning damage."
+    ]
+  },
+  {
+    "name": "The Spectator Eyes",
+    "type": "Amulet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Ray of Fear once per Long Rest.",
+      "Cast Wounding Ray once per Long Rest."
+    ]
+  },
+  {
+    "name": "The Watersparkers",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Water becomes electrified when you stand in it during combat.When you start your turn on an electrified surface, gain 3 Lightning Charges."
+    ]
+  },
+  {
+    "name": "The Whispering Promise",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you heal a creature, grant them Bless for 10 turns."
+    ]
+  },
+  {
+    "name": "Uncovered Mysteries",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Detect Thoughts once per Long Rest."
+    ]
+  },
+  {
+    "name": "Varsh Ko'kuu's Boots",
+    "type": "Boots",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Immune to Acidic Surfaces.Resistance to Acid damage."
+    ]
+  },
+  {
+    "name": "Wapira's Crown",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Regain ❤️(1d6) Hit Points when you heal another creature."
+    ]
+  },
+  {
+    "name": "Warped Headband of Intellect",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Increases Intelligence to 17."
+    ]
+  },
+  {
+    "name": "Winter's Clutches",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Cold damage, inflict Encrusted with Frost for 2 turns."
+    ]
+  },
+  {
+    "name": "Wondrous Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": 1,
+    "effects": [
+      "Gain 1 more use of Bardic Inspiration."
+    ]
+  },
+  {
+    "name": "Wood Woad Shield",
+    "type": "Shield",
+    "rarity": "Uncommon",
+    "armor_class": 2,
+    "effects": [
+      "Use a Bonus Action to attack and possibly Ensnare your target once per Short Rest."
+    ]
+  },
+  {
+    "name": "Absolute's Protector",
+    "type": "Shield",
+    "rarity": "Rare",
+    "armor_class": 2,
+    "effects": [
+      "Reduce all incoming spell damage by 1 if you bear the Absolute's Brand.",
+      "Cast Fire Shield: Chill once per Long Rest."
+    ]
+  },
+  {
+    "name": "Acrobat Shoes",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Advantage on Dexterity Saving Throws Checks.Acrobatics +1"
+    ]
+  },
+  {
+    "name": "Amulet of the Harpers",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Advantage with Wisdom Saving Throws Checks.Cast Shield once per Short Rest."
+    ]
+  },
+  {
+    "name": "Armour of Devotion",
+    "type": "Heavy Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 18 AC",
+      "Regain 1 Paladin Channel Oath Charge once per Long Rest."
+    ]
+  },
+  {
+    "name": "Barkskin Armour",
+    "type": "Medium Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 16 AC",
+      "Increase Shield AC to 16.Advantage on Constitution Saving Throws Check."
+    ]
+  },
+  {
+    "name": "Bided Time",
+    "type": "Clothing",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Gain Arcane Charge whenever you are hit by a melee attack."
+    ]
+  },
+  {
+    "name": "Boots of Apparent Death",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Feign Death once per Short Rest."
+    ]
+  },
+  {
+    "name": "Boots of Arcane Bolstering",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you Dash or take a similar action, gain Arcane Charge for 2 turns."
+    ]
+  },
+  {
+    "name": "Boots of Brilliance",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Restore 1 Bardic Inspiration charges once per Long Rest."
+    ]
+  },
+  {
+    "name": "Braindrain Gloves",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Psychic damage, inflict Mental Fatigue for 2 turns."
+    ]
+  },
+  {
+    "name": "Browbeaten Circlet",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to Spell Save DC while Threatened."
+    ]
+  },
+  {
+    "name": "Callous Glow Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Radiant(2) against creatures that are illuminated."
+    ]
+  },
+  {
+    "name": "Cindersnap Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Protection from Missiles once per Short Rest."
+    ]
+  },
+  {
+    "name": "Circle of Bones",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Allied undead within 6m / 20ft are Resistant to Bludgeoning, Slashing, and Piercing damage.Cast Animate Dead once per Long Rest."
+    ]
+  },
+  {
+    "name": "Circlet of Hunting",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a 🎲(1d4) bonus to Attack Rolls against creatures marked by Hunter's Mark, True Strike, Faerie Fire, Guiding Bolt."
+    ]
+  },
+  {
+    "name": "Circlet of Mental Anguish",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Regain ❤️(1d4) Hit Points when an enemy fails a Charisma, Intelligence, or Wisdom Saving Throw against one of your spells or cantrips"
+    ]
+  },
+  {
+    "name": "Cloak of Cunning Brume",
+    "type": "Cloak",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you Disengage, create a foggy cloud with 2m/ 7ft radius that last for 1 turn."
+    ]
+  },
+  {
+    "name": "Cloak of Elemental Absorption",
+    "type": "Cloak",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you are hit with an elemental attack, take half damage and deal an additional 🎲(1d6) of that element type on your next attack."
+    ]
+  },
+  {
+    "name": "Cloak of Protection",
+    "type": "Cloak",
+    "rarity": "Uncommon",
+    "armor_class": 1,
+    "effects": [
+      "Saving Throw +1"
+    ]
+  },
+  {
+    "name": "Coldbrim Hat",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you inflict a target with any condition, also inflict Encrusted with Frost for 2 turns. Once per turn."
+    ]
+  },
+  {
+    "name": "Coruscation Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal spell damage to a creature while illuminated by a light source, inflict Radiating Orb for 1 turn."
+    ]
+  },
+  {
+    "name": "Dark Justiciar Gauntlets (Rare)",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Necrotic(1d4) with weapon attacks.",
+      "Strength Saving Throws +1",
+      "Cast Beckoning Darkness"
+    ]
+  },
+  {
+    "name": "Dark Justiciar Half-Plate (Very Rare)",
+    "type": "Medium Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 17 AC",
+      "Advantage on Stealth checks while Obscured by shadows.",
+      "Advantage on Constitution Saving Throws.",
+      "While Shield of Faith is active, reduct all incoming damage by 2 and deal Necrotic(1d4) to the attacker.",
+      "Cast Shar's Aegis once per Long Rest."
+    ]
+  },
+  {
+    "name": "Derivation Cloak",
+    "type": "Cloak",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain ❤️(1d4) Hit Points when you poison an enemy."
+    ]
+  },
+  {
+    "name": "Dwarven Splintmail",
+    "type": "Heavy Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 19 AC",
+      "Gain a +1 bonus to Strength Saving Throws and Checks.You take 1 less Piercing damage.Constitution +2 (Max 20)"
+    ]
+  },
+  {
+    "name": "Enraging Heart Garb",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "When Raging, gain 2 turns of Wrath.Constitution +2 (up to 20)"
+    ]
+  },
+  {
+    "name": "Evasive Shoes",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": 1,
+    "effects": [
+      "Acrobatics +1"
+    ]
+  },
+  {
+    "name": "Eversight Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Immune to Blind."
+    ]
+  },
+  {
+    "name": "Family Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Death Saving Throws +2"
+    ]
+  },
+  {
+    "name": "Fireheart",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you are hit with Fire damage from another creature, gain Heat for 2 turns."
+    ]
+  },
+  {
+    "name": "Firzu's Ring of Trading",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Deception +1"
+    ]
+  },
+  {
+    "name": "Fistbreaker Helm",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to Spell Save DC.Gain a +1 bonus to Initiative Rolls."
+    ]
+  },
+  {
+    "name": "Flawed Helldusk Armour",
+    "type": "Heavy Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 18 AC",
+      "When you are hit with an attack, the attacker might take Fire(1d4) if they are within 2m / 7ft.You take 1 less Piercing damage."
+    ]
+  },
+  {
+    "name": "Flawed Helldusk Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Fire(1d4) with your weapon attacks. Deal an additional Necrotic(1d4) with your unarmed attacks, and can possibly inflict Bleeding.Strength Saving Throws +1"
+    ]
+  },
+  {
+    "name": "Fleshmelter Cloak",
+    "type": "Cloak",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you are hit with a melee attack, the attacker receives Acid(1d4)."
+    ]
+  },
+  {
+    "name": "Frost Prince",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Ice Knife once per Long Rest."
+    ]
+  },
+  {
+    "name": "Gloomstrand Shield",
+    "type": "Shield",
+    "rarity": "Uncommon",
+    "armor_class": 2,
+    "effects": [
+      "Stealth +1"
+    ]
+  },
+  {
+    "name": "Gloves of Battlemage's Power",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you inflict a condition with your weapon attacks, gain Arcane Acuity.Strength Saving Throws +1"
+    ]
+  },
+  {
+    "name": "Gloves of Crushing",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to unarmed Attack Rolls and unarmed attacks deal an additional Bludgeoning(2)."
+    ]
+  },
+  {
+    "name": "Gloves of the Automaton",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "You are considered a Construct.Advantage on weapon Attack Rolls.Resistance to Lightning damage"
+    ]
+  },
+  {
+    "name": "Gloves of the Balanced Hands",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional 🎲(Ability Modifier) with your off-hand weapon."
+    ]
+  },
+  {
+    "name": "Gloves of Battlemage's Power",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you inflict a condition with a weapon attack, gain Arcane Acuity.Strength Saving Throws + 1"
+    ]
+  },
+  {
+    "name": "Gloves of The Duellist",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +2 bonus to melee weapon Attack Rolls while only holding one weapon in your main hand."
+    ]
+  },
+  {
+    "name": "Hammergrim Mist Amulet",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Fog Cloud"
+    ]
+  },
+  {
+    "name": "Hat of Fire Acuity",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Fire damage, you gain Arcane Acuity for 2 turns."
+    ]
+  },
+  {
+    "name": "Hat of Storm Scion's Power",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Thunder damage, you gain Arcane Acuity."
+    ]
+  },
+  {
+    "name": "Hat of Uninhibited Kushigo",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to their Spell Save DC until the end of your turn after dealing damage with an unarmed attack."
+    ]
+  },
+  {
+    "name": "Hr'a'cknir Bracers",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Mage HandCast Telekinesis once per Short Rest.Strength Saves +1"
+    ]
+  },
+  {
+    "name": "Icebite Robe",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Resistance to Cold damage.Cast Armour of Agathys once per Long Rest."
+    ]
+  },
+  {
+    "name": "Ichorous Gloves",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Acid damage, inflict Noxious Fumes."
+    ]
+  },
+  {
+    "name": "Ironvine Shield",
+    "type": "Shield",
+    "rarity": "Uncommon",
+    "armor_class": 2,
+    "effects": [
+      "When you are hit with a melee attack while holding a weapon empowered with Shillelagh, the attacker receives Bow(1)."
+    ]
+  },
+  {
+    "name": "Jhannyl's Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you become Blind, Paralysed or Poisoned, automatically Cast Lesser Restoration on yourself.Saving Throw +1"
+    ]
+  },
+  {
+    "name": "Justiciar's Greatshield",
+    "type": "Shield",
+    "rarity": "Rare",
+    "armor_class": 2,
+    "effects": [
+      "Advantage on Perception Checks.Cast Darkness Cloak once per Short Rest."
+    ]
+  },
+  {
+    "name": "Ketheric's Shield",
+    "type": "Shield",
+    "rarity": "Rare",
+    "armor_class": 2,
+    "effects": [
+      "Gain a +1 bonus to Spell Save DC and Spell Attack Rolls.Advantage on Dexterity Saving Throws."
+    ]
+  },
+  {
+    "name": "Killer's Sweetheart",
+    "type": "Ring",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "When you kill a creature, your next Attack Roll will be a Critical Hit. Once per Long Rest."
+    ]
+  },
+  {
+    "name": "Luminous Gloves",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Radiant damage, inflict Radiating Orb for 1 turn.Strength Saving Throws +1"
+    ]
+  },
+  {
+    "name": "Marksmanship Hat",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to ranged Attack Rolls (including spells)."
+    ]
+  },
+  {
+    "name": "Moon Devotion Robe",
+    "type": "Clothing",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Successful Saving Throws causes the source of the Saving Throw to take Radiant(1d4) while you have Mage Armour.Advantage on Constitution Saving Throw Checks.Saving Throw +1Cast Lunar Bulwark once per Long Rest.Cast Produce Flame"
+    ]
+  },
+  {
+    "name": "Obsidian Laced Robe",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Deal Fire(1d4 + 4) to an enemy on a successful Saving Throw against a spell.Resistance to Fire damage."
+    ]
+  },
+  {
+    "name": "Penumbral Armour",
+    "type": "Light Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 12 AC",
+      "Gain a +3 bonus to Stealth Checks while Obscured by shadows."
+    ]
+  },
+  {
+    "name": "Poisoner's Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you deal Poison damage, the target must succeed a Constitution Saving Throw or become Poisoned."
+    ]
+  },
+  {
+    "name": "Potent Robe",
+    "type": "Clothing",
+    "rarity": "Very Rare",
+    "armor_class": 1,
+    "effects": [
+      "Shield 10 ACShield + 1 AC",
+      "Deal an additional 🎲(Charisma Modifier) with cantrips.Gain ❤️(Charisma Modifier) Temporary Hit Points at the start of each turn."
+    ]
+  },
+  {
+    "name": "Protective Plate",
+    "type": "Heavy Armour",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 18 AC",
+      "Resistance to Necrotic Damage"
+    ]
+  },
+  {
+    "name": "Psionic Ward Armour",
+    "type": "Medium Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 15 AC",
+      "Regain ❤️(1d4) Hit Points on a successful Saving Throw against a spell.Resistance to Psychic damage if you are Githyanki."
+    ]
+  },
+  {
+    "name": "Raven Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Summon Quothe the Raven once per Long Rest."
+    ]
+  },
+  {
+    "name": "Reaper's Embrace",
+    "type": "Heavy Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 19 AC",
+      "Reduce all incoming damage by 2.When activated, you can't be moved against your will by any spell or action, but have Disadvantage on Dexterity Saving Throws.Cast Howl of the Dead once per Short Rest."
+    ]
+  },
+  {
+    "name": "Ring of Exalted Marrow",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Ghoulish Touch once per Long Rest.Cast Exhort the Risen once per Long Rest."
+    ]
+  },
+  {
+    "name": "Ring of Free Action",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Immune to Difficult Terrain, and cannot be Paralysed or Restrained."
+    ]
+  },
+  {
+    "name": "Ring of Geniality",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Persuasion +1Deception +1"
+    ]
+  },
+  {
+    "name": "Ring of Mental Inhibition",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Inflict Mental Fatigue for 2 turns when an enemy fails a saving throw against one of your spells or actions."
+    ]
+  },
+  {
+    "name": "Ring of Self Immolation",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Use a Bonus Action to Burn yourself and gain Heat for 2 turns once per Short Rest."
+    ]
+  },
+  {
+    "name": "Ring of Shadows",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Pass Without Trace once per Long Rest."
+    ]
+  },
+  {
+    "name": "Ring of Spiteful Thunder",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Thunder damage to a Reverberating creature, the target must succeed a Constitution Saving Throw or become Dazed."
+    ]
+  },
+  {
+    "name": "Ring of Twilight",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield + 1 AC while Obscured by shadow."
+    ]
+  },
+  {
+    "name": "Rippling Force Mail",
+    "type": "Heavy Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 17 AC",
+      "When you take Slashing, Piercing, or Bludgeoning damage, gain Force Conduit for 2 turns."
+    ]
+  },
+  {
+    "name": "Risky Ring",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Advantage on Attack RollsDisadvantage on Saving Throws."
+    ]
+  },
+  {
+    "name": "Robe of Exquisite Focus",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Gain a +1 bonus to Spell Save DC."
+    ]
+  },
+  {
+    "name": "Sentinel Shield",
+    "type": "Shield",
+    "rarity": "Rare",
+    "armor_class": 2,
+    "effects": [
+      "Gain a +3 bonus to Initiative rolls and Advantage on Perception Ability Checks.When you are hit with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity Saving Throw."
+    ]
+  },
+  {
+    "name": "Shadeclinger Armour",
+    "type": "Light Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 12 AC",
+      "Advantage on Saving Throws while Obscured by Shadows.Gain a +1 bonus to Stealth."
+    ]
+  },
+  {
+    "name": "Shadow Blade Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Shadow Blade once per Short Rest."
+    ]
+  },
+  {
+    "name": "Shadow-Cloaked Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional 🎲(1d4) damage with weapon and unarmed attacks against Lightly or Heavily obscured creatures, and creatures made of shadow."
+    ]
+  },
+  {
+    "name": "Shar's Temptation",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Charm Person once per Short Rest."
+    ]
+  },
+  {
+    "name": "Sharpened Snare Cuirass",
+    "type": "Medium Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 14 AC",
+      "Add Shield + (Dexterity Modifier) to your AC. Enemies have Disadvantage on Saving Throws when resisting your attacks and spells that inflict Restrained."
+    ]
+  },
+  {
+    "name": "Shield of Devotion",
+    "type": "Shield",
+    "rarity": "Very Rare",
+    "armor_class": 2,
+    "effects": [
+      "Gain 1 Level 1 Spell Slot.When you are hit with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity Saving Throw.Cast Shield of Devotion: Aid once per Long Rest."
+    ]
+  },
+  {
+    "name": "Shield of Scorching Reprisal",
+    "type": "Shield",
+    "rarity": "Rare",
+    "armor_class": 2,
+    "effects": [
+      "When you are hit with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity Saving Throw.Resistance to Fire DamageCast Blazing Retaliation once per Short Rest."
+    ]
+  },
+  {
+    "name": "Shifting Corpus Ring",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Invisibility once per Long Rest.Cast Blur once per Long Rest."
+    ]
+  },
+  {
+    "name": "Snowburst Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Cold damage, create a 4.5m / 15ft circle of Ice around the target."
+    ]
+  },
+  {
+    "name": "Spellcrux Amulet",
+    "type": "Amulet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "You can replenish expended Spell Slot of any level once per Long Rest."
+    ]
+  },
+  {
+    "name": "Strange Tendril Amulet",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Evard's Black Tentacles once per Long Rest."
+    ]
+  },
+  {
+    "name": "Surgeon's Subjugation Amulet",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When landing a Critical Hit on a humanoid, you can Paralyse the target for 2 turns once per Long Rest."
+    ]
+  },
+  {
+    "name": "Swordmaster Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Proficiency with shortswords, longswords, and greatswords. Gain a +1 bonus to melee Attack Rolls."
+    ]
+  },
+  {
+    "name": "Spineshudder Amulet",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal damage with a ranged spell attack, inflict Reverberation for 2 turns."
+    ]
+  },
+  {
+    "name": "The Graceful Cloth (Araj)",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": 1,
+    "effects": [
+      "Shield 10 ACShield + 1 AC",
+      "Deal an additional 🎲(1) and gain a +1 bonus to Unarmed Attack Rolls.Dexterity +2 (up to 20)"
+    ]
+  },
+  {
+    "name": "The Mighty Cloth",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Immune to being pushed and gain Advantage on Saving Throws against being Restrained.Strength +2 (up to 20)"
+    ]
+  },
+  {
+    "name": "Thermoarcanic Gloves",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Fire damage, gain Heat for 2 turns."
+    ]
+  },
+  {
+    "name": "Thunderskin Cloak",
+    "type": "Cloak",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you are hit with an attack by a creature with Reverberation, the attacker needs to succeed a Constitution Saving Throw or become Dazed."
+    ]
+  },
+  {
+    "name": "True Love's Caress",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Receive Warding Bond from a creature wearing True Love's Embrace once per Long Rest."
+    ]
+  },
+  {
+    "name": "True Love's Embrace",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Warding Bond on a creature wearing True Love's Caress once per Long Rest."
+    ]
+  },
+  {
+    "name": "Vivacious Cloak",
+    "type": "Cloak",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Gain ❤️(7) Temporary Hit Points when you cast a Spell while in melee."
+    ]
+  },
+  {
+    "name": "Watcher's Shield",
+    "type": "Shield",
+    "rarity": "Uncommon",
+    "armor_class": 2,
+    "effects": [
+      "Advantage on Perception Checks."
+    ]
+  },
+  {
+    "name": "Yuan-Ti Scale Mail",
+    "type": "Medium Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 15 AC",
+      "Add Shield + (Dexterity Modifier) to your AC. This armour does not impose Disadvantage on Stealth Ability Checks.Gain a +1 bonus to Initiative Rolls."
+    ]
+  },
+  {
+    "name": "Abdel's Trusted Shield",
+    "type": "Shield",
+    "rarity": "Very Rare",
+    "armor_class": 2,
+    "effects": [
+      "When you are hit with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity Saving Throw.Cast Protection from Missiles once per Short Rest."
+    ]
+  },
+  {
+    "name": "Absolute Confidence Amulet",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Performance + 1Intimidation - 1"
+    ]
+  },
+  {
+    "name": "After Death Do Us Part",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you are downed, you regain ❤️(Half your Maximum) Hit Points and are affected by Shadow Possession."
+    ]
+  },
+  {
+    "name": "Amulet of Bhaal",
+    "type": "Amulet",
+    "rarity": "Legendary",
+    "armor_class": null,
+    "effects": [
+      "On a hit, inflict Bleeding to targets that have maximum Hit Points."
+    ]
+  },
+  {
+    "name": "Amulet of Elemental Torment",
+    "type": "Amulet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you stand on certain surfaces and cast a spell that deals damage, the target also suffers the surface's effects."
+    ]
+  },
+  {
+    "name": "Amulet of Greater Health",
+    "type": "Amulet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Increases Constitution to 23.Advantage on Constitution Saving Throws Checks:."
+    ]
+  },
+  {
+    "name": "Amulet of the Devout",
+    "type": "Amulet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +2 bonus to Spell Save DC.Gain 1 additional use of Channel Divinity once per Long Rest."
+    ]
+  },
+  {
+    "name": "Amulet of the Drunkard",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Regain ❤️(2d4) Hit Points per turn while Drunk. Additionally, increase the duration of your inebriation by 5 turns."
+    ]
+  },
+  {
+    "name": "Amulet of Windrider",
+    "type": "Amulet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Ride the WindsCast Gust of Wind once per Short Rest."
+    ]
+  },
+  {
+    "name": "Armour of Agility",
+    "type": "Medium Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 17 AC",
+      "Add Shield + (Dexterity Modifier) to your AC. This armour does not impose Disadvantage on Stealth Ability Checks.Saving Throw +2."
+    ]
+  },
+  {
+    "name": "Armour of Landfall",
+    "type": "Light Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 13 AC",
+      "Gain a +1 bonus to Spell Save DC.Regain ❤️(1d4) Hit Points when you start your turn on a Plant Growth Surface or Vine Surface.Advantage on Constitution Saving Throw.Cast Plant Growth"
+    ]
+  },
+  {
+    "name": "Armour of Moonbasking",
+    "type": "Light Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 11 AC",
+      "Gain ❤️(22) Temporary Hit Points after casting Wild Shape. Reduce all incoming damage by 1 while those Temporary Hit Points are active.Shield + 2 AC and Advantage on Saving Throws against spells. This effect persists while using your druidic Wild Shape ability."
+    ]
+  },
+  {
+    "name": "Armour of Persistence",
+    "type": "Heavy Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 20 AC",
+      "Reduce all incoming damage by 2.Resistance and Blade Ward."
+    ]
+  },
+  {
+    "name": "Armour of the Sporekeeper",
+    "type": "Light Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 13 AC",
+      "Malefic Funghi: The wearer gains a +1 bonus to Spell Save DC and when dealing Necrotic damage, they deal an additional Necrotic(1).Spore Sacks: While imbued with Symbiotic Entity, you can spread Bibberbang Spores, Timmask Spores, and Haste Spores."
+    ]
+  },
+  {
+    "name": "Assassin of Bhaal Cowl",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "You can see in the dark up to 3 m / 10 ft. Gain a +2 bonus to Initiative.Cast See Invisibility once per Short Rest."
+    ]
+  },
+  {
+    "name": "Band of the Mystic Scoundrel",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "You can cast illusion or enchantment spells as a bonus action after hitting a creature with a weapon attack."
+    ]
+  },
+  {
+    "name": "Bhaalist Armour",
+    "type": "Light Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 14 AC",
+      "Enemies within 2 m / 6.5 ft become Vulnerable to Piercing damage, unless they are Resistant or Immune to it.Gain a +2 bonus to Initiative Rolls."
+    ]
+  },
+  {
+    "name": "Bhaalist Gloves",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Garrote once per Short Rest.Attack Rolls +1"
+    ]
+  },
+  {
+    "name": "Birthright",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Charisma +2 (up to 22)"
+    ]
+  },
+  {
+    "name": "Blackguard's Plate",
+    "type": "Heavy Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 19 AC",
+      "Reduce all incoming damage by 1.Advantage on Wisdom Saving Throws."
+    ]
+  },
+  {
+    "name": "Bonespike Boots",
+    "type": "Boots",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to Saving Throws and Shield + 1 AC as long as you are not wearing armour or holding a shield.Jump distance is increased by 1.5m / 5ft.Cast Brutal Leap"
+    ]
+  },
+  {
+    "name": "Bonespike Garb",
+    "type": "Clothing",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Gain ❤️(15) Temporary Hit Points when you Rage.Reduce all incoming damage by 2. When you are hit by a melee attack, the attacker takes Bow(3)."
+    ]
+  },
+  {
+    "name": "Bonespike Gloves",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Your attacks ignore Resistance to Slashing, Piercing, and Bludgeoning damage."
+    ]
+  },
+  {
+    "name": "Bonespike Helmet",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal Psychic(2d4) to nearby enemies in a 3m/10ft radius when you rage, they must succeed a Wisdom Saving Throw or take half damage.Intimidation +2Cast Menacing Attack once per turn."
+    ]
+  },
+  {
+    "name": "Boots of Uninhibited Kushigo",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional 🎲(Wisdom Modifier) with unarmed attacks."
+    ]
+  },
+  {
+    "name": "Boots of Very Fast Blinking",
+    "type": "Boots",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Misty Step once per turn. The caster's clothes are left behind."
+    ]
+  },
+  {
+    "name": "Cerebral Citadel Armour",
+    "type": "Heavy Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 18 AC",
+      "Immune to Frighten.Gain a +1 bonus to Intelligence, Wisdom, and Charisma Saving Throws if you are infested by a mind flayer tadpole."
+    ]
+  },
+  {
+    "name": "Cerebral Citadel Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a 🎲(1d4) bonus to Attack Rolls and Saving Throws against Charmed or Frightened creatures.Strength Saving Throws +1"
+    ]
+  },
+  {
+    "name": "Cindermoth Cloak",
+    "type": "Cloak",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you are hit with an attack, inflict Burning if they are within 2m / 7ft."
+    ]
+  },
+  {
+    "name": "Circlet of Fire",
+    "type": "Helmet",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you deal Fire damage with a non-cantrip spell, gain a bonus action."
+    ]
+  },
+  {
+    "name": "Cloak of Displacement",
+    "type": "Cloak",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "At the beginning of your turn, enemies have Disadvantage on Attack Rolls against you. This effect lasts until the you takes damage."
+    ]
+  },
+  {
+    "name": "Cloak of the Weave",
+    "type": "Cloak",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to Spell Save DC and spell Attack Rolls.When you are hit with an elemental attack, take half damage and deal an additional 🎲(1d6) of that element type on your next attack."
+    ]
+  },
+  {
+    "name": "Cloth of Authority",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": 1,
+    "effects": [
+      "Shield 10 ACShield + 1 AC",
+      "Immune to Frighten, and cannot be afflicted with other emotion-altering conditions.Advantage on Intimidation checks and Insight checks."
+    ]
+  },
+  {
+    "name": "Corvid Token",
+    "type": "Amulet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Jump and Flying distance increased by 1.5m / 5ft.Gain Feather Fall while you are Wild Shaped or Polymorphed.Cast Polymorph: Dire Raven once per Long Rest."
+    ]
+  },
+  {
+    "name": "Craterflesh Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you land a Critical Hit, deal an additional Force(1d6).Strength Saving Throws +1"
+    ]
+  },
+  {
+    "name": "Crypt Lord Ring",
+    "type": "Ring",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Create Undead once per Long Rest."
+    ]
+  },
+  {
+    "name": "Dark Displacement Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to Attack Rolls when throwing, and may swap positions with the target if they fail a Dexterity Saving Throw.Sleight of Hand +1"
+    ]
+  },
+  {
+    "name": "Djinni Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Mage Hand"
+    ]
+  },
+  {
+    "name": "Drunken Cloth",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "While Drunk, gain Advantage on Constitution Saving Throws and gain ❤️(Constitution Modifier) Temporary Hit Points at the start of your turn."
+    ]
+  },
+  {
+    "name": "Elegant Studded Leather",
+    "type": "Light Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 14 AC",
+      "Gain a +2 bonus to Initiative Rolls.Advantage on Stealth checks.Cast Shield once per Short Rest."
+    ]
+  },
+  {
+    "name": "Elven Chain",
+    "type": "Medium Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 14 AC",
+      "Gain a +2 bonus to Initiative Rolls and Advantage on Dexterity Saving ThrowsProficiency with this armour while wearing it."
+    ]
+  },
+  {
+    "name": "Emblazoned Plate of the Marshal",
+    "type": "Heavy Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 19 AC",
+      "Reduce all incoming damage by 2.Resistance to Fire damageGain a +2 bonus to Saving Throws.Cast Fire Shield once per Long Rest."
+    ]
+  },
+  {
+    "name": "Fey Semblance Amulet",
+    "type": "Amulet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Advantage on Intelligence, Wisdom, and Charisma Saving Throws."
+    ]
+  },
+  {
+    "name": "Flame Enamelled Armour",
+    "type": "Medium Armour",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 16 AC",
+      "Gain a +2 bonus to Initiative Rolls and Saving Throws.Resistance to Fire damageCast Fire Shield (Warm) once per Long Rest."
+    ]
+  },
+  {
+    "name": "Garb of the Land and Sky",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": 1,
+    "effects": [
+      "Shield 10 ACShield + 1 AC",
+      "When you use Patient Defence, gain Blade Ward.When you use Step of the Wind, your next Attack Roll has Advantage and Deal an additional Force(1d8)."
+    ]
+  },
+  {
+    "name": "Gauntlet of the Tyrant",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Force(1d4) with unarmed attacks.Gain a +1 bonus to Spell Save DC.Cast Command"
+    ]
+  },
+  {
+    "name": "Gauntlets of Hill Giant Strength",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Strength Saving Throws: +1Increases Strength to 23."
+    ]
+  },
+  {
+    "name": "Gemini Gloves",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cantrips targeting enemies and allies can target an additional creature. The same target can be chosen twice. Can be used once per Short Rest."
+    ]
+  },
+  {
+    "name": "Gibus of the Worshipful Servant",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain 🎲(Charisma Modifier) Momentum at the start of combat.Gain Advantage on Concentration Saving Throws."
+    ]
+  },
+  {
+    "name": "Gloves of Soul Catching",
+    "type": "Gloves",
+    "rarity": "Legendary",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Force(1d10) with unarmed attacks.",
+      "Regain ❤️(10) Hit Points on an unarmed attack once per turn. Alternatively, you may forego healing to gain Advantage on Attack Rolls and Saving Throws until the end of your next turn.",
+      "Constitution +2, up to 20."
+    ]
+  },
+  {
+    "name": "Hat of the Sharp Caster",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you roll a 1 or 2 on a damage die for a Spell Attack, that die is rerolled once."
+    ]
+  },
+  {
+    "name": "Helldusk Armour",
+    "type": "Heavy Armour",
+    "rarity": "Legendary",
+    "armor_class": null,
+    "effects": [
+      "Shield 21 AC",
+      "Proficient with this armour while wearing it.",
+      "When you succeed a Saving Throw, the caster receives Burning for 3 turns.",
+      "Resistance to Fire damage",
+      "Immune to Burn.",
+      "Reduce all incoming damage by 3.",
+      "Cast Fly once per Long Rest."
+    ]
+  },
+  {
+    "name": "Helldusk Boots",
+    "type": "Boots",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Immune to Difficult Terrain. and you cannot be forcibly moved by an enemies spell or action.When you fail a Saving Throw, you may use your reaction to succeed instead.Cast Hellcrawler once per Short Rest."
+    ]
+  },
+  {
+    "name": "Helldusk Gloves",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain +1 bonus to Spell Attack Rolls and Spell Save DC.Deal an additional Fire(1d6) with your weapon attacks. Deal an additional Necrotic(1d6) with your unarmed attacks, and can possibly inflict Bleeding.Strength Saving Throws +1Cast Rays of Fire once per Short Rest."
+    ]
+  },
+  {
+    "name": "Helldusk Helmet",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Fire(2d8) damage against Burning creatures.You can see in the dark and through magical darkness up to 12m / 40ft. Immune to Blind.Gain a +2 bonus to Saving Throws against spells.Attackers can't land Critical Hits on you."
+    ]
+  },
+  {
+    "name": "Hood of the Weave",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +2 bonus to Spell Save DC and spell attack rolls."
+    ]
+  },
+  {
+    "name": "Horns of the Berserker",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +2 bonus to Attack Rolls when attacking creatures that have already taken damage.Deal an extra Necrotic(2) with unarmed and melee attacks as long as you don't have your full health.Take Necrotic(1d4) at the end of your turn if you haven't dealt damage."
+    ]
+  },
+  {
+    "name": "Jannath's Hat",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Advantage on Persuasion Checks.Advantage on Deception Checks."
+    ]
+  },
+  {
+    "name": "Keepsake Ring",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Dominate Beast once per Long Rest."
+    ]
+  },
+  {
+    "name": "Khalid's Gift",
+    "type": "Amulet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Can cast Aid once per Long Rest.Wisdom +1 (up to 21)"
+    ]
+  },
+  {
+    "name": "Knock Knuckle Gloves",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Cast Knock once per Long Rest.Sleight of Hand +1"
+    ]
+  },
+  {
+    "name": "Magic Amulet",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Advantage with an Attack Roll or Saving Throw once per Long Rest."
+    ]
+  },
+  {
+    "name": "Mantle of the Holy Warrior",
+    "type": "Cloak",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Crusader's Mantle once per Long Rest."
+    ]
+  },
+  {
+    "name": "Martial Exertion Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Martial Exertion once per Short Rest."
+    ]
+  },
+  {
+    "name": "Mask of Soul Perception",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +2 bonus to Attack Rolls, Initiative Rolls, and Perception Checks.Cast Detect Thoughts once per Short Rest."
+    ]
+  },
+  {
+    "name": "Nimblefinger Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain +2 to Dexterity if you are a Gnome.Gain +1 to Dexterity if you are a Halfling or Dwarf.Sleight of Hand +1"
+    ]
+  },
+  {
+    "name": "Nymph Cloak",
+    "type": "Cloak",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Dominate Person once per Long Rest."
+    ]
+  },
+  {
+    "name": "Orphic Ring",
+    "type": "Ring",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Confusion once per Long Rest."
+    ]
+  },
+  {
+    "name": "Pyroquickness Hat",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "When you deal Fire damage with a non-cantrip spell, inflict Burn on yourself and gain an additional Bonus Action."
+    ]
+  },
+  {
+    "name": "Quickspell Gloves",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cantrips that cost an Action cost a Bonus Action instead. This effect can be used once per Short Rest."
+    ]
+  },
+  {
+    "name": "Reverse Rain Cloak",
+    "type": "Cloak",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "You are inflicted with Wet."
+    ]
+  },
+  {
+    "name": "Ring of Blink",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Blink once per Long Rest."
+    ]
+  },
+  {
+    "name": "Ring of Feywild Sparks",
+    "type": "Ring",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "While your sorcerous Tides of Chaos feature is active, you will always trigger wild magic surge when casting spells."
+    ]
+  },
+  {
+    "name": "Ring Of Regeneration",
+    "type": "Ring",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Regain ❤️(1d4) Hit Points at the start of your turn."
+    ]
+  },
+  {
+    "name": "Ring of Truthfulness",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Advantage on Insight Checks."
+    ]
+  },
+  {
+    "name": "Robe of Supreme Defences",
+    "type": "Clothing",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Gain 🎲(Spellcasting Modifier) to your Saving Throws while Concentrating.Gain Shield + 1 AC while Concentrating."
+    ]
+  },
+  {
+    "name": "Robe of the Weave",
+    "type": "Clothing",
+    "rarity": "Very Rare",
+    "armor_class": 2,
+    "effects": [
+      "Shield 10 ACShield + 2 AC",
+      "Gain a +1 bonus to Spell Save DC and spell attack rolls.Regain ❤️(1d6) Hit Points when you succeed with a Saving Throw against a spell."
+    ]
+  },
+  {
+    "name": "Scabby Pugilist Circlet",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional 🎲(2) damage with your weapon and unarmed attacks while surrounded by 2 or more foes."
+    ]
+  },
+  {
+    "name": "Scarlet Leather Armour",
+    "type": "Light Armour",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Shield 12 AC",
+      "Gain a +1 bonus to Stealth Checks."
+    ]
+  },
+  {
+    "name": "Seemingly Gleaming Ring",
+    "type": "Ring",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Charisma Saving Throws + 1Wisdom Saving Throws - 1"
+    ]
+  },
+  {
+    "name": "Sentient Amulet (Very Rare)",
+    "type": "Amulet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Shatter once per Long Rest.Cast Ki Restoration once per Long Rest."
+    ]
+  },
+  {
+    "name": "Seraphic Pugilist Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Radiant(1d4) with unarmed attacks.Cast Guiding Bolt once per Long Rest."
+    ]
+  },
+  {
+    "name": "Servitor of the Black Hand Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Force(1d4) with unarmed attacks.Cast Fear once per Long Rest."
+    ]
+  },
+  {
+    "name": "Shade-Slayer Cloak",
+    "type": "Cloak",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "The number you need to roll a Critical Hit while attacking is reduced by 1 while hiding. This effect can stack."
+    ]
+  },
+  {
+    "name": "Shapeshifter Hat",
+    "type": "Helmet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Increase your Wild Shape Charge by 1."
+    ]
+  },
+  {
+    "name": "Shelter of Athkatla",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Advantage on Saving Throws against spells.Cast Mirror Image once per Long Rest."
+    ]
+  },
+  {
+    "name": "Shield (Hope)",
+    "type": "Shield",
+    "rarity": "Very Rare",
+    "armor_class": 4,
+    "effects": []
+  },
+  {
+    "name": "Shield of Shielding",
+    "type": "Shield",
+    "rarity": "Rare",
+    "armor_class": 2,
+    "effects": [
+      "Cast Shield once per Long Rest."
+    ]
+  },
+  {
+    "name": "Shield of the Undevout",
+    "type": "Shield",
+    "rarity": "Very Rare",
+    "armor_class": 2,
+    "effects": [
+      "Gain 1 level 1 spell slot.Enemies have Disadvantage on Saving Throws to resist your spells or actions that inflict Fear.When you are hit with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity Saving Throw."
+    ]
+  },
+  {
+    "name": "Slinging Shoes",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Psychic(2d4) when thrown and will return to its owner.Dexterity Saving Throws +1"
+    ]
+  },
+  {
+    "name": "Snow-Dusted Monastery Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Cold(1d4) with unarmed attacks.Cast Ice Knife once per Long Rest."
+    ]
+  },
+  {
+    "name": "Spaceshunt Boots",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Dimension Door once per Long Rest."
+    ]
+  },
+  {
+    "name": "Spell Savant Amulet",
+    "type": "Amulet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain an additional Level 2 spell slot."
+    ]
+  },
+  {
+    "name": "Spellmight Gloves",
+    "type": "Gloves",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "When you cast a spell that requires an Attack Roll, you can take a -5 penalty to the roll to deal an additional 🎲(1d8)."
+    ]
+  },
+  {
+    "name": "Spellseeking Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "When you make a spell Attack Roll, you can spend a Sorcery Point to gain Advantage.Cantrips cost 1 Sorcery Point and Spells costs 1 Sorcery Point per spell slot Level."
+    ]
+  },
+  {
+    "name": "Stalker Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Force(1d4) with a Sneak Attack.Gain a +1 bonus to Initiative Rolls."
+    ]
+  },
+  {
+    "name": "Steelwatcher Helmet",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Immune to Blind."
+    ]
+  },
+  {
+    "name": "Swires' Sledboard",
+    "type": "Shield",
+    "rarity": "Very Rare",
+    "armor_class": 2,
+    "effects": [
+      "At the start of your turn, gain Force Conduit for 2 turns.When you are hit with a melee attack, you can use your reaction to knock them Prone unless they succeed a Dexterity Saving Throw."
+    ]
+  },
+  {
+    "name": "The Pointy Hat",
+    "type": "Helmet",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a 🎲(Intelligence Modifier) bonus to your Persuasion Checks."
+    ]
+  },
+  {
+    "name": "Thunderpalm Strikers",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Deal an additional Thunder(1d4) with unarmed attacks.Cast Thunderwave once per Long Rest."
+    ]
+  },
+  {
+    "name": "Til Death Do Us Part",
+    "type": "Ring",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Beacon of Hope once per Long Rest."
+    ]
+  },
+  {
+    "name": "Tyrannical Jackboots",
+    "type": "Boots",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to Charisma checks and Saving Throws."
+    ]
+  },
+  {
+    "name": "Unflinching Protector Amulet",
+    "type": "Amulet",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "When a nearby ally is targeted by an attack of any kind, you can use your reaction to make that attack automatically miss. Once per Short Rest."
+    ]
+  },
+  {
+    "name": "Unlucky Thief's Gloves",
+    "type": "Gloves",
+    "rarity": "Uncommon",
+    "armor_class": null,
+    "effects": [
+      "When you roll a 1 or 2 on a damage die for a Spell Attack, that die is re-rolled once."
+    ]
+  },
+  {
+    "name": "Unwanted Masterwork Gauntlets",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to Attack Rolls.Strength Saving Throws + 1"
+    ]
+  },
+  {
+    "name": "Unwanted Masterwork Greaves",
+    "type": "Boots",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Athletics + 1"
+    ]
+  },
+  {
+    "name": "Unwanted Masterwork Scalemail",
+    "type": "Medium Armour",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 16 AC",
+      "Applies your full Dexterity Modifier to your AC. Does not impose Disadvantage on Stealth Ability Checks.Resistance to Fire damage."
+    ]
+  },
+  {
+    "name": "Veil of the Morning",
+    "type": "Clothing",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Undead have Disadvantage on Attack Rolls against you, and you have Advantage on Saving Throws against their actions and spells.Cast Turn Undead once per Long Rest."
+    ]
+  },
+  {
+    "name": "Vest of Soul Rejuvenation",
+    "type": "Clothing",
+    "rarity": "Very Rare",
+    "armor_class": 2,
+    "effects": [
+      "Shield 10 ACShield + 2 AC",
+      "Regain ❤️(1d4) Hit Points when you succeed with a Saving Throw against a spell.You can use a reaction to make an unarmed strike against any attacker that misses."
+    ]
+  },
+  {
+    "name": "Viconia's Priestess Robe",
+    "type": "Clothing",
+    "rarity": "Rare",
+    "armor_class": 1,
+    "effects": [
+      "Shield 10 ACShield + 1 AC",
+      "Advantage on Stealth Checks while Obscured by shadows.Gain a +2 to all Saving throws while affected by Shield of Faith."
+    ]
+  },
+  {
+    "name": "Viconia's Walking Fortress",
+    "type": "Shield",
+    "rarity": "Legendary",
+    "armor_class": 3,
+    "effects": [
+      "When an enemy hits you with a melee attack, you can use your Reaction to deal Force(2d4) and knock it Prone unless they succeed a Dexterity Saving Throw.",
+      "Advantage on Saving Throws against spells. Spell Attack Rolls against you have Disadvantage.",
+      "Cast Reflective Shell once per Short Rest.",
+      "Cast Warding Bond once per Long Rest."
+    ]
+  },
+  {
+    "name": "Wavemother's Cloak",
+    "type": "Cloak",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain Water Layer Protection until you take damage once per turn."
+    ]
+  },
+  {
+    "name": "Wavemother's Robe",
+    "type": "Clothing",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Shield 10 AC",
+      "Regain ❤️(1d4) Hit Points when you start your turn on a water surface.Cast Create or Destroy Water once per Short Rest.Resistance to Fire damage.Resistance to Cold damage."
+    ]
+  },
+  {
+    "name": "Winkling Gloves",
+    "type": "Gloves",
+    "rarity": "Rare",
+    "armor_class": null,
+    "effects": [
+      "Gain a +1 bonus to Attack Rolls.Sleight of Hand + 1"
+    ]
+  },
+  {
+    "name": "Burnished Ring",
+    "type": "Ring",
+    "rarity": "Very Rare",
+    "armor_class": null,
+    "effects": [
+      "Cast Paralyzing Ray once per Long Rest."
+    ]
+  }
+]
