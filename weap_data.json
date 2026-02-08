@@ -31,7 +31,7 @@
     "type": "Dagger",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d4 + 1)",
+      "1h Piercing(1d4 + 1)",
       "Deals an additional Necrotic(1d4) to creatures that are Knocked Out or Sleeping."
     ]
   },
@@ -49,7 +49,7 @@
     "type": "Shortbow",
     "rarity": "Uncommon",
     "effects": [
-      "2h Bow(1d6 + 1)",
+      "2h Piercing(1d6 + 1)",
       "Gain a +1 bonus to Initiative Rolls."
     ]
   },
@@ -58,7 +58,7 @@
     "type": "Shortbow",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d6 + 1)",
+      "2h Piercing(1d6 + 1)",
       "Gain 🎲(1d4) bonus to attack and damage rolls against Frightened creatures.When you a hit with this weapon, possibly inflict Frightened."
     ]
   },
@@ -144,7 +144,7 @@
     "type": "Heavy Crossbow",
     "rarity": "Uncommon",
     "effects": [
-      "2h Bow(1d10 + 1)",
+      "2h Piercing(1d10 + 1)",
       "Gain Arcane Ammunition weapon action."
     ]
   },
@@ -153,8 +153,8 @@
     "type": "War Pick",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d8)",
-      "Inflicts Shattered on hit. When attacking a Shattered target, deal an additional Bow(1d4)."
+      "1h Piercing(1d8)",
+      "Inflicts Shattered on hit. When attacking a Shattered target, deal an additional Piercing(1d4)."
     ]
   },
   {
@@ -215,8 +215,8 @@
     "type": "Hand Crossbow",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d6)",
-      "Deals an additional Bow(1d4) to Burning targets."
+      "1h Piercing(1d6)",
+      "Deals an additional Piercing(1d4) to Burning targets."
     ]
   },
   {
@@ -224,7 +224,7 @@
     "type": "Heavy Crossbow",
     "rarity": "Uncommon",
     "effects": [
-      "2h Bow(1d10 + 1)",
+      "2h Piercing(1d10 + 1)",
       "Advantage against Monstrosity type enemies."
     ]
   },
@@ -233,7 +233,7 @@
     "type": "Heavy Crossbow",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d10)",
+      "2h Piercing(1d10)",
       "When you hit, inflict Reeling for 2 turns."
     ]
   },
@@ -260,7 +260,7 @@
     "type": "Heavy Crossbow",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d10 + 1)",
+      "2h Piercing(1d10 + 1)",
       "When you deal damage to a target with a ranged weapon, it must succeed a Charisma Charisma Save or be Baned for 2 turns."
     ]
   },
@@ -269,7 +269,7 @@
     "type": "Dagger",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d4 + 1)",
+      "1h Piercing(1d4 + 1)",
       "On a hit, the target must succeed a Constitution Saving Throw or become Ruptured."
     ]
   },
@@ -278,7 +278,7 @@
     "type": "Shortbow",
     "rarity": "Uncommon",
     "effects": [
-      "2h Bow(1d6 + 1)",
+      "2h Piercing(1d6 + 1)",
       "Advantage against Monstrosity type enemies.",
       "Cast Hunter's Mark once per Long Rest."
     ]
@@ -297,7 +297,7 @@
     "type": "Spear",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d6)2h Bow(1d8)",
+      "1h Piercing(1d6)2h Piercing(1d8)",
       "On a hit, the target may receive Disadvantage on Constitution Saving Throws."
     ]
   },
@@ -315,7 +315,7 @@
     "type": "Shortsword",
     "rarity": "Very Rare",
     "effects": [
-      "1h Bow(1d6 + 2)",
+      "1h Piercing(1d6 + 2)",
       "When you roll 2 damage or less, reroll the dice.You have Advantage on Attack Rolls against Lightly or Heavily Obscured targets when using this weapon.You land a Critical Hit when rolling a 19."
     ]
   },
@@ -427,7 +427,7 @@
     "type": "Pike",
     "rarity": "Uncommon",
     "effects": [
-      "2h Bow(1d10 + 1)",
+      "2h Piercing(1d10 + 1)",
       "This weapon will return to its owner when thrown."
     ]
   },
@@ -437,7 +437,7 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Slashing(1d6)",
-      "On a hit, possibly inflict a 🎲(1d4) penalty to Attack Rolls and Saving Throws on target.If the attacker still has 25% or more Hit Points, they take Bow(1d6) themselves."
+      "On a hit, possibly inflict a 🎲(1d4) penalty to Attack Rolls and Saving Throws on target.If the attacker still has 25% or more Hit Points, they take Piercing(1d6) themselves."
     ]
   },
   {
@@ -445,7 +445,7 @@
     "type": "Dagger",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d4)",
+      "1h Piercing(1d4)",
       "On a hit, receive a 🎲(1d4) bonus to Attack Rolls and Saving Throws until the end of your next turn.Use a Bonus Action to take Slashing(1d4) and receive a 🎲(1d4) bonus to Attack Rolls and Saving Throws."
     ]
   },
@@ -454,7 +454,7 @@
     "type": "Rapier",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d8 + 1)",
+      "1h Piercing(1d8 + 1)",
       "Gain Searing Blood weapon action."
     ]
   },
@@ -480,8 +480,8 @@
     "type": "Shortsword",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d6)",
-      "Deals an additional Bow(1d8) to targets that still have all their Hit Points."
+      "1h Piercing(1d6)",
+      "Deals an additional Piercing(1d8) to targets that still have all their Hit Points."
     ]
   },
   {
@@ -534,7 +534,7 @@
     "type": "Longbow",
     "rarity": "Uncommon",
     "effects": [
-      "2h Bow(1d8)",
+      "2h Piercing(1d8)",
       "Regain a Level 1 Spell Slot when you land a Critical hit with the Spellthief once per Short Rest."
     ]
   },
@@ -563,7 +563,7 @@
     "type": "Shortsword",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d6 + 1)"
+      "1h Piercing(1d6 + 1)"
     ]
   },
   {
@@ -571,7 +571,7 @@
     "type": "Dagger",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d4 + 1)",
+      "1h Piercing(1d4 + 1)",
       "On a hit, Silence target."
     ]
   },
@@ -616,7 +616,7 @@
     "type": "Rapier",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d8) + Psychic(1d4)"
+      "1h Piercing(1d8) + Psychic(1d4)"
     ]
   },
   {
@@ -624,7 +624,7 @@
     "type": "Shortsword",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d6 + 1)",
+      "1h Piercing(1d6 + 1)",
       "The Warlock bound to this weapon is always Proficient with it. The weapon's damage is magical.Gain a +1 bonus to damage and Attack Rolls with this weapon.On a hit, possibly inflict Bane your target."
     ]
   },
@@ -644,7 +644,7 @@
     "type": "Longbow",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d8)",
+      "2h Piercing(1d8)",
       "When you deal damage with this weapon, gain 2 Lightning Charges."
     ]
   },
@@ -662,7 +662,7 @@
     "type": "Trident",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d6)2h Bow(1d8)",
+      "1h Piercing(1d6)2h Piercing(1d8)",
       "When you deal damage with this weapon, gain 2 Lightning Charges."
     ]
   },
@@ -680,7 +680,7 @@
     "type": "Spear",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d6)2h Bow(1d8)",
+      "1h Piercing(1d6)2h Piercing(1d8)",
       "On a miss, the next Attack Roll against that target gains True Strike."
     ]
   },
@@ -689,7 +689,7 @@
     "type": "Longbow",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d8 + 1)",
+      "2h Piercing(1d8 + 1)",
       "Deal an additional 🎲(Strength Modifier) with this weapon."
     ]
   },
@@ -698,7 +698,7 @@
     "type": "Pike",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d10 + 1)",
+      "2h Piercing(1d10 + 1)",
       "This weapon is Invisible while equipped. It loses this property for 2 turns on a missed Attack Rolls.While Invisible, you are Immune to Disarm, gain Advantage on Attack Rolls and you land a Critical Hit when rolling a 19."
     ]
   },
@@ -716,8 +716,8 @@
     "type": "Spear",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d6)2h Bow(1d8)",
-      "On a hit, the target must succeed a Dexterity Saving Throw or become Blinded. Deals an additional Bow(2d6) to creatures that have multiple sets of eyes."
+      "1h Piercing(1d6)2h Piercing(1d8)",
+      "On a hit, the target must succeed a Dexterity Saving Throw or become Blinded. Deals an additional Piercing(2d6) to creatures that have multiple sets of eyes."
     ]
   },
   {
@@ -734,7 +734,7 @@
     "type": "Dagger",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d4)",
+      "1h Piercing(1d4)",
       "Goblins have Disadvantage on Attack Rolls against you."
     ]
   },
@@ -752,7 +752,7 @@
     "type": "Shortsword",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d6 + 1)",
+      "1h Piercing(1d6 + 1)",
       "Advantage on Stealth Checks."
     ]
   },
@@ -815,7 +815,7 @@
     "type": "Shortbow",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d6 + 2)",
+      "2h Piercing(1d6 + 2)",
       "Resistance to Fire damage.Resistance to Cold damage.Cast Haste once per Long Rest."
     ]
   },
@@ -860,7 +860,7 @@
     "type": "Hand Crossbow",
     "rarity": "Very Rare",
     "effects": [
-      "1h Bow(1d6 + 2)",
+      "1h Piercing(1d6 + 2)",
       "On a hit while Hiding or Invisible, possibly inflict Burning.Cast Scorching Ray once per Short Rest."
     ]
   },
@@ -878,7 +878,7 @@
     "type": "Rapier",
     "rarity": "Very Rare",
     "effects": [
-      "1h Bow(1d8 + 2)",
+      "1h Piercing(1d8 + 2)",
       "Gain a +1 bonus to Spell Save DC.Add Spellcasting Ability Modifier to Attack Rolls instead of Dexterity Modifier.Cast Planar Ally: Cambion once per Long Rest."
     ]
   },
@@ -912,7 +912,7 @@
     "type": "Shortbow",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d6)",
+      "2h Piercing(1d6)",
       "Gain 🎲(1d4) bonus to ranged weapon attacks while Obscured by shadow."
     ]
   },
@@ -921,7 +921,7 @@
     "type": "Spear",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d6 + 1) + Lightning(1d4)2h Bow(1d8 + 1) + Lightning(1d4)",
+      "1h Piercing(1d6 + 1) + Lightning(1d4)2h Piercing(1d8 + 1) + Lightning(1d4)",
       "On a hit, possibly Shock your target.When thrown, deal an additional Lightning(1d4)."
     ]
   },
@@ -974,7 +974,7 @@
     "type": "Shortsword",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d6 + 1)",
+      "1h Piercing(1d6 + 1)",
       "When attacking a target with Advantage, deal an additional Psychic(1d8)."
     ]
   },
@@ -983,7 +983,7 @@
     "type": "Dagger",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d4 + 1) + Necrotic(1d4)"
+      "1h Piercing(1d4 + 1) + Necrotic(1d4)"
     ]
   },
   {
@@ -991,7 +991,7 @@
     "type": "Spear",
     "rarity": "Legendary",
     "effects": [
-      "1h Bow(1d6 + 3)2h Bow(1d8 + 3)",
+      "1h Piercing(1d6 + 3)2h Piercing(1d8 + 3)",
       "Advantage on Wisdom Saving Throws and Perception Checks.",
       "You can see in the dark up to 12m.",
       "Cast Moonbeam once per Long Rest.",
@@ -1012,7 +1012,7 @@
     "type": "Spear",
     "rarity": "Legendary",
     "effects": [
-      "1h Bow(1d6 + 3)2h Bow(1d8 + 3)",
+      "1h Piercing(1d6 + 3)2h Piercing(1d8 + 3)",
       "Advantage on Saving Throws while Lightly or Heavily Obscured.",
       "Deals an additional 🎲(1d6) with this weapon to creatures that are Lightly or Heavily Obscured.",
       "Immunity to Blind.",
@@ -1024,7 +1024,7 @@
     "type": "Shortsword",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d6 + 1)",
+      "1h Piercing(1d6 + 1)",
       "When you attack with Advantage, inflict Bleeding."
     ]
   },
@@ -1033,7 +1033,7 @@
     "type": "Spear",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d6)2h Bow(1d8)",
+      "1h Piercing(1d6)2h Piercing(1d8)",
       "If Shar allows it, use this spear to kill Nightsong."
     ]
   },
@@ -1042,7 +1042,7 @@
     "type": "Shortsword",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d6 + 1)",
+      "1h Piercing(1d6 + 1)",
       "Gain Shadowsoaked Blow weapon action."
     ]
   },
@@ -1051,7 +1051,7 @@
     "type": "Shortsword",
     "rarity": "Very Rare",
     "effects": [
-      "1h Bow(1d6 + 2)",
+      "1h Piercing(1d6 + 2)",
       "On a Critical Hit, you gain ❤️(10) Temporary Hit Points and the target takes an extra Necrotic(1d10) as long as it isn't a construct or an undead."
     ]
   },
@@ -1087,7 +1087,7 @@
     "type": "Morningstar",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d8 + 1)",
+      "1h Piercing(1d8 + 1)",
       "When you roll 2 or less with this weapon's damage die, reroll it and take the new result."
     ]
   },
@@ -1096,7 +1096,7 @@
     "type": "Shortsword",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d6 + 1)",
+      "1h Piercing(1d6 + 1)",
       "Deal an additional Necrotic(1d6) against creatures that haven't taken a turn yet.Gain a +1 bonus to Initiative rolls and Advantage on Perception Ability Checks."
     ]
   },
@@ -1134,7 +1134,7 @@
     "type": "Shortbow",
     "rarity": "Very Rare",
     "effects": [
-      "2h Bow(1d6)",
+      "2h Piercing(1d6)",
       "Gain a 🎲(1d4) bonus to Attack and Damage rolls when attacking Gnomes or Dwarves with this weapon.When you land a Critical Hit with this weapon, Slow the target creature."
     ]
   },
@@ -1143,7 +1143,7 @@
     "type": "Dagger",
     "rarity": "Legendary",
     "effects": [
-      "1h Bow(1d4 + 2)",
+      "1h Piercing(1d4 + 2)",
       "The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.",
       "Cast True Strike once per Short Rest.",
       "Bound Weapon",
@@ -1159,7 +1159,7 @@
     "type": "Pike",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d10) + Force(1d4)"
+      "2h Piercing(1d10) + Force(1d4)"
     ]
   },
   {
@@ -1185,7 +1185,7 @@
     "type": "Dagger",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d6)Shield + 1 AC",
+      "1h Piercing(1d6)Shield + 1 AC",
       "Off-Hand Only:When a creature misses an attack against you, it must succeed a DC 13 Constitution Saving Throw or be Chilled for 2 turns."
     ]
   },
@@ -1203,10 +1203,10 @@
     "type": "Shortsword",
     "rarity": "Legendary",
     "effects": [
-      "1h Bow(1d6 + 2) + Necrotic(1d4)",
+      "1h Piercing(1d6 + 2) + Necrotic(1d4)",
       "Main Hand Only:",
-      "Deal an additional Bow(1d4) against targets that have 50% Hit Points or less.",
-      "When you make an attack with Advantage, the target takes an additional Bow(7).",
+      "Deal an additional Piercing(1d4) against targets that have 50% Hit Points or less.",
+      "When you make an attack with Advantage, the target takes an additional Piercing(7).",
       "Off-Hand Only:",
       "On a hit, deal an additional 🎲(Ability Modifier)."
     ]
@@ -1234,7 +1234,7 @@
     "type": "Dagger",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d4 + 2)",
+      "1h Piercing(1d4 + 2)",
       "When you land a Critical Hit with this weapon, it deals an additional 7 damage."
     ]
   },
@@ -1243,7 +1243,7 @@
     "type": "Dagger",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d4 + 1)",
+      "1h Piercing(1d4 + 1)",
       "Deal an extra Necrotic(1d6) with this weapon while you are Hidden."
     ]
   },
@@ -1252,7 +1252,7 @@
     "type": "Rapier",
     "rarity": "Legendary",
     "effects": [
-      "1h Bow(1d8 + 3) + Necrotic(1d4)",
+      "1h Piercing(1d8 + 3) + Necrotic(1d4)",
       "While your off-hand is empty, you land a Critical Hit when rolling a 19 and gain an additional reaction per turn.",
       "Deal an additional Necrotic(Proficiency Bonus) on a hit with this weapon.",
       "Cast Challenge to Duel",
@@ -1282,7 +1282,7 @@
     "type": "Heavy Crossbow",
     "rarity": "Very Rare",
     "effects": [
-      "2h Bow(1d10 + 2)",
+      "2h Piercing(1d10 + 2)",
       "Cast Illuminating Shot"
     ]
   },
@@ -1300,7 +1300,7 @@
     "type": "Shortsword",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d6 + 2)",
+      "1h Piercing(1d6 + 2)",
       "Gain Part the Flesh weapon action."
     ]
   },
@@ -1318,7 +1318,7 @@
     "type": "Dagger",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d4 + 2)",
+      "1h Piercing(1d4 + 2)",
       "This weapon shines with a glowing light in a radius of 6m.Off-Hand Only:Shield + 1 AC"
     ]
   },
@@ -1327,7 +1327,7 @@
     "type": "Longbow",
     "rarity": "Legendary",
     "effects": [
-      "2h Bow(1d8 + 3)",
+      "2h Piercing(1d8 + 3)",
       "On a hit, possibly inflict Guiding Bolt.",
       "This weapon shines with a glowing light in a radius of 6m.",
       "Cast Celestial Haste once per Long Rest."
@@ -1356,7 +1356,7 @@
     "type": "Rapier",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d8 + 1)",
+      "1h Piercing(1d8 + 1)",
       "Cast Mellow Harmony once per Short Rest."
     ]
   },
@@ -1382,7 +1382,7 @@
     "type": "Heavy Crossbow",
     "rarity": "Very Rare",
     "effects": [
-      "2h Bow(1d10 + 2)",
+      "2h Piercing(1d10 + 2)",
       "Cast Lightning Arrow once per Long Rest."
     ]
   },
@@ -1400,7 +1400,7 @@
     "type": "Longbow",
     "rarity": "Uncommon",
     "effects": [
-      "2h Bow(1d8 + 1)",
+      "2h Piercing(1d8 + 1)",
       "Gain a +3 bonus to Initiative Rolls and Advantage on Perception Ability Checks.Once per turn, a creature hit by this weapon will possibly be afflicted with Faerie Fire."
     ]
   },
@@ -1427,7 +1427,7 @@
     "type": "Spear",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d6 + 1)2h Bow(1d8 + 1)",
+      "1h Piercing(1d6 + 1)2h Piercing(1d8 + 1)",
       "When you hit, deal an additional Poison(3) and possibly Poison the target."
     ]
   },
@@ -1456,8 +1456,8 @@
     "type": "Dagger",
     "rarity": "Uncommon",
     "effects": [
-      "1h Bow(1d4 + 1)",
-      "Deals an additional Bow(1d4) against targets with 50% or less of their Hit Points."
+      "1h Piercing(1d4 + 1)",
+      "Deals an additional Piercing(1d4) against targets with 50% or less of their Hit Points."
     ]
   },
   {
@@ -1465,7 +1465,7 @@
     "type": "Trident",
     "rarity": "Legendary",
     "effects": [
-      "1h Bow(1d6 + 3) + Thunder(1d6)2h Bow(1d8 + 3) + Thunder(1d6)",
+      "1h Piercing(1d6 + 3) + Thunder(1d6)2h Piercing(1d8 + 3) + Thunder(1d6)",
       "Deal Thunder(3d4) in a 6m / 20ft at the centered on your target when thrown.This weapon will return to your hand when thrown. You cannot be forced to drop the trident.Jump and Movement distance increased by 3m / 10ft. Immunity to falling damage.This weapon shines with a glowing light in a radius of 6m."
     ]
   },
@@ -1484,7 +1484,7 @@
     "type": "Rapier",
     "rarity": "Very Rare",
     "effects": [
-      "1h Bow(1d8 + 1) + Radiant(1d4)",
+      "1h Piercing(1d8 + 1) + Radiant(1d4)",
       "Advantage with Attack Rolls against Undead."
     ]
   },
@@ -1493,7 +1493,7 @@
     "type": "Morningstar",
     "rarity": "Rare",
     "effects": [
-      "1h Bow(1d8)",
+      "1h Piercing(1d8)",
       "Cast Commander's Strike once per Short Rest."
     ]
   },
@@ -1502,7 +1502,7 @@
     "type": "Dagger",
     "rarity": "Very Rare",
     "effects": [
-      "1h Bow(1d4 + 1)",
+      "1h Piercing(1d4 + 1)",
       "Deal 🎲(1) and gain a +1 bonus to Attack Rolls and Spell Save DC for every enemy you slay, stacking up to 3 times per battle.On a hit with this weapon while Hiding or Invisible, possibly inflict Bleeding."
     ]
   },
@@ -1576,7 +1576,7 @@
     "type": "Dagger",
     "rarity": "Very Rare",
     "effects": [
-      "1h Bow(1d4 + 2)",
+      "1h Piercing(1d4 + 2)",
       "Cast Hold Person once per Long Rest."
     ]
   },
@@ -1611,7 +1611,7 @@
     "type": "Longbow",
     "rarity": "Very Rare",
     "effects": [
-      "2h Bow(1d8 + 2)",
+      "2h Piercing(1d8 + 2)",
       "The number you need to roll a Critical Hit while attacking is reduced by 1. This effect can stack.Double your Proficiency Bonus when rolling ranged attacks with this weapon, unless you have Disadvantage."
     ]
   },
@@ -1620,7 +1620,7 @@
     "type": "Heavy Crossbow",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d10 + 2)",
+      "2h Piercing(1d10 + 2)",
       "Gain 🎲(1d4) bonus to Attack and Damage Rolls when attacking undead creatures."
     ]
   },
@@ -1629,7 +1629,7 @@
     "type": "Morningstar",
     "rarity": "Very Rare",
     "effects": [
-      "1h Bow(1d8 + 3) + Radiant(1d4)",
+      "1h Piercing(1d8 + 3) + Radiant(1d4)",
       "On a hit, inflict Radiating Orb for 1 turn.Sanctified Weapon: Undead creatures struck by this weapon are possibly Turned."
     ]
   },
@@ -1654,7 +1654,7 @@
     "type": "Trident",
     "rarity": "Very Rare",
     "effects": [
-      "1h Bow(1d6 + 1)2h Bow(1d8 + 1)",
+      "1h Piercing(1d6 + 1)2h Piercing(1d8 + 1)",
       "On a hit, create a 2m / 7ft water surface centered around the target."
     ]
   },
@@ -1672,7 +1672,7 @@
     "type": "Shortbow",
     "rarity": "Rare",
     "effects": [
-      "2h Bow(1d6 + 2)",
+      "2h Piercing(1d6 + 2)",
       "Deal an additional 🎲(7) on a Critical Hit."
     ]
   },

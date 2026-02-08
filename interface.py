@@ -41,9 +41,10 @@ RANGED_2H = []
 def get_weapon_handedness(weapon_item):
     """
     Returns a set containing '1h' and/or '2h' based on effects.
-    Also returns 'ranged' if it appears to be a ranged weapon (checks for 'Bow' in damage or type).
+    Also returns 'ranged' if it appears to be a ranged weapon (checks for 'bow' or 'crossbow' in TYPE).
     """
     effects_str = " ".join(weapon_item.get('effects', [])).lower()
+    w_type = weapon_item.get('type', '').lower()
     
     modes = set()
     if '1h ' in effects_str or '1h' == effects_str[:2]:
@@ -51,10 +52,8 @@ def get_weapon_handedness(weapon_item):
     if '2h ' in effects_str or '2h' == effects_str[:2]:
         modes.add('2h')
     
-    # Fallback/Heuristics if parsing fails or for specific types
-    w_type = weapon_item.get('type', '').lower()
-    
-    is_ranged = 'bow' in effects_str or 'crossbow' in w_type or 'bow' in w_type
+    # Updated: Rely strictly on type string for ranged classification to avoid effect description/damage type confusion
+    is_ranged = 'bow' in w_type or 'crossbow' in w_type
     
     if is_ranged:
         modes.add('ranged')

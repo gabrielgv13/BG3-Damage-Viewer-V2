@@ -808,7 +808,7 @@
     "armor_class": null,
     "effects": [
       "Shield 13 AC",
-      "Deal Bow(1d4) to the attackers that hit you with a melee attack while you're at 50% Hit Points or less."
+      "Deal Piercing(1d4) to the attackers that hit you with a melee attack while you're at 50% Hit Points or less."
     ]
   },
   {
@@ -1623,7 +1623,7 @@
     "rarity": "Uncommon",
     "armor_class": 2,
     "effects": [
-      "When you are hit with a melee attack while holding a weapon empowered with Shillelagh, the attacker receives Bow(1)."
+      "When you are hit with a melee attack while holding a weapon empowered with Shillelagh, the attacker receives Piercing(1)."
     ]
   },
   {
@@ -2293,7 +2293,7 @@
     "armor_class": null,
     "effects": [
       "Shield 10 AC",
-      "Gain ❤️(15) Temporary Hit Points when you Rage.Reduce all incoming damage by 2. When you are hit by a melee attack, the attacker takes Bow(3)."
+      "Gain ❤️(15) Temporary Hit Points when you Rage.Reduce all incoming damage by 2. When you are hit by a melee attack, the attacker takes Piercing(3)."
     ]
   },
   {
