@@ -1,0 +1,57 @@
+1. Attribute Scaling by Weapon Type
+
+The "Ability Modifier" added to damage depends on the weapon category :
+
+    Melee Weapons: Use Strength (STR) Modifier.
+
+    Ranged Weapons: Use Dexterity (DEX) Modifier (e.g., Bows, Crossbows).
+
+    Finesse Weapons: Use the higher of Strength or Dexterity. (e.g., Daggers, Rapiers, Shortswords).
+
+    Thrown Weapons: Use Strength. If the weapon has the "Finesse" property, use the higher of Strength or Dexterity.
+
+    Monk Weapons & Unarmed Strikes: Use Dexterity if it is higher than Strength.
+
+2. Base Damage Formula
+
+The total damage for a standard hit is calculated as follows :
+
+Total Damage = (Damage Die Roll) + Ability Modifier + Weapon Enchantment + Flat Bonuses
+
+    Damage Die Roll: The result of the die associated with the weapon (e.g., 1-8 for a 1d8 weapon).
+
+    Ability Modifier: The bonus from STR or DEX (e.g., 18 STR = +4).
+
+    Weapon Enchantment: The magical bonus of the weapon (e.g., +1, +2, or +3).
+
+    Flat Bonuses: Static additions from items (e.g., +2 Acid damage from a ring).
+
+3. Critical Hit Formula
+
+A Critical Hit occurs on a Natural 20. It doubles the number of damage dice rolled but does not double flat modifiers.
+
+Critical Damage = (Damage Dice * 2) + Ability Modifier + Weapon Enchantment + Flat Bonuses
+
+    Example: A 1d8 Rapier + 4 DEX modifier.
+
+    Normal Hit: 1d8 + 4
+
+    Critical Hit: 2d8 + 4.
+
+4. Armor Class (AC) Formulas
+
+AC determines the target number an attacker must meet. The formula depends on the armor worn :
+
+    Unarmored: 10 + Dexterity Modifier.
+
+    Light Armor: Armor Base Value + Dexterity Modifier.
+
+    Medium Armor: Armor Base Value + Dexterity Modifier (Maximum +2 bonus).
+
+    Heavy Armor: Armor Base Value (Ignore Dexterity Modifier).
+
+    Shields: Add +2 to the total AC.
+
+5. Note on "Versatile" Weapons
+
+If a weapon is "Versatile," your calculator logic should check if a shield or off-hand weapon is equipped. If the off-hand is empty, use the 2-handed damage die (e.g., 1d8 becomes 1d10 for a Longsword).

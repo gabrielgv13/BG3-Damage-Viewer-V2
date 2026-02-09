@@ -1,0 +1,17 @@
+Head:
+Effect1
+
+Cape:
+Effect1
+
+Torso:
+Effect1
+Effect2
+
+Gloves:
+Effect1
+
+Boots:
+Effect1
+
+AC
