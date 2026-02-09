@@ -5,3 +5,6 @@ Right now you can calculate AC and get the item effects.
 TODO:
 - Integrate feats, racials, class spells;
 - Spell, unarmed, class action and weapons manouver damage calculator.
+
+Depedencies:
+- dearpygui python library.
