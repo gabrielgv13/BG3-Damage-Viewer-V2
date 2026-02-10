@@ -137,6 +137,14 @@ ABILITIES = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", 
 BASE_COSTS = {8: 0, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 7, 15: 9}
 TOTAL_POINTS = 27
 
+# --- Class and Level System ---
+CLASSES = ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]
+MAX_CHARACTER_LEVEL = 12
+
+# Character state: tracks levels in each class
+# Format: {"Barbarian": 3, "Fighter": 2, ...}
+character_levels = {}
+
 # --- Parsing Logic ---
 
 def parse_dice_string(dice_str):
@@ -145,6 +153,68 @@ def parse_dice_string(dice_str):
     parts = dice_str.lower().split('d')
     if len(parts) != 2: return (0, 0)
     return (int(parts[0]), int(parts[1]))
+
+# --- Level Management Functions ---
+
+def get_total_level():
+    """Returns the total character level across all classes."""
+    return sum(character_levels.values())
+
+def can_add_level():
+    """Check if a level can be added (total < 12 and a class is selected)."""
+    selected_class = dpg.get_value("class_selector")
+    return get_total_level() < MAX_CHARACTER_LEVEL and selected_class and selected_class != ""
+
+def add_level_to_class(sender, app_data, user_data):
+    """Add a level to the currently selected class."""
+    if not can_add_level():
+        return
+    
+    selected_class = dpg.get_value("class_selector")
+    
+    # Add level to the selected class
+    if selected_class in character_levels:
+        character_levels[selected_class] += 1
+    else:
+        character_levels[selected_class] = 1
+    
+    # Update the UI
+    update_level_display()
+
+def update_level_display():
+    """Update all level-related UI elements."""
+    total_level = get_total_level()
+    
+    # Update total level display
+    dpg.set_value("total_level_text", f"Total Level: {total_level} / {MAX_CHARACTER_LEVEL}")
+    
+    # Update class breakdown
+    class_breakdown = []
+    for class_name in sorted(character_levels.keys()):
+        if character_levels[class_name] > 0:
+            class_breakdown.append(f"{class_name} {character_levels[class_name]}")
+    
+    if class_breakdown:
+        dpg.set_value("class_breakdown_text", " / ".join(class_breakdown))
+    else:
+        dpg.set_value("class_breakdown_text", "No levels assigned")
+    
+    # Enable/disable the Add Level button
+    if can_add_level():
+        dpg.configure_item("add_level_button", enabled=True)
+    else:
+        dpg.configure_item("add_level_button", enabled=False)
+
+def on_class_selection_change(sender, app_data, user_data):
+    """Called when the class selector changes."""
+    update_level_display()
+
+def reset_levels(sender, app_data, user_data):
+    """Reset all character levels."""
+    global character_levels
+    character_levels.clear()
+    update_level_display()
+
 
 def get_mean_damage(dice_str, flat_bonus=0, modifier=0):
     count, sides = parse_dice_string(dice_str)
@@ -516,6 +586,29 @@ with dpg.window(tag="Primary Window", label="BG3 Damage Analyzer"):
                                 dpg.add_text("8", tag=f"total_{ab}")
                                 dpg.add_text("-1", tag=f"mod_{ab}")
 
+                # --- CLASS & LEVEL SYSTEM ---
+                dpg.add_text("Class & Level", color=[255, 215, 0])
+                
+                with dpg.group():
+                    # Total level display
+                    dpg.add_text("Total Level: 0 / 12", tag="total_level_text", color=[100, 255, 100])
+                    dpg.add_text("No levels assigned", tag="class_breakdown_text", color=[180, 180, 180])
+                    
+                    dpg.add_spacer(height=10)
+                    
+                    # Class selection and level-up controls
+                    with dpg.group(horizontal=True):
+                        dpg.add_text("Select Class:")
+                        dpg.add_combo(items=CLASSES, tag="class_selector", callback=on_class_selection_change, width=150, default_value="")
+                    
+                    dpg.add_spacer(height=5)
+                    
+                    # Add Level button
+                    with dpg.group(horizontal=True):
+                        dpg.add_button(label="Add Level", tag="add_level_button", callback=add_level_to_class, enabled=False, width=120)
+                        dpg.add_button(label="Reset Levels", callback=reset_levels, width=120)
+                    dpg.add_text("(Select a class first)", color=[200, 200, 100])
+                
                 dpg.add_separator()
                 
                 # --- EQUIPMENT ---
