@@ -3,5 +3,9 @@ The item "Database" (It's a formatted json...) was structered using the BG3 Item
 Right now you can calculate AC and get the item effects.
 
 TODO:
+- Create a Level system;
 - Integrate feats, racials, class spells;
 - Spell, unarmed, class action and weapons manouver damage calculator.
+
+Depedencies:
+- dearpygui python library.
