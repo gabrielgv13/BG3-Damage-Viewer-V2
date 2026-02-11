@@ -2,7 +2,7 @@ Creating a BG3 Damage Calculator using Python and the Dear Pygui library.
 The item "Database" (It's a formatted json...) was structered using the BG3 Item Index Cheat Sheet by Cayxx on r/Baldursgate3 (https://www.reddit.com/r/BaldursGate3/comments/16acy9l/bg3_cheat_sheet_for_items_in_each_act_spoilers/)
 Right now you can calculate AC and get the item effects.
 
-Forgot to rename interface.py to main.py, because right it's counterintuitive...
+Forgot to rename interface.py to main.py, because right now it's counterintuitive...
 
 TODO:
 -  ̶C̶r̶e̶a̶t̶e̶ ̶a̶ ̶L̶e̶v̶e̶l̶ ̶s̶y̶s̶t̶e̶m̶;
