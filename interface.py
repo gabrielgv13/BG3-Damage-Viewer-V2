@@ -2,6 +2,7 @@
 import dearpygui.dearpygui as dpg
 import json
 import os
+import re
 
 # --- Data Loading ---
 
@@ -133,6 +134,39 @@ dpg.create_context()
 EQUIP_MAP = {i['name']: i for i in EQUIP_DATA}
 WEAP_MAP = {i['name']: i for i in WEAP_DATA}
 
+DAMAGE_TYPE_COLORS = {
+    "slashing": "#C8C8C8",
+    "bludgeoning": "#C8C8C8",
+    "piercing": "#C8C8C8",
+    "cold": "#77C4DE",
+    "acid": "#D0DE15",
+    "necrotic": "#84C69E",
+    "poison": "#91A049",
+    "psychic": "#B56BA4",
+    "radiant": "#F2D57D",
+    "force": "#D36B6C",
+    "thunder": "#8266A6",
+    "lightning": "#5F93DD",
+}
+
+DAMAGE_TYPE_ICON_NAMES = {
+    "acid": "Acid.png",
+    "bludgeoning": "Bludgeoning.png",
+    "cold": "Cold.png",
+    "fire": "Fire.png",
+    "force": "Force.png",
+    "lightning": "Lightning.png",
+    "necrotic": "Necrotic.png",
+    "piercing": "Piercing.png",
+    "poison": "Poison.png",
+    "psychic": "Psychic.png",
+    "radiant": "Radiant.png",
+    "slashing": "Slashing.png",
+    "thunder": "Thunder.png",
+}
+
+DAMAGE_TYPE_TEXTURES = {}
+
 ABILITIES = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
 BASE_COSTS = {8: 0, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 7, 15: 9}
 TOTAL_POINTS = 27
@@ -153,6 +187,176 @@ def parse_dice_string(dice_str):
     parts = dice_str.lower().split('d')
     if len(parts) != 2: return (0, 0)
     return (int(parts[0]), int(parts[1]))
+
+def parse_damage_value(value_str):
+    """Parse a damage value like '1d8 + 1' or '2' into (count, sides, flat)."""
+    if not value_str:
+        return 0, 0, 0
+    value_str = value_str.strip()
+    dice_match = re.match(r"^(\d+)d(\d+)(?:\s*\+\s*(\d+))?$", value_str)
+    if dice_match:
+        count = int(dice_match.group(1))
+        sides = int(dice_match.group(2))
+        flat = int(dice_match.group(3)) if dice_match.group(3) else 0
+        return count, sides, flat
+    flat_match = re.match(r"^(\d+)$", value_str)
+    if flat_match:
+        return 0, 0, int(flat_match.group(1))
+    return 0, 0, 0
+
+def extract_handedness_segment(effects_str, handedness):
+    tokens = list(re.finditer(r"(?:^|\s|\))(?P<h>1h|2h)\s+", effects_str))
+    for idx, token in enumerate(tokens):
+        if token.group("h").lower() == handedness.lower():
+            start = token.end()
+            end = tokens[idx + 1].start() if idx + 1 < len(tokens) else len(effects_str)
+            return effects_str[start:end]
+    return ""
+
+def parse_weapon_base_components(item, handedness, source_name):
+    effects_str = " ".join(item.get("effects", []))
+    segment = extract_handedness_segment(effects_str, handedness)
+    if not segment:
+        return []
+    components = []
+    for match in re.finditer(r"([A-Za-z]+)\(([^)]+)\)", segment):
+        dmg_type = match.group(1)
+        value_str = match.group(2)
+        count, sides, flat = parse_damage_value(value_str)
+        components.append({
+            "type": dmg_type,
+            "dice_count": count,
+            "dice_sides": sides,
+            "flat": flat,
+            "source": source_name,
+        })
+    return components
+
+def parse_additional_damage_components(effects_str, source_name):
+    components = []
+    pattern = r"(?:deal\s+)?an\s+additional\s+(?:([A-Za-z]+)|🎲)\(([^)]+)\)"
+    for match in re.finditer(pattern, effects_str, re.IGNORECASE):
+        dmg_type = match.group(1) or "Unspecified"
+        value_str = match.group(2)
+        count, sides, flat = parse_damage_value(value_str)
+        if count == 0 and sides == 0 and flat == 0:
+            continue
+        components.append({
+            "type": dmg_type,
+            "dice_count": count,
+            "dice_sides": sides,
+            "flat": flat,
+            "source": source_name,
+        })
+    return components
+
+def get_equipment_damage_components():
+    flat_total = 0
+    components = []
+    slots = ["slot_helmet", "slot_cape", "slot_armor", "slot_gloves", "slot_boots", "slot_amulet", "slot_ring1", "slot_ring2"]
+    for tag in slots:
+        item_name = dpg.get_value(tag)
+        if not item_name or item_name not in EQUIP_MAP:
+            continue
+        item = EQUIP_MAP[item_name]
+        effects_str = " ".join(item.get("effects", []))
+        item_components = parse_additional_damage_components(effects_str, f"{item_name} (equipment)")
+        for comp in item_components:
+            components.append(comp)
+            if comp["dice_count"] == 0 and comp["flat"]:
+                flat_total += comp["flat"]
+    return flat_total, components
+
+def format_damage_components(components):
+    lines = []
+    for comp in components:
+        dmg_type = comp["type"]
+        source = comp["source"]
+        count = comp["dice_count"]
+        sides = comp["dice_sides"]
+        flat = comp["flat"]
+        if count > 0:
+            d_min = count
+            d_max = count * sides
+            d_avg = (count * (sides + 1)) / 2
+            line = f"{dmg_type} ({source}): {count}d{sides} -> {d_min}-{d_max} (Avg {d_avg:.1f})"
+            if flat:
+                sign = "+" if flat > 0 else ""
+                line += f" {sign}{flat} flat"
+        else:
+            sign = "+" if flat >= 0 else ""
+            line = f"{dmg_type} ({source}): {sign}{flat} flat"
+        lines.append(line)
+    return lines
+
+def hex_to_rgb(hex_str):
+    hex_str = hex_str.lstrip("#")
+    return [int(hex_str[i:i + 2], 16) for i in (0, 2, 4)]
+
+def get_damage_type_color(damage_type):
+    return DAMAGE_TYPE_COLORS.get(damage_type.lower(), "#FFFFFF")
+
+def normalize_damage_type(damage_type):
+    if not damage_type:
+        return "Unspecified"
+    return damage_type.strip().capitalize()
+
+def get_damage_texture_tag(damage_type):
+    return DAMAGE_TYPE_TEXTURES.get(damage_type.lower())
+
+def load_damage_type_textures():
+    icon_dir = os.path.join(os.path.dirname(__file__), "icons", "damage_types")
+    if not os.path.isdir(icon_dir):
+        return
+
+    for dmg_key, filename in DAMAGE_TYPE_ICON_NAMES.items():
+        file_path = os.path.join(icon_dir, filename)
+        if not os.path.isfile(file_path):
+            continue
+        width, height, channels, data = dpg.load_image(file_path)
+        texture_tag = f"tex_damage_{dmg_key}"
+        if not dpg.does_item_exist(texture_tag):
+            dpg.add_static_texture(width, height, data, tag=texture_tag)
+        DAMAGE_TYPE_TEXTURES[dmg_key] = texture_tag
+
+def render_damage_breakdown(parent_tag, components):
+    if not dpg.does_item_exist(parent_tag):
+        return
+    dpg.delete_item(parent_tag, children_only=True)
+    if not components:
+        dpg.add_text("(no damage breakdown)", parent=parent_tag, color=[180, 180, 180])
+        return
+
+    for comp in components:
+        dmg_type_raw = comp["type"]
+        dmg_type = normalize_damage_type(dmg_type_raw)
+        color = hex_to_rgb(get_damage_type_color(dmg_type_raw))
+        texture_tag = get_damage_texture_tag(dmg_type_raw)
+        count = comp["dice_count"]
+        sides = comp["dice_sides"]
+        flat = comp["flat"]
+        source = comp["source"]
+
+        if count > 0:
+            d_min = count
+            d_max = count * sides
+            d_avg = (count * (sides + 1)) / 2
+            detail = f"{count}d{sides} -> {d_min}-{d_max} (Avg {d_avg:.1f})"
+            if flat:
+                sign = "+" if flat > 0 else ""
+                detail += f" {sign}{flat} flat"
+        else:
+            sign = "+" if flat >= 0 else ""
+            detail = f"{sign}{flat} flat"
+
+        with dpg.group(horizontal=True, parent=parent_tag):
+            if texture_tag:
+                dpg.add_image(texture_tag, width=16, height=16)
+            dpg.add_text(dmg_type, color=color)
+            dpg.add_text(f"({source}): {detail}")
+
+with dpg.texture_registry():
+    load_damage_type_textures()
 
 # --- Level Management Functions ---
 
@@ -242,26 +446,8 @@ def parse_weapon_damage(item, handedness='1h'):
     return "0d0", 0
 
 def get_global_damage_bonuses():
-    # Scan all equipped items (except weapons themselves for now, simplifying)
-    bonus = 0
-    # List of slots to check for flat dmg bonuses (Rings, Gloves, Helmets, etc)
-    slots = ["slot_helmet", "slot_cape", "slot_armor", "slot_gloves", "slot_boots", "slot_amulet", "slot_ring1", "slot_ring2"]
-    
-    for tag in slots:
-        item_name = dpg.get_value(tag)
-        if not item_name or item_name not in EQUIP_MAP: continue
-        item = EQUIP_MAP[item_name]
-        effects = " ".join(item.get('effects', []))
-        
-        # Look for "Deal an additional ... (X)"
-        # Regex: additional \w+\((\d+)\) or additional 🎲\((\d+)\)
-        # Examples: "Deal an additional Acid(2)", "Deal an additional 🎲(2)"
-        
-        matches = re.findall(r"additional (?:🎲|\w+)\((\d+)\)", effects, re.IGNORECASE)
-        for m in matches:
-            bonus += int(m)
-            
-    return bonus
+    flat_total, _ = get_equipment_damage_components()
+    return flat_total
 
 # --- Calculation ---
 
@@ -436,6 +622,7 @@ def recalculate_stats():
     # --- Main Hand ---
     mh_name = dpg.get_value("melee_main")
     mh_stats = "None"
+    mh_breakdown_components = []
     
     if mh_name and mh_name in WEAP_MAP and mh_name != "None":
         w_item = WEAP_MAP[mh_name]
@@ -457,21 +644,43 @@ def recalculate_stats():
             if dex_mod > str_mod: use_dex = True
             
         ability_mod = dex_mod if use_dex else str_mod
-        flat_bonuses = get_global_damage_bonuses()
+        flat_bonuses, equipment_components = get_equipment_damage_components()
         
         total_mod = ability_mod + enchant + flat_bonuses
         
         v_min, v_max, v_avg, c_min, c_max, c_avg = calculate_dmg_range(dice, total_mod)
         
+        breakdown_components = []
+        base_components = parse_weapon_base_components(w_item, main_hand_dice_mode, f"{mh_name} (weapon)")
+        breakdown_components.extend(base_components)
+        breakdown_components.extend(parse_additional_damage_components(
+            " ".join(w_item.get("effects", [])), f"{mh_name} (weapon effect)"
+        ))
+        breakdown_components.extend(equipment_components)
+
+        base_type = base_components[0]["type"] if base_components else "Weapon"
+        if ability_mod:
+            breakdown_components.append({
+                "type": base_type,
+                "dice_count": 0,
+                "dice_sides": 0,
+                "flat": ability_mod,
+                "source": "Ability modifier",
+            })
+
+        mh_breakdown_components = breakdown_components
+
         mh_stats = (f"{dice} + {total_mod}\n"
                     f"Damage: {v_min}-{v_max} (Avg {v_avg:.1f})\n"
                     f"Crit:   {c_min}-{c_max} (Avg {c_avg:.1f})")
         
     dpg.set_value("stat_mh_dmg", f"{mh_stats}")
+    render_damage_breakdown("mh_breakdown", mh_breakdown_components)
 
     # --- Ranged ---
     rh_name = dpg.get_value("ranged_main")
     rh_stats = "None"
+    rh_breakdown_components = []
     
     if rh_name and rh_name in WEAP_MAP and rh_name != "None":
         w_item = WEAP_MAP[rh_name] 
@@ -480,17 +689,50 @@ def recalculate_stats():
              dice, enchant = parse_weapon_damage(w_item, '1h')
              
         ability_mod = dex_mod # Ranged = Dex
-        flat_bonuses = get_global_damage_bonuses() + (str_mod if 'Titanstring' in rh_name else 0) 
+        flat_bonuses, equipment_components = get_equipment_damage_components()
+        if 'Titanstring' in rh_name:
+            flat_bonuses += str_mod
         
         total_mod = ability_mod + enchant + flat_bonuses
         
         v_min, v_max, v_avg, c_min, c_max, c_avg = calculate_dmg_range(dice, total_mod)
         
+        breakdown_components = []
+        base_components = parse_weapon_base_components(w_item, '2h', f"{rh_name} (weapon)")
+        if not base_components:
+            base_components = parse_weapon_base_components(w_item, '1h', f"{rh_name} (weapon)")
+        breakdown_components.extend(base_components)
+        breakdown_components.extend(parse_additional_damage_components(
+            " ".join(w_item.get("effects", [])), f"{rh_name} (weapon effect)"
+        ))
+        breakdown_components.extend(equipment_components)
+
+        base_type = base_components[0]["type"] if base_components else "Weapon"
+        if ability_mod:
+            breakdown_components.append({
+                "type": base_type,
+                "dice_count": 0,
+                "dice_sides": 0,
+                "flat": ability_mod,
+                "source": "Ability modifier",
+            })
+        if 'Titanstring' in rh_name and str_mod:
+            breakdown_components.append({
+                "type": base_type,
+                "dice_count": 0,
+                "dice_sides": 0,
+                "flat": str_mod,
+                "source": "Titanstring bonus",
+            })
+
+        rh_breakdown_components = breakdown_components
+
         rh_stats = (f"{dice} + {total_mod}\n"
                     f"Damage: {v_min}-{v_max} (Avg {v_avg:.1f})\n"
                     f"Crit:   {c_min}-{c_max} (Avg {c_avg:.1f})")
         
     dpg.set_value("stat_rh_dmg", f"{rh_stats}")
+    render_damage_breakdown("rh_breakdown", rh_breakdown_components)
 
 
 def on_selection_change(sender, app_data, user_data):
@@ -521,8 +763,6 @@ def on_selection_change(sender, app_data, user_data):
 def update_abilities_wrapper(sender, app_data, user_data):
     update_abilities(sender, app_data, user_data)
     recalculate_stats()
-
-import re # Ensure re is available
 
 # Re-construction of Window for Split View
 # dpg.delete_item("Primary Window") # Clear old
@@ -688,7 +928,12 @@ with dpg.window(tag="Primary Window", label="BG3 Damage Analyzer"):
                         dpg.add_spacer(height=20)
                         dpg.add_text("Damage Output", color=[255, 100, 100])
                         dpg.add_text("Melee Main: --", tag="stat_mh_dmg")
+                        dpg.add_text("Melee Breakdown", color=[200, 200, 200])
+                        dpg.add_group(tag="mh_breakdown")
+                        dpg.add_spacer(height=10)
                         dpg.add_text("Ranged Main: --", tag="stat_rh_dmg")
+                        dpg.add_text("Ranged Breakdown", color=[200, 200, 200])
+                        dpg.add_group(tag="rh_breakdown")
                         
                         dpg.add_spacer(height=20)
                         dpg.add_text("Active Effects Log", color=[150, 255, 150])

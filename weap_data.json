@@ -23,7 +23,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Slashing(1d6)",
-      "This weapon ignores Resistance to Slashing damage.If you hit an object with this weapon, the hit is always Critical."
+      "This weapon ignores Resistance to Slashing damage.If you hit an object with this weapon, the hit is always Critical.",
+      "Finesse."
     ]
   },
   {
@@ -32,7 +33,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Piercing(1d4 + 1)",
-      "Deals an additional Necrotic(1d4) to creatures that are Knocked Out or Sleeping."
+      "Deals an additional Necrotic(1d4) to creatures that are Knocked Out or Sleeping.",
+      "Finesse."
     ]
   },
   {
@@ -270,7 +272,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Piercing(1d4 + 1)",
-      "On a hit, the target must succeed a Constitution Saving Throw or become Ruptured."
+      "On a hit, the target must succeed a Constitution Saving Throw or become Ruptured.",
+      "Finesse."
     ]
   },
   {
@@ -316,7 +319,8 @@
     "rarity": "Very Rare",
     "effects": [
       "1h Piercing(1d6 + 2)",
-      "When you roll 2 damage or less, reroll the dice.You have Advantage on Attack Rolls against Lightly or Heavily Obscured targets when using this weapon.You land a Critical Hit when rolling a 19."
+      "When you roll 2 damage or less, reroll the dice.You have Advantage on Attack Rolls against Lightly or Heavily Obscured targets when using this weapon.You land a Critical Hit when rolling a 19.",
+      "Finesse."
     ]
   },
   {
@@ -325,7 +329,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Slashing(1d8 + 1)2h Slashing(1d10 + 1)",
-      "Gain Razor Gale weapon action."
+      "Gain Razor Gale weapon action.",
+      "Finesse."
     ]
   },
   {
@@ -410,7 +415,8 @@
       "1h Slashing(1d8 + 1)2h Slashing(1d10 + 1)",
       "Cast Phalar Aluve: Shriek once per Short Rest.",
       "Cast Phalar Aluve: Sing once per Short Rest.",
-      "Performance +1"
+      "Performance +1",
+      "Finesse."
     ]
   },
   {
@@ -446,7 +452,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Piercing(1d4)",
-      "On a hit, receive a 🎲(1d4) bonus to Attack Rolls and Saving Throws until the end of your next turn.Use a Bonus Action to take Slashing(1d4) and receive a 🎲(1d4) bonus to Attack Rolls and Saving Throws."
+      "On a hit, receive a 🎲(1d4) bonus to Attack Rolls and Saving Throws until the end of your next turn.Use a Bonus Action to take Slashing(1d4) and receive a 🎲(1d4) bonus to Attack Rolls and Saving Throws.",
+      "Finesse."
     ]
   },
   {
@@ -455,7 +462,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Piercing(1d8 + 1)",
-      "Gain Searing Blood weapon action."
+      "Gain Searing Blood weapon action.",
+      "Finesse."
     ]
   },
   {
@@ -481,7 +489,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Piercing(1d6)",
-      "Deals an additional Piercing(1d8) to targets that still have all their Hit Points."
+      "Deals an additional Piercing(1d8) to targets that still have all their Hit Points.",
+      "Finesse."
     ]
   },
   {
@@ -526,7 +535,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Slashing(1d6)",
-      "On a hit, gain Momentum for 2 turns."
+      "On a hit, gain Momentum for 2 turns.",
+      "Finesse."
     ]
   },
   {
@@ -563,7 +573,8 @@
     "type": "Shortsword",
     "rarity": "Uncommon",
     "effects": [
-      "1h Piercing(1d6 + 1)"
+      "1h Piercing(1d6 + 1)",
+      "Finesse."
     ]
   },
   {
@@ -572,7 +583,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d4 + 1)",
-      "On a hit, Silence target."
+      "On a hit, Silence target.",
+      "Finesse."
     ]
   },
   {
@@ -616,7 +628,8 @@
     "type": "Rapier",
     "rarity": "Uncommon",
     "effects": [
-      "1h Piercing(1d8) + Psychic(1d4)"
+      "1h Piercing(1d8) + Psychic(1d4)",
+      "Finesse."
     ]
   },
   {
@@ -625,7 +638,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d6 + 1)",
-      "The Warlock bound to this weapon is always Proficient with it. The weapon's damage is magical.Gain a +1 bonus to damage and Attack Rolls with this weapon.On a hit, possibly inflict Bane your target."
+      "The Warlock bound to this weapon is always Proficient with it. The weapon's damage is magical.Gain a +1 bonus to damage and Attack Rolls with this weapon.On a hit, possibly inflict Bane your target.",
+      "Finesse."
     ]
   },
   {
@@ -735,7 +749,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Piercing(1d4)",
-      "Goblins have Disadvantage on Attack Rolls against you."
+      "Goblins have Disadvantage on Attack Rolls against you.",
+      "Finesse."
     ]
   },
   {
@@ -753,7 +768,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Piercing(1d6 + 1)",
-      "Advantage on Stealth Checks."
+      "Advantage on Stealth Checks.",
+      "Finesse."
     ]
   },
   {
@@ -879,7 +895,8 @@
     "rarity": "Very Rare",
     "effects": [
       "1h Piercing(1d8 + 2)",
-      "Gain a +1 bonus to Spell Save DC.Add Spellcasting Ability Modifier to Attack Rolls instead of Dexterity Modifier.Cast Planar Ally: Cambion once per Long Rest."
+      "Gain a +1 bonus to Spell Save DC.Add Spellcasting Ability Modifier to Attack Rolls instead of Dexterity Modifier.Cast Planar Ally: Cambion once per Long Rest.",
+      "Finesse."
     ]
   },
   {
@@ -896,7 +913,8 @@
     "rarity": "Very Rare",
     "effects": [
       "1h Slashing(1d6 + 2)",
-      "When you attack with Advantage, possibly inflict Blind.Cast Shadowsoaked Blow once per Short Rest."
+      "When you attack with Advantage, possibly inflict Blind.Cast Shadowsoaked Blow once per Short Rest.",
+      "Finesse."
     ]
   },
   {
@@ -975,7 +993,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Piercing(1d6 + 1)",
-      "When attacking a target with Advantage, deal an additional Psychic(1d8)."
+      "When attacking a target with Advantage, deal an additional Psychic(1d8).",
+      "Finesse."
     ]
   },
   {
@@ -983,7 +1002,8 @@
     "type": "Dagger",
     "rarity": "Uncommon",
     "effects": [
-      "1h Piercing(1d4 + 1) + Necrotic(1d4)"
+      "1h Piercing(1d4 + 1) + Necrotic(1d4)",
+      "Finesse."
     ]
   },
   {
@@ -1025,7 +1045,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d6 + 1)",
-      "When you attack with Advantage, inflict Bleeding."
+      "When you attack with Advantage, inflict Bleeding.",
+      "Finesse."
     ]
   },
   {
@@ -1043,7 +1064,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d6 + 1)",
-      "Gain Shadowsoaked Blow weapon action."
+      "Gain Shadowsoaked Blow weapon action.",
+      "Finesse."
     ]
   },
   {
@@ -1052,7 +1074,8 @@
     "rarity": "Very Rare",
     "effects": [
       "1h Piercing(1d6 + 2)",
-      "On a Critical Hit, you gain ❤️(10) Temporary Hit Points and the target takes an extra Necrotic(1d10) as long as it isn't a construct or an undead."
+      "On a Critical Hit, you gain ❤️(10) Temporary Hit Points and the target takes an extra Necrotic(1d10) as long as it isn't a construct or an undead.",
+      "Finesse."
     ]
   },
   {
@@ -1061,7 +1084,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Slashing(1d6 + 1)",
-      "Add Spellcasting Ability Modifier to Attack Rolls instead of Dexterity Modifier."
+      "Add Spellcasting Ability Modifier to Attack Rolls instead of Dexterity Modifier.",
+      "Finesse."
     ]
   },
   {
@@ -1079,7 +1103,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Slashing(1d6 + 1)",
-      "Deal an additional Poison(1d4) when you attack with this weapon while Concentrating.Cast Ensnaring Strike once per Long Rest."
+      "Deal an additional Poison(1d4) when you attack with this weapon while Concentrating.Cast Ensnaring Strike once per Long Rest.",
+      "Finesse."
     ]
   },
   {
@@ -1097,7 +1122,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d6 + 1)",
-      "Deal an additional Necrotic(1d6) against creatures that haven't taken a turn yet.Gain a +1 bonus to Initiative rolls and Advantage on Perception Ability Checks."
+      "Deal an additional Necrotic(1d6) against creatures that haven't taken a turn yet.Gain a +1 bonus to Initiative rolls and Advantage on Perception Ability Checks.",
+      "Finesse."
     ]
   },
   {
@@ -1117,7 +1143,8 @@
     "rarity": "Very Rare",
     "effects": [
       "1h Slashing(1d6 + 2)",
-      "Gain an additional attack as a bonus action."
+      "Gain an additional attack as a bonus action.",
+      "Finesse."
     ]
   },
   {
@@ -1151,7 +1178,8 @@
       "On a hit with this weapon, creatures receive Vulnerability to Piercing damage.",
       "Off-Hand Only:",
       "When a creature misses you with a melee attack, you may retaliate and gain True Strike.",
-      "Shield + 1 AC"
+      "Shield + 1 AC",
+      "Finesse."
     ]
   },
   {
@@ -1186,7 +1214,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d6)Shield + 1 AC",
-      "Off-Hand Only:When a creature misses an attack against you, it must succeed a DC 13 Constitution Saving Throw or be Chilled for 2 turns."
+      "Off-Hand Only:When a creature misses an attack against you, it must succeed a DC 13 Constitution Saving Throw or be Chilled for 2 turns.",
+      "Finesse."
     ]
   },
   {
@@ -1208,7 +1237,8 @@
       "Deal an additional Piercing(1d4) against targets that have 50% Hit Points or less.",
       "When you make an attack with Advantage, the target takes an additional Piercing(7).",
       "Off-Hand Only:",
-      "On a hit, deal an additional 🎲(Ability Modifier)."
+      "On a hit, deal an additional 🎲(Ability Modifier).",
+      "Finesse."
     ]
   },
   {
@@ -1235,7 +1265,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d4 + 2)",
-      "When you land a Critical Hit with this weapon, it deals an additional 7 damage."
+      "When you land a Critical Hit with this weapon, it deals an additional 7 damage.",
+      "Finesse."
     ]
   },
   {
@@ -1244,7 +1275,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d4 + 1)",
-      "Deal an extra Necrotic(1d6) with this weapon while you are Hidden."
+      "Deal an extra Necrotic(1d6) with this weapon while you are Hidden.",
+      "Finesse."
     ]
   },
   {
@@ -1256,7 +1288,8 @@
       "While your off-hand is empty, you land a Critical Hit when rolling a 19 and gain an additional reaction per turn.",
       "Deal an additional Necrotic(Proficiency Bonus) on a hit with this weapon.",
       "Cast Challenge to Duel",
-      "Cast Dueller's Enthusiasm"
+      "Cast Dueller's Enthusiasm",
+      "Finesse."
     ]
   },
   {
@@ -1301,7 +1334,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d6 + 2)",
-      "Gain Part the Flesh weapon action."
+      "Gain Part the Flesh weapon action.",
+      "Finesse."
     ]
   },
   {
@@ -1319,7 +1353,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d4 + 2)",
-      "This weapon shines with a glowing light in a radius of 6m.Off-Hand Only:Shield + 1 AC"
+      "This weapon shines with a glowing light in a radius of 6m.Off-Hand Only:Shield + 1 AC",
+      "Finesse."
     ]
   },
   {
@@ -1357,7 +1392,8 @@
     "rarity": "Rare",
     "effects": [
       "1h Piercing(1d8 + 1)",
-      "Cast Mellow Harmony once per Short Rest."
+      "Cast Mellow Harmony once per Short Rest.",
+      "Finesse."
     ]
   },
   {
@@ -1437,7 +1473,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Slashing(1d6) + Fire(1d4)",
-      "On a hit, the target must succeed a Constitution Saving Throw or begin Burning."
+      "On a hit, the target must succeed a Constitution Saving Throw or begin Burning.",
+      "Finesse."
     ]
   },
   {
@@ -1457,7 +1494,8 @@
     "rarity": "Uncommon",
     "effects": [
       "1h Piercing(1d4 + 1)",
-      "Deals an additional Piercing(1d4) against targets with 50% or less of their Hit Points."
+      "Deals an additional Piercing(1d4) against targets with 50% or less of their Hit Points.",
+      "Finesse."
     ]
   },
   {
@@ -1485,7 +1523,8 @@
     "rarity": "Very Rare",
     "effects": [
       "1h Piercing(1d8 + 1) + Radiant(1d4)",
-      "Advantage with Attack Rolls against Undead."
+      "Advantage with Attack Rolls against Undead.",
+      "Finesse."
     ]
   },
   {
@@ -1503,7 +1542,8 @@
     "rarity": "Very Rare",
     "effects": [
       "1h Piercing(1d4 + 1)",
-      "Deal 🎲(1) and gain a +1 bonus to Attack Rolls and Spell Save DC for every enemy you slay, stacking up to 3 times per battle.On a hit with this weapon while Hiding or Invisible, possibly inflict Bleeding."
+      "Deal 🎲(1) and gain a +1 bonus to Attack Rolls and Spell Save DC for every enemy you slay, stacking up to 3 times per battle.On a hit with this weapon while Hiding or Invisible, possibly inflict Bleeding.",
+      "Finesse."
     ]
   },
   {
@@ -1577,7 +1617,8 @@
     "rarity": "Very Rare",
     "effects": [
       "1h Piercing(1d4 + 2)",
-      "Cast Hold Person once per Long Rest."
+      "Cast Hold Person once per Long Rest.",
+      "Finesse."
     ]
   },
   {
@@ -1603,7 +1644,8 @@
     "type": "Glaive",
     "rarity": "Very Rare",
     "effects": [
-      "2h Slashing(1d10)"
+      "2h Slashing(1d10)",
+      "Finesse."
     ]
   },
   {
