@@ -100,6 +100,11 @@ def update_melee_slots(sender, app_data, user_data):
     - Otherwise, enable Off Hand.
     """
     main_hand_name = dpg.get_value("melee_main")
+
+    if main_hand_name == "Unarmed":
+        dpg.set_value("melee_off", "None")
+        dpg.configure_item("melee_off", enabled=False)
+        return
     
     # Check if selected item is strictly 2H
     is_2h = main_hand_name in MELEE_2H
@@ -250,7 +255,7 @@ def parse_additional_damage_components(effects_str, source_name):
         })
     return components
 
-def get_equipment_damage_components():
+def get_equipment_damage_components(is_unarmed=False):
     flat_total = 0
     components = []
     slots = ["slot_helmet", "slot_cape", "slot_armor", "slot_gloves", "slot_boots", "slot_amulet", "slot_ring1", "slot_ring2"]
@@ -260,6 +265,8 @@ def get_equipment_damage_components():
             continue
         item = EQUIP_MAP[item_name]
         effects_str = " ".join(item.get("effects", []))
+        if (not is_unarmed) and re.search(r"\bunarmed\b", effects_str, re.IGNORECASE):
+            continue
         item_components = parse_additional_damage_components(effects_str, f"{item_name} (equipment)")
         for comp in item_components:
             components.append(comp)
@@ -446,7 +453,7 @@ def parse_weapon_damage(item, handedness='1h'):
     return "0d0", 0
 
 def get_global_damage_bonuses():
-    flat_total, _ = get_equipment_damage_components()
+    flat_total, _ = get_equipment_damage_components(is_unarmed=False)
     return flat_total
 
 # --- Calculation ---
@@ -624,7 +631,40 @@ def recalculate_stats():
     mh_stats = "None"
     mh_breakdown_components = []
     
-    if mh_name and mh_name in WEAP_MAP and mh_name != "None":
+    if mh_name == "Unarmed":
+        dice = "1d1"
+        ability_mod = str_mod
+        flat_bonuses, equipment_components = get_equipment_damage_components(is_unarmed=True)
+        total_mod = ability_mod + flat_bonuses
+
+        v_min, v_max, v_avg, c_min, c_max, c_avg = calculate_dmg_range(dice, total_mod)
+
+        breakdown_components = [
+            {
+                "type": "Bludgeoning",
+                "dice_count": 0,
+                "dice_sides": 0,
+                "flat": 1,
+                "source": "Unarmed base",
+            }
+        ]
+        breakdown_components.extend(equipment_components)
+        if ability_mod:
+            breakdown_components.append({
+                "type": "Bludgeoning",
+                "dice_count": 0,
+                "dice_sides": 0,
+                "flat": ability_mod,
+                "source": "Ability modifier",
+            })
+
+        mh_breakdown_components = breakdown_components
+
+        mh_stats = (f"{dice} + {total_mod}\n"
+                    f"Damage: {v_min}-{v_max} (Avg {v_avg:.1f})\n"
+                    f"Crit:   {c_min}-{c_max} (Avg {c_avg:.1f})")
+
+    elif mh_name and mh_name in WEAP_MAP and mh_name != "None":
         w_item = WEAP_MAP[mh_name]
         is_versatile = "2h" in " ".join(w_item.get('effects', [])) and "1h" in " ".join(w_item.get('effects', []))
         
@@ -644,7 +684,7 @@ def recalculate_stats():
             if dex_mod > str_mod: use_dex = True
             
         ability_mod = dex_mod if use_dex else str_mod
-        flat_bonuses, equipment_components = get_equipment_damage_components()
+        flat_bonuses, equipment_components = get_equipment_damage_components(is_unarmed=False)
         
         total_mod = ability_mod + enchant + flat_bonuses
         
@@ -689,7 +729,7 @@ def recalculate_stats():
              dice, enchant = parse_weapon_damage(w_item, '1h')
              
         ability_mod = dex_mod # Ranged = Dex
-        flat_bonuses, equipment_components = get_equipment_damage_components()
+        flat_bonuses, equipment_components = get_equipment_damage_components(is_unarmed=False)
         if 'Titanstring' in rh_name:
             flat_bonuses += str_mod
         
@@ -886,6 +926,8 @@ with dpg.window(tag="Primary Window", label="BG3 Damage Analyzer"):
                 dpg.add_text("Weapons", color=[255, 215, 0])
                 
                 all_melee = sorted(list(set(MELEE_1H + MELEE_2H)))
+                if "Unarmed" not in all_melee:
+                    all_melee = ["Unarmed"] + all_melee
                 offhand_options = sorted(list(set(SHIELDS + MELEE_1H)))
                 all_ranged = sorted(list(set(RANGED_1H + RANGED_2H)))
 
