@@ -8,8 +8,8 @@ from class_features_loader import ClassFeaturesLoader
 # --- Data Loading ---
 
 def load_data():
-    equip_data_path = os.path.join(os.path.dirname(__file__), 'equip_data.json')
-    weap_data_path = os.path.join(os.path.dirname(__file__), 'weap_data.json')
+    equip_data_path = os.path.join(os.path.dirname(__file__), 'data', 'equipment.json')
+    weap_data_path = os.path.join(os.path.dirname(__file__), 'data', 'weapons.json')
 
     with open(equip_data_path, 'r', encoding='utf-8') as f:
         equip_data = json.load(f)
