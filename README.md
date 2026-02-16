@@ -6,13 +6,13 @@ A comprehensive Baldur's Gate 3 damage calculator and character build analyzer b
 
 ### Character Building
 - **Multi-Class System**: Support for up to 12 total character levels across multiple classes
-- **Ability Score Management**: Point-buy system (27 points, base 8-15) with racial bonuses (+2, +1)
+- **Ability Score Management**: Point-buy system (27 points, base 8-15) with +2, +1.
 - **Ability Modifiers**: Automatic calculation of ability modifiers and their effects
 
 ### Equipment System
-- **Comprehensive Equipment Database**: 10+ equipment slots (Helmet, Armor, Cape, Gloves, Boots, Amulet, 2 Rings, Weapon slots)
-- **Equipment Data**: Detailed JSON database with equipment and weapon effects
-- **Equipment Effects**: Conditional bonuses (e.g., Bracers of Defence only work when unarmored without shield)
+- **All equipment slots** (Helmet, Armor, Cape, Gloves, Boots, Amulet, 2 Rings, Weapon slots)
+- **JSON database** with equipment and weapon effects
+- **Conditional bonuses** (e.g., Bracers of Defence only work when unarmored without shield)
 
 ### Damage Calculations
 - **Weapon Damage**: Full dice roll calculations (1d8, 2d6, etc.) with min/max/average ranges
@@ -29,14 +29,13 @@ A comprehensive Baldur's Gate 3 damage calculator and character build analyzer b
 - **Base AC from Armor**: Proper AC values for all armor types
 - **Dexterity Modifiers**: Correctly capped based on armor type (Heavy: 0, Medium: +2, Light: unlimited)
 - **Shield Bonuses**: AC bonus from equipped shields
-- **Equipment Bonuses**: Additional AC from items like rings and amulets
+- **Equipment Bonuses**: Additional AC from items
 - **Armor Type Detection**: Automatic handling of Light, Medium, Heavy armor, and Clothing
 
 ### Visual Features
 - **Damage Type Icons**: Visual representation of different damage types
 - **Color-Coded Display**: Damage types shown in appropriate colors
 - **Damage Breakdown**: Detailed breakdown showing each damage component's source and contribution
-- **Split View Interface**: Equipment selection on left, real-time statistics on right
 
 ### Weapon Categories
 - **Melee Weapons**: 1-handed and 2-handed melee weapons
@@ -48,8 +47,7 @@ A comprehensive Baldur's Gate 3 damage calculator and character build analyzer b
 ### Character Features
 - Feats system
 - Racial abilities and bonuses
-- Class features and abilities
-- Subclass features
+- Subclass features and abilities ( Still base classes only)
 - Background selection and bonuses
 
 ### Combat Calculations
@@ -68,7 +66,7 @@ A comprehensive Baldur's Gate 3 damage calculator and character build analyzer b
 
 ## Future Development
 
-We are exploring integration with [crpggames/bg3planner](https://github.com/crpggames/bg3planner), an open-source Angular-based character planner that has comprehensive class, subclass, feat, and spell systems. Their project provides the character building foundation we lack, while we have the equipment database and damage calculation systems they're missing. A potential fork and integration could result in a complete, open-source BG3 build planner with full damage calculations.
+Exploring integration with [crpggames/bg3planner](https://github.com/crpggames/bg3planner), an open-source Angular-based character planner that has comprehensive class, subclass, feat, and spell systems. Their project provides the character building foundation, while i have the equipment database and damage calculation systems they're missing. A potential fork and integration could result in a complete, open-source BG3 build planner with full damage calculations (Most likely will integrate his data).
 
 ## Data Sources
 
