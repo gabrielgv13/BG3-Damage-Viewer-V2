@@ -1,0 +1,78 @@
+{
+  "name": "Warlock",
+  "subclassLevel": 1,
+  "subclasses": [
+    "the_archfey",
+    "the_fiend",
+    "the_great_old_one"
+  ],
+  "levels": {
+    "1": [
+      {
+        "name": "Choose Warlock Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Warlock archetype"
+      },
+      {
+        "name": "Pact Magic",
+        "type": "feature"
+      }
+    ],
+    "2": [
+      {
+        "name": "Eldritch Invocation",
+        "type": "feature"
+      }
+    ],
+    "3": [
+      {
+        "name": "Pact Boon",
+        "type": "feature"
+      }
+    ],
+    "5": [
+      {
+        "name": "Eldritch Invocation",
+        "type": "feature"
+      },
+      {
+        "name": "Deepened Pact",
+        "type": "feature"
+      },
+      {
+        "name": "Cantrip Damage Boost",
+        "type": "feature"
+      }
+    ],
+    "7": [
+      {
+        "name": "Eldritch Invocation",
+        "type": "feature"
+      }
+    ],
+    "9": [
+      {
+        "name": "Eldritch Invocation",
+        "type": "feature"
+      }
+    ],
+    "10": [
+      {
+        "name": "Cantrip Damage Boost",
+        "type": "feature"
+      }
+    ],
+    "11": [
+      {
+        "name": "Mystic Arcanum",
+        "type": "feature"
+      }
+    ],
+    "12": [
+      {
+        "name": "Eldritch Invocation",
+        "type": "feature"
+      }
+    ]
+  }
+}

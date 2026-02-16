@@ -1,0 +1,48 @@
+{
+  "name": "Ranger",
+  "subclassLevel": 3,
+  "subclasses": [
+    "hunter",
+    "beast_master",
+    "gloom_stalker"
+  ],
+  "levels": {
+    "1": [
+      {
+        "name": "Bonus Skill Proficiency",
+        "type": "feature"
+      }
+    ],
+    "2": [
+      {
+        "name": "Fighting Style",
+        "type": "feature"
+      }
+    ],
+    "3": [
+      {
+        "name": "Choose Ranger Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Ranger archetype"
+      }
+    ],
+    "5": [
+      {
+        "name": "Extra Attack",
+        "type": "feature"
+      }
+    ],
+    "8": [
+      {
+        "name": "Land\\",
+        "type": "feature"
+      }
+    ],
+    "10": [
+      {
+        "name": "Hide in Plain Sight",
+        "type": "feature"
+      }
+    ]
+  }
+}

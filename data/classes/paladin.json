@@ -1,0 +1,67 @@
+{
+  "name": "Paladin",
+  "subclassLevel": 1,
+  "subclasses": [
+    "oath_of_the_ancients",
+    "oath_of_devotion",
+    "oath_of_vengeance",
+    "oathbreaker"
+  ],
+  "levels": {
+    "1": [
+      {
+        "name": "Choose Paladin Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Paladin archetype"
+      },
+      {
+        "name": "Divine Sense",
+        "type": "feature"
+      },
+      {
+        "name": "Lay on Hands",
+        "type": "feature"
+      }
+    ],
+    "2": [
+      {
+        "name": "Divine Smite",
+        "type": "feature"
+      },
+      {
+        "name": "Fighting Style",
+        "type": "feature"
+      }
+    ],
+    "3": [
+      {
+        "name": "Divine Health",
+        "type": "feature"
+      }
+    ],
+    "5": [
+      {
+        "name": "Extra Attack",
+        "type": "feature"
+      }
+    ],
+    "6": [
+      {
+        "name": "Aura of Protection",
+        "type": "feature"
+      }
+    ],
+    "10": [
+      {
+        "name": "Aura of Courage",
+        "type": "feature"
+      }
+    ],
+    "11": [
+      {
+        "name": "Improved Divine Smite",
+        "type": "feature"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Fighter",
+  "subclassLevel": 3,
+  "subclasses": [
+    "battle_master",
+    "champion",
+    "eldritch_knight"
+  ],
+  "levels": {
+    "1": [
+      {
+        "name": "Second Wind",
+        "type": "feature"
+      },
+      {
+        "name": "Fighting Style",
+        "type": "feature"
+      }
+    ],
+    "2": [
+      {
+        "name": "Action Surge",
+        "type": "feature"
+      }
+    ],
+    "3": [
+      {
+        "name": "Choose Fighter Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Fighter archetype"
+      }
+    ],
+    "5": [
+      {
+        "name": "Extra Attack",
+        "type": "feature"
+      }
+    ],
+    "9": [
+      {
+        "name": "Indomitable",
+        "type": "feature"
+      }
+    ],
+    "11": [
+      {
+        "name": "Improved Extra Attack",
+        "type": "feature"
+      }
+    ]
+  }
+}

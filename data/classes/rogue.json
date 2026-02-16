@@ -1,0 +1,62 @@
+{
+  "name": "Rogue",
+  "subclassLevel": 3,
+  "subclasses": [
+    "arcane_trickster",
+    "thief",
+    "assassin"
+  ],
+  "levels": {
+    "1": [
+      {
+        "name": "Bonus Skill Proficiency",
+        "type": "feature"
+      },
+      {
+        "name": "Skill Expertise",
+        "type": "feature"
+      },
+      {
+        "name": "Sneak Attack",
+        "type": "feature"
+      }
+    ],
+    "2": [
+      {
+        "name": "Cunning Action",
+        "type": "feature"
+      }
+    ],
+    "3": [
+      {
+        "name": "Choose Rogue Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Rogue archetype"
+      }
+    ],
+    "5": [
+      {
+        "name": "Uncanny Dodge",
+        "type": "feature"
+      }
+    ],
+    "6": [
+      {
+        "name": "Skill Expertise",
+        "type": "feature"
+      }
+    ],
+    "7": [
+      {
+        "name": "Evasion",
+        "type": "feature"
+      }
+    ],
+    "11": [
+      {
+        "name": "Reliable Talent",
+        "type": "feature"
+      }
+    ]
+  }
+}

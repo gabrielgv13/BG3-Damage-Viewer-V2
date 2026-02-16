@@ -1,0 +1,122 @@
+{
+  "name": "Monk",
+  "subclassLevel": 3,
+  "subclasses": [
+    "way_of_the_open_hand",
+    "way_of_shadow",
+    "way_of_the_four_elements"
+  ],
+  "levels": {
+    "1": [
+      {
+        "name": "Unarmoured Defence (Monk)",
+        "type": "feature"
+      },
+      {
+        "name": "Flurry of Blows",
+        "type": "feature"
+      },
+      {
+        "name": "Dextrous Attacks",
+        "type": "feature"
+      },
+      {
+        "name": "Deft Strikes",
+        "type": "feature"
+      },
+      {
+        "name": "Bonus Unarmed Attack",
+        "type": "feature"
+      }
+    ],
+    "2": [
+      {
+        "name": "Patient Defence",
+        "type": "feature"
+      },
+      {
+        "name": "Step of the Wind (Dash)",
+        "type": "feature"
+      },
+      {
+        "name": "Step of the Wind (Disengage)",
+        "type": "feature"
+      },
+      {
+        "name": "Unarmoured Movement",
+        "type": "feature"
+      }
+    ],
+    "3": [
+      {
+        "name": "Choose Monk Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Monk archetype"
+      },
+      {
+        "name": "Deflect Missiles",
+        "type": "feature"
+      },
+      {
+        "name": "Improved Deft Strikes",
+        "type": "feature"
+      }
+    ],
+    "4": [
+      {
+        "name": "Slow Fall",
+        "type": "feature"
+      }
+    ],
+    "5": [
+      {
+        "name": "Extra Attack",
+        "type": "feature"
+      },
+      {
+        "name": "Stunning Strike",
+        "type": "feature"
+      }
+    ],
+    "6": [
+      {
+        "name": "Ki-Empowered Strikes",
+        "type": "feature"
+      },
+      {
+        "name": "Improved Unarmoured Movement",
+        "type": "feature"
+      }
+    ],
+    "7": [
+      {
+        "name": "Evasion",
+        "type": "feature"
+      },
+      {
+        "name": "Stillness of Mind",
+        "type": "feature"
+      }
+    ],
+    "9": [
+      {
+        "name": "Advanced Unarmoured Movement",
+        "type": "feature"
+      },
+      {
+        "name": "Improved Deft Strikes",
+        "type": "feature"
+      }
+    ],
+    "10": [
+      {
+        "name": "Purity of Body",
+        "type": "feature"
+      },
+      {
+        "name": "Improved Unarmoured Movement",
+        "type": "feature"
+      }
+    ]
+  }
+}

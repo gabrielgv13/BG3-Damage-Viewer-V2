@@ -1,0 +1,48 @@
+{
+  "name": "Cleric",
+  "subclassLevel": 1,
+  "subclasses": [
+    "knowledge_domain",
+    "life_domain",
+    "light_domain",
+    "nature_domain",
+    "tempest_domain",
+    "trickery_domain",
+    "war_domain"
+  ],
+  "levels": {
+    "1": [
+      {
+        "name": "Choose Cleric Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Cleric archetype"
+      }
+    ],
+    "2": [
+      {
+        "name": "Turn Undead",
+        "type": "feature"
+      }
+    ],
+    "5": [
+      {
+        "name": "Destroy Undead",
+        "type": "feature"
+      },
+      {
+        "name": "Cantrip Damage Boost",
+        "type": "feature"
+      }
+    ],
+    "10": [
+      {
+        "name": "Divine Intervention",
+        "type": "feature"
+      },
+      {
+        "name": "Cantrip Damage Boost",
+        "type": "feature"
+      }
+    ]
+  }
+}

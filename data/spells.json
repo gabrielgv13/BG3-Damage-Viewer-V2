@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Acid Splash",
+    "description": "Hurl a bubble of acid that deals 1d6 Acid damage to each creature it hits in a small area.",
+    "school": "Conjuration",
+    "type": "spell"
+  },
+  {
+    "name": "Blade Ward",
+    "description": "The caster gains resistance against Bludgeoning, Piercing, and Slashing damage dealt by weapon attacks for two turns. Damage of these types is halved.",
+    "school": "Abjuration",
+    "type": "spell"
+  },
+  {
+    "name": "Bone Chill",
+    "description": "Assail a creature with the chill of the grave. It takes 1d8 Necrotic damage and cannot regain Hit Points. Undead creatures also get Disadvantage on Attack Rolls.",
+    "school": "Necromancy",
+    "type": "spell"
+  },
+  {
+    "name": "Dancing Lights",
+    "description": "Create a wisp of light that illuminates a 12 m / 40 ft radius.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Fire Bolt",
+    "description": "Hurl a bolt of fire at an enemy as a ranged attack, dealing 1d10 Fire damage if it hits.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Friends",
+    "description": "Gain Advantage on Charisma Checks against a non-hostile creature. In higher difficulty modes, the target might accuse you of enchanting them.",
+    "school": "Enchantment",
+    "type": "spell"
+  },
+  {
+    "name": "Light",
+    "description": "Infuse an object with an aura of light. Only affects one target at a time.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Mage Hand",
+    "description": "Create a spectral hand that can manipulate and interact with objects.",
+    "school": "Conjuration",
+    "type": "spell"
+  },
+  {
+    "name": "Minor Illusion",
+    "description": "Create an illusory image that distracts nearby creatures, compelling them to investigate.",
+    "school": "Illusion",
+    "type": "spell"
+  },
+  {
+    "name": "Poison Spray",
+    "description": "Project a puff of noxious gas that deals 1d12 Poison damage.",
+    "school": "Conjuration",
+    "type": "spell"
+  },
+  {
+    "name": "Ray of Frost",
+    "description": "Call forth a frigid beam of blue light. Deals 1d8 Cold damage and reduces the target\\",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Shocking Grasp",
+    "description": "Lightning springs from your hand. It deals 1d8 Lightning damage and prevents the target from taking Reactions. You have Advantage when using this spell on creatures wearing metal Armour.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "True Strike",
+    "description": "Divine a character\\",
+    "school": "Divination",
+    "type": "spell"
+  },
+  {
+    "name": "Faerie Fire",
+    "description": "Encase multiple targets in colorful light. The targets turn visible, and Attack Rolls against the target have Advantage.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Darkness",
+    "description": "Create a cloud of magical darkness to Heavily Obscure and Blind creatures within. Creatures cannot make ranged attacks into or out of the darkness.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Enlarge",
+    "description": "Make a creature larger. Its weapons deal an extra 1d4 damage. It has Advantage on Strength Checks and Saving Throws.",
+    "school": "Transmutation",
+    "type": "spell"
+  },
+  {
+    "name": "Invisibility",
+    "description": "Touch a creature to turn it Invisible. Attacks against it have Disadvantage. It attacks with Advantage. The spell ends early if the creature attacks or casts a spell.",
+    "school": "Illusion",
+    "type": "spell"
+  },
+  {
+    "name": "Speak with Animals",
+    "description": "Gain the ability to comprehend and verbally communicate with beasts.",
+    "school": "Divination",
+    "type": "spell"
+  },
+  {
+    "name": "Produce Flame",
+    "description": "A flickering flame appears in your hand. It sheds bright light in a 9 m / 30 ft radius and deals 1d8 Fire damage when thrown.",
+    "school": "Conjuration",
+    "type": "spell"
+  },
+  {
+    "name": "Hellish Rebuke",
+    "description": "The next time you take damage, you use your Reaction to surround your attacker in hellish flames that deal 2d10 Fire damage. On a successful save, the target still takes half damage.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Flame Blade",
+    "description": "Conjure a flaming scimitar in your hand that deals 3d6 Fire damage. It sheds a bright light in a 3m / 10ft radius and a dim light in a 6m / 20ft radius.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Thaumaturgy",
+    "description": "Manifest a sign of supernatural power that grants you Advantage on Intimidation and Performance Skill Checks.",
+    "school": "Transmutation",
+    "type": "spell"
+  },
+  {
+    "name": "Searing Smite",
+    "description": "Your weapon flares with white-hot intensity. It deals an extra 1d6 Fire damage and marks the target with Searing Smite. A target with Searing Smite takes 1d6 Fire damage every turn, until it succeeds on a Constitution Saving Throw.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Branding Smite",
+    "description": "Your weapon gleams with astral radiance as you strike and possibly marks your target with light, preventing it from turning invisible. It deals an extra 2d6 Radiant damage.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Burning Hands",
+    "description": "Fire shoots from your outstretched fingers. It ignites anything flammable and deals 3d6 Fire damage. On a successful save, targets still take half damage.",
+    "school": "Evocation",
+    "type": "spell"
+  },
+  {
+    "name": "Enhance Leap",
+    "description": "Triple a creature\\",
+    "school": "Transmutation",
+    "type": "spell"
+  },
+  {
+    "name": "Misty Step",
+    "description": "Surrounded by silver mists, you teleport to an unoccupied space you can see within 18m / 60ft.",
+    "school": "Conjuration",
+    "type": "spell"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "name": "Barbarian",
+  "subclassLevel": 3,
+  "subclasses": [
+    "berserker",
+    "wildheart",
+    "wild_magic_barbarian"
+  ],
+  "levels": {
+    "1": [
+      {
+        "name": "Rage",
+        "type": "feature"
+      },
+      {
+        "name": "Unarmoured Defence (Barbarian)",
+        "type": "feature"
+      }
+    ],
+    "2": [
+      {
+        "name": "Reckless Attack",
+        "type": "feature"
+      },
+      {
+        "name": "Danger Sense",
+        "type": "feature"
+      }
+    ],
+    "3": [
+      {
+        "name": "Choose Barbarian Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Barbarian archetype"
+      }
+    ],
+    "5": [
+      {
+        "name": "Extra Attack",
+        "type": "feature"
+      },
+      {
+        "name": "Fast Movement",
+        "type": "feature"
+      }
+    ],
+    "7": [
+      {
+        "name": "Feral Instinct",
+        "type": "feature"
+      }
+    ],
+    "9": [
+      {
+        "name": "Brutal Critical",
+        "type": "feature"
+      }
+    ],
+    "11": [
+      {
+        "name": "Relentless Rage",
+        "type": "feature"
+      }
+    ]
+  }
+}

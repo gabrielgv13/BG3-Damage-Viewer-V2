@@ -1,0 +1,41 @@
+{
+  "name": "Wizard",
+  "subclassLevel": 2,
+  "subclasses": [
+    "abjuration_school",
+    "conjuration_school",
+    "divination_school",
+    "enchantment_school",
+    "evocation_school",
+    "illusion_school",
+    "necromancy_school",
+    "transmutation_school"
+  ],
+  "levels": {
+    "1": [
+      {
+        "name": "Arcane Recovery",
+        "type": "feature"
+      }
+    ],
+    "2": [
+      {
+        "name": "Choose Wizard Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Wizard archetype"
+      }
+    ],
+    "5": [
+      {
+        "name": "Cantrip Damage Boost",
+        "type": "feature"
+      }
+    ],
+    "10": [
+      {
+        "name": "Cantrip Damage Boost",
+        "type": "feature"
+      }
+    ]
+  }
+}

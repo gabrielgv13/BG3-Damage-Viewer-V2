@@ -1,0 +1,46 @@
+{
+  "name": "Druid",
+  "subclassLevel": 2,
+  "subclasses": [
+    "circle_of_the_land",
+    "circle_of_the_moon",
+    "circle_of_the_spores"
+  ],
+  "levels": {
+    "2": [
+      {
+        "name": "Choose Druid Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Druid archetype"
+      },
+      {
+        "name": "Wild Shape",
+        "type": "feature"
+      }
+    ],
+    "4": [
+      {
+        "name": "Wild Shape Improvement",
+        "type": "feature"
+      }
+    ],
+    "6": [
+      {
+        "name": "Wild Shape Improvement",
+        "type": "feature"
+      }
+    ],
+    "8": [
+      {
+        "name": "Wild Shape Improvement",
+        "type": "feature"
+      }
+    ],
+    "10": [
+      {
+        "name": "Wild Shape Improvement",
+        "type": "feature"
+      }
+    ]
+  }
+}

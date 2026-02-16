@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Ability Improvement",
+    "description": "Increase one Ability Score by 2, or two Ability Scores by 1. You can\\",
+    "type": "feat"
+  },
+  {
+    "name": "Actor",
+    "description": "Your Charisma increases by 1, to a maximum of 20. Your gain Proficiency in Deception and Performance and your proficiency bonus is doubled for these skills.",
+    "type": "feat"
+  },
+  {
+    "name": "Alert",
+    "description": "You gain a +5 bonus to Initiative and can\\",
+    "type": "feat"
+  },
+  {
+    "name": "Athlete",
+    "description": "Your Strength or Dexterity increases by 1, to a maximum of 20. When you are Prone, standing up uses significantly less movement. Your Jump distance also increases by 50%.",
+    "type": "feat"
+  },
+  {
+    "name": "Charger",
+    "description": "You gain the Charge weapon attach, which uses both an action and bonus action to charge up to 9m and make a melee attack that deals +5 damage without provoking an Attack of Opportunity. You also gain the Shove attack, allowing you to charge forward and shove the first enemy in your way.",
+    "type": "feat"
+  },
+  {
+    "name": "Crossbow Expert",
+    "description": "When you make crossbow attacks within melee range, the Attack Rolls do not have Disadvantage. Your Piercing Shot also inflicts Gaping Wounds (Condition) for twice as long.",
+    "type": "feat"
+  },
+  {
+    "name": "Defensive Duelist",
+    "description": "When you are attacked with a melee attack while wielding a Finesse Weapon you are Proficient in, you can use a Reaction to increase your Armour Class by your Proficiency Bonus, possibly causing the attack to miss.",
+    "type": "feat"
+  },
+  {
+    "name": "Duel Wielder",
+    "description": "You can use Two-Weapon Fighting even if your weapons aren\\",
+    "type": "feat"
+  },
+  {
+    "name": "Dungeon Delver",
+    "description": "You gain Advantage on Perception checks made to detect hidden objects and on Saving Throws made to avoid or resist traps. You gain Resistance to the damage dealt by traps.",
+    "type": "feat"
+  },
+  {
+    "name": "Durable",
+    "description": "Constitution increases by 1, to a maximum of 20. Regain full Hit Points every time you take a Short Rest.",
+    "type": "feat"
+  },
+  {
+    "name": "Elemental Adept",
+    "description": "Spells you cast ignore Resistance to a damage type of your choice. In addition, when you deal that type of damage with a Spell, you cannot roll a 1.",
+    "type": "feat"
+  },
+  {
+    "name": "Acid Damage",
+    "description": "Your spells ignore Acid Resistance.",
+    "type": "feat"
+  },
+  {
+    "name": "Cold Damage",
+    "description": "Your spells ignore Cold Resistance.",
+    "type": "feat"
+  },
+  {
+    "name": "Lightning Damage",
+    "description": "Your spells ignore Lightning Resistance.",
+    "type": "feat"
+  },
+  {
+    "name": "Fire Damage",
+    "description": "Your spells ignore Fire Resistance.",
+    "type": "feat"
+  },
+  {
+    "name": "Thunder Damage",
+    "description": "Your spells ignore Thunder Resistance.",
+    "type": "feat"
+  },
+  {
+    "name": "Great Weapon Master",
+    "description": "When an attack with a melee weapon lands a Critical Hit or kills a creature, you can make another melee weapon attack as a Bonus Action that turn. When attacking with a Two-Handed or Versatile melee weapon (in both hands) that you are Proficient with, Attack Rolls take a -5 penalty, but their damage increases by 10.",
+    "type": "feat"
+  },
+  {
+    "name": "Heavily Armoured",
+    "description": "Increase your Strength by 1, to a maximum of 20. Gain Proficiency with Heavy Armour.",
+    "type": "feat"
+  },
+  {
+    "name": "Heavy Armour Master",
+    "description": "Increase your Strength by 1, to a maximum of 20. Incoming damage from non-magical attacks also decreases by 3 while you\\",
+    "type": "feat"
+  },
+  {
+    "name": "Lightly Armoured",
+    "description": "Increase your Strength or Dexterity by 1, to a maximum of 20. You gain Proficiency with Light Armour.",
+    "type": "feat"
+  },
+  {
+    "name": "Lucky",
+    "description": "You gain 3 Luck Points. These can be used to gain Advantage on Attack Rolls, Ability Checks, Saving Throws, or to make an enemy reroll their Attack Roll.",
+    "type": "feat"
+  },
+  {
+    "name": "Mage Slayer",
+    "description": "When a creature casts a Spell within melee range of you, you have Advantage on any Saving Throws against it, and you can use a Reaction to immediately make an attack against the caster. Enemies you hit have Disadvantage on Concentration Saving Throws.",
+    "type": "feat"
+  },
+  {
+    "name": "Magic Initiate (Bard)",
+    "description": "Learn 2 Cantrips and a 1st-level Spell from the Bard spell list. You can cast the 1st-level Spell once per Long Rest. Your Spellcasting Ability for all three spells is Charisma.",
+    "type": "feat"
+  },
+  {
+    "name": "Magic Initiate (Cleric)",
+    "description": "Learn 2 Cantrips and a 1st-level Spell from the Cleric spell list. You can cast the 1st-level Spell once per Long Rest. Your Spellcasting Ability for all three spells is Wisdom.",
+    "type": "feat"
+  },
+  {
+    "name": "Magic Initiate (Druid)",
+    "description": "Learn 2 Cantrips and a 1st-level Spell from the Druid spell list. You can cast the 1st-level Spell once per Long Rest. Your Spellcasting Ability for all three spells is Wisdom.",
+    "type": "feat"
+  },
+  {
+    "name": "Magic Initiate (Sorcerer)",
+    "description": "Learn 2 Cantrips and a 1st-level Spell from the Sorcerer spell list. You can cast the 1st-level Spell once per Long Rest. Your Spellcasting Ability for all three spells is Charisma.",
+    "type": "feat"
+  },
+  {
+    "name": "Magic Initiate (Warlock)",
+    "description": "Learn 2 Cantrips and a 1st-level Spell from the Warlock spell list. You can cast the 1st-level Spell once per Long Rest. Your Spellcasting Ability for all three spells is Charisma.",
+    "type": "feat"
+  },
+  {
+    "name": "Magic Initiate (Wizard)",
+    "description": "Learn 2 Cantrips and a 1st-level Spell from the Wizard spell list. You can cast the 1st-level Spell once per Long Rest. Your Spellcasting Ability for all three spells is Intelligence.",
+    "type": "feat"
+  },
+  {
+    "name": "Martial Adept",
+    "description": "Learn two manoeuvres from the Battle Master archetype and receive 1 (additional) Superiority Die to fuel them. You regain expended Superiority Dice after a Short or Long Rest.",
+    "type": "feat"
+  },
+  {
+    "name": "Medium Armour Master",
+    "description": "When you wear medium armour, it doesn\\",
+    "type": "feat"
+  },
+  {
+    "name": "Mobile",
+    "description": "Your Movement Speed increases by Range Icon.png 3 m / 10 ft. When you use the Dash action, difficult terrain doesn\\",
+    "type": "feat"
+  },
+  {
+    "name": "Moderately Armoured",
+    "description": "Increase your Strength or Dexterity by 1, to a maximum of 20. Gain Proficiency with Medium Armour and Shields.",
+    "type": "feat"
+  },
+  {
+    "name": "Performer",
+    "description": "Increase your Charisma by 1, to a maximum of 20. Gain Musical Instrument Proficiency.",
+    "type": "feat"
+  },
+  {
+    "name": "Polearm Master",
+    "description": "When attacking with a Glaive, Halberd, Quarterstaff, or Spear, you can use a Bonus Action to attack with the butt of your weapon. You can also make an Opportunity Attack when a target comes within range.",
+    "type": "feat"
+  },
+  {
+    "name": "Resilient",
+    "description": "You increase an Ability by 1, to a maximum of 20. Gain Proficiency in that ability\\",
+    "type": "feat"
+  },
+  {
+    "name": "Ritual Caster",
+    "description": "You learn two Ritual Spells of your choice.",
+    "type": "feat"
+  },
+  {
+    "name": "Savage Attacker",
+    "description": "When making melee weapon attacks, you roll your damage dice twice and use the highest result.",
+    "type": "feat"
+  },
+  {
+    "name": "Sentinel",
+    "description": "When an enemy in melee range attacks an ally, you can use a Reaction to make a weapon attack against that enemy. Target ally must not have the Sentinel feat. You gain Advantage on Opportunity Attacks, and when you hit a creature with an opportunity attack, it can no longer move for the rest of its turn.",
+    "type": "feat"
+  },
+  {
+    "name": "Sharpshooter",
+    "description": "Your ranged weapon attacks are not penalized for High Ground Rules. Ranged weapon attacks with weapons you are Proficient with have a -5 penalty to their Attack Roll, but deal an additional 10 damage.",
+    "type": "feat"
+  },
+  {
+    "name": "Shield Master",
+    "description": "Gain a +2 bonus to Dexterity Saving Throws when wielding a Shield. If a Spell forces you to make a Dexterity Saving Throw, you can use your Reaction to shield yourself and diminish the effect\\",
+    "type": "feat"
+  },
+  {
+    "name": "Skilled",
+    "description": "You gain Proficiency in 3 Skills of your choice.",
+    "type": "feat"
+  },
+  {
+    "name": "Spell Sniper",
+    "description": "You learn a cantrip, and the number you need to roll a Critical Hit while attacking with a Spell is reduced by 1. This effect can stack. Applies to targeted projectile spells with a range greater than 1.5 m / 5 ft and no area of effect.",
+    "type": "feat"
+  },
+  {
+    "name": "Tavern Brawler",
+    "description": "Increase your Strength or Constitution by 1, to a maximum of 20. When you make an unarmed attack, use an improvised weapon, or throw something, your strength modifier is added twice to the damage and Attack Rolls.",
+    "type": "feat"
+  },
+  {
+    "name": "Tough",
+    "description": "Hit Point maximum increased by 2 for each level.",
+    "type": "feat"
+  },
+  {
+    "name": "War Caster",
+    "description": "You gain Advantage on Saving Throws to maintain Concentration Concentration on a Spell. You can also use a Reaction to cast Shocking Grasp at a target moving out of melee range.",
+    "type": "feat"
+  },
+  {
+    "name": "Weapon Master",
+    "description": "Increase your Strength or Dexterity by 1, to a maximum of 20. Gain Proficiency with four Weapon types of your choice.",
+    "type": "feat"
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "name": "Sorcerer",
+  "subclassLevel": 1,
+  "subclasses": [],
+  "levels": {
+    "1": [
+      {
+        "name": "Choose Sorcerer Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Sorcerer archetype"
+      }
+    ],
+    "2": [
+      {
+        "name": "Metamagic",
+        "type": "feature"
+      },
+      {
+        "name": "Create Spell Slot",
+        "type": "feature"
+      },
+      {
+        "name": "Create Sorcery Points",
+        "type": "feature"
+      }
+    ],
+    "3": [
+      {
+        "name": "Metamagic",
+        "type": "feature"
+      }
+    ],
+    "5": [
+      {
+        "name": "Cantrip Damage Boost",
+        "type": "feature"
+      }
+    ],
+    "10": [
+      {
+        "name": "Metamagic",
+        "type": "feature"
+      },
+      {
+        "name": "Cantrip Damage Boost",
+        "type": "feature"
+      }
+    ]
+  }
+}

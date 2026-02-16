@@ -3,6 +3,7 @@ import dearpygui.dearpygui as dpg
 import json
 import os
 import re
+from class_features_loader import ClassFeaturesLoader
 
 # --- Data Loading ---
 
@@ -19,6 +20,11 @@ def load_data():
     return equip_data, weap_data
 
 EQUIP_DATA, WEAP_DATA = load_data()
+
+# --- Load Class Features ---
+print("[*] Loading class features, feats, and spells...")
+FEATURES_LOADER = ClassFeaturesLoader(data_path="data")
+print("[OK] Features loader initialized\n")
 
 # --- Data Parsing & Organization ---
 
@@ -177,12 +183,67 @@ BASE_COSTS = {8: 0, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 7, 15: 9}
 TOTAL_POINTS = 27
 
 # --- Class and Level System ---
-CLASSES = ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]
+# Dynamically load classes from features loader
+CLASSES = [name.capitalize() for name in FEATURES_LOADER.get_available_classes()]
 MAX_CHARACTER_LEVEL = 12
 
 # Character state: tracks levels in each class
 # Format: {"Barbarian": 3, "Fighter": 2, ...}
 character_levels = {}
+
+# Character subclass choices
+# Format: {"Barbarian": "berserker", "Bard": "college_of_lore", ...}
+character_subclasses = {}
+
+# Pending subclass selection when leveling up
+# Format: (class_name, level) when waiting for subclass selection
+pending_subclass_level = ("", 0)
+
+def get_class_features_display(class_name, level, subclass_name=None):
+    """
+    Get formatted string of features a character gains from a class at a specific level.
+    
+    Includes subclass features if the subclass has been selected.
+    """
+    features = FEATURES_LOADER.get_features_at_level(class_name.lower(), level)
+    subclass_features = []
+    
+    if subclass_name:
+        subclass_features = FEATURES_LOADER.get_subclass_features_at_level(
+            class_name.lower(), subclass_name.lower(), level
+        )
+    
+    if not features and not subclass_features:
+        return ""
+    
+    lines = [f"\n{'='*60}"]
+    lines.append(f"{class_name} - Level {level} Features")
+    lines.append('='*60)
+    
+    for feature in features:
+        name = feature.get("name", "Unknown")
+        feature_type = feature.get("type", "feature")
+        
+        if feature_type == "subclassSelection":
+            lines.append(f"\n🎭 {name}")
+            lines.append(f"   → {feature.get('description', 'Choose your subclass')}")
+        else:
+            lines.append(f"\n⭐ {name}")
+    
+    for feature in subclass_features:
+        name = feature.get("name", "Unknown")
+        lines.append(f"\n📘 {name} (Subclass)")
+    
+    return "\n".join(lines)
+
+def has_subclass_choice(class_name, level):
+    """Check if a class has a subclass choice at a specific level."""
+    return FEATURES_LOADER.has_subclass_choice_at_level(class_name.lower(), level)
+
+def get_subclass_choices(class_name):
+    """Get available subclass options for a class."""
+    choices = FEATURES_LOADER.get_subclass_options(class_name.lower())
+    return [choice.replace('_', ' ').title() for choice in choices]
 
 # --- Parsing Logic ---
 
@@ -376,24 +437,150 @@ def can_add_level():
     selected_class = dpg.get_value("class_selector")
     return get_total_level() < MAX_CHARACTER_LEVEL and selected_class and selected_class != ""
 
-def add_level_to_class(sender, app_data, user_data):
-    """Add a level to the currently selected class."""
-    if not can_add_level():
+def on_class_selection_change(sender, app_data, user_data):
+    """Called when a class is selected."""
+    selected_class = dpg.get_value("class_selector")
+    if not selected_class or selected_class == "":
+        # Clear UI
+        dpg.configure_item("add_level_button", enabled=False)
+        dpg.configure_item("subclass_selector_group", show=False)
+        dpg.set_value("character_features_text", "")
         return
+    
+    # Enable Add Level button
+    dpg.configure_item("add_level_button", enabled=True)
+    dpg.configure_item("subclass_selector_group", show=False)
+    dpg.set_value("character_features_text", "")
+    update_total_level_display()
+
+def add_level_to_class(sender, app_data, user_data):
+    """Add a level to the currently selected class (linear progression)."""
+    global pending_subclass_level
     
     selected_class = dpg.get_value("class_selector")
     
-    # Add level to the selected class
-    if selected_class in character_levels:
-        character_levels[selected_class] += 1
-    else:
-        character_levels[selected_class] = 1
+    if not selected_class or get_total_level() >= MAX_CHARACTER_LEVEL:
+        return
     
-    # Update the UI
-    update_level_display()
+    # Get current level for this class
+    current_level = character_levels.get(selected_class, 0)
+    new_level = current_level + 1
+    
+    # Check if this new level requires subclass selection
+    if has_subclass_choice(selected_class, new_level):
+        # Don't add level yet - show subclass selector first
+        pending_subclass_level = (selected_class, new_level)
+        
+        # Show subclass selector
+        subclass_options = get_subclass_choices(selected_class)
+        dpg.configure_item("subclass_selector", items=subclass_options)
+        dpg.set_value("subclass_selector", "")
+        dpg.configure_item("subclass_selector_group", show=True)
+        dpg.configure_item("add_level_button", enabled=False)
+    else:
+        # Add level directly
+        character_levels[selected_class] = new_level
+        pending_subclass_level = ("", 0)
+        update_features_display()
+        update_total_level_display()
+        
+        # Check if next level would require subclass selection
+        next_level = new_level + 1
+        if next_level <= MAX_CHARACTER_LEVEL and has_subclass_choice(selected_class, next_level):
+            dpg.configure_item("add_level_button", enabled=True)
+        elif new_level < MAX_CHARACTER_LEVEL:
+            dpg.configure_item("add_level_button", enabled=True)
+        else:
+            dpg.configure_item("add_level_button", enabled=False)
 
-def update_level_display():
-    """Update all level-related UI elements."""
+def on_subclass_selection_change(sender, app_data, user_data):
+    """Called when a subclass is selected during level-up."""
+    global pending_subclass_level
+    
+    selected_subclass = dpg.get_value("subclass_selector")
+    
+    if not selected_subclass or not pending_subclass_level or pending_subclass_level == ("", 0):
+        return
+    
+    selected_class, new_level = pending_subclass_level
+    
+    # Convert to lowercase with underscores
+    subclass_key = selected_subclass.lower().replace(" ", "_")
+    character_subclasses[selected_class] = subclass_key
+    
+    # Now add the level
+    character_levels[selected_class] = new_level
+    pending_subclass_level = ("", 0)
+    
+    # Hide subclass selector
+    dpg.configure_item("subclass_selector_group", show=False)
+    dpg.set_value("subclass_selector", "")
+    
+    # Update displays
+    update_features_display()
+    update_total_level_display()
+    
+    # Re-enable Add Level if not at max
+    if get_total_level() < MAX_CHARACTER_LEVEL:
+        dpg.configure_item("add_level_button", enabled=True)
+    else:
+        dpg.configure_item("add_level_button", enabled=False)
+
+def update_features_display():
+    """Display all class features for the current character progression."""
+    selected_class = dpg.get_value("class_selector")
+    
+    if not selected_class or selected_class not in character_levels:
+        dpg.set_value("character_features_text", "Select a class and add levels to view features.")
+        return
+    
+    current_level = character_levels.get(selected_class, 0)
+    if current_level == 0:
+        dpg.set_value("character_features_text", "Add a level to view features.")
+        return
+    
+    subclass = character_subclasses.get(selected_class)
+    
+    # Get all features from level 1 up to current level
+    all_features_text = []
+    
+    for lvl in range(1, current_level + 1):
+        class_features = FEATURES_LOADER.get_features_at_level(selected_class.lower(), lvl)
+        
+        if class_features:
+            all_features_text.append(f"\n{'-' * 50}")
+            all_features_text.append(f"{selected_class} - Level {lvl}")
+            all_features_text.append('-' * 50)
+            
+            for feature in class_features:
+                name = feature.get("name", "Unknown")
+                feature_type = feature.get("type", "feature")
+                
+                if feature_type == "subclassSelection":
+                    all_features_text.append(f"\n  [CHOOSE] {name}")
+                else:
+                    all_features_text.append(f"  [+] {name}")
+        
+        # Add subclass features if subclass is selected and we've reached subclass level
+        if subclass:
+            subclass_level = FEATURES_LOADER.get_subclass_level(selected_class.lower())
+            if lvl >= subclass_level:
+                subclass_features = FEATURES_LOADER.get_subclass_features_at_level(
+                    selected_class.lower(), subclass, lvl
+                )
+                if subclass_features:
+                    if lvl == subclass_level and class_features:
+                        # Subclass features start at subclass level
+                        all_features_text.append(f"\n  {' ' * 8}(From {subclass.replace('_', ' ').title()} Subclass)")
+                    for feature in subclass_features:
+                        name = feature.get("name", "Unknown")
+                        all_features_text.append(f"  ★ {name} (Subclass)")
+    
+    features_text = "\n".join(all_features_text) if all_features_text else "No features to display"
+    dpg.set_value("character_features_text", features_text)
+
+def update_total_level_display():
+    """Update total level and class breakdown display."""
     total_level = get_total_level()
     
     # Update total level display
@@ -409,22 +596,18 @@ def update_level_display():
         dpg.set_value("class_breakdown_text", " / ".join(class_breakdown))
     else:
         dpg.set_value("class_breakdown_text", "No levels assigned")
-    
-    # Enable/disable the Add Level button
-    if can_add_level():
-        dpg.configure_item("add_level_button", enabled=True)
-    else:
-        dpg.configure_item("add_level_button", enabled=False)
-
-def on_class_selection_change(sender, app_data, user_data):
-    """Called when the class selector changes."""
-    update_level_display()
 
 def reset_levels(sender, app_data, user_data):
-    """Reset all character levels."""
-    global character_levels
+    """Reset all character levels and subclasses."""
+    global character_levels, character_subclasses, pending_subclass_level
     character_levels.clear()
-    update_level_display()
+    character_subclasses.clear()
+    pending_subclass_level = ("", 0)
+    dpg.set_value("class_selector", "")
+    dpg.configure_item("add_level_button", enabled=False)
+    dpg.configure_item("subclass_selector_group", show=False)
+    dpg.set_value("character_features_text", "")
+    update_total_level_display()
 
 
 def get_mean_damage(dice_str, flat_bonus=0, modifier=0):
@@ -773,6 +956,14 @@ def recalculate_stats():
         
     dpg.set_value("stat_rh_dmg", f"{rh_stats}")
     render_damage_breakdown("rh_breakdown", rh_breakdown_components)
+    
+    # Update class features display
+    update_features_display()
+    
+    # Sync displayed features to the "display_features_text" tag
+    features_content = dpg.get_value("character_features_text")
+    if features_content and features_content != "No features selected":
+        dpg.set_value("display_features_text", features_content)
 
 
 def on_selection_change(sender, app_data, user_data):
@@ -867,7 +1058,7 @@ with dpg.window(tag="Primary Window", label="BG3 Damage Analyzer"):
                                 dpg.add_text("-1", tag=f"mod_{ab}")
 
                 # --- CLASS & LEVEL SYSTEM ---
-                dpg.add_text("Class & Level", color=[255, 215, 0])
+                dpg.add_text("Class & Level System", color=[255, 215, 0])
                 
                 with dpg.group():
                     # Total level display
@@ -876,18 +1067,30 @@ with dpg.window(tag="Primary Window", label="BG3 Damage Analyzer"):
                     
                     dpg.add_spacer(height=10)
                     
-                    # Class selection and level-up controls
+                    # Class selection
                     with dpg.group(horizontal=True):
                         dpg.add_text("Select Class:")
                         dpg.add_combo(items=CLASSES, tag="class_selector", callback=on_class_selection_change, width=150, default_value="")
                     
                     dpg.add_spacer(height=5)
                     
-                    # Add Level button
+                    # Level progression (linear)
                     with dpg.group(horizontal=True):
                         dpg.add_button(label="Add Level", tag="add_level_button", callback=add_level_to_class, enabled=False, width=120)
-                        dpg.add_button(label="Reset Levels", callback=reset_levels, width=120)
-                    dpg.add_text("(Select a class first)", color=[200, 200, 100])
+                        dpg.add_button(label="Reset All", callback=reset_levels, width=100)
+                    
+                    dpg.add_spacer(height=5)
+                    
+                    # Subclass selection (hidden by default)
+                    with dpg.group(tag="subclass_selector_group", show=False):
+                        dpg.add_text("Choose Your Subclass:", color=[200, 180, 100])
+                        with dpg.group(horizontal=True):
+                            dpg.add_combo(items=[], tag="subclass_selector", callback=on_subclass_selection_change, width=250)
+                        dpg.add_text("(Select your subclass to continue leveling up)", color=[150, 150, 100])
+                    
+                    dpg.add_spacer(height=10)
+                    dpg.add_text("Class Features", color=[200, 200, 100])
+                    dpg.add_text("Select a class and add levels to see features.", tag="character_features_text", color=[180, 180, 180], wrap=400)
                 
                 dpg.add_separator()
                 
@@ -976,6 +1179,11 @@ with dpg.window(tag="Primary Window", label="BG3 Damage Analyzer"):
                         dpg.add_text("Ranged Main: --", tag="stat_rh_dmg")
                         dpg.add_text("Ranged Breakdown", color=[200, 200, 200])
                         dpg.add_group(tag="rh_breakdown")
+                        
+                        dpg.add_spacer(height=20)
+                        dpg.add_text("Class Features", color=[150, 255, 150])
+                        with dpg.group():
+                            dpg.add_text("Select a class and level to view class features.", tag="display_features_text", color=[180, 180, 180], wrap=700)
                         
                         dpg.add_spacer(height=20)
                         dpg.add_text("Active Effects Log", color=[150, 255, 150])

@@ -1,0 +1,72 @@
+{
+  "name": "Bard",
+  "subclassLevel": 3,
+  "subclasses": [
+    "college_of_lore",
+    "college_of_valour",
+    "college_of_swords"
+  ],
+  "levels": {
+    "1": [
+      {
+        "name": "Bardic Inspiration",
+        "type": "feature"
+      },
+      {
+        "name": "Bonus Skill Proficiency",
+        "type": "feature"
+      }
+    ],
+    "2": [
+      {
+        "name": "Song of Rest",
+        "type": "feature"
+      },
+      {
+        "name": "Jack of All Trades",
+        "type": "feature"
+      }
+    ],
+    "3": [
+      {
+        "name": "Choose Bard Subclass",
+        "type": "subclassSelection",
+        "description": "Select your Bard archetype"
+      },
+      {
+        "name": "Skill Expertise",
+        "type": "feature"
+      }
+    ],
+    "5": [
+      {
+        "name": "Font of Inspiration",
+        "type": "feature"
+      },
+      {
+        "name": "Improved Bardic Inspiration",
+        "type": "feature"
+      }
+    ],
+    "6": [
+      {
+        "name": "Countercharm",
+        "type": "feature"
+      }
+    ],
+    "10": [
+      {
+        "name": "Skill Expertise",
+        "type": "feature"
+      },
+      {
+        "name": "Magical Secrets",
+        "type": "feature"
+      },
+      {
+        "name": "Improved Bardic Inspiration",
+        "type": "feature"
+      }
+    ]
+  }
+}
