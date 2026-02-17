@@ -1,7 +1,12 @@
 {
   "name": "Sorcerer",
   "subclassLevel": 1,
-  "subclasses": [],
+  "subclasses": [
+    "draconic_bloodline",
+    "wild_magic",
+    "storm_sorcery",
+    "shadow_magic"
+  ],
   "levels": {
     "1": [
       {

@@ -4,7 +4,8 @@
   "subclasses": [
     "arcane_trickster",
     "thief",
-    "assassin"
+    "assassin",
+    "swashbuckler"
   ],
   "levels": {
     "1": [

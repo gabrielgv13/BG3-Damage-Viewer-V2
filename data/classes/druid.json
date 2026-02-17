@@ -4,7 +4,8 @@
   "subclasses": [
     "circle_of_the_land",
     "circle_of_the_moon",
-    "circle_of_the_spores"
+    "circle_of_the_spores",
+    "circle_of_stars"
   ],
   "levels": {
     "2": [

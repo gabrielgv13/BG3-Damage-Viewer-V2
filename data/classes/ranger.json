@@ -4,7 +4,8 @@
   "subclasses": [
     "hunter",
     "beast_master",
-    "gloom_stalker"
+    "gloom_stalker",
+    "swarmkeeper"
   ],
   "levels": {
     "1": [

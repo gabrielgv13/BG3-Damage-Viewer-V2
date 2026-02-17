@@ -4,7 +4,8 @@
   "subclasses": [
     "college_of_lore",
     "college_of_valour",
-    "college_of_swords"
+    "college_of_swords",
+    "college_of_glamour"
   ],
   "levels": {
     "1": [

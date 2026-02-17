@@ -9,7 +9,8 @@
     "evocation_school",
     "illusion_school",
     "necromancy_school",
-    "transmutation_school"
+    "transmutation_school",
+    "bladesinging"
   ],
   "levels": {
     "1": [

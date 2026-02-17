@@ -4,7 +4,8 @@
   "subclasses": [
     "the_archfey",
     "the_fiend",
-    "the_great_old_one"
+    "the_great_old_one",
+    "the_hexblade"
   ],
   "levels": {
     "1": [

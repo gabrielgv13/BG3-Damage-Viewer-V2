@@ -8,7 +8,8 @@
     "nature_domain",
     "tempest_domain",
     "trickery_domain",
-    "war_domain"
+    "war_domain",
+    "death_domain"
   ],
   "levels": {
     "1": [

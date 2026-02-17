@@ -4,7 +4,8 @@
   "subclasses": [
     "battle_master",
     "champion",
-    "eldritch_knight"
+    "eldritch_knight",
+    "arcane_archer"
   ],
   "levels": {
     "1": [

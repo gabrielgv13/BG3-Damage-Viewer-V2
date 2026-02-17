@@ -4,7 +4,8 @@
   "subclasses": [
     "berserker",
     "wildheart",
-    "wild_magic_barbarian"
+    "wild_magic_barbarian",
+    "path_of_giants"
   ],
   "levels": {
     "1": [
