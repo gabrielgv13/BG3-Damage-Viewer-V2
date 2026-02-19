@@ -32,6 +32,22 @@
       {
         "name": "Fighting Style",
         "type": "feature"
+      },
+      {
+        "max_spell_level": 1,
+        "available_spells": [
+          "Bless",
+          "Command",
+          "Compelled Duel",
+          "Cure Wounds",
+          "Divine Favour",
+          "Heroism",
+          "Protection from Evil and Good",
+          "Shield of Faith",
+          "Searing Smite",
+          "Thunderous Smite",
+          "Wrathful Smite"
+        ]
       }
     ],
     "3": [
@@ -44,12 +60,36 @@
       {
         "name": "Extra Attack",
         "type": "feature"
+      },
+      {
+        "max_spell_level": 2,
+        "available_spells": [
+          "Aid",
+          "Branding Smite",
+          "Lesser Restoration",
+          "Magic Weapon",
+          "Protection from Poison"
+        ]
       }
     ],
     "6": [
       {
         "name": "Aura of Protection",
         "type": "feature"
+      }
+    ],
+    "9": [
+      {
+        "max_spell_level": 3,
+        "available_spells": [
+          "Blinding Smite",
+          "Crusader's Mantle",
+          "Daylight",
+          "Elemental Weapon",
+          "Remove Curse",
+          "Revivify",
+          "Warden of Vitality"
+        ]
       }
     ],
     "10": [
