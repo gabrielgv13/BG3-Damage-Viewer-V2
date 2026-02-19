@@ -14,8 +14,12 @@
         "type": "feature"
       },
       {
-        "name": "Bonus Skill Proficiency",
-        "type": "feature"
+        "cantrip_amount": 2,
+        "available_cantrips": ["Blade Ward", "Dancing Lights", "Friends", "Light", "Mage Hand", "Minor Illusion", "True Strike", "Vicious Mockery"]
+      },
+      {
+        "spells_amount": 4,
+        "available_spells": ["Animal Friendship", "Bane", "Charm Person", "Cure Wounds", "Disguise Self", "Dissonant Whispers", "Faerie Fire", "Feather Fall", "Healing Word", "Heroism", "Longstrider", "Sleep", "Speak with Animals", "Tasha's Hideous Laughter", "Thunderwave"]
       }
     ],
     "2": [
@@ -26,6 +30,9 @@
       {
         "name": "Jack of All Trades",
         "type": "feature"
+      },
+      {
+        "spells_amount": 1
       }
     ],
     "3": [
@@ -37,6 +44,23 @@
       {
         "name": "Skill Expertise",
         "type": "feature"
+      },
+      {
+        "spells_amount": 1,
+        "available_spells": ["Blindness", "Calm Emotions", "Cloud of Daggers", "Crown of Madness", "Detect Thoughts", "Enhance Ability", "Enthrall", "Heat Metal", "Hold Person", "Invisibility", "Knock", "Lesser Restoration", "Phantasmal Force", "See Invisibility", "Shatter", "Silence"]
+      }
+    ],
+    "4": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
+      },
+      {
+        "cantrip_amount": 1,
+        "available_cantrips": ["Blade Ward", "Dancing Lights", "Friends", "Light", "Mage Hand", "Minor Illusion", "True Strike", "Vicious Mockery"]
+      },
+      {
+        "spells_amount": 1
       }
     ],
     "5": [
@@ -47,26 +71,68 @@
       {
         "name": "Improved Bardic Inspiration",
         "type": "feature"
+      },
+      {
+        "spells_amount": 1,
+        "available_spells": ["Bestow Curse", "Fear", "Feign Death", "Glyph of Warding", "Hypnotic Pattern", "Plant Growth", "Speak with Dead", "Stinking Cloud"]
       }
     ],
     "6": [
       {
         "name": "Countercharm",
         "type": "feature"
+      },
+      {
+        "spells_amount": 1
+      }
+    ],
+    "7": [
+      {
+        "spells_amount": 1,
+        "available_spells": ["Confusion", "Dimension Door", "Freedom of Movement", "Greater Invisibility", "Polymorph"]
+      }
+    ],
+    "8": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
+      },
+      {
+        "spells_amount": 1
+      }
+    ],
+    "9": [
+      {
+        "spells_amount": 1,
+        "available_spells": ["Dominate Person", "Greater Restoration", "Hold Monster", "Mass Cure Wounds", "Planar Binding", "Seeming"]
       }
     ],
     "10": [
-      {
-        "name": "Skill Expertise",
-        "type": "feature"
-      },
       {
         "name": "Magical Secrets",
         "type": "feature"
       },
       {
-        "name": "Improved Bardic Inspiration",
+        "cantrip_amount": 1,
+        "available_cantrips": ["Blade Ward", "Dancing Lights", "Friends", "Light", "Mage Hand", "Minor Illusion", "True Strike", "Vicious Mockery"]
+      },
+      {
+        "spells_amount": 1
+      }
+    ],
+    "11": [
+      {
+        "spells_amount": 1,
+        "available_spells": ["Eyebite", "Otto's Irresistible Dance"]
+      }
+    ],
+    "12": [
+      {
+        "name": "Ability Score Improvement",
         "type": "feature"
+      },
+      {
+        "spells_amount": 1
       }
     ]
   }
