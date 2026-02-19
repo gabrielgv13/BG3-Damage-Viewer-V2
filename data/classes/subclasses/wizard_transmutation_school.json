@@ -1,5 +1,32 @@
 {
   "name": "Transmutation School",
   "parentClass": "wizard",
-  "levels": {}
+  "levels": {
+    "2": [
+      {
+        "name": "Transmutation Savant",
+        "type": "feature",
+        "description": "The gold and time you must spend to copy a Transmutation spell into your spellbook is halved."
+      },
+      {
+        "name": "Experimental Alchemy",
+        "type": "feature",
+        "description": "You brew two Alchemical Solutions instead of one when combining extracts, if you succeed an Alchemical DC check."
+      }
+    ],
+    "6": [
+      {
+        "name": "Transmuter's Stone",
+        "type": "feature",
+        "description": "You can create a magical stone that grants benefits. Choose one benefit: +1 to Constitution, +1 to Intelligence, +3 m to movement speed, or +1 to Dexterity. Only one stone can be active at a time. Creating a new stone destroys the old one."
+      }
+    ],
+    "10": [
+      {
+        "name": "Shapechanger",
+        "type": "feature",
+        "description": "Transform into a blue jay, able to Fly. If the blue jay's hit points are reduced to 0, you revert to your normal form and take any remaining damage."
+      }
+    ]
+  }
 }

@@ -1,5 +1,32 @@
 {
   "name": "Conjuration School",
   "parentClass": "wizard",
-  "levels": {}
+  "levels": {
+    "2": [
+      {
+        "name": "Conjuration Savant",
+        "type": "feature",
+        "description": "The gold and time you must spend to copy a Conjuration spell into your spellbook is halved."
+      },
+      {
+        "name": "Minor Conjuration: Create Water",
+        "type": "feature",
+        "description": "Call forth rain. It extinguishes exposed flames and forms a Water surface. (Recharge: Short rest)"
+      }
+    ],
+    "6": [
+      {
+        "name": "Benign Transposition: Teleport",
+        "type": "feature",
+        "description": "Teleport to a nearby, unoccupied space, or swap places with an ally. (Recharge: Long rest)"
+      }
+    ],
+    "10": [
+      {
+        "name": "Focused Conjuration",
+        "type": "feature",
+        "description": "Damage taken while you are Concentrating on a Conjuration spell will not break your Concentration."
+      }
+    ]
+  }
 }

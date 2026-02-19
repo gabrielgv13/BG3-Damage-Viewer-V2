@@ -1,5 +1,37 @@
 {
   "name": "Divination School",
   "parentClass": "wizard",
-  "levels": {}
+  "levels": {
+    "2": [
+      {
+        "name": "Divination Savant",
+        "type": "feature",
+        "description": "The gold and time you must spend to copy a Divination spell into your spellbook is halved."
+      },
+      {
+        "name": "Portent",
+        "type": "feature",
+        "description": "Your dreams grant you glimpses that let you influence the future. After each Long Rest, you gain two random Portent Dice. As a reaction, you can use one to change the die of an Attack Roll or Saving Throw rolled near you to one of your Portent Dice. Each Portent Die can only be used once; unused Portent Dice are lost at the end of the day."
+      }
+    ],
+    "6": [
+      {
+        "name": "Expert Divination",
+        "type": "feature",
+        "description": "You gain an additional Portent Die. When taking a Short Rest, you can gain an additional Portent Die (maximum of 6 total)."
+      }
+    ],
+    "10": [
+      {
+        "name": "Third Eye: Darkvision",
+        "type": "feature",
+        "description": "You gain the ability to see in the dark out to a range of 24 m (80 ft). (Recharge: Long rest)"
+      },
+      {
+        "name": "Third Eye: See Invisibility",
+        "type": "feature",
+        "description": "Become able to see Invisible creatures, and possibly reveal them to you and your allies. (Recharge: Long rest)"
+      }
+    ]
+  }
 }

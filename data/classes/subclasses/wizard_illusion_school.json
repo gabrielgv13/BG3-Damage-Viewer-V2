@@ -1,5 +1,32 @@
 {
   "name": "Illusion School",
   "parentClass": "wizard",
-  "levels": {}
+  "levels": {
+    "2": [
+      {
+        "name": "Illusion Savant",
+        "type": "feature",
+        "description": "The gold and time you must spend to copy an Illusion spell into your spellbook is halved."
+      },
+      {
+        "name": "Improved Minor Illusion",
+        "type": "feature",
+        "description": "You can cast Minor Illusion without expending a spell slot or components, and you can create both a sound and an image with a single casting of the spell."
+      }
+    ],
+    "6": [
+      {
+        "name": "See Invisibility",
+        "type": "feature",
+        "description": "Glimpse Invisible creatures, and possibly reveal them to you and your allies. (Recharge: Short rest)"
+      }
+    ],
+    "10": [
+      {
+        "name": "Illusory Self",
+        "type": "feature",
+        "description": "As a reaction, interpose an illusory duplicate of yourself between you and an attacker's strike, making them miss their attack. (Recharge: Short rest)"
+      }
+    ]
+  }
 }

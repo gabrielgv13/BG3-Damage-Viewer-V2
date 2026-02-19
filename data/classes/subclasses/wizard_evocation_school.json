@@ -1,5 +1,32 @@
 {
   "name": "Evocation School",
   "parentClass": "wizard",
-  "levels": {}
+  "levels": {
+    "2": [
+      {
+        "name": "Evocation Savant",
+        "type": "feature",
+        "description": "The gold and time you must spend to copy an Evocation spell into your spellbook is halved."
+      },
+      {
+        "name": "Sculpt Spells",
+        "type": "feature",
+        "description": "Create pockets of safety within your Evocation spells. Allies automatically succeed their Saving throws against these spells and take no damage from them."
+      }
+    ],
+    "6": [
+      {
+        "name": "Potent Cantrip",
+        "type": "feature",
+        "description": "Your cantrips become harder to evade entirely. When a creature succeeds a Saving throw against one of your cantrips, it still takes half the cantrip's damage, but suffers no additional effects."
+      }
+    ],
+    "10": [
+      {
+        "name": "Empowered Evocation",
+        "type": "feature",
+        "description": "Your grasp of Evocation magic has tightened. You can add your Intelligence modifier to the damage rolls of your Evocation spells."
+      }
+    ]
+  }
 }

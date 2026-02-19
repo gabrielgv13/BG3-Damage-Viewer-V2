@@ -1,5 +1,46 @@
 {
   "name": "Bladesinging",
   "parentClass": "wizard",
-  "levels": {}
+  "levels": {
+    "2": [
+      {
+        "name": "Training in War and Song",
+        "type": "feature",
+        "description": "You gain proficiency with Light armour and simple melee weapons."
+      },
+      {
+        "name": "Bladesong",
+        "type": "feature",
+        "description": "Invoke the Bladesong. You gain a +2 bonus to Armour Class and your movement speed increases by 3 m / 10 ft. You also gain Advantage on Dexterity (Acrobatics) checks and can use Intelligence instead of Dexterity for your attack rolls with longswords, scimitars, and other finesse weapons. Bladesong ends early if you are incapacitated or wear Medium or Heavy armor. You have 2 Bladesong Power uses, replenished on a Long Rest."
+      }
+    ],
+    "5": [
+      {
+        "name": "Bladesong Power: 3",
+        "type": "feature",
+        "description": "Gain an additional use of Bladesong."
+      }
+    ],
+    "6": [
+      {
+        "name": "Extra Attack",
+        "type": "feature",
+        "description": "You can make an additional free attack after making an unarmed or weapon attack."
+      }
+    ],
+    "9": [
+      {
+        "name": "Bladesong Power: 4",
+        "type": "feature",
+        "description": "Gain an additional use of Bladesong."
+      }
+    ],
+    "10": [
+      {
+        "name": "Song of Defence",
+        "type": "feature",
+        "description": "When you take damage during your Bladesong, you can use your reaction to reduce the damage taken by your Intelligence modifier (minimum 0). An attacker must be within 5 feet of you."
+      }
+    ]
+  }
 }

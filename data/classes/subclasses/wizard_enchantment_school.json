@@ -1,5 +1,32 @@
 {
   "name": "Enchantment School",
   "parentClass": "wizard",
-  "levels": {}
+  "levels": {
+    "2": [
+      {
+        "name": "Enchantment Savant",
+        "type": "feature",
+        "description": "The gold and time you must spend to copy an Enchantment spell into your spellbook is halved."
+      },
+      {
+        "name": "Hypnotic Gaze",
+        "type": "feature",
+        "description": "Charm and Incapacitate a target creature for 1 minute if it fails a Wisdom save. You can Maintain Hypnotic Gaze each turn to keep the target Charmed. (Recharge: Long rest)"
+      }
+    ],
+    "6": [
+      {
+        "name": "Instinctive Charm",
+        "type": "feature",
+        "description": "As a reaction, Charm an enemy attacking you. They will attack a different target instead of you."
+      }
+    ],
+    "10": [
+      {
+        "name": "Split Enchantment",
+        "type": "feature",
+        "description": "You know your enchantments inside and out. You can target 2 creatures with Enchantment spells that would normally only target 1 creature."
+      }
+    ]
+  }
 }
