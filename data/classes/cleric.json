@@ -16,13 +16,69 @@
       {
         "name": "Choose Cleric Subclass",
         "type": "subclassSelection",
-        "description": "Select your Cleric archetype"
+        "description": "Select your Cleric Domain"
+      },
+      {
+        "cantrip_amount": 3,
+        "available_cantrips": [
+          "Blade Ward",
+          "Bursting Sinew",
+          "Guidance",
+          "Light",
+          "Produce Flame",
+          "Resistance",
+          "Thaumaturgy",
+          "Toll the Dead"
+        ]
+      },
+      {
+        "max_spell_level": 1,
+        "available_spells": [
+          "Bane",
+          "Bless",
+          "Command",
+          "Create or Destroy Water",
+          "Cure Wounds",
+          "Guiding Bolt",
+          "Healing Word",
+          "Inflict Wounds",
+          "Protection from Evil and Good",
+          "Sanctuary",
+          "Shield of Faith"
+        ]
       }
     ],
     "2": [
       {
         "name": "Turn Undead",
         "type": "feature"
+      }
+    ],
+    "3": [
+      {
+        "max_spell_level": 2,
+        "available_spells": [
+          "Aid",
+          "Blindness",
+          "Calm Emotions",
+          "Enhance Ability",
+          "Hold Person",
+          "Lesser Restoration",
+          "Prayer of Healing",
+          "Protection from Poison",
+          "Silence",
+          "Spiritual Weapon",
+          "Warding Bond"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
+      },
+      {
+        "cantrip_amount": 4
       }
     ],
     "5": [
@@ -33,6 +89,64 @@
       {
         "name": "Cantrip Damage Boost",
         "type": "feature"
+      },
+      {
+        "max_spell_level": 3,
+        "available_spells": [
+          "Animate Dead",
+          "Beacon of Hope",
+          "Bestow Curse",
+          "Daylight",
+          "Feign Death",
+          "Glyph of Warding",
+          "Mass Healing Word",
+          "Protection from Energy",
+          "Remove Curse",
+          "Revivify",
+          "Speak with Dead",
+          "Spirit Guardians"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "name": "Channel Divinity Enhancement",
+        "type": "feature"
+      }
+    ],
+    "7": [
+      {
+        "max_spell_level": 4,
+        "available_spells": [
+          "Banishment",
+          "Death Ward",
+          "Freedom of Movement",
+          "Guardian of Faith"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
+      }
+    ],
+    "9": [
+      {
+        "name": "Cantrip Damage Boost",
+        "type": "feature"
+      },
+      {
+        "max_spell_level": 5,
+        "available_spells": [
+          "Contagion",
+          "Dispel Evil and Good",
+          "Flame Strike",
+          "Greater Restoration",
+          "Insect Plague",
+          "Mass Cure Wounds",
+          "Planar Binding"
+        ]
       }
     ],
     "10": [
@@ -41,7 +155,25 @@
         "type": "feature"
       },
       {
-        "name": "Cantrip Damage Boost",
+        "cantrip_amount": 5
+      }
+    ],
+    "11": [
+      {
+        "max_spell_level": 6,
+        "available_spells": [
+          "Blade Barrier",
+          "Create Undead",
+          "Harm",
+          "Heal",
+          "Heroes' Feast",
+          "Planar Ally"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "name": "Ability Score Improvement",
         "type": "feature"
       }
     ]
