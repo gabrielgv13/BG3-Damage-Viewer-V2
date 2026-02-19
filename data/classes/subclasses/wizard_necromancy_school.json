@@ -1,5 +1,32 @@
 {
   "name": "Necromancy School",
   "parentClass": "wizard",
-  "levels": {}
+  "levels": {
+    "2": [
+      {
+        "name": "Necromancy Savant",
+        "type": "feature",
+        "description": "The gold and time you must spend to copy a Necromancy spell into your spellbook is halved."
+      },
+      {
+        "name": "Grim Harvest",
+        "type": "feature",
+        "description": "Once per turn, when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell's level. If the spell is of the Necromancy school, you instead regain hit points equal to three times the spell's level."
+      }
+    ],
+    "6": [
+      {
+        "name": "Undead Thralls",
+        "type": "feature",
+        "description": "You add the Animate Dead spell to your spellbook if you don't already have it. When you cast Animate Dead, you can target one additional corpse or pile of bones to create another zombie or skeleton. Additionally, undead you create have 6 additional maximum hit points and add your proficiency bonus to their damage rolls."
+      }
+    ],
+    "10": [
+      {
+        "name": "Inured to Undeath",
+        "type": "feature",
+        "description": "Your hit point maximum increases by 7. You have Resistance to Necrotic damage, and your hit points cannot be reduced by effects that would reduce your maximum hit points."
+      }
+    ]
+  }
 }

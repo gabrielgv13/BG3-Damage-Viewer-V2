@@ -17,6 +17,50 @@
       {
         "name": "Arcane Recovery",
         "type": "feature"
+      },
+      {
+        "spells_amount": 6,
+        "available_spells": [
+          "Burning Hands",
+          "Charm Person",
+          "Chromatic Orb",
+          "Colour Spray",
+          "Disguise Self",
+          "Expeditious Retreat",
+          "False Life",
+          "Feather Fall",
+          "Find Familiar",
+          "Fog Cloud",
+          "Grease",
+          "Ice Knife",
+          "Enhance Leap",
+          "Longstrider",
+          "Mage Armour",
+          "Magic Missile",
+          "Protection from Evil and Good",
+          "Ray of Sickness",
+          "Shield",
+          "Sleep",
+          "Tasha's Hideous Laughter",
+          "Thunderwave",
+          "Witch Bolt"
+        ],
+        "cantrip_amount": 3,
+        "available_cantrips": [
+          "Acid Splash",
+          "Blade Ward",
+          "Bone Chill",
+          "Dancing Lights",
+          "Fire Bolt",
+          "Friends",
+          "Mage Hand",
+          "Minor Illusion",
+          "Poison Spray",
+          "Ray of Frost",
+          "Shocking Grasp",
+          "True Strike",
+          "Toll the Dead"
+        ]
       }
     ],
     "2": [
@@ -24,18 +68,296 @@
         "name": "Choose Wizard Subclass",
         "type": "subclassSelection",
         "description": "Select your Wizard archetype"
+      },
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Burning Hands",
+          "Charm Person",
+          "Chromatic Orb",
+          "Colour Spray",
+          "Disguise Self",
+          "Expeditious Retreat",
+          "False Life",
+          "Feather Fall",
+          "Find Familiar",
+          "Fog Cloud",
+          "Grease",
+          "Ice Knife",
+          "Enhance Leap",
+          "Longstrider",
+          "Mage Armour",
+          "Magic Missile",
+          "Protection from Evil and Good",
+          "Ray of Sickness",
+          "Shield",
+          "Sleep",
+          "Tasha's Hideous Laughter",
+          "Thunderwave",
+          "Witch Bolt"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Arcane Lock",
+          "Blindness",
+          "Blur",
+          "Cloud of Daggers",
+          "Crown of Madness",
+          "Darkvision",
+          "Detect Thoughts",
+          "Enlarge/Reduce",
+          "Flaming Sphere",
+          "Gust of Wind",
+          "Hold Person",
+          "Invisibility",
+          "Magic Weapon",
+          "Melf's Acid Arrow",
+          "Mirror Image",
+          "Misty Step",
+          "Phantasmal Force",
+          "Ray of Enfeeblement",
+          "See Invisibility",
+          "Shadow Blade",
+          "Shatter",
+          "Web"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
+      },
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Arcane Lock",
+          "Blindness",
+          "Blur",
+          "Cloud of Daggers",
+          "Crown of Madness",
+          "Darkvision",
+          "Detect Thoughts",
+          "Enlarge/Reduce",
+          "Flaming Sphere",
+          "Gust of Wind",
+          "Hold Person",
+          "Invisibility",
+          "Magic Weapon",
+          "Melf's Acid Arrow",
+          "Mirror Image",
+          "Misty Step",
+          "Phantasmal Force",
+          "Ray of Enfeeblement",
+          "See Invisibility",
+          "Shadow Blade",
+          "Shatter",
+          "Web"
+        ],
+        "cantrip_amount": 1,
+        "available_cantrips": [
+          "Acid Splash",
+          "Blade Ward",
+          "Bone Chill",
+          "Dancing Lights",
+          "Fire Bolt",
+          "Friends",
+          "Mage Hand",
+          "Minor Illusion",
+          "Poison Spray",
+          "Ray of Frost",
+          "Shocking Grasp",
+          "True Strike",
+          "Toll the Dead"
+        ]
       }
     ],
     "5": [
       {
         "name": "Cantrip Damage Boost",
         "type": "feature"
+      },
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Animate Dead",
+          "Bestow Curse",
+          "Blink",
+          "Counterspell",
+          "Fear",
+          "Feign Death",
+          "Fireball",
+          "Fly",
+          "Gaseous Form",
+          "Glyph of Warding",
+          "Haste",
+          "Hypnotic Pattern",
+          "Lightning Bolt",
+          "Protection from Energy",
+          "Remove Curse",
+          "Sleet Storm",
+          "Slow",
+          "Stinking Cloud",
+          "Vampiric Touch"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Animate Dead",
+          "Bestow Curse",
+          "Blink",
+          "Counterspell",
+          "Fear",
+          "Feign Death",
+          "Fireball",
+          "Fly",
+          "Gaseous Form",
+          "Glyph of Warding",
+          "Haste",
+          "Hypnotic Pattern",
+          "Lightning Bolt",
+          "Protection from Energy",
+          "Remove Curse",
+          "Sleet Storm",
+          "Slow",
+          "Stinking Cloud",
+          "Vampiric Touch"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Banishment",
+          "Blight",
+          "Confusion",
+          "Conjure Minor Elemental",
+          "Dimension Door",
+          "Evard's Black Tentacles",
+          "Fire Shield",
+          "Greater Invisibility",
+          "Ice Storm",
+          "Otiluke's Resilient Sphere",
+          "Phantasmal Killer",
+          "Polymorph",
+          "Stoneskin"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
+      },
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Banishment",
+          "Blight",
+          "Confusion",
+          "Conjure Minor Elemental",
+          "Dimension Door",
+          "Evard's Black Tentacles",
+          "Fire Shield",
+          "Greater Invisibility",
+          "Ice Storm",
+          "Otiluke's Resilient Sphere",
+          "Phantasmal Killer",
+          "Polymorph",
+          "Stoneskin"
+        ]
+      }
+    ],
+    "9": [
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Cloudkill",
+          "Conjure Elemental",
+          "Danse Macabre",
+          "Dominate Person",
+          "Hold Monster",
+          "Planar Binding",
+          "Seeming",
+          "Telekinesis"
+        ]
       }
     ],
     "10": [
       {
         "name": "Cantrip Damage Boost",
         "type": "feature"
+      },
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Cloudkill",
+          "Conjure Elemental",
+          "Danse Macabre",
+          "Dominate Person",
+          "Hold Monster",
+          "Planar Binding",
+          "Seeming",
+          "Telekinesis"
+        ],
+        "cantrip_amount": 1,
+        "available_cantrips": [
+          "Acid Splash",
+          "Blade Ward",
+          "Bone Chill",
+          "Dancing Lights",
+          "Fire Bolt",
+          "Friends",
+          "Mage Hand",
+          "Minor Illusion",
+          "Poison Spray",
+          "Ray of Frost",
+          "Shocking Grasp",
+          "True Strike",
+          "Toll the Dead"
+        ]
+      }
+    ],
+    "11": [
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Arcane Gate",
+          "Circle of Death",
+          "Create Undead",
+          "Disintegrate",
+          "Eyebite",
+          "Flesh to Stone",
+          "Globe of Invulnerability",
+          "Otto's Irresistible Dance"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
+      },
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Arcane Gate",
+          "Circle of Death",
+          "Create Undead",
+          "Disintegrate",
+          "Eyebite",
+          "Flesh to Stone",
+          "Globe of Invulnerability",
+          "Otto's Irresistible Dance"
+        ]
       }
     ]
   }
