@@ -8,6 +8,16 @@
     "circle_of_stars"
   ],
   "levels": {
+    "1": [
+      {
+        "cantrip_amount": 2,
+        "available_cantrips": ["Guidance", "Poison Spray", "Produce Flame", "Resistance", "Shillelagh", "Thorn Whip"]
+      },
+      {
+        "max_spell_level": 1,
+        "available_spells": ["Animal Friendship", "Charm Person", "Create or Destroy Water", "Cure Wounds", "Enhance Leap", "Entangle", "Faerie Fire", "Fog Cloud", "Goodberry", "Healing Word", "Ice Knife", "Longstrider", "Speak with Animals", "Thunderwave"]
+      }
+    ],
     "2": [
       {
         "name": "Choose Druid Subclass",
@@ -19,10 +29,25 @@
         "type": "feature"
       }
     ],
+    "3": [
+      {
+        "max_spell_level": 2,
+        "available_spells": ["Barkskin", "Darkvision", "Enhance Ability", "Flame Blade", "Flaming Sphere", "Gust of Wind", "Heat Metal", "Hold Person", "Lesser Restoration", "Moonbeam", "Pass Without Trace", "Protection from Poison", "Spike Growth"]
+      }
+    ],
     "4": [
       {
         "name": "Wild Shape Improvement",
         "type": "feature"
+      },
+      {
+        "cantrip_amount": 3
+      }
+    ],
+    "5": [
+      {
+        "max_spell_level": 3,
+        "available_spells": ["Call Lightning", "Daylight", "Feign Death", "Plant Growth", "Protection from Energy", "Sleet Storm"]
       }
     ],
     "6": [
@@ -31,15 +56,42 @@
         "type": "feature"
       }
     ],
+    "7": [
+      {
+        "max_spell_level": 4,
+        "available_spells": ["Blight", "Confusion", "Conjure Minor Elemental", "Conjure Woodland Being", "Dominate Beast", "Freedom of Movement", "Grasping Vine", "Ice Storm", "Polymorph", "Stoneskin", "Wall of Fire"]
+      }
+    ],
     "8": [
       {
         "name": "Wild Shape Improvement",
         "type": "feature"
       }
     ],
+    "9": [
+      {
+        "max_spell_level": 5,
+        "available_spells": ["Conjure Elemental", "Contagion", "Greater Restoration", "Insect Plague", "Mass Cure Wounds", "Planar Binding", "Wall of Stone"]
+      }
+    ],
     "10": [
       {
         "name": "Wild Shape Improvement",
+        "type": "feature"
+      },
+      {
+        "cantrip_amount": 4
+      }
+    ],
+    "11": [
+      {
+        "max_spell_level": 6,
+        "available_spells": ["Heal", "Heroes' Feast", "Sunbeam", "Wall of Thorns", "Wind Walk"]
+      }
+    ],
+    "12": [
+      {
+        "name": "Feat or Ability Score Improvement",
         "type": "feature"
       }
     ]
