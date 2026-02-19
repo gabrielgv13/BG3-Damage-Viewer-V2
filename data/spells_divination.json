@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Guidance",
+    "description": "The target gains a +1d4 bonus to Ability Checks.",
+    "school": "Divination",
+    "type": "spell",
+    "level": 0,
+    "upcastable": false,
+    "damage": "",
+    "buff": "Target receives a +1d4 bonus to all Ability Checks for 10 turns. Requires Concentration.",
+    "debuff": ""
+  },
+  {
+    "name": "True Strike",
+    "description": "Divine a character's defences to give you Advantage on your next Attack Roll against it.",
+    "school": "Divination",
+    "type": "spell",
+    "level": 0,
+    "upcastable": false,
+    "damage": "",
+    "buff": "Caster gains Advantage on their next Attack Roll against the target. Lasts 2 turns. Requires Concentration.",
+    "debuff": ""
+  },
+  {
+    "name": "Hunter's Mark",
+    "description": "Mark a creature as your quarry to deal an additional 1d6 Slashing damage whenever you hit it with a weapon attack. If the target dies before the spell ends, you can mark a new creature without expending a Spell Slot.",
+    "school": "Divination",
+    "type": "spell",
+    "level": 1,
+    "upcastable": true,
+    "damage": "Weapon attacks deal an extra 1d6 Slashing damage to the marked target",
+    "buff": "",
+    "debuff": "Target is marked, taking bonus damage from weapon attacks. Lasts until Long Rest. Requires Concentration. When upcast, duration extends and can be maintained without Concentration at higher levels."
+  },
+  {
+    "name": "Speak with Animals",
+    "description": "Gain the ability to comprehend and verbally communicate with beasts.",
+    "school": "Divination",
+    "type": "spell",
+    "level": 1,
+    "upcastable": false,
+    "damage": "",
+    "buff": "Caster can understand and communicate with animals until Long Rest. Ritual spell - can be cast without expending a spell slot outside combat.",
+    "debuff": ""
+  },
+  {
+    "name": "Detect Thoughts",
+    "description": "Focus your mind to read the thoughts of certain creatures while talking to them.",
+    "school": "Divination",
+    "type": "spell",
+    "level": 2,
+    "upcastable": false,
+    "damage": "",
+    "buff": "Allows caster to read minds during dialogue, revealing lies and secrets. Lasts until Long Rest. Requires Concentration. Ritual spell - can be cast without expending a spell slot outside combat.",
+    "debuff": ""
+  },
+  {
+    "name": "See Invisibility",
+    "description": "Become able to see Invisible creatures, and possibly reveal them to others.",
+    "school": "Divination",
+    "type": "spell",
+    "level": 2,
+    "upcastable": false,
+    "damage": "",
+    "buff": "Caster can see invisible creatures within 9m for 10 turns. Affected creatures may be revealed to all allies.",
+    "debuff": "Invisible creatures within range are revealed and lose benefits of invisibility."
+  }
+]
