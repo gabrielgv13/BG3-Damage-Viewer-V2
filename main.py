@@ -26,6 +26,127 @@ print("[*] Loading class features, feats, and spells...")
 FEATURES_LOADER = ClassFeaturesLoader(data_path="data")
 print("[OK] Features loader initialized\n")
 
+# --- Load Spell Slot Data ---
+def load_spell_slot_data():
+    spell_slot_path = os.path.join(os.path.dirname(__file__), 'resources', 'spell_slots.json')
+    with open(spell_slot_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+SPELL_SLOT_DATA = load_spell_slot_data()
+
+# --- Caster Classification ---
+# Define caster types and their progression divisor
+FULL_CASTERS = {'bard', 'cleric', 'druid', 'sorcerer', 'wizard', 'warlock'}
+HALF_CASTERS = {'paladin', 'ranger'}
+ONE_THIRD_CASTERS = {'eldritch knight', 'arcane trickster'}
+
+def get_caster_type(class_name):
+    """Returns 'full', 'half', 'one_third', or None if not a caster."""
+    class_lower = class_name.lower()
+    if class_lower in FULL_CASTERS:
+        return 'full'
+    elif class_lower in HALF_CASTERS:
+        return 'half'
+    elif class_lower in ONE_THIRD_CASTERS:
+        return 'one_third'
+    return None
+
+def get_subclass_caster_type(subclass_name):
+    """Returns caster type for subclasses like 'eldritch_knight' or 'arcane_trickster'."""
+    subclass_lower = subclass_name.lower().replace('_', ' ')
+    if subclass_lower in FULL_CASTERS:
+        return 'full'
+    elif subclass_lower in HALF_CASTERS:
+        return 'half'
+    elif subclass_lower in ONE_THIRD_CASTERS:
+        return 'one_third'
+    return None
+
+def calculate_effective_spell_level():
+    """
+    Calculate total Effective Spell Level (ESL) from multiclass levels.
+    Formula: ESL = floor(full_levels/1 + half_levels/2 + one_third_levels/3)
+    
+    Returns the ESL capped at 20 (max D&D level).
+    """
+    esl = 0.0
+    
+    for class_name, level in character_levels.items():
+        caster_type = get_caster_type(class_name)
+        
+        # Check subclass if it's a caster
+        if caster_type:
+            subclass_name = character_subclasses.get(class_name)
+            if subclass_name:
+                subclass_type = get_subclass_caster_type(subclass_name)
+                if subclass_type:
+                    caster_type = subclass_type
+        
+        if caster_type == 'full':
+            esl += level / 1
+        elif caster_type == 'half':
+            esl += level / 2
+        elif caster_type == 'one_third':
+            esl += level / 3
+    
+    return min(int(esl), 20)
+
+def get_spell_slots_for_level(spell_level):
+    """
+    Get the number of spell slots for a given spell level (1-6+).
+    Returns the slot count based on current ESL, or 0 if ESL is not high enough.
+    """
+    esl = calculate_effective_spell_level()
+    
+    if esl == 0:
+        return 0
+    
+    progression_table = SPELL_SLOT_DATA['progression_tables']['full_casters']
+    
+    # ESL is treated like character level for spell slot lookup
+    # Find the entry in progression table
+    for entry in progression_table:
+        if entry['level'] == esl:
+            return entry['slots'].get(str(spell_level), 0)
+    
+    # If exact level not found, use highest available
+    if esl > 12:
+        return progression_table[-1]['slots'].get(str(spell_level), 0)
+    
+    return 0
+
+def get_all_spell_slots():
+    """
+    Calculate all spell slots (levels 1-6) for the current character.
+    Returns a dict: {1: count, 2: count, ..., 6: count}
+    """
+    esl = calculate_effective_spell_level()
+    result = {}
+    
+    if esl == 0:
+        return {i: 0 for i in range(1, 7)}
+    
+    progression_table = SPELL_SLOT_DATA['progression_tables']['full_casters']
+    
+    # Find the entry for current ESL
+    spell_slots = None
+    for entry in progression_table:
+        if entry['level'] == esl:
+            spell_slots = entry['slots']
+            break
+    
+    # If not found and ESL > 12, use level 12 slots
+    if not spell_slots and esl > 12:
+        spell_slots = progression_table[-1]['slots']
+    
+    if spell_slots:
+        for i in range(1, 7):
+            result[i] = spell_slots.get(str(i), 0)
+    else:
+        result = {i: 0 for i in range(1, 7)}
+    
+    return result
+
 # --- Data Parsing & Organization ---
 
 # Categories for simple slots
@@ -452,6 +573,7 @@ def on_class_selection_change(sender, app_data, user_data):
     dpg.configure_item("subclass_selector_group", show=False)
     dpg.set_value("character_features_text", "")
     update_total_level_display()
+    update_spell_slots_display()
 
 def add_level_to_class(sender, app_data, user_data):
     """Add a level to the currently selected class (linear progression)."""
@@ -483,6 +605,7 @@ def add_level_to_class(sender, app_data, user_data):
         pending_subclass_level = ("", 0)
         update_features_display()
         update_total_level_display()
+        update_spell_slots_display()
         
         # Check if next level would require subclass selection
         next_level = new_level + 1
@@ -519,6 +642,7 @@ def on_subclass_selection_change(sender, app_data, user_data):
     # Update displays
     update_features_display()
     update_total_level_display()
+    update_spell_slots_display()
     
     # Re-enable Add Level if not at max
     if get_total_level() < MAX_CHARACTER_LEVEL:
@@ -597,6 +721,31 @@ def update_total_level_display():
     else:
         dpg.set_value("class_breakdown_text", "No levels assigned")
 
+def update_spell_slots_display():
+    """Update spell slot display based on current character levels and caster types."""
+    esl = calculate_effective_spell_level()
+    
+    # Update ESL display
+    dpg.set_value("spell_esl_text", f"Effective Spell Level: {esl}")
+    
+    # Get spell slots for all levels
+    spell_slots = get_all_spell_slots()
+    
+    # Update individual slot displays
+    for slot_level in range(1, 7):
+        count = spell_slots.get(slot_level, 0)
+        dpg.set_value(f"spell_slot_level{slot_level}", f"Level {slot_level}: {count}")
+    
+    # Update the summary text
+    if esl == 0:
+        dpg.set_value("spell_slots_text", "No caster levels. Select a caster class to view spell slots.")
+    else:
+        slots_summary = ", ".join([f"{slot_level}L: {count}" for slot_level in range(1, 7) if (spell_slots.get(slot_level, 0) > 0)])
+        if slots_summary:
+            dpg.set_value("spell_slots_text", f"Spell Slots: {slots_summary}")
+        else:
+            dpg.set_value("spell_slots_text", f"ESL {esl}: No spell slots available at this level")
+
 def reset_levels(sender, app_data, user_data):
     """Reset all character levels and subclasses."""
     global character_levels, character_subclasses, pending_subclass_level
@@ -608,6 +757,7 @@ def reset_levels(sender, app_data, user_data):
     dpg.configure_item("subclass_selector_group", show=False)
     dpg.set_value("character_features_text", "")
     update_total_level_display()
+    update_spell_slots_display()
 
 
 def get_mean_damage(dice_str, flat_bonus=0, modifier=0):
@@ -1091,6 +1241,22 @@ with dpg.window(tag="Primary Window", label="BG3 Damage Analyzer"):
                     dpg.add_spacer(height=10)
                     dpg.add_text("Class Features", color=[200, 200, 100])
                     dpg.add_text("Select a class and add levels to see features.", tag="character_features_text", color=[180, 180, 180], wrap=400)
+                
+                dpg.add_separator()
+                
+                # --- SPELL SLOTS ---
+                dpg.add_text("Spell Slots", color=[255, 215, 0])
+                
+                with dpg.group():
+                    dpg.add_text("Effective Spell Level: 0", tag="spell_esl_text", color=[100, 200, 255])
+                    dpg.add_text("No caster levels. Select a caster class to view spell slots.", tag="spell_slots_text", color=[180, 180, 180], wrap=400)
+                    
+                    dpg.add_spacer(height=5)
+                    dpg.add_text("Spell Slots by Level:", color=[200, 200, 100])
+                    
+                    with dpg.group():
+                        for slot_level in range(1, 7):
+                            dpg.add_text(f"Level {slot_level}: 0", tag=f"spell_slot_level{slot_level}", color=[180, 180, 180])
                 
                 dpg.add_separator()
                 
