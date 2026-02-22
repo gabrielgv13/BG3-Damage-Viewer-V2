@@ -10,7 +10,11 @@
   "levels": {
     "1": [
       {
-        "name": "Bonus Skill Proficiency",
+        "name": "Favoured Enemy",
+        "type": "feature"
+      },
+      {
+        "name": "Natural Explorer",
         "type": "feature"
       }
     ],
@@ -18,6 +22,21 @@
       {
         "name": "Fighting Style",
         "type": "feature"
+      },
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Animal Friendship",
+          "Cure Wounds",
+          "Ensnaring Strike",
+          "Fog Cloud",
+          "Goodberry",
+          "Hail of Thorns",
+          "Hunter's Mark",
+          "Jump",
+          "Longstrider",
+          "Speak with Animals"
+        ]
       }
     ],
     "3": [
@@ -25,23 +44,94 @@
         "name": "Choose Ranger Subclass",
         "type": "subclassSelection",
         "description": "Select your Ranger archetype"
+      },
+      {
+        "name": "Primeval Awareness",
+        "type": "feature"
+      },
+      {
+        "spells_amount": 1
+      }
+    ],
+    "4": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
       }
     ],
     "5": [
       {
         "name": "Extra Attack",
         "type": "feature"
+      },
+      {
+        "spells_amount": 1,
+        "available_spells": [
+          "Barkskin",
+          "Darkvision",
+          "Find Traps",
+          "Lesser Restoration",
+          "Misty Step",
+          "Pass Without Trace",
+          "Protection from Poison",
+          "Spike Growth"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "name": "Favoured Enemy",
+        "type": "feature"
+      }
+    ],
+    "7": [
+      {
+        "name": "Exceptional Training",
+        "type": "feature"
+      },
+      {
+        "spells_amount": 1
       }
     ],
     "8": [
       {
-        "name": "Land\\",
+        "name": "Ability Score Improvement",
         "type": "feature"
+      },
+      {
+        "name": "Land's Stride",
+        "type": "feature"
+      }
+    ],
+    "9": [
+      {
+        "spells_amount": 1,
+        "available_spells": [
+          "Conjure Barrage",
+          "Lightning Arrow",
+          "Plant Growth",
+          "Protection from Energy"
+        ]
       }
     ],
     "10": [
       {
         "name": "Hide in Plain Sight",
+        "type": "feature"
+      },
+      {
+        "name": "Natural Explorer",
+        "type": "feature"
+      }
+    ],
+    "11": [
+      {
+        "spells_amount": 1
+      }
+    ],
+    "12": [
+      {
+        "name": "Ability Score Improvement",
         "type": "feature"
       }
     ]

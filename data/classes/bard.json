@@ -15,11 +15,36 @@
       },
       {
         "cantrip_amount": 2,
-        "available_cantrips": ["Blade Ward", "Dancing Lights", "Friends", "Light", "Mage Hand", "Minor Illusion", "True Strike", "Vicious Mockery"]
+        "available_cantrips": [
+          "Blade Ward",
+          "Dancing Lights",
+          "Friends",
+          "Light",
+          "Mage Hand",
+          "Minor Illusion",
+          "True Strike",
+          "Vicious Mockery"
+        ]
       },
       {
         "spells_amount": 4,
-        "available_spells": ["Animal Friendship", "Bane", "Charm Person", "Cure Wounds", "Disguise Self", "Dissonant Whispers", "Faerie Fire", "Feather Fall", "Healing Word", "Heroism", "Longstrider", "Sleep", "Speak with Animals", "Tasha's Hideous Laughter", "Thunderwave"]
+        "available_spells": [
+          "Animal Friendship",
+          "Bane",
+          "Charm Person",
+          "Cure Wounds",
+          "Disguise Self",
+          "Dissonant Whispers",
+          "Faerie Fire",
+          "Feather Fall",
+          "Healing Word",
+          "Heroism",
+          "Longstrider",
+          "Sleep",
+          "Speak with Animals",
+          "Tasha's Hideous Laughter",
+          "Thunderwave"
+        ]
       }
     ],
     "2": [
@@ -47,7 +72,24 @@
       },
       {
         "spells_amount": 1,
-        "available_spells": ["Blindness", "Calm Emotions", "Cloud of Daggers", "Crown of Madness", "Detect Thoughts", "Enhance Ability", "Enthrall", "Heat Metal", "Hold Person", "Invisibility", "Knock", "Lesser Restoration", "Phantasmal Force", "See Invisibility", "Shatter", "Silence"]
+        "available_spells": [
+          "Blindness",
+          "Calm Emotions",
+          "Cloud of Daggers",
+          "Crown of Madness",
+          "Detect Thoughts",
+          "Enhance Ability",
+          "Enthrall",
+          "Heat Metal",
+          "Hold Person",
+          "Invisibility",
+          "Knock",
+          "Lesser Restoration",
+          "Phantasmal Force",
+          "See Invisibility",
+          "Shatter",
+          "Silence"
+        ]
       }
     ],
     "4": [
@@ -56,8 +98,7 @@
         "type": "feature"
       },
       {
-        "cantrip_amount": 1,
-        "available_cantrips": ["Blade Ward", "Dancing Lights", "Friends", "Light", "Mage Hand", "Minor Illusion", "True Strike", "Vicious Mockery"]
+        "cantrip_amount": 1
       },
       {
         "spells_amount": 1
@@ -74,7 +115,16 @@
       },
       {
         "spells_amount": 1,
-        "available_spells": ["Bestow Curse", "Fear", "Feign Death", "Glyph of Warding", "Hypnotic Pattern", "Plant Growth", "Speak with Dead", "Stinking Cloud"]
+        "available_spells": [
+          "Bestow Curse",
+          "Fear",
+          "Feign Death",
+          "Glyph of Warding",
+          "Hypnotic Pattern",
+          "Plant Growth",
+          "Speak with Dead",
+          "Stinking Cloud"
+        ]
       }
     ],
     "6": [
@@ -89,7 +139,13 @@
     "7": [
       {
         "spells_amount": 1,
-        "available_spells": ["Confusion", "Dimension Door", "Freedom of Movement", "Greater Invisibility", "Polymorph"]
+        "available_spells": [
+          "Confusion",
+          "Dimension Door",
+          "Freedom of Movement",
+          "Greater Invisibility",
+          "Polymorph"
+        ]
       }
     ],
     "8": [
@@ -104,7 +160,14 @@
     "9": [
       {
         "spells_amount": 1,
-        "available_spells": ["Dominate Person", "Greater Restoration", "Hold Monster", "Mass Cure Wounds", "Planar Binding", "Seeming"]
+        "available_spells": [
+          "Dominate Person",
+          "Greater Restoration",
+          "Hold Monster",
+          "Mass Cure Wounds",
+          "Planar Binding",
+          "Seeming"
+        ]
       }
     ],
     "10": [
@@ -113,8 +176,7 @@
         "type": "feature"
       },
       {
-        "cantrip_amount": 1,
-        "available_cantrips": ["Blade Ward", "Dancing Lights", "Friends", "Light", "Mage Hand", "Minor Illusion", "True Strike", "Vicious Mockery"]
+        "cantrip_amount": 1
       },
       {
         "spells_amount": 1
@@ -123,7 +185,10 @@
     "11": [
       {
         "spells_amount": 1,
-        "available_spells": ["Eyebite", "Otto's Irresistible Dance"]
+        "available_spells": [
+          "Eyebite",
+          "Otto's Irresistible Dance"
+        ]
       }
     ],
     "12": [

@@ -11,11 +11,33 @@
     "1": [
       {
         "cantrip_amount": 2,
-        "available_cantrips": ["Guidance", "Poison Spray", "Produce Flame", "Resistance", "Shillelagh", "Thorn Whip"]
+        "available_cantrips": [
+          "Guidance",
+          "Poison Spray",
+          "Produce Flame",
+          "Resistance",
+          "Shillelagh",
+          "Thorn Whip"
+        ]
       },
       {
         "max_spell_level": 1,
-        "available_spells": ["Animal Friendship", "Charm Person", "Create or Destroy Water", "Cure Wounds", "Enhance Leap", "Entangle", "Faerie Fire", "Fog Cloud", "Goodberry", "Healing Word", "Ice Knife", "Longstrider", "Speak with Animals", "Thunderwave"]
+        "available_spells": [
+          "Animal Friendship",
+          "Charm Person",
+          "Create or Destroy Water",
+          "Cure Wounds",
+          "Enhance Leap",
+          "Entangle",
+          "Faerie Fire",
+          "Fog Cloud",
+          "Goodberry",
+          "Healing Word",
+          "Ice Knife",
+          "Longstrider",
+          "Speak with Animals",
+          "Thunderwave"
+        ]
       }
     ],
     "2": [
@@ -32,7 +54,21 @@
     "3": [
       {
         "max_spell_level": 2,
-        "available_spells": ["Barkskin", "Darkvision", "Enhance Ability", "Flame Blade", "Flaming Sphere", "Gust of Wind", "Heat Metal", "Hold Person", "Lesser Restoration", "Moonbeam", "Pass Without Trace", "Protection from Poison", "Spike Growth"]
+        "available_spells": [
+          "Barkskin",
+          "Darkvision",
+          "Enhance Ability",
+          "Flame Blade",
+          "Flaming Sphere",
+          "Gust of Wind",
+          "Heat Metal",
+          "Hold Person",
+          "Lesser Restoration",
+          "Moonbeam",
+          "Pass Without Trace",
+          "Protection from Poison",
+          "Spike Growth"
+        ]
       }
     ],
     "4": [
@@ -47,7 +83,14 @@
     "5": [
       {
         "max_spell_level": 3,
-        "available_spells": ["Call Lightning", "Daylight", "Feign Death", "Plant Growth", "Protection from Energy", "Sleet Storm"]
+        "available_spells": [
+          "Call Lightning",
+          "Daylight",
+          "Feign Death",
+          "Plant Growth",
+          "Protection from Energy",
+          "Sleet Storm"
+        ]
       }
     ],
     "6": [
@@ -59,7 +102,19 @@
     "7": [
       {
         "max_spell_level": 4,
-        "available_spells": ["Blight", "Confusion", "Conjure Minor Elemental", "Conjure Woodland Being", "Dominate Beast", "Freedom of Movement", "Grasping Vine", "Ice Storm", "Polymorph", "Stoneskin", "Wall of Fire"]
+        "available_spells": [
+          "Blight",
+          "Confusion",
+          "Conjure Minor Elemental",
+          "Conjure Woodland Being",
+          "Dominate Beast",
+          "Freedom of Movement",
+          "Grasping Vine",
+          "Ice Storm",
+          "Polymorph",
+          "Stoneskin",
+          "Wall of Fire"
+        ]
       }
     ],
     "8": [
@@ -71,7 +126,15 @@
     "9": [
       {
         "max_spell_level": 5,
-        "available_spells": ["Conjure Elemental", "Contagion", "Greater Restoration", "Insect Plague", "Mass Cure Wounds", "Planar Binding", "Wall of Stone"]
+        "available_spells": [
+          "Conjure Elemental",
+          "Contagion",
+          "Greater Restoration",
+          "Insect Plague",
+          "Mass Cure Wounds",
+          "Planar Binding",
+          "Wall of Stone"
+        ]
       }
     ],
     "10": [
@@ -86,7 +149,13 @@
     "11": [
       {
         "max_spell_level": 6,
-        "available_spells": ["Heal", "Heroes' Feast", "Sunbeam", "Wall of Thorns", "Wind Walk"]
+        "available_spells": [
+          "Heal",
+          "Heroes' Feast",
+          "Sunbeam",
+          "Wall of Thorns",
+          "Wind Walk"
+        ]
       }
     ],
     "12": [

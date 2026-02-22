@@ -13,6 +13,47 @@
         "name": "Choose Sorcerer Subclass",
         "type": "subclassSelection",
         "description": "Select your Sorcerer archetype"
+      },
+      {
+        "cantrip_amount": 4,
+        "available_cantrips": [
+          "Acid Splash",
+          "Blade Ward",
+          "Bone Chill",
+          "Dancing Lights",
+          "Fire Bolt",
+          "Friends",
+          "Light",
+          "Mage Hand",
+          "Minor Illusion",
+          "Poison Spray",
+          "Ray of Frost",
+          "Shocking Grasp",
+          "True Strike"
+        ]
+      },
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Burning Hands",
+          "Charm Person",
+          "Chromatic Orb",
+          "Colour Spray",
+          "Disguise Self",
+          "Enhance Leap",
+          "Expeditious Retreat",
+          "False Life",
+          "Feather Fall",
+          "Fog Cloud",
+          "Ice Knife",
+          "Mage Armour",
+          "Magic Missile",
+          "Ray of Sickness",
+          "Shield",
+          "Sleep",
+          "Thunderwave",
+          "Witch Bolt"
+        ]
       }
     ],
     "2": [
@@ -27,18 +68,118 @@
       {
         "name": "Create Sorcery Points",
         "type": "feature"
+      },
+      {
+        "spells_amount": 1
       }
     ],
     "3": [
       {
         "name": "Metamagic",
         "type": "feature"
+      },
+      {
+        "spells_amount": 1,
+        "available_spells": [
+          "Blindness",
+          "Blur",
+          "Cloud of Daggers",
+          "Crown of Madness",
+          "Darkness",
+          "Darkvision",
+          "Detect Thoughts",
+          "Enhance Ability",
+          "Enlarge",
+          "Hold Person",
+          "Invisibility",
+          "Knock",
+          "Mirror Image",
+          "Misty Step",
+          "Phantasmal Force",
+          "Scorching Ray",
+          "See Invisibility",
+          "Shatter",
+          "Web"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
+      },
+      {
+        "cantrip_amount": 1
+      },
+      {
+        "spells_amount": 1
       }
     ],
     "5": [
       {
         "name": "Cantrip Damage Boost",
         "type": "feature"
+      },
+      {
+        "spells_amount": 1,
+        "available_spells": [
+          "Counterspell",
+          "Daylight",
+          "Fireball",
+          "Gaseous Form",
+          "Haste",
+          "Hypnotic Pattern",
+          "Lightning Bolt",
+          "Protection from Energy",
+          "Sleet Storm",
+          "Slow",
+          "Stinking Cloud"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "spells_amount": 1
+      }
+    ],
+    "7": [
+      {
+        "spells_amount": 1,
+        "available_spells": [
+          "Blight",
+          "Confusion",
+          "Dimension Door",
+          "Dominate Beast",
+          "Greater Invisibility",
+          "Ice Storm",
+          "Polymorph",
+          "Stoneskin",
+          "Wall of Fire"
+        ]
+      }
+    ],
+    "8": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
+      },
+      {
+        "spells_amount": 1
+      }
+    ],
+    "9": [
+      {
+        "spells_amount": 1,
+        "available_spells": [
+          "Cloudkill",
+          "Cone of Cold",
+          "Dominate Person",
+          "Hold Monster",
+          "Insect Plague",
+          "Seeming",
+          "Telekinesis",
+          "Wall of Stone"
+        ]
       }
     ],
     "10": [
@@ -49,6 +190,34 @@
       {
         "name": "Cantrip Damage Boost",
         "type": "feature"
+      },
+      {
+        "cantrip_amount": 1
+      },
+      {
+        "spells_amount": 1
+      }
+    ],
+    "11": [
+      {
+        "spells_amount": 1,
+        "available_spells": [
+          "Chain Lightning",
+          "Circle of Death",
+          "Disintegrate",
+          "Eyebite",
+          "Globe of Invulnerability",
+          "Sunbeam"
+        ]
+      }
+    ],
+    "12": [
+      {
+        "name": "Ability Score Improvement",
+        "type": "feature"
+      },
+      {
+        "spells_amount": 1
       }
     ]
   }
