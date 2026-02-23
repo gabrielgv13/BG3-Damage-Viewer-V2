@@ -1,5 +1,80 @@
 {
   "name": "College of Lore",
   "parentClass": "bard",
-  "levels": {}
+  "levels": {
+    "3": [
+      {
+        "name": "Bonus Proficiencies",
+        "type": "feature",
+        "description": "Gain proficiency in three skills of your choice."
+      },
+      {
+        "name": "Cutting Words",
+        "type": "feature",
+        "description": "Use Bardic Inspiration as a reaction to subtract from an enemy's Attack Roll, Ability Check, or Damage Roll."
+      }
+    ],
+    "6": [
+      {
+        "name": "Additional Magical Secrets",
+        "type": "feature",
+        "description": "Learn two spells from any class. They count as Bard spells for you."
+      },
+      {
+        "spells_amount": 2,
+        "available_spells": [
+          "Bone Chill",
+          "Eldritch Blast",
+          "Fire Bolt",
+          "Ray of Frost",
+          "Sacred Flame",
+          "Armour of Agathys",
+          "Bless",
+          "Chromatic Orb",
+          "Command",
+          "Entangle",
+          "False Life",
+          "Guiding Bolt",
+          "Hellish Rebuke",
+          "Hex",
+          "Hunter's Mark",
+          "Ice Knife",
+          "Magic Missile",
+          "Sanctuary",
+          "Thunderous Smite",
+          "Arcane Lock",
+          "Blur",
+          "Darkness",
+          "Darkvision",
+          "Misty Step",
+          "Pass Without Trace",
+          "Ray of Enfeeblement",
+          "Scorching Ray",
+          "Spike Growth",
+          "Spiritual Weapon",
+          "Web",
+          "Animate Dead",
+          "Call Lightning",
+          "Counterspell",
+          "Crusader's Mantle",
+          "Daylight",
+          "Fireball",
+          "Gaseous Form",
+          "Grant Flight",
+          "Haste",
+          "Hunger of Hadar",
+          "Lightning Bolt",
+          "Mass Healing Word",
+          "Remove Curse",
+          "Revivify",
+          "Sleet Storm",
+          "Slow",
+          "Spirit Guardians",
+          "Vampiric Touch",
+          "Warden of Vitality"
+        ],
+        "description": "Choose spells from any class."
+      }
+    ]
+  }
 }
