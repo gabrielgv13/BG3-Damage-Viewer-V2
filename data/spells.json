@@ -2308,5 +2308,71 @@
         "damage": "",
         "buff": "Caster and nearby allies transform into mist, gaining damage Resistance and Advantage on physical Saves until Long Rest.",
         "debuff": ""
+    },
+    {
+        "name": "Sunbeam",
+        "description": "A beam of brilliant light sears and Blinds all creatures in its path. Until the spell ends, you can recast Sunbeam without expending a spell slot.",
+        "school": "Evocation",
+        "type": "spell",
+        "level": 6,
+        "upcastable": false,
+        "damage": "6d8 Radiant damage (6-48)",
+        "buff": "Caster gains the ability to recast Sunbeam without expending a spell slot for 10 turns. Requires Concentration.",
+        "debuff": "Targets that fail CON save are Blinded for 10 turns. Blinded creatures have Disadvantage on attack rolls and their range of attacks/spells is reduced to 3m."
+    },
+    {
+        "name": "Chain Lightning",
+        "description": "Strike an enemy with lightning. Three more bolts will leap from the target, electrifying as many as three other enemies within range.",
+        "school": "Evocation",
+        "type": "spell",
+        "level": 6,
+        "upcastable": false,
+        "damage": "10d8 Lightning damage (10-80). Targets 1 primary target and up to 3 other enemies within 18m.",
+        "buff": "",
+        "debuff": "Targets that fail DEX save take full damage (half on success)."
+    },
+    {
+        "name": "Wall of Ice",
+        "description": "Raise a wall of solid ice that deals 10d6 Cold damage to anyone standing in its way. When the ice is broken, it leaves behind a cloud of frigid air that deals 10d6 Cold per turn to creatures within.",
+        "school": "Evocation",
+        "type": "spell",
+        "level": 6,
+        "upcastable": false,
+        "damage": "10d6 Cold damage (20-120) to creatures when wall appears. Creates Ice Cloud that deals 10d6 Cold per turn when broken.",
+        "buff": "",
+        "debuff": "Targets that fail DEX save take full damage (half on success). Requires Concentration for 10 turns."
+    },
+    {
+        "name": "Cone of Cold",
+        "description": "Make a flurry of frost, crisp air, and condensed snow crystals erupt from your hands.",
+        "school": "Evocation",
+        "type": "spell",
+        "level": 5,
+        "upcastable": true,
+        "damage": "8d8 Cold damage (8-64). When upcast, damage increases by 1d8 Cold for each spell slot level above 5th.",
+        "buff": "",
+        "debuff": "Targets that fail CON save take full damage (half on success). Creates Ice surface that acts as difficult terrain and may cause Prone."
+    },
+    {
+        "name": "Destructive Wave",
+        "description": "Create a shockwave of either divine or malevolent thunder that damages nearby enemies and possibly knocks them Prone.",
+        "school": "Evocation",
+        "type": "spell",
+        "level": 5,
+        "upcastable": false,
+        "damage": "10d6 Thunder damage (10-60). Has Radiant and Necrotic variants. 9m radius AoE, enemies only.",
+        "buff": "",
+        "debuff": "Targets that fail CON save take full damage (half on success) and are knocked Prone for 1 turn."
+    },
+    {
+        "name": "Blade Barrier",
+        "description": "Summons a wall of razor-sharp blades that turns the area into Difficult Terrain and damages anyone foolish enough to come close.",
+        "school": "Evocation",
+        "type": "spell",
+        "level": 6,
+        "upcastable": false,
+        "damage": "6d10 Slashing damage (6-60) when entering the barrier. Creatures take 6d10 Slashing damage per turn while inside.",
+        "buff": "",
+        "debuff": "Creates Difficult Terrain in a 36m line. Targets that fail DEX save take damage. Requires Concentration for 60 turns."
     }
 ]
