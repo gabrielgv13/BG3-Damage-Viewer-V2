@@ -8,7 +8,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster gains resistance to Bludgeoning, Piercing, and Slashing damage from weapon attacks for 2 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Resistance",
@@ -18,8 +19,9 @@
         "level": 0,
         "upcastable": false,
         "damage": "",
-        "buff": "Target receives a +1d4 bonus to all Saving Throws for 10 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target receives a +1d4 bonus to all Saving Throws for 10 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Armour of Agathys",
@@ -30,7 +32,8 @@
         "upcastable": true,
         "damage": "5 Cold damage to melee attackers",
         "buff": "Caster gains 5 temporary hit points until Long Rest. When upcast, gain an additional 5 temporary hit points and 5 Cold damage per spell slot level above 1st.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Mage Armour",
@@ -41,7 +44,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target's AC becomes 13 + Dexterity modifier until Long Rest. Target cannot be wearing armor.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Protection from Evil and Good",
@@ -51,8 +55,9 @@
         "level": 1,
         "upcastable": false,
         "damage": "",
-        "buff": "Target gains immunity to being Charmed, Frightened, or possessed by certain creature types. Those creatures have Disadvantage on attack rolls against the target. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target gains immunity to being Charmed, Frightened, or possessed by certain creature types. Those creatures have Disadvantage on attack rolls against the target.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Sanctuary",
@@ -63,7 +68,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target cannot be targeted by attacks until it attacks or harms another creature. Lasts 10 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Shar's Aegis",
@@ -74,7 +80,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster's Armour Class increases by 2 until Long Rest. Ends if armor is unequipped.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Shield",
@@ -85,7 +92,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "As a Reaction, caster gains +5 AC until the start of their next turn. Immunity to Magic Missile.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Shield of Faith",
@@ -95,8 +103,9 @@
         "level": 1,
         "upcastable": false,
         "damage": "",
-        "buff": "Target gains +2 AC until Long Rest. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target gains +2 AC until Long Rest.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Tyr's Protection",
@@ -106,8 +115,9 @@
         "level": 1,
         "upcastable": false,
         "damage": "",
-        "buff": "Target gains +2 AC until Long Rest. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target gains +2 AC until Long Rest.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Aid",
@@ -118,7 +128,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Up to 3 targets regain 5 hit points and their maximum HP increases by 5 until Long Rest. When upcast, gain an additional 5 HP per spell slot level above 2nd.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Arcane Lock",
@@ -129,7 +140,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Magically locks a door or container for 10 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Gentle Warding Bond",
@@ -140,7 +152,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target ally gains Resistance to all damage, +1 AC, and +1 to Saving Throws until Long Rest.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Lesser Restoration",
@@ -151,7 +164,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Removes disease, poison, paralysis, or blindness from a creature.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Pass Without Trace",
@@ -161,8 +175,9 @@
         "level": 2,
         "upcastable": false,
         "damage": "",
-        "buff": "Caster and nearby allies gain +10 to Stealth checks for 10 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Caster and nearby allies gain +10 to Stealth checks for 10 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Protection from Missiles",
@@ -173,7 +188,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster gains Resistance to damage from ranged weapon attacks, and attackers have Disadvantage. Lasts 10 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Protection from Poison",
@@ -184,7 +200,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target cures any poisons affecting it, gains Advantage on saves against being Poisoned, and gains Resistance to Poison damage until Long Rest.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Warding Bond",
@@ -195,7 +212,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target ally gains Resistance to all damage, +1 AC, and +1 to Saving Throws until Long Rest.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Beacon of Hope",
@@ -205,8 +223,9 @@
         "level": 3,
         "upcastable": false,
         "damage": "",
-        "buff": "Allies within range regain maximum HP from healing, gain Advantage on Wisdom Saves and Death Saves for 10 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Allies within range regain maximum HP from healing, gain Advantage on Wisdom Saves and Death Saves for 10 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Counterspell",
@@ -217,7 +236,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "As a Reaction, prevents an enemy spell from taking effect. When upcast, automatically counters spells of that level or lower.",
-        "debuff": "Enemy spell is negated without effect."
+        "debuff": "Enemy spell is negated without effect.",
+        "need_concentration": false
     },
     {
         "name": "Glyph of Warding",
@@ -228,7 +248,8 @@
         "upcastable": true,
         "damage": "5d8 elemental damage (Acid, Cold, Fire, Lightning, or Thunder) for damaging variants",
         "buff": "",
-        "debuff": "Varies by glyph type: Sleep (puts creatures to sleep), Detonation (pushes creatures back), or elemental damage with DEX Save for half. Only one glyph active at a time."
+        "debuff": "Varies by glyph type: Sleep (puts creatures to sleep), Detonation (pushes creatures back), or elemental damage with DEX Save for half. Only one glyph active at a time.",
+        "need_concentration": false
     },
     {
         "name": "Khalid's Gift: Aid",
@@ -239,7 +260,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster regains 10 hit points and maximum HP increases by 10 until Long Rest.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Protection from Energy",
@@ -249,8 +271,9 @@
         "level": 3,
         "upcastable": false,
         "damage": "",
-        "buff": "Target gains Resistance to one chosen damage type (Acid, Cold, Fire, Lightning, or Thunder) until Long Rest. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target gains Resistance to one chosen damage type (Acid, Cold, Fire, Lightning, or Thunder) until Long Rest.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Remove Curse",
@@ -261,7 +284,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Removes all curses and hexes from a creature or object.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Shield of Devotion: Aid",
@@ -272,7 +296,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster regains 10 hit points and maximum HP increases by 10 until Long Rest.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Banishment",
@@ -283,7 +308,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Can be used on allies to temporarily remove them from danger.",
-        "debuff": "Target is Banished for 2 turns, unable to act and immune to damage. Requires Concentration. When upcast, target an additional creature per spell slot level above 4th."
+        "debuff": "Target is Banished for 2 turns, unable to act and immune to damage.  When upcast, target an additional creature per spell slot level above 4th.",
+        "need_concentration": true
     },
     {
         "name": "Death Ward",
@@ -294,7 +320,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target automatically survives being reduced to 0 HP once, remaining at 1 HP instead. Lasts until Long Rest.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Freedom of Movement",
@@ -305,7 +332,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target is unaffected by Difficult Terrain, cannot be Paralysed or Restrained, and can break non-magical Restraints easily. Lasts until Long Rest.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Gargoyle's Countenance",
@@ -316,7 +344,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster gains Resistance to non-magical Bludgeoning, Piercing, and Slashing damage for 10 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Stoneskin",
@@ -326,8 +355,9 @@
         "level": 4,
         "upcastable": false,
         "damage": "",
-        "buff": "Target gains Resistance to non-magical Bludgeoning, Piercing, and Slashing damage until Long Rest. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target gains Resistance to non-magical Bludgeoning, Piercing, and Slashing damage until Long Rest.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Dispel Evil and Good",
@@ -338,7 +368,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster gains protection against certain creature types for 10 turns. Can end enchantment effects on allies.",
-        "debuff": "Certain creature types have Disadvantage on attack rolls against caster."
+        "debuff": "Certain creature types have Disadvantage on attack rolls against caster.",
+        "need_concentration": false
     },
     {
         "name": "Greater Restoration",
@@ -349,7 +380,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Removes Charm, Petrification, Stun, curses, ability score reductions, and exhaustion from a creature.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Planar Binding",
@@ -360,7 +392,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Forces a celestial, elemental, fey, or fiend to fight for you for 10 turns if it fails a WIS Save. When upcast, duration extends.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Globe of Invulnerability",
@@ -371,7 +404,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Creates a 3m radius globe where creatures and objects are immune to spell damage of 5th level or lower for 3 turns. When upcast, immunity threshold increases.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Symbol",
@@ -382,7 +416,8 @@
         "upcastable": false,
         "damage": "Varies by effect",
         "buff": "",
-        "debuff": "Triggers a powerful magical effect when creatures approach the inscribed object."
+        "debuff": "Triggers a powerful magical effect when creatures approach the inscribed object.",
+        "need_concentration": false
     },
     {
         "name": "Acid Splash",
@@ -393,7 +428,8 @@
         "upcastable": false,
         "damage": "1d6 Acid",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Mage Hand",
@@ -404,7 +440,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Summons an invisible hand that can interact with objects, use items, and throw things for 10 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Poison Spray",
@@ -415,7 +452,8 @@
         "upcastable": false,
         "damage": "1d12 Poison",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Produce Flame",
@@ -426,7 +464,8 @@
         "upcastable": false,
         "damage": "1d8 Fire (when thrown)",
         "buff": "Provides light in a 9m / 30ft radius.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Arms of Hadar",
@@ -437,7 +476,8 @@
         "upcastable": true,
         "damage": "2d6 Necrotic",
         "buff": "",
-        "debuff": "Targets cannot take Reactions until their next turn."
+        "debuff": "Targets cannot take Reactions until their next turn.",
+        "need_concentration": false
     },
     {
         "name": "Ensnaring Strike",
@@ -448,7 +488,8 @@
         "upcastable": true,
         "damage": "Weapon damage + 1d6 Piercing (ongoing)",
         "buff": "",
-        "debuff": "Target may become Ensnared, unable to move and taking ongoing Piercing damage. An ally can use Help to free them."
+        "debuff": "Target may become Ensnared, unable to move and taking ongoing Piercing damage. An ally can use Help to free them.",
+        "need_concentration": false
     },
     {
         "name": "Entangle",
@@ -459,7 +500,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Creatures in area may become Entangled (cannot move). Area is Difficult Terrain. Requires Concentration."
+        "debuff": "Creatures in area may become Entangled (cannot move). Area is Difficult Terrain.",
+        "need_concentration": true
     },
     {
         "name": "Find Familiar",
@@ -470,7 +512,8 @@
         "upcastable": false,
         "damage": "Varies by familiar (typically 1-4 damage)",
         "buff": "Summons an animal companion that can fight, scout, and provide utility out of combat.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Fog Cloud",
@@ -481,7 +524,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Can obscure your party from enemy ranged attacks.",
-        "debuff": "Creates an area that Heavily Obscures and Blinds creatures inside. Requires Concentration."
+        "debuff": "Creates an area that Heavily Obscures and Blinds creatures inside.",
+        "need_concentration": true
     },
     {
         "name": "Grease",
@@ -492,7 +536,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Area becomes Difficult Terrain. Creatures may fall Prone (Dex Save). The grease is flammable."
+        "debuff": "Area becomes Difficult Terrain. Creatures may fall Prone (Dex Save). The grease is flammable.",
+        "need_concentration": false
     },
     {
         "name": "Hail of Thorns",
@@ -503,7 +548,8 @@
         "upcastable": true,
         "damage": "Weapon damage + 1d10 Piercing (AoE)",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Ice Knife",
@@ -514,7 +560,8 @@
         "upcastable": true,
         "damage": "1d10 Piercing + 2d6 Cold (AoE)",
         "buff": "",
-        "debuff": "Creates an ice surface that may cause creatures to fall Prone."
+        "debuff": "Creates an ice surface that may cause creatures to fall Prone.",
+        "need_concentration": false
     },
     {
         "name": "Cloud of Daggers",
@@ -525,7 +572,8 @@
         "upcastable": true,
         "damage": "4d4 Slashing per turn",
         "buff": "",
-        "debuff": "Creates a damaging area that lasts for 10 turns."
+        "debuff": "Creates a damaging area that lasts for 10 turns.",
+        "need_concentration": false
     },
     {
         "name": "Flaming Sphere",
@@ -535,8 +583,9 @@
         "level": 2,
         "upcastable": true,
         "damage": "2d6 Fire (when ramming enemies)",
-        "buff": "Summons a controllable sphere that provides light and damages enemies. Requires Concentration.",
-        "debuff": ""
+        "buff": "Summons a controllable sphere that provides light and damages enemies.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Misty Step",
@@ -547,7 +596,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Allows the caster to instantly teleport to a nearby, visible location as a Bonus Action.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Web",
@@ -558,7 +608,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Creates webbing that slows creatures and may Enweb them. The webbing is flammable. Requires Concentration."
+        "debuff": "Creates webbing that slows creatures and may Enweb them. The webbing is flammable.",
+        "need_concentration": true
     },
     {
         "name": "Call Lightning",
@@ -569,7 +620,8 @@
         "upcastable": true,
         "damage": "3d10 Lightning",
         "buff": "",
-        "debuff": "Requires Concentration."
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Conjure Barrage",
@@ -580,7 +632,8 @@
         "upcastable": true,
         "damage": "Weapon damage + 2d8 (same type as weapon)",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Hunger of Hadar",
@@ -591,7 +644,8 @@
         "upcastable": true,
         "damage": "2d6 Cold (start of turn) + 2d6 Acid (end of turn)",
         "buff": "",
-        "debuff": "Creates an area that Blinds creatures, damages them, and is Difficult Terrain. Requires Concentration."
+        "debuff": "Creates an area that Blinds creatures, damages them, and is Difficult Terrain.",
+        "need_concentration": true
     },
     {
         "name": "Sleet Storm",
@@ -602,7 +656,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Creates ice surface (Difficult Terrain, may cause Prone). Disrupts Concentration. Requires Concentration."
+        "debuff": "Creates ice surface (Difficult Terrain, may cause Prone). Disrupts Concentration.",
+        "need_concentration": true
     },
     {
         "name": "Spirit Guardians",
@@ -613,7 +668,8 @@
         "upcastable": true,
         "damage": "3d8 Radiant or Necrotic per turn",
         "buff": "Protects the caster with spirits that damage nearby enemies.",
-        "debuff": "Enemies in range have their Movement Speed halved. Requires Concentration."
+        "debuff": "Enemies in range have their Movement Speed halved.",
+        "need_concentration": true
     },
     {
         "name": "Stinking Cloud",
@@ -624,7 +680,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Creates a cloud that may prevent creatures from taking actions. Requires Concentration."
+        "debuff": "Creates a cloud that may prevent creatures from taking actions.",
+        "need_concentration": true
     },
     {
         "name": "Conjure Minor Elemental",
@@ -635,7 +692,8 @@
         "upcastable": true,
         "damage": "Varies by summon (Azer: 1d10+3 Bludgeoning +1d6 Fire; Ice Mephits: 1d4+1 Slashing +2d6 Cold; Mud Mephits: 3d6+1 Bludgeoning)",
         "buff": "Summons elemental allies that fight for you.",
-        "debuff": "Summons may apply conditions: Ice Mephits can create ice surfaces; Mud Mephits can Restrain enemies."
+        "debuff": "Summons may apply conditions: Ice Mephits can create ice surfaces; Mud Mephits can Restrain enemies.",
+        "need_concentration": false
     },
     {
         "name": "Conjure Woodland Being",
@@ -646,7 +704,8 @@
         "upcastable": true,
         "damage": "Varies by summon",
         "buff": "Summons a dryad ally with powerful support and summoning abilities.",
-        "debuff": "Dryad can Entangle enemies."
+        "debuff": "Dryad can Entangle enemies.",
+        "need_concentration": false
     },
     {
         "name": "Dimension Door",
@@ -657,7 +716,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Allows the caster and one ally to teleport to any visible location.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Evard's Black Tentacles",
@@ -668,7 +728,8 @@
         "upcastable": true,
         "damage": "Ongoing damage to creatures in area",
         "buff": "",
-        "debuff": "Creates an area of tentacles that damage and Restrain creatures. Requires Concentration."
+        "debuff": "Creates an area of tentacles that damage and Restrain creatures.",
+        "need_concentration": true
     },
     {
         "name": "Grasping Vine",
@@ -679,7 +740,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Vine pulls creatures toward it. Requires Concentration."
+        "debuff": "Vine pulls creatures toward it.",
+        "need_concentration": true
     },
     {
         "name": "Guardian of Faith",
@@ -690,7 +752,8 @@
         "upcastable": true,
         "damage": "20 Radiant per attack",
         "buff": "Summons a stationary guardian that attacks enemies that come near.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Cloudkill",
@@ -701,7 +764,8 @@
         "upcastable": true,
         "damage": "5d8 Poison per turn",
         "buff": "",
-        "debuff": "Creates a movable poison cloud that damages and obscures. Requires Concentration."
+        "debuff": "Creates a movable poison cloud that damages and obscures.",
+        "need_concentration": true
     },
     {
         "name": "Conjure Elemental",
@@ -712,7 +776,8 @@
         "upcastable": true,
         "damage": "Varies by elemental (typically 2d8 + elemental damage)",
         "buff": "Summons a powerful elemental ally to fight for you.",
-        "debuff": "Elementals can apply various conditions (Burn, Chilled, Prone, etc.). Requires Concentration."
+        "debuff": "Elementals can apply various conditions (Burn, Chilled, Prone, etc.).",
+        "need_concentration": true
     },
     {
         "name": "Insect Plague",
@@ -723,7 +788,8 @@
         "upcastable": true,
         "damage": "4d10 Piercing",
         "buff": "",
-        "debuff": "Creates a damaging area that is Difficult Terrain and impairs Perception. Requires Concentration."
+        "debuff": "Creates a damaging area that is Difficult Terrain and impairs Perception.",
+        "need_concentration": true
     },
     {
         "name": "Arcane Gate",
@@ -734,7 +800,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Creates portals for strategic movement and positioning.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Heroes' Feast",
@@ -745,7 +812,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Allies gain immunity to Poison, Disease, and Frightened; +2d10 max HP; Advantage on Wisdom Saves.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Planar Ally",
@@ -756,7 +824,8 @@
         "upcastable": false,
         "damage": "Varies by ally",
         "buff": "Summons a powerful celestial, elemental, or fiendish ally to fight for you until Long Rest.",
-        "debuff": "Allies can apply various conditions to enemies."
+        "debuff": "Allies can apply various conditions to enemies.",
+        "need_concentration": false
     },
     {
         "name": "Wall of Thorns",
@@ -767,7 +836,8 @@
         "upcastable": true,
         "damage": "7d8 Piercing per turn (when moving through)",
         "buff": "",
-        "debuff": "Creates a damaging barrier that slows movement and may Entangle. Requires Concentration."
+        "debuff": "Creates a damaging barrier that slows movement and may Entangle.",
+        "need_concentration": true
     },
     {
         "name": "Guidance",
@@ -777,8 +847,9 @@
         "level": 0,
         "upcastable": false,
         "damage": "",
-        "buff": "Target receives a +1d4 bonus to all Ability Checks for 10 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target receives a +1d4 bonus to all Ability Checks for 10 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "True Strike",
@@ -788,8 +859,9 @@
         "level": 0,
         "upcastable": false,
         "damage": "",
-        "buff": "Caster gains Advantage on their next Attack Roll against the target. Lasts 2 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Caster gains Advantage on their next Attack Roll against the target. Lasts 2 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Hunter's Mark",
@@ -800,7 +872,8 @@
         "upcastable": true,
         "damage": "Weapon attacks deal an extra 1d6 Slashing damage to the marked target",
         "buff": "",
-        "debuff": "Target is marked, taking bonus damage from weapon attacks. Lasts until Long Rest. Requires Concentration. When upcast, duration extends and can be maintained without Concentration at higher levels."
+        "debuff": "Target is marked, taking bonus damage from weapon attacks. Lasts until Long Rest.  When upcast, duration extends and can be maintained without Concentration at higher levels.",
+        "need_concentration": true
     },
     {
         "name": "Speak with Animals",
@@ -811,7 +884,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster can understand and communicate with animals until Long Rest. Ritual spell - can be cast without expending a spell slot outside combat.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Detect Thoughts",
@@ -821,8 +895,9 @@
         "level": 2,
         "upcastable": false,
         "damage": "",
-        "buff": "Allows caster to read minds during dialogue, revealing lies and secrets. Lasts until Long Rest. Requires Concentration. Ritual spell - can be cast without expending a spell slot outside combat.",
-        "debuff": ""
+        "buff": "Allows caster to read minds during dialogue, revealing lies and secrets. Lasts until Long Rest.  Ritual spell - can be cast without expending a spell slot outside combat.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "See Invisibility",
@@ -833,7 +908,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster can see invisible creatures within 9m for 10 turns. Affected creatures may be revealed to all allies.",
-        "debuff": "Invisible creatures within range are revealed and lose benefits of invisibility."
+        "debuff": "Invisible creatures within range are revealed and lose benefits of invisibility.",
+        "need_concentration": false
     },
     {
         "name": "Friends",
@@ -844,7 +920,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster gains Advantage on Charisma checks against the target for 10 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Vicious Mockery",
@@ -855,7 +932,8 @@
         "upcastable": false,
         "damage": "1d4 Psychic",
         "buff": "",
-        "debuff": "Target has Disadvantage on its next Attack Roll. Lasts 1 turn."
+        "debuff": "Target has Disadvantage on its next Attack Roll. Lasts 1 turn.",
+        "need_concentration": false
     },
     {
         "name": "Animal Friendship",
@@ -866,7 +944,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Target beast cannot attack you for 10 turns."
+        "debuff": "Target beast cannot attack you for 10 turns.",
+        "need_concentration": false
     },
     {
         "name": "Bane",
@@ -877,7 +956,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Up to 3 targets suffer -1d4 penalty to Attack Rolls and Saving Throws for 10 turns. Requires Concentration. When upcast, target an additional creature per spell slot level above 1st."
+        "debuff": "Up to 3 targets suffer -1d4 penalty to Attack Rolls and Saving Throws for 10 turns.  When upcast, target an additional creature per spell slot level above 1st.",
+        "need_concentration": true
     },
     {
         "name": "Bless",
@@ -887,8 +967,9 @@
         "level": 1,
         "upcastable": true,
         "damage": "",
-        "buff": "Up to 3 allies gain +1d4 bonus to Attack Rolls and Saving Throws for 10 turns. Requires Concentration. When upcast, target an additional creature per spell slot level above 1st.",
-        "debuff": ""
+        "buff": "Up to 3 allies gain +1d4 bonus to Attack Rolls and Saving Throws for 10 turns.  When upcast, target an additional creature per spell slot level above 1st.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Challenge to Duel",
@@ -899,7 +980,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Target is forced to attack only the caster for 3 turns and suffers Bleeding."
+        "debuff": "Target is forced to attack only the caster for 3 turns and suffers Bleeding.",
+        "need_concentration": false
     },
     {
         "name": "Charm Person",
@@ -910,7 +992,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Caster gains Advantage on Charisma checks against the target in dialogue.",
-        "debuff": "Target humanoid is Charmed and cannot attack you for 10 turns. When upcast, target an additional humanoid per spell slot level above 1st."
+        "debuff": "Target humanoid is Charmed and cannot attack you for 10 turns. When upcast, target an additional humanoid per spell slot level above 1st.",
+        "need_concentration": false
     },
     {
         "name": "Command",
@@ -921,7 +1004,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Target must obey a single-word command for 1 turn. When upcast, target an additional creature per spell slot level above 1st."
+        "debuff": "Target must obey a single-word command for 1 turn. When upcast, target an additional creature per spell slot level above 1st.",
+        "need_concentration": false
     },
     {
         "name": "Compelled Duel",
@@ -932,7 +1016,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Target is forced to attack only the caster for 3 turns."
+        "debuff": "Target is forced to attack only the caster for 3 turns.",
+        "need_concentration": false
     },
     {
         "name": "Dissonant Whispers",
@@ -943,7 +1028,8 @@
         "upcastable": true,
         "damage": "3d6 Psychic",
         "buff": "",
-        "debuff": "Target is Frightened for 2 turns. When upcast, deal an additional 1d6 Psychic damage per spell slot level above 1st."
+        "debuff": "Target is Frightened for 2 turns. When upcast, deal an additional 1d6 Psychic damage per spell slot level above 1st.",
+        "need_concentration": false
     },
     {
         "name": "Exhort the Risen",
@@ -954,7 +1040,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Commands an undead creature to obey you."
+        "debuff": "Commands an undead creature to obey you.",
+        "need_concentration": false
     },
     {
         "name": "Heroism",
@@ -964,8 +1051,9 @@
         "level": 1,
         "upcastable": true,
         "damage": "",
-        "buff": "Target becomes immune to Frightened and gains 5 temporary HP each turn for 10 turns. Requires Concentration. When upcast, gain an additional 5 temporary HP per turn per spell slot level above 1st.",
-        "debuff": ""
+        "buff": "Target becomes immune to Frightened and gains 5 temporary HP each turn for 10 turns.  When upcast, gain an additional 5 temporary HP per turn per spell slot level above 1st.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Hex",
@@ -976,7 +1064,8 @@
         "upcastable": true,
         "damage": "1d6 Necrotic (when you attack the target)",
         "buff": "",
-        "debuff": "Target suffers Disadvantage on chosen Ability Checks and takes bonus Necrotic damage from your attacks. Lasts until Long Rest. Requires Concentration. When upcast, duration extends."
+        "debuff": "Target suffers Disadvantage on chosen Ability Checks and takes bonus Necrotic damage from your attacks. Lasts until Long Rest.  When upcast, duration extends.",
+        "need_concentration": true
     },
     {
         "name": "Sleep",
@@ -987,7 +1076,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Creatures with total HP up to 24 fall asleep for 2 turns. When upcast, affect an additional 7 HP worth of creatures per spell slot level above 1st."
+        "debuff": "Creatures with total HP up to 24 fall asleep for 2 turns. When upcast, affect an additional 7 HP worth of creatures per spell slot level above 1st.",
+        "need_concentration": false
     },
     {
         "name": "Tasha's Hideous Laughter",
@@ -998,7 +1088,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Target falls Prone and is Incapacitated for 10 turns. Requires Concentration. When upcast, target an additional creature per spell slot level above 1st."
+        "debuff": "Target falls Prone and is Incapacitated for 10 turns.  When upcast, target an additional creature per spell slot level above 1st.",
+        "need_concentration": true
     },
     {
         "name": "Calm Emotions",
@@ -1009,7 +1100,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Allies in area become immune to being Charmed or Frightened for 10 turns.",
-        "debuff": "Enemies in area cannot be enraged. Requires Concentration."
+        "debuff": "Enemies in area cannot be enraged.",
+        "need_concentration": true
     },
     {
         "name": "Crown of Madness",
@@ -1020,7 +1112,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Target humanoid attacks the nearest creature (excluding caster) for 3 turns. Requires Concentration."
+        "debuff": "Target humanoid attacks the nearest creature (excluding caster) for 3 turns.",
+        "need_concentration": true
     },
     {
         "name": "Enthrall",
@@ -1031,7 +1124,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Target has Disadvantage on Perception checks for 10 turns. Requires Concentration."
+        "debuff": "Target has Disadvantage on Perception checks for 10 turns.",
+        "need_concentration": true
     },
     {
         "name": "Hold Person",
@@ -1042,7 +1136,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Target humanoid is Paralyzed for 10 turns. Attacks from within 3m are automatic Critical Hits. Requires Concentration. When upcast, target an additional humanoid per spell slot level above 2nd."
+        "debuff": "Target humanoid is Paralyzed for 10 turns. Attacks from within 3m are automatic Critical Hits.  When upcast, target an additional humanoid per spell slot level above 2nd.",
+        "need_concentration": true
     },
     {
         "name": "Confusion",
@@ -1053,7 +1148,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Creatures in area become Confused for 3 turns, acting randomly. Requires Concentration. When upcast, increase the radius."
+        "debuff": "Creatures in area become Confused for 3 turns, acting randomly.  When upcast, increase the radius.",
+        "need_concentration": true
     },
     {
         "name": "Dominate Beast",
@@ -1064,7 +1160,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Summons a dominated beast ally for 10 turns.",
-        "debuff": "Target beast is Charmed and fights for you. When upcast at 5th level, duration extends to 10 turns with Concentration. At 6th level, duration extends to Long Rest with Concentration."
+        "debuff": "Target beast is Charmed and fights for you. When upcast at 5th level, duration extends to 10 turns with Concentration. At 6th level, duration extends to Long Rest with Concentration.",
+        "need_concentration": false
     },
     {
         "name": "Dominate Person",
@@ -1075,7 +1172,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Summons a dominated humanoid ally for 10 turns.",
-        "debuff": "Target humanoid is Charmed and fights for you. When upcast at 6th level, duration extends to Long Rest with Concentration."
+        "debuff": "Target humanoid is Charmed and fights for you. When upcast at 6th level, duration extends to Long Rest with Concentration.",
+        "need_concentration": false
     },
     {
         "name": "Hold Monster",
@@ -1086,7 +1184,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Target creature is Paralyzed for 10 turns. Attacks from within 3m are automatic Critical Hits. Requires Concentration. When upcast, target an additional creature per spell slot level above 5th."
+        "debuff": "Target creature is Paralyzed for 10 turns. Attacks from within 3m are automatic Critical Hits.  When upcast, target an additional creature per spell slot level above 5th.",
+        "need_concentration": true
     },
     {
         "name": "Otto's Irresistible Dance",
@@ -1097,7 +1196,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Target is forced to dance for 10 turns, unable to take actions or move. Attackers have Advantage on Attack Rolls against it. Target has Disadvantage on Attack Rolls and Dexterity Saving Throws. Requires Concentration."
+        "debuff": "Target is forced to dance for 10 turns, unable to take actions or move. Attackers have Advantage on Attack Rolls against it. Target has Disadvantage on Attack Rolls and Dexterity Saving Throws.",
+        "need_concentration": true
     },
     {
         "name": "Dancing Lights",
@@ -1107,8 +1207,9 @@
         "level": 0,
         "upcastable": false,
         "damage": "",
-        "buff": "Illuminates a 9m/30ft radius area for 10 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Illuminates a 9m/30ft radius area for 10 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Eldritch Blast",
@@ -1119,7 +1220,8 @@
         "upcastable": false,
         "damage": "1d10 Force per beam",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Fire Bolt",
@@ -1130,7 +1232,8 @@
         "upcastable": false,
         "damage": "1d10 Fire",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Light",
@@ -1141,7 +1244,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target object emits bright light in a 9m / 30ft radius for 100 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Ray of Frost",
@@ -1152,7 +1256,8 @@
         "upcastable": false,
         "damage": "1d8 Cold",
         "buff": "",
-        "debuff": "Reduces the target's Movement Speed by 3m / 10ft for 1 turn."
+        "debuff": "Reduces the target's Movement Speed by 3m / 10ft for 1 turn.",
+        "need_concentration": false
     },
     {
         "name": "Sacred Flame",
@@ -1163,7 +1268,8 @@
         "upcastable": false,
         "damage": "1d8 Radiant",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Shocking Grasp",
@@ -1174,7 +1280,8 @@
         "upcastable": false,
         "damage": "1d8 Lightning",
         "buff": "",
-        "debuff": "Target cannot take Reactions until the start of its next turn."
+        "debuff": "Target cannot take Reactions until the start of its next turn.",
+        "need_concentration": false
     },
     {
         "name": "Burning Hands",
@@ -1185,7 +1292,8 @@
         "upcastable": true,
         "damage": "3d6 Fire (Dex Save for half)",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Chromatic Orb",
@@ -1196,7 +1304,8 @@
         "upcastable": true,
         "damage": "3d8 Thunder (or 2d8 of another type)",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Cure Wounds",
@@ -1207,7 +1316,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Target regains 1d8+2 hit points. Has no effect on undead or constructs.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Divine Favour",
@@ -1217,8 +1327,9 @@
         "level": 1,
         "upcastable": false,
         "damage": "Weapon attacks deal an extra 1d4 Radiant damage",
-        "buff": "Caster's weapon attacks deal an additional 1d4 Radiant damage for 3 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Caster's weapon attacks deal an additional 1d4 Radiant damage for 3 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Faerie Fire",
@@ -1228,8 +1339,9 @@
         "level": 1,
         "upcastable": true,
         "damage": "",
-        "buff": "All attacks against affected targets have Advantage for 10 turns. Requires Concentration.",
-        "debuff": "Targets cannot benefit from Invisibility. Attack Rolls against them have Advantage."
+        "buff": "All attacks against affected targets have Advantage for 10 turns.",
+        "debuff": "Targets cannot benefit from Invisibility. Attack Rolls against them have Advantage.",
+        "need_concentration": true
     },
     {
         "name": "Guiding Bolt",
@@ -1240,7 +1352,8 @@
         "upcastable": true,
         "damage": "4d6 Radiant",
         "buff": "",
-        "debuff": "The next Attack Roll against the target has Advantage for 2 turns."
+        "debuff": "The next Attack Roll against the target has Advantage for 2 turns.",
+        "need_concentration": false
     },
     {
         "name": "Healing Word",
@@ -1251,7 +1364,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Target regains 1d4 hit points. Has no effect on undead or constructs.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Hellish Rebuke",
@@ -1262,7 +1376,8 @@
         "upcastable": true,
         "damage": "2d10 Fire",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Magic Missile",
@@ -1273,7 +1388,8 @@
         "upcastable": true,
         "damage": "3 x (2d4+1) Force",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Searing Smite",
@@ -1284,7 +1400,8 @@
         "upcastable": true,
         "damage": "Initial: Weapon damage + 1d6 Fire. Subsequent: 1d6 Fire per turn.",
         "buff": "",
-        "debuff": "Target is marked with Searing Smite, taking 1d6 Fire damage at the start of each of its turns unless it makes a Constitution Save."
+        "debuff": "Target is marked with Searing Smite, taking 1d6 Fire damage at the start of each of its turns unless it makes a Constitution Save.",
+        "need_concentration": false
     },
     {
         "name": "Thunderous Smite",
@@ -1295,7 +1412,8 @@
         "upcastable": true,
         "damage": "Weapon damage + 2d6 Thunder",
         "buff": "",
-        "debuff": "Target is pushed 3m away and may be knocked Prone (Str Save)."
+        "debuff": "Target is pushed 3m away and may be knocked Prone (Str Save).",
+        "need_concentration": false
     },
     {
         "name": "Thunderwave",
@@ -1306,7 +1424,8 @@
         "upcastable": true,
         "damage": "2d8 Thunder (Con Save for half)",
         "buff": "",
-        "debuff": "Targets are pushed away from the caster."
+        "debuff": "Targets are pushed away from the caster.",
+        "need_concentration": false
     },
     {
         "name": "Witch Bolt",
@@ -1317,7 +1436,8 @@
         "upcastable": true,
         "damage": "Initial: 1d12 Lightning. Subsequent: 1d12 Lightning per turn when activated.",
         "buff": "",
-        "debuff": "Remains connected to target, dealing damage each turn. Ends if target moves out of range or breaks line of sight."
+        "debuff": "Remains connected to target, dealing damage each turn. Ends if target moves out of range or breaks line of sight.",
+        "need_concentration": true
     },
     {
         "name": "Wrathful Smite",
@@ -1328,7 +1448,8 @@
         "upcastable": true,
         "damage": "Weapon damage + 1d6 Psychic",
         "buff": "",
-        "debuff": "Target may become Frightened (Wis Save), causing it to have Disadvantage on Ability Checks and Attack Rolls, and cannot move closer to the caster."
+        "debuff": "Target may become Frightened (Wis Save), causing it to have Disadvantage on Ability Checks and Attack Rolls, and cannot move closer to the caster.",
+        "need_concentration": false
     },
     {
         "name": "Branding Smite",
@@ -1339,7 +1460,8 @@
         "upcastable": true,
         "damage": "Weapon damage + 2d6 Radiant",
         "buff": "",
-        "debuff": "Target is marked with light, preventing it from becoming Invisible."
+        "debuff": "Target is marked with light, preventing it from becoming Invisible.",
+        "need_concentration": false
     },
     {
         "name": "Darkness",
@@ -1350,7 +1472,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Can be used to obscure your party from enemy ranged attacks. Warlocks with Devil's Sight can see through it.",
-        "debuff": "Heavily Obscures and Blinds creatures inside the cloud for 10 turns. They cannot make ranged attacks into or out of it. Requires Concentration."
+        "debuff": "Heavily Obscures and Blinds creatures inside the cloud for 10 turns. They cannot make ranged attacks into or out of it.",
+        "need_concentration": true
     },
     {
         "name": "Flame Blade",
@@ -1360,8 +1483,9 @@
         "level": 2,
         "upcastable": true,
         "damage": "3d6 Fire (melee spell attack)",
-        "buff": "Creates a flaming scimitar for melee attacks. Provides light. Requires Concentration.",
-        "debuff": ""
+        "buff": "Creates a flaming scimitar for melee attacks. Provides light.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Gust of Wind",
@@ -1372,7 +1496,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Clears clouds and gas effects from an area.",
-        "debuff": "Pushes creatures back 5m and inflicts Off Balance. Requires Concentration."
+        "debuff": "Pushes creatures back 5m and inflicts Off Balance.",
+        "need_concentration": true
     },
     {
         "name": "Melf's Acid Arrow",
@@ -1383,7 +1508,8 @@
         "upcastable": true,
         "damage": "Initial: 4d4 Acid. Delayed: 2d4 Acid",
         "buff": "",
-        "debuff": "Target takes additional Acid damage at the end of its next turn. On miss, still deals half initial damage."
+        "debuff": "Target takes additional Acid damage at the end of its next turn. On miss, still deals half initial damage.",
+        "need_concentration": false
     },
     {
         "name": "Moonbeam",
@@ -1394,7 +1520,8 @@
         "upcastable": true,
         "damage": "2d10 Radiant (Con Save for half)",
         "buff": "",
-        "debuff": "Damages creatures in the beam each turn. Can be moved each turn. Requires Concentration."
+        "debuff": "Damages creatures in the beam each turn. Can be moved each turn.",
+        "need_concentration": true
     },
     {
         "name": "Prayer of Healing",
@@ -1405,7 +1532,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "All visible allies regain 2d8+2 hit points. Has no effect on undead or constructs.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Scorching Ray",
@@ -1416,7 +1544,8 @@
         "upcastable": true,
         "damage": "3 x 2d6 Fire",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Shatter",
@@ -1427,7 +1556,8 @@
         "upcastable": true,
         "damage": "3d8 Thunder (Con Save for half)",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Spiritual Weapon",
@@ -1438,7 +1568,8 @@
         "upcastable": true,
         "damage": "1d8+2 Force (varies by weapon type)",
         "buff": "Summons a weapon that attacks enemies as a Bonus Action. Does not require Concentration.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Blinding Smite",
@@ -1449,7 +1580,8 @@
         "upcastable": true,
         "damage": "Weapon damage + 3d8 Radiant",
         "buff": "",
-        "debuff": "Target may become Blinded (Con Save)."
+        "debuff": "Target may become Blinded (Con Save).",
+        "need_concentration": false
     },
     {
         "name": "Crusader's Mantle",
@@ -1459,8 +1591,9 @@
         "level": 3,
         "upcastable": false,
         "damage": "Allies' weapon attacks deal an extra 1d4 Radiant damage",
-        "buff": "Allies within 9m deal an additional 1d4 Radiant damage with weapon attacks. Requires Concentration.",
-        "debuff": ""
+        "buff": "Allies within 9m deal an additional 1d4 Radiant damage with weapon attacks.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Daylight",
@@ -1471,7 +1604,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Creates bright light in a 18m radius and dispels magical darkness.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Fireball",
@@ -1482,7 +1616,8 @@
         "upcastable": true,
         "damage": "8d6 Fire (Dex Save for half)",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Lightning Bolt",
@@ -1493,7 +1628,8 @@
         "upcastable": true,
         "damage": "8d6 Lightning (Dex Save for half)",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Mass Healing Word",
@@ -1504,7 +1640,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Up to 6 visible allies regain 1d4+4 hit points.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Warden of Vitality",
@@ -1514,8 +1651,9 @@
         "level": 3,
         "upcastable": false,
         "damage": "",
-        "buff": "Allows the caster to heal themselves or allies within 3m for 1d6 each turn as a Bonus Action. Requires Concentration.",
-        "debuff": ""
+        "buff": "Allows the caster to heal themselves or allies within 3m for 1d6 each turn as a Bonus Action.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Fire Shield",
@@ -1526,7 +1664,8 @@
         "upcastable": false,
         "damage": "2d8 Fire or Cold damage to melee attackers",
         "buff": "Caster gains Resistance to Fire or Cold damage and deals damage to melee attackers. Lasts 10 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Ice Storm",
@@ -1537,7 +1676,8 @@
         "upcastable": true,
         "damage": "2d8 Bludgeoning + 4d6 Cold (Dex Save for half)",
         "buff": "",
-        "debuff": "Creates an ice surface that may cause creatures to fall Prone."
+        "debuff": "Creates an ice surface that may cause creatures to fall Prone.",
+        "need_concentration": false
     },
     {
         "name": "Otiluke's Resilient Sphere",
@@ -1548,7 +1688,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Can protect an ally by enclosing them in an invulnerable sphere.",
-        "debuff": "Traps an enemy in an invulnerable sphere, preventing them from dealing or receiving damage. Requires Concentration."
+        "debuff": "Traps an enemy in an invulnerable sphere, preventing them from dealing or receiving damage.",
+        "need_concentration": true
     },
     {
         "name": "Minor Illusion",
@@ -1559,7 +1700,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Creates a silent image to distract creatures. Can be cast while hidden.",
-        "debuff": "Nearby creatures are compelled to investigate the illusion."
+        "debuff": "Nearby creatures are compelled to investigate the illusion.",
+        "need_concentration": false
     },
     {
         "name": "Improved Minor Illusion",
@@ -1570,7 +1712,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Creates a silent image as a bonus action. Can be cast while hidden or silenced.",
-        "debuff": "Nearby creatures are compelled to investigate the illusion."
+        "debuff": "Nearby creatures are compelled to investigate the illusion.",
+        "need_concentration": false
     },
     {
         "name": "Colour Spray",
@@ -1581,7 +1724,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Creatures with total HP up to 33 are Blinded for 1 turn. When upcast, affects an additional 2d6 HP worth of creatures per spell slot level above 1st."
+        "debuff": "Creatures with total HP up to 33 are Blinded for 1 turn. When upcast, affects an additional 2d6 HP worth of creatures per spell slot level above 1st.",
+        "need_concentration": false
     },
     {
         "name": "Disguise Self",
@@ -1592,7 +1736,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster can change appearance (race, gender, appearance) until Long Rest. Useful for dialogue and infiltration.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Shapeshift",
@@ -1603,7 +1748,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster can change appearance.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Blur",
@@ -1615,7 +1761,7 @@
         "damage": "",
         "buff": "Caster gains Disadvantage on attack rolls against them for 10 turns.",
         "debuff": "",
-        "concentration": true
+        "need_concentration": true
     },
     {
         "name": "Invisibility",
@@ -1627,7 +1773,7 @@
         "damage": "",
         "buff": "Target becomes Invisible for 10 turns. Attacks against it have Disadvantage; its attacks have Advantage.",
         "debuff": "",
-        "concentration": true
+        "need_concentration": true
     },
     {
         "name": "Mirror Image",
@@ -1638,7 +1784,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster gains +3 AC from duplicates for 10 turns. Each hit that would hit destroys one duplicate instead.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Phantasmal Force",
@@ -1649,8 +1796,8 @@
         "upcastable": true,
         "damage": "1d6 Psychic per turn",
         "buff": "",
-        "debuff": "Target takes ongoing psychic damage for 10 turns. Damage type adapts to other damage taken. Requires Concentration.",
-        "concentration": true
+        "debuff": "Target takes ongoing psychic damage for 10 turns. Damage type adapts to other damage taken.",
+        "need_concentration": true
     },
     {
         "name": "Shadow Blade",
@@ -1662,7 +1809,7 @@
         "damage": "2d8 Psychic (melee spell attack)",
         "buff": "Creates a shadowy shortsword that deals psychic damage and grants Advantage in dim light/darkness.",
         "debuff": "",
-        "concentration": true
+        "need_concentration": true
     },
     {
         "name": "Silence",
@@ -1673,8 +1820,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Can protect allies from Thunder damage and sound-based effects.",
-        "debuff": "Creates a sphere where creatures are Silenced (cannot cast spells with verbal components). Lasts 100 turns. Requires Concentration.",
-        "concentration": true
+        "debuff": "Creates a sphere where creatures are Silenced (cannot cast spells with verbal components). Lasts 100 turns.",
+        "need_concentration": true
     },
     {
         "name": "Fear",
@@ -1685,8 +1832,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Targets in a cone become Frightened for 3 turns, dropping weapons and unable to move. Requires Concentration. When upcast, affects additional creatures.",
-        "concentration": true
+        "debuff": "Targets in a cone become Frightened for 3 turns, dropping weapons and unable to move.  When upcast, affects additional creatures.",
+        "need_concentration": true
     },
     {
         "name": "Hypnotic Pattern",
@@ -1697,8 +1844,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Creatures in the area become Hypnotised for 2 turns, unable to act. Requires Concentration. When upcast, affects additional creatures.",
-        "concentration": true
+        "debuff": "Creatures in the area become Hypnotised for 2 turns, unable to act.  When upcast, affects additional creatures.",
+        "need_concentration": true
     },
     {
         "name": "Greater Invisibility",
@@ -1710,7 +1857,7 @@
         "damage": "",
         "buff": "Target becomes Invisible for 10 turns. Can attack and cast spells while remaining invisible.",
         "debuff": "",
-        "concentration": true
+        "need_concentration": true
     },
     {
         "name": "Phantasmal Killer",
@@ -1721,8 +1868,8 @@
         "upcastable": true,
         "damage": "4d10 Psychic per turn",
         "buff": "",
-        "debuff": "Target is Frightened, cannot move, takes heavy psychic damage each turn. Requires Concentration. When upcast, deals an additional 1d10 Psychic damage per spell slot level above 4th.",
-        "concentration": true
+        "debuff": "Target is Frightened, cannot move, takes heavy psychic damage each turn.  When upcast, deals an additional 1d10 Psychic damage per spell slot level above 4th.",
+        "need_concentration": true
     },
     {
         "name": "Seeming",
@@ -1732,9 +1879,9 @@
         "level": 5,
         "upcastable": true,
         "damage": "",
-        "buff": "Up to 4 allies gain disguises (appearance changes) for 10 turns. Requires Concentration. When upcast, affects additional creatures.",
+        "buff": "Up to 4 allies gain disguises (appearance changes) for 10 turns.  When upcast, affects additional creatures.",
         "debuff": "",
-        "concentration": true
+        "need_concentration": true
     },
     {
         "name": "Bone Chill",
@@ -1745,7 +1892,8 @@
         "upcastable": false,
         "damage": "1d8 Necrotic",
         "buff": "",
-        "debuff": "Target cannot regain Hit Points until the start of your next turn. If the target is Undead, it also has Disadvantage on Attack Rolls."
+        "debuff": "Target cannot regain Hit Points until the start of your next turn. If the target is Undead, it also has Disadvantage on Attack Rolls.",
+        "need_concentration": false
     },
     {
         "name": "Toll the Dead",
@@ -1756,7 +1904,8 @@
         "upcastable": false,
         "damage": "1d8 Necrotic (or 1d12 if target is at full health)",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "False Life",
@@ -1767,7 +1916,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Caster gains 7 temporary hit points until Long Rest. When upcast, gain an additional 5 temporary hit points per spell slot level above 1st.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Inflict Wounds",
@@ -1778,7 +1928,8 @@
         "upcastable": true,
         "damage": "3d10 Necrotic",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Ray of Sickness",
@@ -1789,7 +1940,8 @@
         "upcastable": true,
         "damage": "2d8 Poison",
         "buff": "",
-        "debuff": "Target may become Poisoned for 2 turns, suffering Disadvantage on Attack Rolls and Ability Checks."
+        "debuff": "Target may become Poisoned for 2 turns, suffering Disadvantage on Attack Rolls and Ability Checks.",
+        "need_concentration": false
     },
     {
         "name": "Blindness",
@@ -1800,7 +1952,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "",
-        "debuff": "Target is Blinded for 10 turns. Attack Rolls against it have Advantage, and its attacks have Disadvantage."
+        "debuff": "Target is Blinded for 10 turns. Attack Rolls against it have Advantage, and its attacks have Disadvantage.",
+        "need_concentration": false
     },
     {
         "name": "Ray of Enfeeblement",
@@ -1811,7 +1964,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Target deals half damage with Strength-based weapon attacks for 10 turns. Requires Concentration."
+        "debuff": "Target deals half damage with Strength-based weapon attacks for 10 turns.",
+        "need_concentration": true
     },
     {
         "name": "Animate Dead",
@@ -1822,7 +1976,8 @@
         "upcastable": true,
         "damage": "Summon attacks vary (typically 1d6+3 + 1d10 Necrotic)",
         "buff": "Summons a zombie or skeleton minion that fights for you. When upcast at Level 4, creates 3 minions. At Level 5, creates a Ghoul. At Level 6, creates 3 Ghouls or Flying Ghouls.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Bestow Curse",
@@ -1833,7 +1988,8 @@
         "upcastable": true,
         "damage": "If using damage option: +1d8 Necrotic per attack",
         "buff": "",
-        "debuff": "Choose one curse effect for 10 turns: Disadvantage on Ability Checks and Saving Throws; Disadvantage on Attack Rolls; target must make WIS save each turn or lose its action; or your attacks deal an extra 1d8 Necrotic damage. Requires Concentration. When upcast to Level 4 or 5, duration extends and Concentration not required."
+        "debuff": "Choose one curse effect for 10 turns: Disadvantage on Ability Checks and Saving Throws; Disadvantage on Attack Rolls; target must make WIS save each turn or lose its action; or your attacks deal an extra 1d8 Necrotic damage.  When upcast to Level 4 or 5, duration extends and Concentration not required.",
+        "need_concentration": true
     },
     {
         "name": "Feign Death",
@@ -1844,7 +2000,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target ally becomes immune to poison and disease, gains Resistance to all damage except Psychic, and appears dead for 10 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Revivify",
@@ -1855,7 +2012,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Revives a dead companion with 1 HP.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Speak with Dead",
@@ -1866,7 +2024,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Allows caster to question a corpse for information.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Vampiric Touch",
@@ -1878,7 +2037,7 @@
         "damage": "3d6 Necrotic",
         "buff": "Caster regains HP equal to half the damage dealt.",
         "debuff": "",
-        "concentration": true
+        "need_concentration": true
     },
     {
         "name": "Blight",
@@ -1889,7 +2048,8 @@
         "upcastable": true,
         "damage": "8d8 Necrotic (CON Save for half)",
         "buff": "",
-        "debuff": "Plants have Disadvantage on their Saving Throw against this spell."
+        "debuff": "Plants have Disadvantage on their Saving Throw against this spell.",
+        "need_concentration": false
     },
     {
         "name": "Contagion",
@@ -1900,7 +2060,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Target becomes diseased for 10 turns. Options include: Blinding Sickness (Blinded, WIS Disadvantage); Filth Fever (Exhausted, STR Disadvantage); Flesh Rot (Vulnerability to all damage, CHA Disadvantage); Mindfire (Confused, INT Disadvantage); Red Ache (Reduced movement, DEX Disadvantage); Shakes (Stunned when hit, CON Disadvantage)."
+        "debuff": "Target becomes diseased for 10 turns. Options include: Blinding Sickness (Blinded, WIS Disadvantage); Filth Fever (Exhausted, STR Disadvantage); Flesh Rot (Vulnerability to all damage, CHA Disadvantage); Mindfire (Confused, INT Disadvantage); Red Ache (Reduced movement, DEX Disadvantage); Shakes (Stunned when hit, CON Disadvantage).",
+        "need_concentration": false
     },
     {
         "name": "Circle of Death",
@@ -1911,7 +2072,8 @@
         "upcastable": true,
         "damage": "8d6 Necrotic (CON Save for half)",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Create Undead",
@@ -1922,7 +2084,8 @@
         "upcastable": false,
         "damage": "Mummy attacks vary",
         "buff": "Summons a powerful mummy minion that fights for you until Long Rest.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Eyebite",
@@ -1933,7 +2096,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Choose one effect per turn for 100 turns: Asleep (target falls unconscious); Panicked (target is Frightened); Sickened (target has Disadvantage on Attack Rolls and Ability Checks). Requires Concentration."
+        "debuff": "Choose one effect per turn for 100 turns: Asleep (target falls unconscious); Panicked (target is Frightened); Sickened (target has Disadvantage on Attack Rolls and Ability Checks).",
+        "need_concentration": true
     },
     {
         "name": "Harm",
@@ -1944,7 +2108,8 @@
         "upcastable": false,
         "damage": "14d6 Necrotic (CON Save for half)",
         "buff": "",
-        "debuff": "Target's maximum HP is reduced by the damage taken until Long Rest (cannot go below 1 HP)."
+        "debuff": "Target's maximum HP is reduced by the damage taken until Long Rest (cannot go below 1 HP).",
+        "need_concentration": false
     },
     {
         "name": "Danse Macabre",
@@ -1955,7 +2120,8 @@
         "upcastable": false,
         "damage": "Ghoul attacks: 2d4+1 Slashing + possible Paralysis",
         "buff": "Summons 4 ghoul minions that can Paralyze enemies.",
-        "debuff": "Ghoul attacks may Paralyze targets (CON Save)."
+        "debuff": "Ghoul attacks may Paralyze targets (CON Save).",
+        "need_concentration": false
     },
     {
         "name": "Dethrone",
@@ -1966,7 +2132,8 @@
         "upcastable": false,
         "damage": "10d6+20 Necrotic (CON Save for half)",
         "buff": "",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Barkskin",
@@ -1976,8 +2143,9 @@
         "level": 2,
         "upcastable": false,
         "damage": "",
-        "buff": "Target's AC becomes 16 (if lower) for 10 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target's AC becomes 16 (if lower) for 10 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Blink",
@@ -1988,7 +2156,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster has 50% chance to become ethereal each turn, avoiding damage for 10 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Celestial Haste",
@@ -1998,8 +2167,9 @@
         "level": 3,
         "upcastable": false,
         "damage": "",
-        "buff": "Target gains +2 AC, Advantage on Dex Saves, doubled speed, and an extra action each turn for 5 turns. No lethargic penalty when spell ends. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target gains +2 AC, Advantage on Dex Saves, doubled speed, and an extra action each turn for 5 turns. No lethargic penalty when spell ends.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Create or Destroy Water",
@@ -2010,7 +2180,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Can create water surfaces for elemental interactions or remove hazardous surfaces.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Darkvision",
@@ -2021,7 +2192,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target gains darkvision (12m range) until Long Rest.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Disintegrate",
@@ -2032,7 +2204,8 @@
         "upcastable": true,
         "damage": "10d6+40 Force (Dex Save negates)",
         "buff": "",
-        "debuff": "Target that fails save takes massive damage. If reduced to 0 HP, target is disintegrated (cannot be revived except by True Resurrection or Wish). When upcast, deals an additional 3d6 Force damage per spell slot level above 6th."
+        "debuff": "Target that fails save takes massive damage. If reduced to 0 HP, target is disintegrated (cannot be revived except by True Resurrection or Wish). When upcast, deals an additional 3d6 Force damage per spell slot level above 6th.",
+        "need_concentration": false
     },
     {
         "name": "Elemental Weapon",
@@ -2042,8 +2215,9 @@
         "level": 3,
         "upcastable": true,
         "damage": "Weapon deals +1d4 elemental damage (Acid, Cold, Fire, Lightning, or Thunder)",
-        "buff": "Target weapon gains +1 Attack and +1d4 chosen elemental damage for 10 turns. Requires Concentration. When upcast, bonus increases to +2 at Level 4, +3 at Level 5.",
-        "debuff": ""
+        "buff": "Target weapon gains +1 Attack and +1d4 chosen elemental damage for 10 turns.  When upcast, bonus increases to +2 at Level 4, +3 at Level 5.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Enhance Ability",
@@ -2053,8 +2227,9 @@
         "level": 2,
         "upcastable": true,
         "damage": "",
-        "buff": "Target gains Advantage on Ability Checks for one chosen ability score for 10 turns. Requires Concentration. When upcast, target an additional creature per spell slot level above 2nd.",
-        "debuff": ""
+        "buff": "Target gains Advantage on Ability Checks for one chosen ability score for 10 turns.  When upcast, target an additional creature per spell slot level above 2nd.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Enhance Leap",
@@ -2065,7 +2240,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target's jump distance is tripled for 10 turns. Can be cast as a Ritual outside combat.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Enlarge/Reduce",
@@ -2076,7 +2252,8 @@
         "upcastable": false,
         "damage": "Enlarge: Weapon attacks deal an extra 1d4 damage",
         "buff": "Enlarge: Target becomes larger, gains Advantage on Strength Checks and Saves, and deals +1d4 weapon damage for 10 turns.",
-        "debuff": "Reduce: Target becomes smaller, has Disadvantage on Strength Checks and Saves, and deals 1d4 less weapon damage for 10 turns. Requires Concentration."
+        "debuff": "Reduce: Target becomes smaller, has Disadvantage on Strength Checks and Saves, and deals 1d4 less weapon damage for 10 turns.",
+        "need_concentration": true
     },
     {
         "name": "Etherealness",
@@ -2087,7 +2264,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Caster becomes ethereal, unable to be harmed or interact with the material world. When upcast, can target additional creatures per spell slot level above 7th.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Expeditious Retreat",
@@ -2097,8 +2275,9 @@
         "level": 1,
         "upcastable": false,
         "damage": "",
-        "buff": "Caster can Dash as a Bonus Action for 10 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Caster can Dash as a Bonus Action for 10 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Feather Fall",
@@ -2109,7 +2288,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster and nearby allies gain immunity to falling damage for 10 turns. Can be cast as a Ritual outside combat.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Flesh to Stone",
@@ -2120,7 +2300,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Target is Restrained for 3 turns, then becomes Petrified. Requires Concentration."
+        "debuff": "Target is Restrained for 3 turns, then becomes Petrified.",
+        "need_concentration": true
     },
     {
         "name": "Fly",
@@ -2130,8 +2311,9 @@
         "level": 3,
         "upcastable": true,
         "damage": "",
-        "buff": "Target gains flight (18m movement speed) for 10 turns. Requires Concentration. When upcast, target an additional creature per spell slot level above 3rd.",
-        "debuff": ""
+        "buff": "Target gains flight (18m movement speed) for 10 turns.  When upcast, target an additional creature per spell slot level above 3rd.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Gaseous Form",
@@ -2141,8 +2323,9 @@
         "level": 3,
         "upcastable": false,
         "damage": "",
-        "buff": "Target transforms into mist, gaining damage Resistance, Advantage on physical Saves, and ability to pass through small gaps for 10 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target transforms into mist, gaining damage Resistance, Advantage on physical Saves, and ability to pass through small gaps for 10 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Goodberry",
@@ -2153,7 +2336,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Creates 4 berries that each heal 1d4 HP when consumed.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Haste",
@@ -2163,8 +2347,9 @@
         "level": 3,
         "upcastable": false,
         "damage": "",
-        "buff": "Target gains +2 AC, Advantage on Dex Saves, doubled speed, and an extra action each turn for 3 turns. Requires Concentration.",
-        "debuff": ""
+        "buff": "Target gains +2 AC, Advantage on Dex Saves, doubled speed, and an extra action each turn for 3 turns.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Heat Metal",
@@ -2175,7 +2360,8 @@
         "upcastable": true,
         "damage": "2d8 Fire (initial and each subsequent turn)",
         "buff": "",
-        "debuff": "Target touching metal suffers Disadvantage on Attack Rolls and Ability Checks. Can be forced to drop metal objects. Requires Concentration. When upcast, deals an additional 1d8 Fire damage per spell slot level above 2nd."
+        "debuff": "Target touching metal suffers Disadvantage on Attack Rolls and Ability Checks. Can be forced to drop metal objects.  When upcast, deals an additional 1d8 Fire damage per spell slot level above 2nd.",
+        "need_concentration": true
     },
     {
         "name": "Lightning Arrow",
@@ -2186,7 +2372,8 @@
         "upcastable": true,
         "damage": "Weapon damage + 2d8 Lightning (primary), 2d8 Lightning (secondary targets)",
         "buff": "",
-        "debuff": "When upcast, damage increases by 1d8 per spell slot level above 3rd."
+        "debuff": "When upcast, damage increases by 1d8 per spell slot level above 3rd.",
+        "need_concentration": false
     },
     {
         "name": "Longstrider",
@@ -2197,7 +2384,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target's movement speed increases by 3m until Long Rest. Can be cast as a Ritual outside combat.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Magic Weapon",
@@ -2207,8 +2395,9 @@
         "level": 2,
         "upcastable": true,
         "damage": "Weapon deals +1 damage",
-        "buff": "Target weapon becomes magical with +1 to Attack and Damage Rolls for 10 turns. Requires Concentration. When upcast, bonus increases to +2 at Level 3, +3 at Level 4.",
-        "debuff": ""
+        "buff": "Target weapon becomes magical with +1 to Attack and Damage Rolls for 10 turns.  When upcast, bonus increases to +2 at Level 3, +3 at Level 4.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Plant Growth",
@@ -2219,7 +2408,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Creates an area where creatures' speed is reduced to 1/4 for 10 turns. Does not require Concentration."
+        "debuff": "Creates an area where creatures' speed is reduced to 1/4 for 10 turns. Does not require Concentration.",
+        "need_concentration": false
     },
     {
         "name": "Polymorph",
@@ -2230,7 +2420,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Can be used on allies to temporarily remove them from danger or provide utility.",
-        "debuff": "Target transforms into a sheep for 5 turns, unable to attack or cast spells. Requires Concentration."
+        "debuff": "Target transforms into a sheep for 5 turns, unable to attack or cast spells.",
+        "need_concentration": true
     },
     {
         "name": "Shillelagh",
@@ -2241,7 +2432,8 @@
         "upcastable": false,
         "damage": "1d8+2 Bludgeoning",
         "buff": "Weapon becomes magical and uses spellcasting ability for attack rolls for 10 turns. Does not require Concentration.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Slow",
@@ -2252,7 +2444,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "",
-        "debuff": "Up to 6 targets are Slowed for 10 turns: speed halved, -2 AC, Disadvantage on Dex Saves, can only take one action. Requires Concentration."
+        "debuff": "Up to 6 targets are Slowed for 10 turns: speed halved, -2 AC, Disadvantage on Dex Saves, can only take one action.",
+        "need_concentration": true
     },
     {
         "name": "Spike Growth",
@@ -2263,7 +2456,8 @@
         "upcastable": false,
         "damage": "2d4 Piercing per 1.5m moved",
         "buff": "",
-        "debuff": "Creates an area of difficult terrain that damages creatures moving through it. Requires Concentration."
+        "debuff": "Creates an area of difficult terrain that damages creatures moving through it.",
+        "need_concentration": true
     },
     {
         "name": "Telekinesis",
@@ -2274,7 +2468,8 @@
         "upcastable": false,
         "damage": "Varies by object weight (typically 2d4 to 8d6)",
         "buff": "Allows manipulation and throwing of objects and creatures for 10 turns.",
-        "debuff": "Target creature can be moved or thrown. Requires Concentration."
+        "debuff": "Target creature can be moved or thrown.",
+        "need_concentration": true
     },
     {
         "name": "Thaumaturgy",
@@ -2285,7 +2480,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster gains Advantage on Intimidation and Performance checks for 10 turns.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Thorn Whip",
@@ -2296,7 +2492,8 @@
         "upcastable": false,
         "damage": "1d6 Piercing",
         "buff": "",
-        "debuff": "Target is pulled 3m closer to the caster."
+        "debuff": "Target is pulled 3m closer to the caster.",
+        "need_concentration": false
     },
     {
         "name": "Wind Walk",
@@ -2307,7 +2504,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Caster and nearby allies transform into mist, gaining damage Resistance and Advantage on physical Saves until Long Rest.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Sunbeam",
@@ -2317,8 +2515,9 @@
         "level": 6,
         "upcastable": false,
         "damage": "6d8 Radiant damage (6-48)",
-        "buff": "Caster gains the ability to recast Sunbeam without expending a spell slot for 10 turns. Requires Concentration.",
-        "debuff": "Targets that fail CON save are Blinded for 10 turns. Blinded creatures have Disadvantage on attack rolls and their range of attacks/spells is reduced to 3m."
+        "buff": "Caster gains the ability to recast Sunbeam without expending a spell slot for 10 turns.",
+        "debuff": "Targets that fail CON save are Blinded for 10 turns. Blinded creatures have Disadvantage on attack rolls and their range of attacks/spells is reduced to 3m.",
+        "need_concentration": true
     },
     {
         "name": "Chain Lightning",
@@ -2329,7 +2528,8 @@
         "upcastable": false,
         "damage": "10d8 Lightning damage (10-80). Targets 1 primary target and up to 3 other enemies within 18m.",
         "buff": "",
-        "debuff": "Targets that fail DEX save take full damage (half on success)."
+        "debuff": "Targets that fail DEX save take full damage (half on success).",
+        "need_concentration": false
     },
     {
         "name": "Wall of Ice",
@@ -2340,7 +2540,8 @@
         "upcastable": false,
         "damage": "10d6 Cold damage (20-120) to creatures when wall appears. Creates Ice Cloud that deals 10d6 Cold per turn when broken.",
         "buff": "",
-        "debuff": "Targets that fail DEX save take full damage (half on success). Requires Concentration for 10 turns."
+        "debuff": "Targets that fail DEX save take full damage (half on success). Requires Concentration for 10 turns.",
+        "need_concentration": false
     },
     {
         "name": "Cone of Cold",
@@ -2351,7 +2552,8 @@
         "upcastable": true,
         "damage": "8d8 Cold damage (8-64). When upcast, damage increases by 1d8 Cold for each spell slot level above 5th.",
         "buff": "",
-        "debuff": "Targets that fail CON save take full damage (half on success). Creates Ice surface that acts as difficult terrain and may cause Prone."
+        "debuff": "Targets that fail CON save take full damage (half on success). Creates Ice surface that acts as difficult terrain and may cause Prone.",
+        "need_concentration": false
     },
     {
         "name": "Destructive Wave",
@@ -2362,7 +2564,8 @@
         "upcastable": false,
         "damage": "10d6 Thunder damage (10-60). Has Radiant and Necrotic variants. 9m radius AoE, enemies only.",
         "buff": "",
-        "debuff": "Targets that fail CON save take full damage (half on success) and are knocked Prone for 1 turn."
+        "debuff": "Targets that fail CON save take full damage (half on success) and are knocked Prone for 1 turn.",
+        "need_concentration": false
     },
     {
         "name": "Blade Barrier",
@@ -2373,7 +2576,8 @@
         "upcastable": false,
         "damage": "6d10 Slashing damage (6-60) when entering the barrier. Creatures take 6d10 Slashing damage per turn while inside.",
         "buff": "",
-        "debuff": "Creates Difficult Terrain in a 36m line. Targets that fail DEX save take damage. Requires Concentration for 60 turns."
+        "debuff": "Creates Difficult Terrain in a 36m line. Targets that fail DEX save take damage. Requires Concentration for 60 turns.",
+        "need_concentration": false
     },
     {
         "name": "Staggering Smite",
@@ -2384,7 +2588,8 @@
         "upcastable": false,
         "damage": "Weapon damage + 4d6 Psychic damage (4-24)",
         "buff": "",
-        "debuff": "Target must make WIS save or be Staggered for 1 turn (Disadvantage on Attack Rolls, Ability Checks, can't take reactions). Requires Concentration."
+        "debuff": "Target must make WIS save or be Staggered for 1 turn (Disadvantage on Attack Rolls, Ability Checks, can't take reactions).",
+        "need_concentration": true
     },
     {
         "name": "Grant Flight",
@@ -2394,8 +2599,9 @@
         "level": 3,
         "upcastable": true,
         "damage": "",
-        "buff": "Target gains the ability to fly for 10 turns, moving up to 18m per turn. Requires Concentration. When upcast, affects an additional target per spell slot level above 3rd.",
-        "debuff": ""
+        "buff": "Target gains the ability to fly for 10 turns, moving up to 18m per turn.  When upcast, affects an additional target per spell slot level above 3rd.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Knock",
@@ -2406,7 +2612,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Instantly unlocks any non-magical lock regardless of lockpicking difficulty.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Banishing Smite",
@@ -2417,7 +2624,8 @@
         "upcastable": false,
         "damage": "Weapon damage + 5d10 Force damage (5-50)",
         "buff": "",
-        "debuff": "If target is left with 1-49 HP after damage, it is Banished for 2 turns (can't be targeted, move, or take actions). Requires Concentration."
+        "debuff": "If target is left with 1-49 HP after damage, it is Banished for 2 turns (can't be targeted, move, or take actions).",
+        "need_concentration": true
     },
     {
         "name": "Flame Strike",
@@ -2428,7 +2636,8 @@
         "upcastable": true,
         "damage": "5d6 Fire + 5d6 Radiant damage (10-60 total). When upcast, deals an additional 1d6 Fire and 1d6 Radiant per spell slot level above 5th.",
         "buff": "",
-        "debuff": "Targets that fail DEX save take full damage (half on success)."
+        "debuff": "Targets that fail DEX save take full damage (half on success).",
+        "need_concentration": false
     },
     {
         "name": "Heal",
@@ -2439,7 +2648,8 @@
         "upcastable": false,
         "damage": "",
         "buff": "Target regains 70 hit points and is cured of Blindness and diseases. Has no effect on undead or constructs.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Mass Cure Wounds",
@@ -2450,7 +2660,8 @@
         "upcastable": true,
         "damage": "",
         "buff": "Heals up to 6 allies for 3d8 hit points. When upcast, heals an extra 1d8 per spell slot level above 5th. Has no effect on undead or constructs.",
-        "debuff": ""
+        "debuff": "",
+        "need_concentration": false
     },
     {
         "name": "Wall of Fire",
@@ -2461,7 +2672,8 @@
         "upcastable": true,
         "damage": "5d8 Fire damage (5-40) to creatures within 3m. When upcast, deals an extra 1d8 Fire damage per spell slot level above 4th.",
         "buff": "",
-        "debuff": "Creates a 36m line wall of fire for 10 turns. Creatures may be Burned (1d4 Fire damage per turn). Requires Concentration."
+        "debuff": "Creates a 36m line wall of fire for 10 turns. Creatures may be Burned (1d4 Fire damage per turn).",
+        "need_concentration": true
     },
     {
         "name": "Wall of Stone",
@@ -2471,8 +2683,9 @@
         "level": 5,
         "upcastable": false,
         "damage": "",
-        "buff": "Creates a stone barrier that blocks movement and line of sight. Requires Concentration.",
-        "debuff": ""
+        "buff": "Creates a stone barrier that blocks movement and line of sight.",
+        "debuff": "",
+        "need_concentration": true
     },
     {
         "name": "Otiluke's Freezing Sphere",
@@ -2483,7 +2696,8 @@
         "upcastable": false,
         "damage": "10d6 Cold damage (10-60)",
         "buff": "",
-        "debuff": "Targets must make CON save or take full damage."
+        "debuff": "Targets must make CON save or take full damage.",
+        "need_concentration": false
     },
     {
         "name": "Power Word Kill",
@@ -2494,7 +2708,8 @@
         "upcastable": false,
         "damage": "Instant death if target has 100 HP or less",
         "buff": "",
-        "debuff": "Target with 100 HP or less dies instantly. No saving throw. Can only be learned by Dark Urge after defeating Orin and accepting Bhaal's gift."
+        "debuff": "Target with 100 HP or less dies instantly. No saving throw. Can only be learned by Dark Urge after defeating Orin and accepting Bhaal's gift.",
+        "need_concentration": false
     },
     {
         "name": "Booming Blade",
@@ -2505,6 +2720,7 @@
         "upcastable": false,
         "damage": "Weapon damage + 1d8 Thunder when target moves. At level 5: +1d8 Thunder on hit, +2d8 when target moves. At level 11: +2d8 Thunder on hit, +3d8 when target moves.",
         "buff": "",
-        "debuff": "Target takes Thunder damage when it moves on its next turn."
+        "debuff": "Target takes Thunder damage when it moves on its next turn.",
+        "need_concentration": false
     }
 ]
