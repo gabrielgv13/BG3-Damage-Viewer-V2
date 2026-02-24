@@ -48,20 +48,31 @@ class ClassFeaturesLoader:
         self._load_spells()
     
     def _load_classes(self) -> None:
-        """Load all class JSON files."""
+        """Load all class JSON files from subdirectories."""
         classes_dir = self.data_path / "classes"
         
         if not classes_dir.exists():
             print(f"[!] Classes directory not found at {classes_dir}")
             return
         
-        # Load all .json files in classes directory (not subdirectories)
-        for class_file in classes_dir.glob("*.json"):
+        # Each class has its own directory (e.g., barbarian/, bard/)
+        # Inside each directory is the main class file (e.g., barbarian.json)
+        for class_dir in sorted(classes_dir.iterdir()):
+            if not class_dir.is_dir() or class_dir.name == "subclasses":
+                continue
+            
+            # Look for the main class file (matches directory name)
+            class_file = class_dir / f"{class_dir.name}.json"
+            
+            if not class_file.exists():
+                print(f"[!] Class file not found: {class_file}")
+                continue
+            
             try:
                 with open(class_file, 'r', encoding='utf-8') as f:
                     class_data = json.load(f)
                 
-                class_name = class_file.stem  # filename without .json
+                class_name = class_dir.name  # Use directory name as class name
                 self.classes[class_name] = class_data
                 
                 # Track subclass selection level
@@ -73,24 +84,43 @@ class ClassFeaturesLoader:
                 print(f"[!] Error loading {class_file}: {e}")
     
     def _load_subclasses(self) -> None:
-        """Load all subclass JSON files."""
-        subclasses_dir = self.data_path / "classes" / "subclasses"
+        """Load all subclass JSON files from class subdirectories."""
+        classes_dir = self.data_path / "classes"
         
-        if not subclasses_dir.exists():
-            print(f"[!] Subclasses directory not found at {subclasses_dir}")
+        if not classes_dir.exists():
+            print(f"[!] Classes directory not found at {classes_dir}")
             return
         
-        for subclass_file in subclasses_dir.glob("*.json"):
-            try:
-                with open(subclass_file, 'r', encoding='utf-8') as f:
-                    subclass_data = json.load(f)
-                
-                subclass_name = subclass_file.stem
-                self.subclasses[subclass_name] = subclass_data
-            except Exception as e:
-                print(f"[!] Error loading {subclass_file}: {e}")
+        subclass_count = 0
         
-        print(f"[OK] Loaded {len(self.subclasses)} subclasses")
+        # Load subclasses from each class directory
+        for class_dir in sorted(classes_dir.iterdir()):
+            if not class_dir.is_dir():
+                continue
+            
+            # Load all JSON files in the class directory except the main class file
+            for subclass_file in class_dir.glob("*.json"):
+                # Skip the main class file (it has the same name as the directory)
+                if subclass_file.stem == class_dir.name:
+                    continue
+                
+                try:
+                    with open(subclass_file, 'r', encoding='utf-8') as f:
+                        subclass_data = json.load(f)
+                    
+                    # Strip class prefix from subclass filename if present
+                    # e.g., "wizard_abjuration_school" -> "abjuration_school"
+                    subclass_name = subclass_file.stem
+                    class_prefix = f"{class_dir.name}_"
+                    if subclass_name.startswith(class_prefix):
+                        subclass_name = subclass_name[len(class_prefix):]
+                    
+                    self.subclasses[subclass_name] = subclass_data
+                    subclass_count += 1
+                except Exception as e:
+                    print(f"[!] Error loading {subclass_file}: {e}")
+        
+        print(f"[OK] Loaded {subclass_count} subclasses")
     
     def _load_feats(self) -> None:
         """Load feats.json."""
@@ -141,8 +171,8 @@ class ClassFeaturesLoader:
     
     def get_subclass_data(self, class_name: str, subclass_name: str) -> Optional[Dict]:
         """Get full data for a specific subclass."""
-        # Subclass keys are formatted as: {classname}_{subclassname}
-        subclass_key = f"{class_name.lower()}_{subclass_name.lower()}"
+        # Subclass keys are now just the subclass name (e.g., "berserker", "wildheart")
+        subclass_key = subclass_name.lower()
         return self.subclasses.get(subclass_key)
     
     def get_features_at_level(self, class_name: str, level: int) -> List[Dict]:

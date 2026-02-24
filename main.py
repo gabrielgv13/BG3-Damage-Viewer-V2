@@ -1,229 +1,60 @@
 
 import dearpygui.dearpygui as dpg
-import json
-import os
 import re
 from class_features_loader import ClassFeaturesLoader
+from loaders import DataLoader
+from models import SpellSlotCalculator, DamageCalculator, ArmorCalculator
+from utils import AbilityScoreCalculator, EquipmentCategorizer
+from ui import load_damage_type_textures, render_damage_breakdown
 
 # --- Data Loading ---
-
-def load_data():
-    equip_data_path = os.path.join(os.path.dirname(__file__), 'data', 'equipment.json')
-    weap_data_path = os.path.join(os.path.dirname(__file__), 'data', 'weapons.json')
-
-    with open(equip_data_path, 'r', encoding='utf-8') as f:
-        equip_data = json.load(f)
-
-    with open(weap_data_path, 'r', encoding='utf-8') as f:
-        weap_data = json.load(f)
-    
-    return equip_data, weap_data
-
-EQUIP_DATA, WEAP_DATA = load_data()
+print("[*] Loading data...")
+DATA_LOADER = DataLoader()
+EQUIP_DATA = DATA_LOADER.equipment_data
+WEAP_DATA = DATA_LOADER.weapon_data
+SPELL_SLOT_DATA = DATA_LOADER.spell_slot_data
+print("[OK] Data loaded\n")
 
 # --- Load Class Features ---
-print("[*] Loading class features, feats, and spells...")
-FEATURES_LOADER = ClassFeaturesLoader(data_path="data")
-print("[OK] Features loader initialized\n")
+FEATURES_LOADER = DATA_LOADER.features_loader
 
-# --- Load Spell Slot Data ---
-def load_spell_slot_data():
-    spell_slot_path = os.path.join(os.path.dirname(__file__), 'resources', 'spell_slots.json')
-    with open(spell_slot_path, 'r', encoding='utf-8') as f:
-        return json.load(f)
+# --- Initialize Calculators ---
+print("[*] Initializing calculators...")
+EQUIPMENT_CATEGORIZER = EquipmentCategorizer(EQUIP_DATA, WEAP_DATA)
+SPELL_SLOT_CALC = SpellSlotCalculator(SPELL_SLOT_DATA)
+print("[OK] Calculators initialized\n")
 
-SPELL_SLOT_DATA = load_spell_slot_data()
-
-# --- Caster Classification ---
-# Define caster types and their progression divisor
-FULL_CASTERS = {'bard', 'cleric', 'druid', 'sorcerer', 'wizard', 'warlock'}
-HALF_CASTERS = {'paladin', 'ranger'}
-ONE_THIRD_CASTERS = {'eldritch knight', 'arcane trickster'}
-
-def get_caster_type(class_name):
-    """Returns 'full', 'half', 'one_third', or None if not a caster."""
-    class_lower = class_name.lower()
-    if class_lower in FULL_CASTERS:
-        return 'full'
-    elif class_lower in HALF_CASTERS:
-        return 'half'
-    elif class_lower in ONE_THIRD_CASTERS:
-        return 'one_third'
-    return None
-
-def get_subclass_caster_type(subclass_name):
-    """Returns caster type for subclasses like 'eldritch_knight' or 'arcane_trickster'."""
-    subclass_lower = subclass_name.lower().replace('_', ' ')
-    if subclass_lower in FULL_CASTERS:
-        return 'full'
-    elif subclass_lower in HALF_CASTERS:
-        return 'half'
-    elif subclass_lower in ONE_THIRD_CASTERS:
-        return 'one_third'
-    return None
-
+# --- Spell Slot Calculation Wrappers ---
 def calculate_effective_spell_level():
-    """
-    Calculate total Effective Spell Level (ESL) from multiclass levels.
-    Formula: ESL = floor(full_levels/1 + half_levels/2 + one_third_levels/3)
-    
-    Returns the ESL capped at 20 (max D&D level).
-    """
-    esl = 0.0
-    
-    for class_name, level in character_levels.items():
-        caster_type = get_caster_type(class_name)
-        
-        # Check subclass if it's a caster
-        if caster_type:
-            subclass_name = character_subclasses.get(class_name)
-            if subclass_name:
-                subclass_type = get_subclass_caster_type(subclass_name)
-                if subclass_type:
-                    caster_type = subclass_type
-        
-        if caster_type == 'full':
-            esl += level / 1
-        elif caster_type == 'half':
-            esl += level / 2
-        elif caster_type == 'one_third':
-            esl += level / 3
-    
-    return min(int(esl), 20)
-
-def get_spell_slots_for_level(spell_level):
-    """
-    Get the number of spell slots for a given spell level (1-6+).
-    Returns the slot count based on current ESL, or 0 if ESL is not high enough.
-    """
-    esl = calculate_effective_spell_level()
-    
-    if esl == 0:
-        return 0
-    
-    progression_table = SPELL_SLOT_DATA['progression_tables']['full_casters']
-    
-    # ESL is treated like character level for spell slot lookup
-    # Find the entry in progression table
-    for entry in progression_table:
-        if entry['level'] == esl:
-            return entry['slots'].get(str(spell_level), 0)
-    
-    # If exact level not found, use highest available
-    if esl > 12:
-        return progression_table[-1]['slots'].get(str(spell_level), 0)
-    
-    return 0
+    """Calculate ESL using the SpellSlotCalculator."""
+    return SPELL_SLOT_CALC.calculate_effective_spell_level(character_levels, character_subclasses)
 
 def get_all_spell_slots():
-    """
-    Calculate all spell slots (levels 1-6) for the current character.
-    Returns a dict: {1: count, 2: count, ..., 6: count}
-    """
+    """Get all spell slots for current ESL."""
     esl = calculate_effective_spell_level()
-    result = {}
-    
-    if esl == 0:
-        return {i: 0 for i in range(1, 7)}
-    
-    progression_table = SPELL_SLOT_DATA['progression_tables']['full_casters']
-    
-    # Find the entry for current ESL
-    spell_slots = None
-    for entry in progression_table:
-        if entry['level'] == esl:
-            spell_slots = entry['slots']
-            break
-    
-    # If not found and ESL > 12, use level 12 slots
-    if not spell_slots and esl > 12:
-        spell_slots = progression_table[-1]['slots']
-    
-    if spell_slots:
-        for i in range(1, 7):
-            result[i] = spell_slots.get(str(i), 0)
-    else:
-        result = {i: 0 for i in range(1, 7)}
-    
-    return result
+    return SPELL_SLOT_CALC.get_all_spell_slots(esl)
 
-# --- Data Parsing & Organization ---
-
-# Categories for simple slots
-HELMETS = sorted([i['name'] for i in EQUIP_DATA if i['type'] == 'Helmet'])
-ARMOR_CLOTHING = sorted([i['name'] for i in EQUIP_DATA if i['type'] in ['Medium Armour', 'Heavy Armour', 'Light Armour', 'Clothing']])
-BOOTS = sorted([i['name'] for i in EQUIP_DATA if i['type'] == 'Boots'])
-CAPES = sorted([i['name'] for i in EQUIP_DATA if i['type'] in ['Cape', 'Cloak']])
-GLOVES = sorted([i['name'] for i in EQUIP_DATA if i['type'] == 'Gloves'])
-AMULETS = sorted([i['name'] for i in EQUIP_DATA if i['type'] == 'Amulet'])
-RINGS = sorted([i['name'] for i in EQUIP_DATA if i['type'] == 'Ring'])
-SHIELDS = sorted([i['name'] for i in EQUIP_DATA if i['type'] == 'Shield'])
-
-# Weapon categorization
-MELEE_1H = []
-MELEE_2H = []
-RANGED_1H = []
-RANGED_2H = []
-
-# Helper to check handedness
-def get_weapon_handedness(weapon_item):
-    """
-    Returns a set containing '1h' and/or '2h' based on effects.
-    Also returns 'ranged' if it appears to be a ranged weapon (checks for 'bow' or 'crossbow' in TYPE).
-    """
-    effects_str = " ".join(weapon_item.get('effects', [])).lower()
-    w_type = weapon_item.get('type', '').lower()
-    
-    modes = set()
-    if '1h ' in effects_str or '1h' == effects_str[:2]:
-        modes.add('1h')
-    if '2h ' in effects_str or '2h' == effects_str[:2]:
-        modes.add('2h')
-    
-    # Updated: Rely strictly on type string for ranged classification to avoid effect description/damage type confusion
-    is_ranged = 'bow' in w_type or 'crossbow' in w_type
-    
-    if is_ranged:
-        modes.add('ranged')
-    else:
-        modes.add('melee')
-        
-    return modes
-
-for w in WEAP_DATA:
-    name = w['name']
-    modes = get_weapon_handedness(w)
-    
-    if 'melee' in modes:
-        if '1h' in modes:
-            MELEE_1H.append(name)
-        if '2h' in modes:
-            MELEE_2H.append(name)
-    elif 'ranged' in modes:
-        if '1h' in modes:
-            RANGED_1H.append(name)
-        if '2h' in modes:
-            RANGED_2H.append(name)
-        
-        # Fallback for ranged logic if effect parsing wasn't perfect
-        # Most bows/xbows are 2h, hand crossbows are 1h.
-        w_type = w.get('type', '').lower()
-        if 'hand crossbow' in w_type:
-            if name not in RANGED_1H: RANGED_1H.append(name)
-        elif 'bow' in w_type or 'crossbow' in w_type:
-             if name not in RANGED_2H: RANGED_2H.append(name)
-
-MELEE_1H.sort()
-MELEE_2H.sort()
-RANGED_1H.sort()
-RANGED_2H.sort()
+# --- Equipment Categorization ---
+CATEGORIES = EQUIPMENT_CATEGORIZER.get_all_categories()
+HELMETS = CATEGORIES['helmets']
+ARMOR_CLOTHING = CATEGORIES['armor_clothing']
+BOOTS = CATEGORIES['boots']
+CAPES = CATEGORIES['capes']
+GLOVES = CATEGORIES['gloves']
+AMULETS = CATEGORIES['amulets']
+RINGS = CATEGORIES['rings']
+SHIELDS = CATEGORIES['shields']
+MELEE_1H = CATEGORIES['melee_1h']
+MELEE_2H = CATEGORIES['melee_2h']
+RANGED_1H = CATEGORIES['ranged_1h']
+RANGED_2H = CATEGORIES['ranged_2h']
 
 # --- UI Logic ---
 
 def update_melee_slots(sender, app_data, user_data):
     """
     Logic:
-    - If Main Hand has a STRICTLY 2H weapon (is in MELEE_2H but NOT in MELEE_1H), disable Off Hand.
+    - If Main Hand has a STRICTLY 2H weapon, disable Off Hand.
     - Otherwise, enable Off Hand.
     """
     main_hand_name = dpg.get_value("melee_main")
@@ -234,10 +65,7 @@ def update_melee_slots(sender, app_data, user_data):
         return
     
     # Check if selected item is strictly 2H
-    is_2h = main_hand_name in MELEE_2H
-    is_1h = main_hand_name in MELEE_1H
-    
-    if is_2h and not is_1h:
+    if EQUIPMENT_CATEGORIZER.is_strictly_two_handed(main_hand_name, is_ranged=False):
         # Strictly 2H
         dpg.set_value("melee_off", "")
         dpg.configure_item("melee_off", enabled=False)
@@ -248,10 +76,7 @@ def update_melee_slots(sender, app_data, user_data):
 def update_ranged_slots(sender, app_data, user_data):
     main_hand_name = dpg.get_value("ranged_main")
     
-    is_2h = main_hand_name in RANGED_2H
-    is_1h = main_hand_name in RANGED_1H
-    
-    if is_2h and not is_1h:
+    if EQUIPMENT_CATEGORIZER.is_strictly_two_handed(main_hand_name, is_ranged=True):
         dpg.set_value("ranged_off", "")
         dpg.configure_item("ranged_off", enabled=False)
     else:
@@ -266,42 +91,10 @@ dpg.create_context()
 EQUIP_MAP = {i['name']: i for i in EQUIP_DATA}
 WEAP_MAP = {i['name']: i for i in WEAP_DATA}
 
-DAMAGE_TYPE_COLORS = {
-    "slashing": "#C8C8C8",
-    "bludgeoning": "#C8C8C8",
-    "piercing": "#C8C8C8",
-    "cold": "#77C4DE",
-    "acid": "#D0DE15",
-    "necrotic": "#84C69E",
-    "poison": "#91A049",
-    "psychic": "#B56BA4",
-    "radiant": "#F2D57D",
-    "force": "#D36B6C",
-    "thunder": "#8266A6",
-    "lightning": "#5F93DD",
-}
-
-DAMAGE_TYPE_ICON_NAMES = {
-    "acid": "Acid.png",
-    "bludgeoning": "Bludgeoning.png",
-    "cold": "Cold.png",
-    "fire": "Fire.png",
-    "force": "Force.png",
-    "lightning": "Lightning.png",
-    "necrotic": "Necrotic.png",
-    "piercing": "Piercing.png",
-    "poison": "Poison.png",
-    "psychic": "Psychic.png",
-    "radiant": "Radiant.png",
-    "slashing": "Slashing.png",
-    "thunder": "Thunder.png",
-}
-
-DAMAGE_TYPE_TEXTURES = {}
-
-ABILITIES = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
-BASE_COSTS = {8: 0, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 7, 15: 9}
-TOTAL_POINTS = 27
+# Ability scores and point  buy constants
+ABILITIES = AbilityScoreCalculator.ABILITIES
+BASE_COSTS = AbilityScoreCalculator.BASE_COSTS
+TOTAL_POINTS = AbilityScoreCalculator.TOTAL_POINTS
 
 # --- Class and Level System ---
 # Dynamically load classes from features loader
@@ -368,182 +161,18 @@ def get_subclass_choices(class_name):
 
 # --- Parsing Logic ---
 
-def parse_dice_string(dice_str):
-    # Parses "1d8" -> (1, 8)
-    if not dice_str: return (0, 0)
-    parts = dice_str.lower().split('d')
-    if len(parts) != 2: return (0, 0)
-    return (int(parts[0]), int(parts[1]))
+# --- Initialize Damage and Armor Calculators ---
+DAMAGE_CALC = DamageCalculator(EQUIP_DATA, WEAP_DATA)
+ARMOR_CALC = ArmorCalculator(EQUIP_DATA, WEAP_DATA, SHIELDS)
 
-def parse_damage_value(value_str):
-    """Parse a damage value like '1d8 + 1' or '2' into (count, sides, flat)."""
-    if not value_str:
-        return 0, 0, 0
-    value_str = value_str.strip()
-    dice_match = re.match(r"^(\d+)d(\d+)(?:\s*\+\s*(\d+))?$", value_str)
-    if dice_match:
-        count = int(dice_match.group(1))
-        sides = int(dice_match.group(2))
-        flat = int(dice_match.group(3)) if dice_match.group(3) else 0
-        return count, sides, flat
-    flat_match = re.match(r"^(\d+)$", value_str)
-    if flat_match:
-        return 0, 0, int(flat_match.group(1))
-    return 0, 0, 0
-
-def extract_handedness_segment(effects_str, handedness):
-    tokens = list(re.finditer(r"(?:^|\s|\))(?P<h>1h|2h)\s+", effects_str))
-    for idx, token in enumerate(tokens):
-        if token.group("h").lower() == handedness.lower():
-            start = token.end()
-            end = tokens[idx + 1].start() if idx + 1 < len(tokens) else len(effects_str)
-            return effects_str[start:end]
-    return ""
-
-def parse_weapon_base_components(item, handedness, source_name):
-    effects_str = " ".join(item.get("effects", []))
-    segment = extract_handedness_segment(effects_str, handedness)
-    if not segment:
-        return []
-    components = []
-    for match in re.finditer(r"([A-Za-z]+)\(([^)]+)\)", segment):
-        dmg_type = match.group(1)
-        value_str = match.group(2)
-        count, sides, flat = parse_damage_value(value_str)
-        components.append({
-            "type": dmg_type,
-            "dice_count": count,
-            "dice_sides": sides,
-            "flat": flat,
-            "source": source_name,
-        })
-    return components
-
-def parse_additional_damage_components(effects_str, source_name):
-    components = []
-    pattern = r"(?:deal\s+)?an\s+additional\s+(?:([A-Za-z]+)|🎲)\(([^)]+)\)"
-    for match in re.finditer(pattern, effects_str, re.IGNORECASE):
-        dmg_type = match.group(1) or "Unspecified"
-        value_str = match.group(2)
-        count, sides, flat = parse_damage_value(value_str)
-        if count == 0 and sides == 0 and flat == 0:
-            continue
-        components.append({
-            "type": dmg_type,
-            "dice_count": count,
-            "dice_sides": sides,
-            "flat": flat,
-            "source": source_name,
-        })
-    return components
-
+# Wrapper function for equipment damage components
 def get_equipment_damage_components(is_unarmed=False):
-    flat_total = 0
-    components = []
+    """Get damage bonuses from equipped items."""
     slots = ["slot_helmet", "slot_cape", "slot_armor", "slot_gloves", "slot_boots", "slot_amulet", "slot_ring1", "slot_ring2"]
-    for tag in slots:
-        item_name = dpg.get_value(tag)
-        if not item_name or item_name not in EQUIP_MAP:
-            continue
-        item = EQUIP_MAP[item_name]
-        effects_str = " ".join(item.get("effects", []))
-        if (not is_unarmed) and re.search(r"\bunarmed\b", effects_str, re.IGNORECASE):
-            continue
-        item_components = parse_additional_damage_components(effects_str, f"{item_name} (equipment)")
-        for comp in item_components:
-            components.append(comp)
-            if comp["dice_count"] == 0 and comp["flat"]:
-                flat_total += comp["flat"]
-    return flat_total, components
+    equipped_items = [dpg.get_value(tag) for tag in slots if dpg.get_value(tag)]
+    return DAMAGE_CALC.get_equipment_damage_components(equipped_items, is_unarmed)
 
-def format_damage_components(components):
-    lines = []
-    for comp in components:
-        dmg_type = comp["type"]
-        source = comp["source"]
-        count = comp["dice_count"]
-        sides = comp["dice_sides"]
-        flat = comp["flat"]
-        if count > 0:
-            d_min = count
-            d_max = count * sides
-            d_avg = (count * (sides + 1)) / 2
-            line = f"{dmg_type} ({source}): {count}d{sides} -> {d_min}-{d_max} (Avg {d_avg:.1f})"
-            if flat:
-                sign = "+" if flat > 0 else ""
-                line += f" {sign}{flat} flat"
-        else:
-            sign = "+" if flat >= 0 else ""
-            line = f"{dmg_type} ({source}): {sign}{flat} flat"
-        lines.append(line)
-    return lines
-
-def hex_to_rgb(hex_str):
-    hex_str = hex_str.lstrip("#")
-    return [int(hex_str[i:i + 2], 16) for i in (0, 2, 4)]
-
-def get_damage_type_color(damage_type):
-    return DAMAGE_TYPE_COLORS.get(damage_type.lower(), "#FFFFFF")
-
-def normalize_damage_type(damage_type):
-    if not damage_type:
-        return "Unspecified"
-    return damage_type.strip().capitalize()
-
-def get_damage_texture_tag(damage_type):
-    return DAMAGE_TYPE_TEXTURES.get(damage_type.lower())
-
-def load_damage_type_textures():
-    icon_dir = os.path.join(os.path.dirname(__file__), "icons", "damage_types")
-    if not os.path.isdir(icon_dir):
-        return
-
-    for dmg_key, filename in DAMAGE_TYPE_ICON_NAMES.items():
-        file_path = os.path.join(icon_dir, filename)
-        if not os.path.isfile(file_path):
-            continue
-        width, height, channels, data = dpg.load_image(file_path)
-        texture_tag = f"tex_damage_{dmg_key}"
-        if not dpg.does_item_exist(texture_tag):
-            dpg.add_static_texture(width, height, data, tag=texture_tag)
-        DAMAGE_TYPE_TEXTURES[dmg_key] = texture_tag
-
-def render_damage_breakdown(parent_tag, components):
-    if not dpg.does_item_exist(parent_tag):
-        return
-    dpg.delete_item(parent_tag, children_only=True)
-    if not components:
-        dpg.add_text("(no damage breakdown)", parent=parent_tag, color=[180, 180, 180])
-        return
-
-    for comp in components:
-        dmg_type_raw = comp["type"]
-        dmg_type = normalize_damage_type(dmg_type_raw)
-        color = hex_to_rgb(get_damage_type_color(dmg_type_raw))
-        texture_tag = get_damage_texture_tag(dmg_type_raw)
-        count = comp["dice_count"]
-        sides = comp["dice_sides"]
-        flat = comp["flat"]
-        source = comp["source"]
-
-        if count > 0:
-            d_min = count
-            d_max = count * sides
-            d_avg = (count * (sides + 1)) / 2
-            detail = f"{count}d{sides} -> {d_min}-{d_max} (Avg {d_avg:.1f})"
-            if flat:
-                sign = "+" if flat > 0 else ""
-                detail += f" {sign}{flat} flat"
-        else:
-            sign = "+" if flat >= 0 else ""
-            detail = f"{sign}{flat} flat"
-
-        with dpg.group(horizontal=True, parent=parent_tag):
-            if texture_tag:
-                dpg.add_image(texture_tag, width=16, height=16)
-            dpg.add_text(dmg_type, color=color)
-            dpg.add_text(f"({source}): {detail}")
-
+# Load damage type textures
 with dpg.texture_registry():
     load_damage_type_textures()
 
@@ -671,24 +300,41 @@ def update_features_display():
     for lvl in range(1, current_level + 1):
         class_features = FEATURES_LOADER.get_features_at_level(selected_class.lower(), lvl)
         
-        if class_features:
+        # Filter and display class features
+        displayable_features = []
+        for feature in class_features:
+            # Skip spell selection entries (they don't have a "name" field)
+            if "spells_amount" in feature or "cantrip_amount" in feature:
+                # Build spell selection description
+                parts = []
+                if "cantrip_amount" in feature:
+                    parts.append(f"Learn {feature['cantrip_amount']} Cantrip(s)")
+                if "spells_amount" in feature:
+                    parts.append(f"Learn {feature['spells_amount']} Spell(s)")
+                displayable_features.append({"name": " + ".join(parts), "type": "spellSelection"})
+            elif "name" in feature:
+                displayable_features.append(feature)
+        
+        if displayable_features:
             all_features_text.append(f"\n{'-' * 50}")
             all_features_text.append(f"{selected_class} - Level {lvl}")
             all_features_text.append('-' * 50)
             
-            for feature in class_features:
+            for feature in displayable_features:
                 name = feature.get("name", "Unknown")
                 feature_type = feature.get("type", "feature")
                 
                 if feature_type == "subclassSelection":
                     all_features_text.append(f"\n  [CHOOSE] {name}")
+                elif feature_type == "spellSelection":
+                    all_features_text.append(f"  [SPELL] {name}")
                 else:
                     all_features_text.append(f"  [+] {name}")
         
         # Add subclass features if subclass is selected and we've reached subclass level
         if subclass:
             subclass_level = FEATURES_LOADER.get_subclass_level(selected_class.lower())
-            if lvl >= subclass_level:
+            if subclass_level is not None and lvl >= subclass_level:
                 subclass_features = FEATURES_LOADER.get_subclass_features_at_level(
                     selected_class.lower(), subclass, lvl
                 )
@@ -731,15 +377,20 @@ def update_spell_slots_display():
     # Get spell slots for all levels
     spell_slots = get_all_spell_slots()
     
-    # Update individual slot displays
-    for slot_level in range(1, 7):
-        count = spell_slots.get(slot_level, 0)
-        dpg.set_value(f"spell_slot_level{slot_level}", f"Level {slot_level}: {count}")
-    
-    # Update the summary text
+    # Update the summary text and show/hide detailed breakdown
     if esl == 0:
         dpg.set_value("spell_slots_text", "No caster levels. Select a caster class to view spell slots.")
+        dpg.configure_item("spell_slots_by_level_group", show=False)
     else:
+        # Show the detailed breakdown
+        dpg.configure_item("spell_slots_by_level_group", show=True)
+        
+        # Update individual slot displays
+        for slot_level in range(1, 7):
+            count = spell_slots.get(slot_level, 0)
+            dpg.set_value(f"spell_slot_level{slot_level}", f"Level {slot_level}: {count}")
+        
+        # Update summary text
         slots_summary = ", ".join([f"{slot_level}L: {count}" for slot_level in range(1, 7) if (spell_slots.get(slot_level, 0) > 0)])
         if slots_summary:
             dpg.set_value("spell_slots_text", f"Spell Slots: {slots_summary}")
@@ -760,30 +411,15 @@ def reset_levels(sender, app_data, user_data):
     update_spell_slots_display()
 
 
+# Wrapper functions for damage calculation
 def get_mean_damage(dice_str, flat_bonus=0, modifier=0):
-    count, sides = parse_dice_string(dice_str)
-    return (count * (sides + 1) / 2) + flat_bonus + modifier
+    return DAMAGE_CALC.get_mean_damage(dice_str, flat_bonus, modifier)
 
 def parse_weapon_damage(item, handedness='1h'):
-    # Returns (dice_str, enchantment)
-    # Regex to find "1h Slashing(1d8 + 1)" or "1h Piercing(1d6)"
-    # Pattern: <handedness> <type>(<dice> [ + <enchant>])
-    effects = " ".join(item.get('effects', []))
-    pattern = rf"{handedness}\s+\w+\(([\d]+d[\d]+)(?:\s*\+\s*(\d+))?\)"
-    match = re.search(pattern, effects, re.IGNORECASE)
-    
-    if match:
-        dice = match.group(1)
-        enchant = int(match.group(2)) if match.group(2) else 0
-        return dice, enchant
-    
-    # Fallback/Try loose search if strict pattern fails
-    loose_pattern = rf"\(([\d]+d[\d]+)(?:\s*\+\s*(\d+))?\)"
-    match = re.search(loose_pattern, effects)
-    if match:
-        return match.group(1), (int(match.group(2)) if match.group(2) else 0)
-        
-    return "0d0", 0
+    return DAMAGE_CALC.parse_weapon_damage(item, handedness)
+
+def parse_dice_string(dice_str):
+    return DAMAGE_CALC._parse_dice_string(dice_str)
 
 def get_global_damage_bonuses():
     flat_total, _ = get_equipment_damage_components(is_unarmed=False)
@@ -791,8 +427,9 @@ def get_global_damage_bonuses():
 
 # --- Calculation ---
 
+# Use AbilityScoreCalculator for modifier calculation
 def calculate_mod(score):
-    return (score - 10) // 2
+    return AbilityScoreCalculator.calculate_modifier(score)
 
 def update_abilities(sender, app_data, user_data):
     # Enforce unique checkboxes
@@ -872,92 +509,33 @@ def recalculate_stats():
     # --- AC Calculation ---
     dex_mod = mods.get("Dexterity", 0)
     
-    base_ac = 10
+    # Get equipped items
+    equipped_items = {
+        "slot_helmet": dpg.get_value("slot_helmet"),
+        "slot_cape": dpg.get_value("slot_cape"),
+        "slot_armor": dpg.get_value("slot_armor"),
+        "slot_gloves": dpg.get_value("slot_gloves"),
+        "slot_boots": dpg.get_value("slot_boots"),
+        "slot_amulet": dpg.get_value("slot_amulet"),
+        "slot_ring1": dpg.get_value("slot_ring1"),
+        "slot_ring2": dpg.get_value("slot_ring2"),
+        "melee_main": dpg.get_value("melee_main"),
+        "melee_off": dpg.get_value("melee_off"),
+    }
+    
     armor_name = dpg.get_value("slot_armor")
-    armor_item = EQUIP_MAP.get(armor_name)
-    max_dex_bonus = 99 # Uncapped by default
+    offhand_name = dpg.get_value("melee_off")
     
-    active_ac_bonus = 0
-    
-    if armor_item and armor_name != "None":
-        itype = armor_item.get('type', '')
-        effects = " ".join(armor_item.get('effects', []))
-        
-        # Parse Base AC from "Shield X AC"
-        match = re.search(r"Shield (\d+) AC", effects)
-        if match:
-            base_ac = int(match.group(1))
-        elif armor_item.get('armor_class'):
-             # Fallback
-             base_ac = armor_item['armor_class']
-             
-        if 'Medium' in itype:
-            max_dex_bonus = 2
-        elif 'Heavy' in itype:
-            max_dex_bonus = 0
-    
-    # Shield
-    offhand = dpg.get_value("melee_off")
-    if offhand in SHIELDS and offhand != "None": # SHIELDS list exists in global scope
-        shield_item = EQUIP_MAP.get(offhand) or WEAP_MAP.get(offhand) # Shields in equip data usually
-        if shield_item:
-            # Check AC explicit or effect
-            if shield_item.get('armor_class'):
-                active_ac_bonus += shield_item['armor_class']
-            else:
-                active_ac_bonus += 2 # Default Assumption
-    
-    # Misc Bonuses (Bracers of Defence, Rings +1 AC)
-    # Check all slots for "Shield + X AC" or "Saving Throw +1" -> No, stick to AC
-    slots = ["slot_helmet", "slot_cape", "slot_armor", "slot_gloves", "slot_boots", "slot_amulet", "slot_ring1", "slot_ring2", "melee_main", "melee_off"]
-    
-    is_unarmored = (not armor_name or armor_name == "None") or (armor_item and armor_item.get('type') == 'Clothing')
-    has_shield = (offhand in SHIELDS and offhand != "None")
-    
-    for tag in slots:
-        item_name = dpg.get_value(tag)
-        if not item_name or item_name == "None": continue
-        # Could be weapon or equip
-        item = EQUIP_MAP.get(item_name) or WEAP_MAP.get(item_name)
-        if not item: continue
-        
-        effects = " ".join(item.get('effects', []))
-        
-        # Generic AC bonus "Shield + 1 AC"
-        matches = re.findall(r"Shield \+ (\d+) AC", effects)
-        for m in matches:
-            # Correction: Verify conditional "Bracers of Defence"
-            if item['name'] == "Bracers of Defence":
-                if is_unarmored and not has_shield:
-                    active_ac_bonus += int(m)
-            else:
-                active_ac_bonus += int(m)
-                
-    # Final AC
-    effective_dex = min(dex_mod, max_dex_bonus)
-    final_ac = base_ac + effective_dex + active_ac_bonus
-    
-    dpg.set_value("stat_ac", f"Armor Class: {final_ac} (Base {base_ac} + Dex {effective_dex} + Bonus {active_ac_bonus})")
+    # Calculate AC using ArmorCalculator
+    ac_data = ARMOR_CALC.calculate_ac(dex_mod, equipped_items, armor_name, offhand_name)
+    dpg.set_value("stat_ac", ARMOR_CALC.get_ac_breakdown(ac_data))
     
     # --- Damage Calculation Functions ---
     def calculate_dmg_range(dice_str, total_mod):
-        # returns (min, max, avg, crit_min, crit_max, crit_avg)
-        count, sides = parse_dice_string(dice_str)
-        if count == 0: return (0, 0, 0, 0, 0, 0)
-        
-        # Normal
-        v_min = count + total_mod
-        v_max = (count * sides) + total_mod
-        v_avg = (count * (sides + 1) / 2) + total_mod
-        
-        # Crit (Double Dice, flat mod stays same)
-        c_min = (count * 2) + total_mod
-        c_max = (count * 2 * sides) + total_mod
-        c_avg = (count * 2 * (sides + 1) / 2) + total_mod
-        
-        return v_min, v_max, v_avg, c_min, c_max, c_avg
+        return DAMAGE_CALC.calculate_damage_range(dice_str, total_mod)
 
     str_mod = mods.get("Strength", 0)
+    dex_mod = mods.get("Dexterity", 0)
     
     # --- Main Hand ---
     mh_name = dpg.get_value("melee_main")
@@ -999,6 +577,7 @@ def recalculate_stats():
 
     elif mh_name and mh_name in WEAP_MAP and mh_name != "None":
         w_item = WEAP_MAP[mh_name]
+        offhand = dpg.get_value("melee_off")
         is_versatile = "2h" in " ".join(w_item.get('effects', [])) and "1h" in " ".join(w_item.get('effects', []))
         
         # Determine strict handedness
@@ -1024,9 +603,9 @@ def recalculate_stats():
         v_min, v_max, v_avg, c_min, c_max, c_avg = calculate_dmg_range(dice, total_mod)
         
         breakdown_components = []
-        base_components = parse_weapon_base_components(w_item, main_hand_dice_mode, f"{mh_name} (weapon)")
+        base_components = DAMAGE_CALC.parse_weapon_base_components(w_item, main_hand_dice_mode, f"{mh_name} (weapon)")
         breakdown_components.extend(base_components)
-        breakdown_components.extend(parse_additional_damage_components(
+        breakdown_components.extend(DAMAGE_CALC.parse_additional_damage_components(
             " ".join(w_item.get("effects", [])), f"{mh_name} (weapon effect)"
         ))
         breakdown_components.extend(equipment_components)
@@ -1071,11 +650,11 @@ def recalculate_stats():
         v_min, v_max, v_avg, c_min, c_max, c_avg = calculate_dmg_range(dice, total_mod)
         
         breakdown_components = []
-        base_components = parse_weapon_base_components(w_item, '2h', f"{rh_name} (weapon)")
+        base_components = DAMAGE_CALC.parse_weapon_base_components(w_item, '2h', f"{rh_name} (weapon)")
         if not base_components:
-            base_components = parse_weapon_base_components(w_item, '1h', f"{rh_name} (weapon)")
+            base_components = DAMAGE_CALC.parse_weapon_base_components(w_item, '1h', f"{rh_name} (weapon)")
         breakdown_components.extend(base_components)
-        breakdown_components.extend(parse_additional_damage_components(
+        breakdown_components.extend(DAMAGE_CALC.parse_additional_damage_components(
             " ".join(w_item.get("effects", [])), f"{rh_name} (weapon effect)"
         ))
         breakdown_components.extend(equipment_components)
@@ -1251,12 +830,14 @@ with dpg.window(tag="Primary Window", label="BG3 Damage Analyzer"):
                     dpg.add_text("Effective Spell Level: 0", tag="spell_esl_text", color=[100, 200, 255])
                     dpg.add_text("No caster levels. Select a caster class to view spell slots.", tag="spell_slots_text", color=[180, 180, 180], wrap=400)
                     
-                    dpg.add_spacer(height=5)
-                    dpg.add_text("Spell Slots by Level:", color=[200, 200, 100])
-                    
-                    with dpg.group():
-                        for slot_level in range(1, 7):
-                            dpg.add_text(f"Level {slot_level}: 0", tag=f"spell_slot_level{slot_level}", color=[180, 180, 180])
+                    # Group for spell slots by level (hidden when no caster levels)
+                    with dpg.group(tag="spell_slots_by_level_group", show=False):
+                        dpg.add_spacer(height=5)
+                        dpg.add_text("Spell Slots by Level:", color=[200, 200, 100])
+                        
+                        with dpg.group():
+                            for slot_level in range(1, 7):
+                                dpg.add_text(f"Level {slot_level}: 0", tag=f"spell_slot_level{slot_level}", color=[180, 180, 180])
                 
                 dpg.add_separator()
                 
