@@ -247,6 +247,7 @@
         "level": 3,
         "upcastable": true,
         "damage": "5d8 elemental damage (Acid, Cold, Fire, Lightning, or Thunder) for damaging variants",
+        "upcast-damage": "+1d8 per level (for damaging variants)",
         "buff": "",
         "debuff": "Varies by glyph type: Sleep (puts creatures to sleep), Detonation (pushes creatures back), or elemental damage with DEX Save for half. Only one glyph active at a time.",
         "need_concentration": false
@@ -475,6 +476,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "2d6 Necrotic",
+        "upcast-damage": "+1d6 Necrotic per level",
         "buff": "",
         "debuff": "Targets cannot take Reactions until their next turn.",
         "need_concentration": false
@@ -487,6 +489,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "Weapon damage + 1d6 Piercing (ongoing)",
+        "upcast-damage": "+1d6 Piercing per level (ongoing damage)",
         "buff": "",
         "debuff": "Target may become Ensnared, unable to move and taking ongoing Piercing damage. An ally can use Help to free them.",
         "need_concentration": false
@@ -547,6 +550,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "Weapon damage + 1d10 Piercing (AoE)",
+        "upcast-damage": "+1d10 Piercing per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -559,6 +563,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "1d10 Piercing + 2d6 Cold (AoE)",
+        "upcast-damage": "+1d6 Cold per level",
         "buff": "",
         "debuff": "Creates an ice surface that may cause creatures to fall Prone.",
         "need_concentration": false
@@ -571,6 +576,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "4d4 Slashing per turn",
+        "upcast-damage": "+2d4 Slashing per level",
         "buff": "",
         "debuff": "Creates a damaging area that lasts for 10 turns.",
         "need_concentration": false
@@ -583,6 +589,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "2d6 Fire (when ramming enemies)",
+        "upcast-damage": "+1d6 Fire per level",
         "buff": "Summons a controllable sphere that provides light and damages enemies.",
         "debuff": "",
         "need_concentration": true
@@ -619,6 +626,7 @@
         "level": 3,
         "upcastable": true,
         "damage": "3d10 Lightning",
+        "upcast-damage": "+1d10 Lightning per level",
         "buff": "",
         "debuff": "",
         "need_concentration": true
@@ -631,6 +639,7 @@
         "level": 3,
         "upcastable": true,
         "damage": "Weapon damage + 2d8 (same type as weapon)",
+        "upcast-damage": "+1d8 per level (same type as weapon)",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -643,6 +652,7 @@
         "level": 3,
         "upcastable": true,
         "damage": "2d6 Cold (start of turn) + 2d6 Acid (end of turn)",
+        "upcast-damage": "+1d6 Cold and +1d6 Acid per level",
         "buff": "",
         "debuff": "Creates an area that Blinds creatures, damages them, and is Difficult Terrain.",
         "need_concentration": true
@@ -667,6 +677,7 @@
         "level": 3,
         "upcastable": true,
         "damage": "3d8 Radiant or Necrotic per turn",
+        "upcast-damage": "+1d8 per level (Radiant or Necrotic)",
         "buff": "Protects the caster with spirits that damage nearby enemies.",
         "debuff": "Enemies in range have their Movement Speed halved.",
         "need_concentration": true
@@ -763,6 +774,7 @@
         "level": 5,
         "upcastable": true,
         "damage": "5d8 Poison per turn",
+        "upcast-damage": "+1d8 Poison per level",
         "buff": "",
         "debuff": "Creates a movable poison cloud that damages and obscures.",
         "need_concentration": true
@@ -787,6 +799,7 @@
         "level": 5,
         "upcastable": true,
         "damage": "4d10 Piercing",
+        "upcast-damage": "+1d10 Piercing per level",
         "buff": "",
         "debuff": "Creates a damaging area that is Difficult Terrain and impairs Perception.",
         "need_concentration": true
@@ -835,6 +848,7 @@
         "level": 6,
         "upcastable": true,
         "damage": "7d8 Piercing per turn (when moving through)",
+        "upcast-damage": "+1d8 Piercing per level",
         "buff": "",
         "debuff": "Creates a damaging barrier that slows movement and may Entangle.",
         "need_concentration": true
@@ -1027,6 +1041,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "3d6 Psychic",
+        "upcast-damage": "+1d6 Psychic per level",
         "buff": "",
         "debuff": "Target is Frightened for 2 turns. When upcast, deal an additional 1d6 Psychic damage per spell slot level above 1st.",
         "need_concentration": false
@@ -1291,6 +1306,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "3d6 Fire (Dex Save for half)",
+        "upcast-damage": "+1d6 Fire per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -1303,6 +1319,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "3d8 Thunder (or 2d8 of another type)",
+        "upcast-damage": "+1d8 per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -1351,6 +1368,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "4d6 Radiant",
+        "upcast-damage": "+1d6 Radiant per level",
         "buff": "",
         "debuff": "The next Attack Roll against the target has Advantage for 2 turns.",
         "need_concentration": false
@@ -1375,6 +1393,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "2d10 Fire",
+        "upcast-damage": "+1d10 Fire per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -1387,6 +1406,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "3 x (2d4+1) Force",
+        "upcast-damage": "+1 dart (2d4+1 Force) per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -1399,6 +1419,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "Initial: Weapon damage + 1d6 Fire. Subsequent: 1d6 Fire per turn.",
+        "upcast-damage": "+1d6 Fire per level",
         "buff": "",
         "debuff": "Target is marked with Searing Smite, taking 1d6 Fire damage at the start of each of its turns unless it makes a Constitution Save.",
         "need_concentration": false
@@ -1411,6 +1432,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "Weapon damage + 2d6 Thunder",
+        "upcast-damage": "+1d6 Thunder per level",
         "buff": "",
         "debuff": "Target is pushed 3m away and may be knocked Prone (Str Save).",
         "need_concentration": false
@@ -1423,6 +1445,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "2d8 Thunder (Con Save for half)",
+        "upcast-damage": "+1d8 Thunder per level",
         "buff": "",
         "debuff": "Targets are pushed away from the caster.",
         "need_concentration": false
@@ -1435,6 +1458,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "Initial: 1d12 Lightning. Subsequent: 1d12 Lightning per turn when activated.",
+        "upcast-damage": "+1d12 Lightning per level",
         "buff": "",
         "debuff": "Remains connected to target, dealing damage each turn. Ends if target moves out of range or breaks line of sight.",
         "need_concentration": true
@@ -1447,6 +1471,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "Weapon damage + 1d6 Psychic",
+        "upcast-damage": "+1d6 Psychic per level",
         "buff": "",
         "debuff": "Target may become Frightened (Wis Save), causing it to have Disadvantage on Ability Checks and Attack Rolls, and cannot move closer to the caster.",
         "need_concentration": false
@@ -1459,6 +1484,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "Weapon damage + 2d6 Radiant",
+        "upcast-damage": "+1d6 Radiant per level",
         "buff": "",
         "debuff": "Target is marked with light, preventing it from becoming Invisible.",
         "need_concentration": false
@@ -1483,6 +1509,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "3d6 Fire (melee spell attack)",
+        "upcast-damage": "+1d6 Fire per level",
         "buff": "Creates a flaming scimitar for melee attacks. Provides light.",
         "debuff": "",
         "need_concentration": true
@@ -1507,6 +1534,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "Initial: 4d4 Acid. Delayed: 2d4 Acid",
+        "upcast-damage": "+1d4 Acid per level (both initial and delayed)",
         "buff": "",
         "debuff": "Target takes additional Acid damage at the end of its next turn. On miss, still deals half initial damage.",
         "need_concentration": false
@@ -1519,6 +1547,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "2d10 Radiant (Con Save for half)",
+        "upcast-damage": "+1d10 Radiant per level",
         "buff": "",
         "debuff": "Damages creatures in the beam each turn. Can be moved each turn.",
         "need_concentration": true
@@ -1543,6 +1572,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "3 x 2d6 Fire",
+        "upcast-damage": "+1 ray (2d6 Fire) per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -1555,6 +1585,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "3d8 Thunder (Con Save for half)",
+        "upcast-damage": "+1d8 Thunder per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -1567,6 +1598,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "1d8+2 Force (varies by weapon type)",
+        "upcast-damage": "+1d8 Force per 2 levels",
         "buff": "Summons a weapon that attacks enemies as a Bonus Action. Does not require Concentration.",
         "debuff": "",
         "need_concentration": false
@@ -1579,6 +1611,7 @@
         "level": 3,
         "upcastable": true,
         "damage": "Weapon damage + 3d8 Radiant",
+        "upcast-damage": "+1d8 Radiant per level",
         "buff": "",
         "debuff": "Target may become Blinded (Con Save).",
         "need_concentration": false
@@ -1615,6 +1648,7 @@
         "level": 3,
         "upcastable": true,
         "damage": "8d6 Fire (Dex Save for half)",
+        "upcast-damage": "+1d6 Fire per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -1627,6 +1661,7 @@
         "level": 3,
         "upcastable": true,
         "damage": "8d6 Lightning (Dex Save for half)",
+        "upcast-damage": "+1d6 Lightning per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -1675,6 +1710,7 @@
         "level": 4,
         "upcastable": true,
         "damage": "2d8 Bludgeoning + 4d6 Cold (Dex Save for half)",
+        "upcast-damage": "+1d8 Bludgeoning per level",
         "buff": "",
         "debuff": "Creates an ice surface that may cause creatures to fall Prone.",
         "need_concentration": false
@@ -1795,6 +1831,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "1d6 Psychic per turn",
+        "upcast-damage": "+1d6 per level",
         "buff": "",
         "debuff": "Target takes ongoing psychic damage for 10 turns. Damage type adapts to other damage taken.",
         "need_concentration": true
@@ -1807,6 +1844,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "2d8 Psychic (melee spell attack)",
+        "upcast-damage": "+1d8 Psychic per 2 levels",
         "buff": "Creates a shadowy shortsword that deals psychic damage and grants Advantage in dim light/darkness.",
         "debuff": "",
         "need_concentration": true
@@ -1867,6 +1905,7 @@
         "level": 4,
         "upcastable": true,
         "damage": "4d10 Psychic per turn",
+        "upcast-damage": "+1d10 Psychic per level",
         "buff": "",
         "debuff": "Target is Frightened, cannot move, takes heavy psychic damage each turn.  When upcast, deals an additional 1d10 Psychic damage per spell slot level above 4th.",
         "need_concentration": true
@@ -1927,6 +1966,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "3d10 Necrotic",
+        "upcast-damage": "+1d10 Necrotic per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -1939,6 +1979,7 @@
         "level": 1,
         "upcastable": true,
         "damage": "2d8 Poison",
+        "upcast-damage": "+1d8 Poison per level",
         "buff": "",
         "debuff": "Target may become Poisoned for 2 turns, suffering Disadvantage on Attack Rolls and Ability Checks.",
         "need_concentration": false
@@ -2035,6 +2076,7 @@
         "level": 3,
         "upcastable": true,
         "damage": "3d6 Necrotic",
+        "upcast-damage": "+1d6 Necrotic per level",
         "buff": "Caster regains HP equal to half the damage dealt.",
         "debuff": "",
         "need_concentration": true
@@ -2047,6 +2089,7 @@
         "level": 4,
         "upcastable": true,
         "damage": "8d8 Necrotic (CON Save for half)",
+        "upcast-damage": "+1d8 Necrotic per level",
         "buff": "",
         "debuff": "Plants have Disadvantage on their Saving Throw against this spell.",
         "need_concentration": false
@@ -2071,6 +2114,7 @@
         "level": 6,
         "upcastable": true,
         "damage": "8d6 Necrotic (CON Save for half)",
+        "upcast-damage": "+2d6 Necrotic per level",
         "buff": "",
         "debuff": "",
         "need_concentration": false
@@ -2203,6 +2247,7 @@
         "level": 6,
         "upcastable": true,
         "damage": "10d6+40 Force (Dex Save negates)",
+        "upcast-damage": "+3d6 Force per level",
         "buff": "",
         "debuff": "Target that fails save takes massive damage. If reduced to 0 HP, target is disintegrated (cannot be revived except by True Resurrection or Wish). When upcast, deals an additional 3d6 Force damage per spell slot level above 6th.",
         "need_concentration": false
@@ -2359,6 +2404,7 @@
         "level": 2,
         "upcastable": true,
         "damage": "2d8 Fire (initial and each subsequent turn)",
+        "upcast-damage": "+1d8 Fire per level",
         "buff": "",
         "debuff": "Target touching metal suffers Disadvantage on Attack Rolls and Ability Checks. Can be forced to drop metal objects.  When upcast, deals an additional 1d8 Fire damage per spell slot level above 2nd.",
         "need_concentration": true
@@ -2371,6 +2417,7 @@
         "level": 3,
         "upcastable": true,
         "damage": "Weapon damage + 2d8 Lightning (primary), 2d8 Lightning (secondary targets)",
+        "upcast-damage": "+1d8 Lightning per level",
         "buff": "",
         "debuff": "When upcast, damage increases by 1d8 per spell slot level above 3rd.",
         "need_concentration": false
@@ -2551,6 +2598,7 @@
         "level": 5,
         "upcastable": true,
         "damage": "8d8 Cold damage (8-64). When upcast, damage increases by 1d8 Cold for each spell slot level above 5th.",
+        "upcast-damage": "+1d8 Cold per level",
         "buff": "",
         "debuff": "Targets that fail CON save take full damage (half on success). Creates Ice surface that acts as difficult terrain and may cause Prone.",
         "need_concentration": false
@@ -2635,6 +2683,7 @@
         "level": 5,
         "upcastable": true,
         "damage": "5d6 Fire + 5d6 Radiant damage (10-60 total). When upcast, deals an additional 1d6 Fire and 1d6 Radiant per spell slot level above 5th.",
+        "upcast-damage": "+1d6 Fire and +1d6 Radiant per level",
         "buff": "",
         "debuff": "Targets that fail DEX save take full damage (half on success).",
         "need_concentration": false
@@ -2671,6 +2720,7 @@
         "level": 4,
         "upcastable": true,
         "damage": "5d8 Fire damage (5-40) to creatures within 3m. When upcast, deals an extra 1d8 Fire damage per spell slot level above 4th.",
+        "upcast-damage": "+1d8 Fire per level",
         "buff": "",
         "debuff": "Creates a 36m line wall of fire for 10 turns. Creatures may be Burned (1d4 Fire damage per turn).",
         "need_concentration": true
