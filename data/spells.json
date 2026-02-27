@@ -36,7 +36,8 @@
         "damage": "5 Cold damage to melee attackers",
         "buff": "Caster gains 5 temporary hit points until Long Rest. When upcast, gain an additional 5 temporary hit points and 5 Cold damage per spell slot level above 1st.",
         "debuff": "",
-        "need_concentration": false
+        "need_concentration": false,
+        "damage-type": "Cold"
     },
     {
         "name": "Mage Armour",
@@ -271,7 +272,8 @@
         "buff": "",
         "debuff": "Varies by glyph type: Sleep (puts creatures to sleep), Detonation (pushes creatures back), or elemental damage with DEX Save for half. Only one glyph active at a time.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Acid / Cold / Fire / Lightning / Thunder"
     },
     {
         "name": "Khalid's Gift: Aid",
@@ -453,7 +455,8 @@
         "buff": "",
         "debuff": "Triggers a powerful magical effect when creatures approach the inscribed object.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Variable"
     },
     {
         "name": "Acid Splash",
@@ -466,7 +469,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Acid"
     },
     {
         "name": "Mage Hand",
@@ -492,7 +496,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Poison"
     },
     {
         "name": "Produce Flame",
@@ -505,7 +510,8 @@
         "buff": "Provides light in a 9m / 30ft radius.",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire"
     },
     {
         "name": "Arms of Hadar",
@@ -519,7 +525,8 @@
         "buff": "",
         "debuff": "Targets cannot take Reactions until their next turn.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "Ensnaring Strike",
@@ -533,7 +540,8 @@
         "buff": "",
         "debuff": "Target may become Ensnared, unable to move and taking ongoing Piercing damage. An ally can use Help to free them.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Piercing"
     },
     {
         "name": "Entangle",
@@ -559,7 +567,8 @@
         "damage": "Varies by familiar (typically 1-4 damage)",
         "buff": "Summons an animal companion that can fight, scout, and provide utility out of combat.",
         "debuff": "",
-        "need_concentration": false
+        "need_concentration": false,
+        "damage-type": "Variable"
     },
     {
         "name": "Fog Cloud",
@@ -599,7 +608,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Piercing"
     },
     {
         "name": "Ice Knife",
@@ -613,7 +623,8 @@
         "buff": "",
         "debuff": "Creates an ice surface that may cause creatures to fall Prone.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Piercing / Cold"
     },
     {
         "name": "Cloud of Daggers",
@@ -627,7 +638,8 @@
         "buff": "",
         "debuff": "Creates a damaging area that lasts for 10 turns.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Slashing"
     },
     {
         "name": "Flaming Sphere",
@@ -641,7 +653,8 @@
         "upcast-damage": "+1d6 Fire per level",
         "buff": "Summons a controllable sphere that provides light and damages enemies.",
         "debuff": "",
-        "need_concentration": true
+        "need_concentration": true,
+        "damage-type": "Fire"
     },
     {
         "name": "Misty Step",
@@ -681,7 +694,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Lightning"
     },
     {
         "name": "Conjure Barrage",
@@ -695,7 +709,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Weapon"
     },
     {
         "name": "Hunger of Hadar",
@@ -709,7 +724,8 @@
         "buff": "",
         "debuff": "Creates an area that Blinds creatures, damages them, and is Difficult Terrain.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Cold / Acid"
     },
     {
         "name": "Sleet Storm",
@@ -736,7 +752,8 @@
         "buff": "Protects the caster with spirits that damage nearby enemies.",
         "debuff": "Enemies in range have their Movement Speed halved.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Radiant / Necrotic"
     },
     {
         "name": "Stinking Cloud",
@@ -762,7 +779,8 @@
         "damage": "Varies by summon (Azer: 1d10+3 Bludgeoning +1d6 Fire; Ice Mephits: 1d4+1 Slashing +2d6 Cold; Mud Mephits: 3d6+1 Bludgeoning)",
         "buff": "Summons elemental allies that fight for you.",
         "debuff": "Summons may apply conditions: Ice Mephits can create ice surfaces; Mud Mephits can Restrain enemies.",
-        "need_concentration": false
+        "need_concentration": false,
+        "damage-type": "Variable (Bludgeoning, Cold, Fire, Slashing)"
     },
     {
         "name": "Conjure Woodland Being",
@@ -775,7 +793,8 @@
         "damage": "Varies by summon",
         "buff": "Summons a dryad ally with powerful support and summoning abilities.",
         "debuff": "Dryad can Entangle enemies.",
-        "need_concentration": false
+        "need_concentration": false,
+        "damage-type": "Variable"
     },
     {
         "name": "Dimension Door",
@@ -827,7 +846,8 @@
         "damage": "20 Radiant per attack",
         "buff": "Summons a stationary guardian that attacks enemies that come near.",
         "debuff": "",
-        "need_concentration": false
+        "need_concentration": false,
+        "damage-type": "Radiant"
     },
     {
         "name": "Cloudkill",
@@ -841,7 +861,8 @@
         "buff": "",
         "debuff": "Creates a movable poison cloud that damages and obscures.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Poison"
     },
     {
         "name": "Conjure Elemental",
@@ -854,7 +875,8 @@
         "damage": "Varies by elemental (typically 2d8 + elemental damage)",
         "buff": "Summons a powerful elemental ally to fight for you.",
         "debuff": "Elementals can apply various conditions (Burn, Chilled, Prone, etc.).",
-        "need_concentration": true
+        "need_concentration": true,
+        "damage-type": "Variable"
     },
     {
         "name": "Insect Plague",
@@ -868,7 +890,8 @@
         "buff": "",
         "debuff": "Creates a damaging area that is Difficult Terrain and impairs Perception.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Piercing"
     },
     {
         "name": "Arcane Gate",
@@ -907,7 +930,8 @@
         "damage": "Varies by ally",
         "buff": "Summons a powerful celestial, elemental, or fiendish ally to fight for you until Long Rest.",
         "debuff": "Allies can apply various conditions to enemies.",
-        "need_concentration": false
+        "need_concentration": false,
+        "damage-type": "Variable"
     },
     {
         "name": "Wall of Thorns",
@@ -921,7 +945,8 @@
         "buff": "",
         "debuff": "Creates a damaging barrier that slows movement and may Entangle.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Piercing"
     },
     {
         "name": "Guidance",
@@ -960,7 +985,8 @@
         "buff": "",
         "debuff": "Target is marked, taking bonus damage from weapon attacks. Lasts until Long Rest.  When upcast, duration extends and can be maintained without Concentration at higher levels.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Slashing"
     },
     {
         "name": "Speak with Animals",
@@ -1025,7 +1051,8 @@
         "buff": "",
         "debuff": "Target has Disadvantage on its next Attack Roll. Lasts 1 turn.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Psychic"
     },
     {
         "name": "Animal Friendship",
@@ -1130,7 +1157,8 @@
         "buff": "",
         "debuff": "Target is Frightened for 2 turns. When upcast, deal an additional 1d6 Psychic damage per spell slot level above 1st.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Psychic"
     },
     {
         "name": "Exhort the Risen",
@@ -1169,7 +1197,8 @@
         "buff": "",
         "debuff": "Target suffers Disadvantage on chosen Ability Checks and takes bonus Necrotic damage from your attacks. Lasts until Long Rest.  When upcast, duration extends.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "Sleep",
@@ -1338,7 +1367,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Force"
     },
     {
         "name": "Fire Bolt",
@@ -1351,7 +1381,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire"
     },
     {
         "name": "Light",
@@ -1377,7 +1408,8 @@
         "buff": "",
         "debuff": "Reduces the target's Movement Speed by 3m / 10ft for 1 turn.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Cold"
     },
     {
         "name": "Sacred Flame",
@@ -1390,7 +1422,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Radiant"
     },
     {
         "name": "Shocking Grasp",
@@ -1403,7 +1436,8 @@
         "buff": "",
         "debuff": "Target cannot take Reactions until the start of its next turn.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Lightning"
     },
     {
         "name": "Burning Hands",
@@ -1417,7 +1451,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire"
     },
     {
         "name": "Chromatic Orb",
@@ -1431,7 +1466,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Thunder"
     },
     {
         "name": "Cure Wounds",
@@ -1457,7 +1493,8 @@
         "buff": "Caster's weapon attacks deal an additional 1d4 Radiant damage for 3 turns.",
         "debuff": "",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Radiant"
     },
     {
         "name": "Faerie Fire",
@@ -1484,7 +1521,8 @@
         "buff": "",
         "debuff": "The next Attack Roll against the target has Advantage for 2 turns.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Radiant"
     },
     {
         "name": "Healing Word",
@@ -1511,7 +1549,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire"
     },
     {
         "name": "Magic Missile",
@@ -1525,7 +1564,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Force"
     },
     {
         "name": "Searing Smite",
@@ -1539,7 +1579,8 @@
         "buff": "",
         "debuff": "Target is marked with Searing Smite, taking 1d6 Fire damage at the start of each of its turns unless it makes a Constitution Save.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire"
     },
     {
         "name": "Thunderous Smite",
@@ -1553,7 +1594,8 @@
         "buff": "",
         "debuff": "Target is pushed 3m away and may be knocked Prone (Str Save).",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Thunder"
     },
     {
         "name": "Thunderwave",
@@ -1567,7 +1609,8 @@
         "buff": "",
         "debuff": "Targets are pushed away from the caster.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Thunder"
     },
     {
         "name": "Witch Bolt",
@@ -1581,7 +1624,8 @@
         "buff": "",
         "debuff": "Remains connected to target, dealing damage each turn. Ends if target moves out of range or breaks line of sight.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Lightning"
     },
     {
         "name": "Wrathful Smite",
@@ -1595,7 +1639,8 @@
         "buff": "",
         "debuff": "Target may become Frightened (Wis Save), causing it to have Disadvantage on Ability Checks and Attack Rolls, and cannot move closer to the caster.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Psychic"
     },
     {
         "name": "Branding Smite",
@@ -1609,7 +1654,8 @@
         "buff": "",
         "debuff": "Target is marked with light, preventing it from becoming Invisible.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Radiant"
     },
     {
         "name": "Darkness",
@@ -1636,7 +1682,8 @@
         "buff": "Creates a flaming scimitar for melee attacks. Provides light.",
         "debuff": "",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire"
     },
     {
         "name": "Gust of Wind",
@@ -1663,7 +1710,8 @@
         "buff": "",
         "debuff": "Target takes additional Acid damage at the end of its next turn. On miss, still deals half initial damage.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Acid"
     },
     {
         "name": "Moonbeam",
@@ -1677,7 +1725,8 @@
         "buff": "",
         "debuff": "Damages creatures in the beam each turn. Can be moved each turn.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Radiant"
     },
     {
         "name": "Prayer of Healing",
@@ -1704,7 +1753,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire"
     },
     {
         "name": "Shatter",
@@ -1718,7 +1768,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Thunder"
     },
     {
         "name": "Spiritual Weapon",
@@ -1732,7 +1783,8 @@
         "upcast-damage": "+1d8 Force per 2 levels",
         "buff": "Summons a weapon that attacks enemies as a Bonus Action. Does not require Concentration.",
         "debuff": "",
-        "need_concentration": false
+        "need_concentration": false,
+        "damage-type": "Force"
     },
     {
         "name": "Blinding Smite",
@@ -1746,7 +1798,8 @@
         "buff": "",
         "debuff": "Target may become Blinded (Con Save).",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Radiant"
     },
     {
         "name": "Crusader's Mantle",
@@ -1759,7 +1812,8 @@
         "buff": "Allies within 9m deal an additional 1d4 Radiant damage with weapon attacks.",
         "debuff": "",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Radiant"
     },
     {
         "name": "Daylight",
@@ -1786,7 +1840,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire"
     },
     {
         "name": "Lightning Bolt",
@@ -1800,7 +1855,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Lightning"
     },
     {
         "name": "Mass Healing Word",
@@ -1839,7 +1895,8 @@
         "buff": "Caster gains Resistance to Fire or Cold damage and deals damage to melee attackers. Lasts 10 turns.",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire / Cold"
     },
     {
         "name": "Ice Storm",
@@ -1853,7 +1910,8 @@
         "buff": "",
         "debuff": "Creates an ice surface that may cause creatures to fall Prone.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Bludgeoning / Cold"
     },
     {
         "name": "Otiluke's Resilient Sphere",
@@ -1984,7 +2042,8 @@
         "buff": "",
         "debuff": "Target takes ongoing psychic damage for 10 turns. Damage type adapts to other damage taken.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Psychic"
     },
     {
         "name": "Shadow Blade",
@@ -1998,7 +2057,8 @@
         "buff": "Creates a shadowy shortsword that deals psychic damage and grants Advantage in dim light/darkness.",
         "debuff": "",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Psychic"
     },
     {
         "name": "Silence",
@@ -2064,7 +2124,8 @@
         "buff": "",
         "debuff": "Target is Frightened, cannot move, takes heavy psychic damage each turn.  When upcast, deals an additional 1d10 Psychic damage per spell slot level above 4th.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Psychic"
     },
     {
         "name": "Seeming",
@@ -2090,7 +2151,8 @@
         "buff": "",
         "debuff": "Target cannot regain Hit Points until the start of your next turn. If the target is Undead, it also has Disadvantage on Attack Rolls.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "Toll the Dead",
@@ -2103,7 +2165,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "False Life",
@@ -2130,7 +2193,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "Ray of Sickness",
@@ -2144,7 +2208,8 @@
         "buff": "",
         "debuff": "Target may become Poisoned for 2 turns, suffering Disadvantage on Attack Rolls and Ability Checks.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Poison"
     },
     {
         "name": "Blindness",
@@ -2183,7 +2248,8 @@
         "damage": "Summon attacks vary (typically 1d6+3 + 1d10 Necrotic)",
         "buff": "Summons a zombie or skeleton minion that fights for you. When upcast at Level 4, creates 3 minions. At Level 5, creates a Ghoul. At Level 6, creates 3 Ghouls or Flying Ghouls.",
         "debuff": "",
-        "need_concentration": false
+        "need_concentration": false,
+        "damage-type": "Variable"
     },
     {
         "name": "Bestow Curse",
@@ -2196,7 +2262,8 @@
         "buff": "",
         "debuff": "Choose one curse effect for 10 turns: Disadvantage on Ability Checks and Saving Throws; Disadvantage on Attack Rolls; target must make WIS save each turn or lose its action; or your attacks deal an extra 1d8 Necrotic damage.  When upcast to Level 4 or 5, duration extends and Concentration not required.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "Feign Death",
@@ -2249,7 +2316,8 @@
         "buff": "Caster regains HP equal to half the damage dealt.",
         "debuff": "",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "Blight",
@@ -2263,7 +2331,8 @@
         "buff": "",
         "debuff": "Plants have Disadvantage on their Saving Throw against this spell.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "Contagion",
@@ -2290,7 +2359,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "Create Undead",
@@ -2303,7 +2373,8 @@
         "damage": "Mummy attacks vary",
         "buff": "Summons a powerful mummy minion that fights for you until Long Rest.",
         "debuff": "",
-        "need_concentration": false
+        "need_concentration": false,
+        "damage-type": "Variable"
     },
     {
         "name": "Eyebite",
@@ -2329,7 +2400,8 @@
         "buff": "",
         "debuff": "Target's maximum HP is reduced by the damage taken until Long Rest (cannot go below 1 HP).",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "Danse Macabre",
@@ -2342,7 +2414,8 @@
         "damage": "Ghoul attacks: 2d4+1 Slashing + possible Paralysis",
         "buff": "Summons 4 ghoul minions that can Paralyze enemies.",
         "debuff": "Ghoul attacks may Paralyze targets (CON Save).",
-        "need_concentration": false
+        "need_concentration": false,
+        "damage-type": "Slashing"
     },
     {
         "name": "Dethrone",
@@ -2355,7 +2428,8 @@
         "buff": "",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Necrotic"
     },
     {
         "name": "Barkskin",
@@ -2434,7 +2508,8 @@
         "buff": "",
         "debuff": "Target that fails save takes massive damage. If reduced to 0 HP, target is disintegrated (cannot be revived except by True Resurrection or Wish). When upcast, deals an additional 3d6 Force damage per spell slot level above 6th.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Force"
     },
     {
         "name": "Elemental Weapon",
@@ -2447,7 +2522,8 @@
         "buff": "Target weapon gains +1 Attack and +1d4 chosen elemental damage for 10 turns.  When upcast, bonus increases to +2 at Level 4, +3 at Level 5.",
         "debuff": "",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire / Cold / Lightning / Thunder / Acid"
     },
     {
         "name": "Enhance Ability",
@@ -2486,7 +2562,8 @@
         "buff": "Enlarge: Target becomes larger, gains Advantage on Strength Checks and Saves, and deals +1d4 weapon damage for 10 turns.",
         "debuff": "Reduce: Target becomes smaller, has Disadvantage on Strength Checks and Saves, and deals 1d4 less weapon damage for 10 turns.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Weapon"
     },
     {
         "name": "Etherealness",
@@ -2604,7 +2681,8 @@
         "buff": "",
         "debuff": "Target touching metal suffers Disadvantage on Attack Rolls and Ability Checks. Can be forced to drop metal objects.  When upcast, deals an additional 1d8 Fire damage per spell slot level above 2nd.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire"
     },
     {
         "name": "Lightning Arrow",
@@ -2618,7 +2696,8 @@
         "buff": "",
         "debuff": "When upcast, damage increases by 1d8 per spell slot level above 3rd.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Lightning"
     },
     {
         "name": "Longstrider",
@@ -2644,7 +2723,8 @@
         "buff": "Target weapon becomes magical with +1 to Attack and Damage Rolls for 10 turns.  When upcast, bonus increases to +2 at Level 3, +3 at Level 4.",
         "debuff": "",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Weapon"
     },
     {
         "name": "Plant Growth",
@@ -2683,7 +2763,8 @@
         "buff": "Weapon becomes magical and uses spellcasting ability for attack rolls for 10 turns. Does not require Concentration.",
         "debuff": "",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Bludgeoning"
     },
     {
         "name": "Slow",
@@ -2709,7 +2790,8 @@
         "buff": "",
         "debuff": "Creates an area of difficult terrain that damages creatures moving through it.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Piercing"
     },
     {
         "name": "Telekinesis",
@@ -2722,7 +2804,8 @@
         "buff": "Allows manipulation and throwing of objects and creatures for 10 turns.",
         "debuff": "Target creature can be moved or thrown.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Variable"
     },
     {
         "name": "Thaumaturgy",
@@ -2748,7 +2831,8 @@
         "buff": "",
         "debuff": "Target is pulled 3m closer to the caster.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Piercing"
     },
     {
         "name": "Wind Walk",
@@ -2774,7 +2858,8 @@
         "buff": "Caster gains the ability to recast Sunbeam without expending a spell slot for 10 turns.",
         "debuff": "Targets that fail CON save are Blinded for 10 turns. Blinded creatures have Disadvantage on attack rolls and their range of attacks/spells is reduced to 3m.",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Radiant"
     },
     {
         "name": "Chain Lightning",
@@ -2787,7 +2872,8 @@
         "buff": "",
         "debuff": "Targets that fail DEX save take full damage (half on success).",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Lightning"
     },
     {
         "name": "Wall of Ice",
@@ -2800,7 +2886,8 @@
         "buff": "",
         "debuff": "Targets that fail DEX save take full damage (half on success). Requires Concentration for 10 turns.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Cold"
     },
     {
         "name": "Cone of Cold",
@@ -2814,7 +2901,8 @@
         "buff": "",
         "debuff": "Targets that fail CON save take full damage (half on success). Creates Ice surface that acts as difficult terrain and may cause Prone.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Cold"
     },
     {
         "name": "Destructive Wave",
@@ -2827,7 +2915,8 @@
         "buff": "",
         "debuff": "Targets that fail CON save take full damage (half on success) and are knocked Prone for 1 turn.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Thunder / Radiant / Necrotic"
     },
     {
         "name": "Blade Barrier",
@@ -2840,7 +2929,8 @@
         "buff": "",
         "debuff": "Creates Difficult Terrain in a 36m line. Targets that fail DEX save take damage. Requires Concentration for 60 turns.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Slashing"
     },
     {
         "name": "Staggering Smite",
@@ -2853,7 +2943,8 @@
         "buff": "",
         "debuff": "Target must make WIS save or be Staggered for 1 turn (Disadvantage on Attack Rolls, Ability Checks, can't take reactions).",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Psychic"
     },
     {
         "name": "Grant Flight",
@@ -2892,7 +2983,8 @@
         "buff": "",
         "debuff": "If target is left with 1-49 HP after damage, it is Banished for 2 turns (can't be targeted, move, or take actions).",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Force"
     },
     {
         "name": "Flame Strike",
@@ -2906,7 +2998,8 @@
         "buff": "",
         "debuff": "Targets that fail DEX save take full damage (half on success).",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire / Radiant"
     },
     {
         "name": "Heal",
@@ -2946,7 +3039,8 @@
         "buff": "",
         "debuff": "Creates a 36m line wall of fire for 10 turns. Creatures may be Burned (1d4 Fire damage per turn).",
         "need_concentration": true,
-        "summon": false
+        "summon": false,
+        "damage-type": "Fire"
     },
     {
         "name": "Wall of Stone",
@@ -2972,7 +3066,8 @@
         "buff": "",
         "debuff": "Targets must make CON save or take full damage.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Cold"
     },
     {
         "name": "Power Word Kill",
@@ -2998,6 +3093,7 @@
         "buff": "",
         "debuff": "Target takes Thunder damage when it moves on its next turn.",
         "need_concentration": false,
-        "summon": false
+        "summon": false,
+        "damage-type": "Thunder"
     }
 ]
